@@ -7,7 +7,9 @@
 #include "can_manga.h"
 
 
-// Uncomment THROTTLE_LIMITING to enable power reduction at high temperatures
+// THROTTLE_LIMITING attenuates the throttle at high pack temps
+// attenuation starts at 50C, no current is allowed at 60C
+// this way the car will not shut off due to over heating
 #define THROTTLE_LIMITING
 
 volatile double THROTTLE_MULTIPLIER = 1;
@@ -20,6 +22,7 @@ volatile int ERROR_IDX;
 volatile uint32_t voltage = 0;
 uint8_t charge = 0;
 
+// attenuation map for throttle limiting
 const double THROTTLE_MAP[8] = { 95, 71, 59, 47, 35, 23, 11, 5 };
 
 // mimiced in charger code
@@ -79,57 +82,16 @@ int SOC_LUT[240] =  {
 
 uint16_t curr_voltage = 0;
 
+// used to track when the lcd prints state, or displays data
+// since state is only displayed when first entered
 int firstStart = 0;
 int firstLV = 0;
 int firstHV = 0;
 int firstDrive = 0;
 
-#define PWM_PULSE_WIDTH_STEP        (10u)
-#define SWITCH_PRESSED              (0u)
-#define PWM_MESSAGE_ID              (0x1AAu)
-#define PWM_MESSAGE_IDE             (0u)    /* Standard message */
-#define PWM_MESSAGE_IRQ             (0u)    /* No transmit IRQ */
-#define PWM_MESSAGE_RTR             (0u)    /* No RTR */
-#define CAN_RX_MAILBOX_0_SHIFT      (1u)
-#define CAN_RX_MAILBOX_1_SHIFT      (2u)
-#define DATA_SIZE                   (6u)
-#define ONE_BYTE_OFFSET             (8u)
-
 #define PEDAL_TIMEOUT 100 // Timeout after (PEDAL_TIMEOUT * 10)ms
 
-/* Function prototypes */
-//CY_ISR_PROTO(ISR_CAN);
-
-/* Global variables used to store configuration and data for BASIC CAN mailbox */
-//CAN_DATA_BYTES_MSG dataPWM;
-//CAN_TX_MSG messagePWM;
-
-/* Global variable used to store PWM pulse width value */
-//uint8 pulseWidthValue = 0u;
-
-/* Global variable used to store receive message mailbox number */
-//volatile uint8 receiveMailboxNumber = 0xFFu;
-
-void nodeCheckStart()
-{
-    Node_Timer_Start();
-    isr_nodeok_Start();
-}
-
-void displayData() {
-    GLCD_Clear_Frame();
-    GLCD_DrawInt(0,0,PACK_TEMP,8);
-    GLCD_DrawInt(120,0,charge,8);
-    GLCD_Write_Frame();
-}
-
-CY_ISR(ISR_WDT){
-    WDT_Timer_STATUS;
-    WDT_Reset_Write(0);
-    CyDelay(100);
-    WDT_Reset_Write(1);
-}
-
+// dash states
 typedef enum 
 {
 	Startup,
@@ -138,9 +100,10 @@ typedef enum
 	HV_Enabled,
 	Drive,
 	Fault
-    
+
 }Dash_State;
 
+// error states in dash state machine
 typedef enum 
 {
 	OK,
@@ -154,27 +117,46 @@ typedef enum
     
 }Error_State;
 
-/* Switch state defines -- Active High*/ 
-#define SWITCH_ON         (1u)
-#define SWITCH_OFF        (0u)
-/* Switch debounce delay in milliseconds */
-#define SWITCH_DEBOUNCE_UNIT   (1u)
-/* Number of debounce units to count delay, before consider that switch is pressed */
-#define SWITCH_DEBOUNCE_PERIOD (10u)
-/* Function prototypes */
-static uint32 ReadSwSwitch(void);
-
 /* Global variable used to store switch state */
 uint8 HVSwitch = SWITCH_OFF;
 uint8 DriveSwitch = SWITCH_OFF;
-//volatile Dash_State state = Startup;
 
 // Global variables used to track status of nodes
 volatile uint32_t pedalOK = 0; // for pedal node
-
 volatile int previous_state = -1; // used for SOC writing
-
 volatile BMS_STATUS bms_status = NO_ERROR;
+
+/*
+* i think this is outdated
+*/
+// TODO: delete this and see if it breaks
+void nodeCheckStart()
+{
+    Node_Timer_Start();
+    isr_nodeok_Start();
+}
+
+/*
+* Function to display data on LCD
+* shows temp on left and SOC on right
+*/
+void displayData() {
+    GLCD_Clear_Frame();
+    GLCD_DrawInt(0,0,PACK_TEMP,8);
+    GLCD_DrawInt(120,0,charge,8);
+    GLCD_Write_Frame();
+}
+
+/*
+* Function to start watchdog timer ISR
+* constantly resets timer so it does not expire
+*/
+CY_ISR(ISR_WDT){
+    WDT_Timer_STATUS;
+    WDT_Reset_Write(0);
+    CyDelay(100);
+    WDT_Reset_Write(1);
+}
 
 /*******************************************************************************
 * Function Name: main
@@ -184,15 +166,10 @@ volatile BMS_STATUS bms_status = NO_ERROR;
 *  main() performs the following functions:
 *  1: Initializes a structure for the Basic CAN mailbox to send messages.
 *  2: Starts the CAN and LCD components.
-*  3: When received Message 1, sends the PWM pulse width and displays
-*     received switch status and value of PWM pulse width on an LCD; 
-*     When received Message 2, display received ADC data on an LCD.
-*
-* Parameters:
-*  None.
-*
-* Return:
-*  None.
+*  3: Display state of car through process, once new state is entered display
+*     SOC and pack temperature on dash.
+*  4: Signal starting the car with a short buzzer and entering drive with a long
+*     buzzer.
 *
 *******************************************************************************/
 
@@ -202,10 +179,6 @@ int main()
     
     Dash_State state = Startup;
     Error_State error_state = OK;
-    
-    //Tach Meter Stuff
-    uint8_t value=0; // replace the value with 
-    int8_t direction=1;
     
     //precharging time counter
     volatile uint32_t PrechargingTimeCount = 0;
@@ -231,13 +204,13 @@ int main()
     
     for(;;)
     {
-        
         LED_Write(1);
         
         // Check if all nodes are OK
+        // motor controller check handled in can isr (curtis heartbeat)
         if (pedalOK > PEDAL_TIMEOUT)
         {
-            can_send_cmd(0, 0, 0); // setInterlock. 
+            can_send_cmd(0, 0, 0); // setInterlock to off. 
             state = Fault;
             error_state = nodeFailure;
         }
@@ -252,7 +225,6 @@ int main()
         
         switch(state)
         {    
-
             // startup -- 
             case Startup:
                 GLCD_Clear_Frame();
@@ -295,14 +267,9 @@ int main()
                 CAN_Init();
                 CAN_Start();
                 
-                can_send_cmd(0, 0, 0);
-                //nodeCheckStart();
+                can_send_cmd(0, 0, 0);  // set interlock to off
           
                 can_send_status(state, error_state);
-
-                // calcualte SOC and display SOC
-                //charge = SOC_LUT[(voltage - 93400) / 100] / 100;
-                //hex2Display(charge);
 
                 Buzzer_Write(0);
                 
@@ -387,8 +354,6 @@ int main()
                 CAN_Init();
                 CAN_Start();
                 
-                //nodeCheckStart();
-                
                 can_send_status(state, error_state);
                 
                 //
@@ -396,24 +361,15 @@ int main()
                 // Blue
                 LED_color(BLUE);
                 
-                /*
-                RGB3_2_Write(1);
-                RGB2_2_Write(1);
-                RGB1_2_Write(1);
-                */
-                //CyDelay(5000); ///for debug
                 
                 Buzzer_Write(0);
-                
-                //charge = SOC_LUT[(voltage - 93400) / 100] / 100;
-                //hex1Display(charge);
                 
                 if (Drive_Read())
                 {
                     CyDelay(1000); // wait for the brake msg to be sent
-                    if(getErrorTolerance() == 0) // 100 for error tolerance /// needs to be getErrorTolerance
+                    if(getErrorTolerance() == 1) // switch to 0 cheat if brakes are not attached
                     {
-                        Buzzer_Write(1);
+                        Buzzer_Write(1);    // beeping is part of the rules
                         CyDelay(1000);
                         Buzzer_Write(0);
                         state = Drive;
@@ -422,7 +378,7 @@ int main()
                     else
                     {
                         state = Fault;
-                        error_state = fromHV_Enabled;
+                        error_state = fromHV_Enabled;       //  can recover just try again
                         break;
                     }                     
                 }
@@ -451,18 +407,12 @@ int main()
                     displayData();
                 }
                 
-                can_send_charge(charge, 0);
-                
                 can_send_status(state, error_state);
-                //
-                // RGB code goes here
-                // Green
-                LED_color(GREEN);
                    
                 uint8_t ACK = 0xFF;
                 
                 DriveTimeCount++;
-                if (DriveTimeCount > 100) //EDIT: was 100!
+                if (DriveTimeCount > 100) 
                 {
                     DriveTimeCount = 0; 
                     ACK = getAckRx();
@@ -631,33 +581,10 @@ int main()
 CY_ISR(ISR_CAN)
 {   
     /* Clear Receive Message flag */
-    CAN_INT_SR_REG.byte[1u] = CAN_RX_MESSAGE_MASK;
-
-    /* Set the isrFlag */
-    //isrFlag = 1u;    
+    CAN_INT_SR_REG.byte[1u] = CAN_RX_MESSAGE_MASK; 
 
     /* Acknowledges receipt of new message */
     CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_0);
-
-    ///* Clear Receive Message flag */
-    //CAN_INT_SR_REG.byte[1u] = CAN_RX_MESSAGE_MASK;
-    /* Switch Status message received */
-   // if ((CY_GET_REG16((reg16 *) &CAN_BUF_SR_REG.byte[0u]) & CAN_RX_MAILBOX_0_SHIFT) != 0u)
-   // {        
-   //     receiveMailboxNumber = CAN_RX_MAILBOX_switchStatus;
-
-        /* Acknowledges receipt of new message */
-   //     CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_switchStatus);
-   // }
-
-    /* ADC data message received */
-   // if ((CY_GET_REG16((reg16 *) &CAN_BUF_SR_REG.byte[0u]) & CAN_RX_MAILBOX_1_SHIFT) != 0u)
-   // {
-   //     receiveMailboxNumber = CAN_RX_MAILBOX_ADCdata;
-
-        /* Acknowledges receipt of new message */
-   //     CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_ADCdata);
-   // }
 }
 
 

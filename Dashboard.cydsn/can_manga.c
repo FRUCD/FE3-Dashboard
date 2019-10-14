@@ -121,7 +121,7 @@ void can_receive(uint8_t *msg, int ID)
         case 0x0666:    // pdoAwk from motor controller
             ACK_RX = msg[CAN_DATA_BYTE_1];
             break;
-        case 0x0201:    // BSPD (brake position from pedal node)
+        case 0x0201:    // True when brake is slammed hard enough to enter drive
             ERROR_TOLERANCE = msg[CAN_DATA_BYTE_1];
             break;
         case 0x0200:    // throttle
@@ -149,7 +149,7 @@ void can_receive(uint8_t *msg, int ID)
             current_bytes[3] = data[CAN_DATA_BYTE_6];
             CURRENT = (current_bytes[0] << 24) + (current_bytes[1] << 16) + (current_bytes[2] << 8) + current_bytes[3]; // check CAN to be sure
             break;
-        case 0x188:
+        case 0x188: // status from battery pack, includes errors if present
             bms_status = (data[CAN_DATA_BYTE_3] << 8) | data[CAN_DATA_BYTE_4];  
             break;
     }
@@ -243,7 +243,7 @@ void can_send_cmd(
         data[7] = 0;
 
         can_send(data, 0x766);
-        CyDelay(1); // Wtf is this shit?
+        CyDelay(1); // delay 1 ms to allow ISR time on processor
 
 } // can_send_cmd()
 
