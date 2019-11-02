@@ -118,11 +118,13 @@ void nodeCheckStart()
 }
 
 void displayData() {
-    GLCD_Clear_Frame();
-    GLCD_DrawInt(0,0,PACK_TEMP,8);
-    GLCD_DrawInt(120,0,charge,8);
-    GLCD_Write_Frame();
-    if(BSPD_CATCH == 1){
+    if(BSPD_CATCH == 0){
+        GLCD_Clear_Frame();
+        GLCD_DrawInt(0,0,PACK_TEMP,8);
+        GLCD_DrawInt(120,0,charge,8);
+        GLCD_Write_Frame();
+    }
+    else{
         GLCD_Clear_Frame();
         GLCD_DrawString(0,0,"BSPD TRIGGERED",8);
         GLCD_Write_Frame();
