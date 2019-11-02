@@ -14,6 +14,7 @@ volatile double THROTTLE_MULTIPLIER = 1;
 
 // declared external in can_manga.c
 volatile uint8 PACK_TEMP = 0;
+volatile uint8 BSPD_CATCH = 0;
 volatile int32 CURRENT = 0;
 volatile int ERROR_NODE;
 volatile int ERROR_IDX;
@@ -121,6 +122,11 @@ void displayData() {
     GLCD_DrawInt(0,0,PACK_TEMP,8);
     GLCD_DrawInt(120,0,charge,8);
     GLCD_Write_Frame();
+    if(BSPD_CATCH == 1){
+        GLCD_Clear_Frame();
+        GLCD_DrawString(0,0,"BSPD TRIGGERED",8);
+        GLCD_Write_Frame();
+    }
 }
 
 CY_ISR(ISR_WDT){

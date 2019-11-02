@@ -20,6 +20,7 @@ extern volatile uint32_t pedalOK;
 extern volatile double THROTTLE_MULTIPLIER;
 extern const double THROTTLE_MAP[8];
 extern volatile uint8_t PACK_TEMP;
+extern volatile uint8_t BSPD_CATCH;
 extern volatile int32 CURRENT;
 extern volatile int ERROR_NODE;
 extern volatile int ERROR_IDX;
@@ -123,6 +124,7 @@ void can_receive(uint8_t *msg, int ID)
             break;
         case 0x0201:    // BSPD (brake position from pedal node)
             ERROR_TOLERANCE = msg[CAN_DATA_BYTE_1];
+            BSPD_CATCH = msg[CAN_DATA_BYTE_5];
             break;
         case 0x0200:    // throttle
             pedalOK = 0x0;
