@@ -118,7 +118,7 @@ void nodeCheckStart()
 }
 
 void displayData() {
-    if(BSPD_CATCH == 0){
+    if(BSPD_CATCH == 1){ //were doing this backwards on purpose
         GLCD_Clear_Frame();
         GLCD_DrawInt(0,0,PACK_TEMP,8);
         GLCD_DrawInt(120,0,charge,8);
