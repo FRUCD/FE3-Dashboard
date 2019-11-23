@@ -1,4 +1,4 @@
---------------- Build Started: 11/18/2019 19:17:38 Project: Dashboard, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 11/23/2019 11:04:21 Project: Dashboard, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 The code generation step is up to date.
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/graphic.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c graphic.c -o .\CortexM3\ARM_GCC_541\Debug\graphic.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/T6963C.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c T6963C.c -o .\CortexM3\ARM_GCC_541\Debug\T6963C.o
@@ -59,4 +59,4 @@ Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\CortexM3\ARM_GCC_541\Debug\Dashboard.elf
 Flash used: 12780 of 262144 bytes (4.9%).
 SRAM used: 3513 of 65536 bytes (5.4%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 11/18/2019 19:17:40 ---------------
+--------------- Build Succeeded: 11/23/2019 11:04:25 ---------------
