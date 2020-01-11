@@ -1,8 +1,9 @@
 
 #include <project.h>
 #include <stdio.h>
-#include "T6963C.h"
-#include "graphic.h"
+//#include "T6963C.h"
+//#include "graphic.h"
+#include "TFT_Library.h"
 #include "LED.h"
 #include "can_manga.h"
 
@@ -119,15 +120,22 @@ void nodeCheckStart()
 
 void displayData() {
     if(BSPD_CATCH == 1){
-        GLCD_Clear_Frame();
-        GLCD_DrawString(0,0,"BSPD TRIGGERED",8);
-        GLCD_Write_Frame();
+        libTFT_ClearScreen(); //could this be improved with libTFT_Start_TFT()?
+        libTFT_DrawString("BSPD TRIGGERED",0,0,8,RED);
+        //GLCD_Write_Frame(); //possibly no need for a write frame in this system.
     }
     else{
-        GLCD_Clear_Frame();
-        GLCD_DrawInt(0,0,PACK_TEMP,8);
-        GLCD_DrawInt(120,0,charge,8);
-        GLCD_Write_Frame();
+        libTFT_ClearScreen();
+        char pack_temp_str[10]; //no DrawInt avalible, assuming 10 digits max for conversion
+        //TFT has no DrawInt, so right now itoa is being used to convert for DrawString. a better way would be to implement DrawInt.
+        itoa(PACK_TEMP, pack_temp_str,10);
+        libTFT_DrawString(pack_temp_str,0,0,8,BLUE); //size 8 is left over from previous version.
+
+        char charge_str[10]; //no DrawInt avalible, assuming 3 digits for conversion
+        itoa(charge, charge_str,10);
+        libTFT_DrawString(charge_str,120,0,8,BLUE2); //size 8 is left over from previous version.
+
+        //GLCD_Write_Frame();
     }
 }
 
@@ -221,10 +229,7 @@ int main()
 
     CyGlobalIntEnable;
     
-    GLCD_Initalize();
-    GLCD_Clear_Graphic();
-    GLCD_Clear_Text();
-    GLCD_Clear_CG();
+    libTFT_Start_TFT();
     
     nodeCheckStart();
     
@@ -263,10 +268,10 @@ int main()
 
             // startup -- 
             case Startup:
-                GLCD_Clear_Frame();
+                libTFT_ClearScreen();
                 if(firstStart == 0) {
-                    GLCD_DrawString(0,0,"START",8);
-                    GLCD_Write_Frame();
+                    libTFT_DrawString("START",0,0,8,BLACK);
+                    //GLCD_Write_Frame();
                 } else {
                     displayData();
                 }
@@ -290,9 +295,9 @@ int main()
                 
             case LV:
                 if(firstLV == 0) {
-                    GLCD_Clear_Frame();
-                    GLCD_DrawString(0,0,"LV",8);
-                    GLCD_Write_Frame();
+                    libTFT_ClearScreen();
+                    libTFT_DrawString("LV",0,0,8,BLACK);
+                    //GLCD_Write_Frame();
                     firstLV = 1;
                 } else {
                     charge = SOC_LUT[(voltage - 93400) / 100] / 100;
@@ -337,9 +342,9 @@ int main()
             break;
                 
             case Precharging:
-                GLCD_Clear_Frame();
-                GLCD_DrawString(0,0,"PRCHGE",8);
-                GLCD_Write_Frame();
+                libTFT_ClearScreen();
+                libTFT_DrawString("PRECHARGE",0,0,8,BLACK);
+                //GLCD_Write_Frame();
                 
                 CAN_GlobalIntEnable();
                 CAN_Init();
@@ -382,9 +387,9 @@ int main()
 	        
             case HV_Enabled:
                 if(firstHV == 0) {
-                    GLCD_Clear_Frame();
-                    GLCD_DrawString(0,0,"HV",8);
-                    GLCD_Write_Frame();
+                    libTFT_ClearScreen();
+                    libTFT_DrawString("HV",0,0,8,BLACK);
+                    //GLCD_Write_Frame();
                     firstHV = 1;
                 } else {
                     charge = SOC_LUT[(voltage - 93400) / 100] / 100;
@@ -447,9 +452,9 @@ int main()
                 
 	        case Drive:
                 if(firstDrive == 0) {
-                    GLCD_Clear_Frame();
-                    GLCD_DrawString(0,0,"DRIVE",8);
-                    GLCD_Write_Frame();
+                    libTFT_ClearScreen();;
+                    libTFT_DrawString("DRIVE",0,0,8,BLACK);
+                    //GLCD_Write_Frame();
                     firstDrive = 1;
                 } else {
                     // calcualte SOC
@@ -542,22 +547,33 @@ int main()
                 Buzzer_Write(0);
                 
                 if(error_state == fromBMS) {}
-                GLCD_Clear_Frame();
-                GLCD_DrawString(0,0,"DASH",2);
-                GLCD_DrawString(0,32,"FAULT:",2);
-                GLCD_DrawInt(80,32,error_state,2);
-                GLCD_DrawString(110, 0, "T:", 2);
-                GLCD_DrawString(110, 32, "FALUT:", 2);
+                libTFT_ClearScreen();;
+                libTFT_DrawString("DASH",0,0,2,BLACK);
+                libTFT_DrawString("FAULT",0,0,2,BLACK);
+                char error_state_string[1]; //again, converting to string. possibly can just change enum table.
+                itoa(error_state, error_state_string, 10);
+                libTFT_DrawString(error_state_string,80,32,2,BLACK);
+                libTFT_DrawString("T:",110, 0, 2, BLACK);
+                libTFT_DrawString("FALUT:", 110, 32, 2, BLACK);
                 char* bms_f;
                 //sprintf(bms_f, "%x", bms_error);
                 if(error_state == fromBMS) {
-                    GLCD_DrawChar(110, 0, PACK_TEMP, 2);
-                GLCD_DrawInt(180, 32, bms_error, 2);
-                GLCD_DrawInt(180, 0, ERROR_NODE, 2);
-                GLCD_DrawChar(184, 0, ',', 2);
-                GLCD_DrawInt(188, 0, ERROR_IDX, 2);
+                    
+                char pack_temp_str[10];
+                char bms_error_str[10];
+                char error_node_str[10];
+                char error_idx_str[10];
+                itoa(PACK_TEMP, pack_temp_str, 10);
+                itoa(bms_error, bms_error_str, 10);
+                itoa(ERROR_NODE, error_node_str, 10);
+                itoa(ERROR_IDX, error_idx_str, 10);
+                libTFT_DrawString(pack_temp_str, 110, 0, 2, BLACK);
+                libTFT_DrawString(bms_error_str, 180, 32, 2, BLACK);
+                libTFT_DrawString(error_node_str, 180, 0, 2, BLACK);
+                libTFT_DrawString(",",184, 0, 2, BLACK);
+                libTFT_DrawString(error_idx_str, 188, 0, 2, BLACK);
                 }
-                GLCD_Write_Frame();
+                //GLCD_Write_Frame();
                 
                 if(error_state == fromLV)
                 {

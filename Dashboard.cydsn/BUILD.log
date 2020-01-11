@@ -1,62 +1,84 @@
---------------- Build Started: 11/23/2019 11:04:21 Project: Dashboard, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 01/11/2020 11:44:57 Project: Dashboard, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 The code generation step is up to date.
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/graphic.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c graphic.c -o .\CortexM3\ARM_GCC_541\Debug\graphic.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/T6963C.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c T6963C.c -o .\CortexM3\ARM_GCC_541\Debug\T6963C.o
-T6963C.c: In function 'GLCD_Write_Frame':
-T6963C.c:203:30: warning: iteration 30u invokes undefined behavior [-Waggressive-loop-optimizations]
-         GLCD_Write_Data(FRAME[i]);
-                              ^
-T6963C.c:202:5: note: containing loop
-     for(i = 0; i < GLCD_GRAPHIC_SIZE; i++) {
-     ^
-T6963C.c: In function 'GLCD_Clear_Frame':
-T6963C.c:191:18: warning: iteration 30u invokes undefined behavior [-Waggressive-loop-optimizations]
-         FRAME[i] = 0x00;
-                  ^
-T6963C.c:190:5: note: containing loop
-     for(i = 0; i < GLCD_GRAPHIC_SIZE; i++) {
-     ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM3\ARM_GCC_541\Debug\main.o
+In file included from main.c:6:0:
+TFT_Library.h:28:15: error: expected identifier before numeric constant
+ #define WHITE 0xffff
+               ^
+LED.h:20:5: note: in expansion of macro 'WHITE'
+     WHITE,
+     ^
+In file included from main.c:7:0:
+LED.h: In function 'LED_color':
+LED.h:32:9: warning: case label value exceeds maximum value for type
+         case WHITE:
+         ^
+LED.h:37:9: warning: case label value exceeds maximum value for type
+         case RED:
+         ^
+LED.h:42:9: warning: case label value exceeds maximum value for type
+         case YELLOW:
+         ^
+LED.h:47:9: warning: case label value exceeds maximum value for type
+         case GREEN:
+         ^
+LED.h:52:9: warning: case label value exceeds maximum value for type
+         case CYAN:
+         ^
+LED.h:62:9: warning: case label value exceeds maximum value for type
+         case MAGENTA:
+         ^
+LED.h:67:14: error: 'OFF' undeclared (first use in this function)
+         case OFF:
+              ^
+LED.h:67:14: note: each undeclared identifier is reported only once for each function it appears in
+LED.h:57:9: warning: case value '31' not in enumerated type 'color_t {aka enum color}' [-Wswitch]
+         case BLUE:
+         ^
+In file included from main.c:6:0:
 main.c: In function 'main':
-main.c:551:23: warning: unused variable 'bms_f' [-Wunused-variable]
+TFT_Library.h:22:16: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define YELLOW 0xffe0
+                ^
+main.c:327:27: note: in expansion of macro 'YELLOW'
+                 LED_color(YELLOW);
+                           ^
+TFT_Library.h:26:17: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define MAGENTA 0xF81F
+                 ^
+main.c:356:27: note: in expansion of macro 'MAGENTA'
+                 LED_color(MAGENTA);
+                           ^
+TFT_Library.h:23:15: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define GREEN 0x07e0
+               ^
+main.c:473:27: note: in expansion of macro 'GREEN'
+                 LED_color(GREEN);
+                           ^
+TFT_Library.h:21:15: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define RED   0xf800
+               ^
+main.c:542:27: note: in expansion of macro 'RED'
+                 LED_color(RED);
+                           ^
+main.c:544:27: error: 'OFF' undeclared (first use in this function)
+                 LED_color(OFF);
+                           ^
+main.c:558:23: warning: unused variable 'bms_f' [-Wunused-variable]
                  char* bms_f;
                        ^
-main.c:479:25: warning: unused variable 'ABS_Motor_RPM' [-Wunused-variable]
+main.c:484:25: warning: unused variable 'ABS_Motor_RPM' [-Wunused-variable]
                  uint8_t ABS_Motor_RPM = getABSMotorRPM();
                          ^
-main.c:216:12: warning: unused variable 'direction' [-Wunused-variable]
+main.c:224:12: warning: unused variable 'direction' [-Wunused-variable]
      int8_t direction=1;
             ^
-main.c:215:13: warning: unused variable 'value' [-Wunused-variable]
+main.c:223:13: warning: unused variable 'value' [-Wunused-variable]
      uint8_t value=0; // replace the value with 
              ^
 main.c: At top level:
-main.c:173:15: warning: 'ReadSwSwitch' declared 'static' but never defined [-Wunused-function]
+main.c:181:15: warning: 'ReadSwSwitch' declared 'static' but never defined [-Wunused-function]
  static uint32 ReadSwSwitch(void);
                ^
-main.c: In function 'main':
-main.c:588:21: warning: 'Throttle_Low' may be used uninitialized in this function [-Wmaybe-uninitialized]
-                     can_send_cmd(1, Throttle_High, Throttle_Low); // setInterlock
-                     ^
-main.c:588:21: warning: 'Throttle_High' may be used uninitialized in this function [-Wmaybe-uninitialized]
-main.c:555:17: warning: 'bms_error' may be used uninitialized in this function [-Wmaybe-uninitialized]
-                 GLCD_DrawInt(180, 32, bms_error, 2);
-                 ^
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/can_manga.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c can_manga.c -o .\CortexM3\ARM_GCC_541\Debug\can_manga.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/CAN_TX_RX_func.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\CAN_TX_RX_func.c -o .\CortexM3\ARM_GCC_541\Debug\CAN_TX_RX_func.o
-Generated_Source\PSoC5\CAN_TX_RX_func.c: In function 'CAN_ReceiveMsg':
-Generated_Source\PSoC5\CAN_TX_RX_func.c:643:27: warning: unused variable 'test' [-Wunused-variable]
-             CAN_RX_STRUCT test = CAN_RX[rxMailbox]; // is test always 0s?
-                           ^
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/LED.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\LED.c -o .\CortexM3\ARM_GCC_541\Debug\LED.o
-arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_541\Debug\Dashboard.a .\CortexM3\ARM_GCC_541\Debug\RX.o .\CortexM3\ARM_GCC_541\Debug\TX.o .\CortexM3\ARM_GCC_541\Debug\CAN.o .\CortexM3\ARM_GCC_541\Debug\CAN_INT.o .\CortexM3\ARM_GCC_541\Debug\CAN_PM.o .\CortexM3\ARM_GCC_541\Debug\CAN_TX_RX_func.o .\CortexM3\ARM_GCC_541\Debug\CyDmac.o .\CortexM3\ARM_GCC_541\Debug\CyFlash.o .\CortexM3\ARM_GCC_541\Debug\CyLib.o .\CortexM3\ARM_GCC_541\Debug\cyPm.o .\CortexM3\ARM_GCC_541\Debug\CySpc.o .\CortexM3\ARM_GCC_541\Debug\cyutils.o .\CortexM3\ARM_GCC_541\Debug\LED.o .\CortexM3\ARM_GCC_541\Debug\Buzzer.o .\CortexM3\ARM_GCC_541\Debug\HV.o .\CortexM3\ARM_GCC_541\Debug\Drive.o .\CortexM3\ARM_GCC_541\Debug\RGB3_1.o .\CortexM3\ARM_GCC_541\Debug\RGB2_1.o .\CortexM3\ARM_GCC_541\Debug\RGB1_1.o .\CortexM3\ARM_GCC_541\Debug\RGB3_2.o .\CortexM3\ARM_GCC_541\Debug\RGB2_2.o .\CortexM3\ARM_GCC_541\Debug\RGB1_2.o .\CortexM3\ARM_GCC_541\Debug\timer_clock.o .\CortexM3\ARM_GCC_541\Debug\CAN_Timer.o .\CortexM3\ARM_GCC_541\Debug\CAN_Timer_PM.o .\CortexM3\ARM_GCC_541\Debug\isr_can.o .\CortexM3\ARM_GCC_541\Debug\Node_Timer.o .\CortexM3\ARM_GCC_541\Debug\Node_Timer_PM.o .\CortexM3\ARM_GCC_541\Debug\isr_nodeok.o .\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM3\ARM_GCC_541\Debug\LED_1.o .\CortexM3\ARM_GCC_541\Debug\EEPROM_1.o .\CortexM3\ARM_GCC_541\Debug\CTRL.o .\CortexM3\ARM_GCC_541\Debug\SD.o .\CortexM3\ARM_GCC_541\Debug\WDT_Timer.o .\CortexM3\ARM_GCC_541\Debug\WDT_Timer_PM.o .\CortexM3\ARM_GCC_541\Debug\isr_wdt.o .\CortexM3\ARM_GCC_541\Debug\WDT_Reset.o .\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o
-arm-none-eabi-ar.exe: creating .\CortexM3\ARM_GCC_541\Debug\Dashboard.a
-arm-none-eabi-gcc.exe -Wl,--start-group -o C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\CortexM3\ARM_GCC_541\Debug\Dashboard.elf .\CortexM3\ARM_GCC_541\Debug\graphic.o .\CortexM3\ARM_GCC_541\Debug\T6963C.o .\CortexM3\ARM_GCC_541\Debug\main.o .\CortexM3\ARM_GCC_541\Debug\can_manga.o .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM3\ARM_GCC_541\Debug\cymetadata.o .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o .\CortexM3\ARM_GCC_541\Debug\Dashboard.a "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,.\CortexM3\ARM_GCC_541\Debug/Dashboard.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
-cyelftool.exe -C C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\CortexM3\ARM_GCC_541\Debug\Dashboard.elf --flash_row_size 256 --flash_size 262144 --flash_offset 0x00000000
-No ELF section .cychecksum found, creating one
-Application checksum calculated and stored in ELF section .cychecksum
-Checksum calculated and stored in ELF section .cymeta
-cyelftool.exe -S C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\CortexM3\ARM_GCC_541\Debug\Dashboard.elf
-Flash used: 12780 of 262144 bytes (4.9%).
-SRAM used: 3513 of 65536 bytes (5.4%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 11/23/2019 11:04:25 ---------------
+The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
+--------------- Build Failed: 01/11/2020 11:44:57 ---------------

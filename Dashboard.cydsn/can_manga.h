@@ -9,8 +9,8 @@
 
 #include "project.h"
 #include "CAN.h"
-#include "T6963C.h"
-#include "graphic.h"
+//#include "T6963C.h"
+//#include "graphic.h"
     
 #include "data.h"
 
