@@ -541,7 +541,7 @@ int main()
                 // flashing red
                 LED_color(RED);
                 CyDelay(1000);
-                LED_color(OFF);
+                LED_color(LEDOFF);
                 CyDelay(1000);
                 
                 Buzzer_Write(0);

@@ -17,54 +17,54 @@
 
 
 typedef enum color {
-    WHITE,
-    RED,
-    YELLOW,
-    GREEN,
-    CYAN,
-    BLUE,
-    MAGENTA,
-    OFF
+    LEDWHITE,
+    LEDRED,
+    LEDYELLOW,
+    LEDGREEN,
+    LEDCYAN,
+    LEDBLUE,
+    LEDMAGENTA,
+    LEDOFF
 } color_t;
 
 void LED_color(color_t color) {
     switch(color){
-        case WHITE:
+        case LEDWHITE:
             RGB1_1_Write(0);
             RGB2_1_Write(0);
             RGB3_1_Write(0);
         break;
-        case RED:
+        case LEDRED:
             RGB1_1_Write(0);
             RGB2_1_Write(1);
             RGB3_1_Write(1);
         break;
-        case YELLOW:
+        case LEDYELLOW:
             RGB1_1_Write(0);
             RGB2_1_Write(1);
             RGB3_1_Write(0);
         break;
-        case GREEN:
+        case LEDGREEN:
             RGB1_1_Write(1);
             RGB2_1_Write(1);
             RGB3_1_Write(0);
         break;
-        case CYAN:
+        case LEDCYAN:
             RGB1_1_Write(1);
             RGB2_1_Write(0);
             RGB3_1_Write(0);
         break;
-        case BLUE:
+        case LEDBLUE:
             RGB1_1_Write(1);
             RGB2_1_Write(0);
             RGB3_1_Write(1);
         break;
-        case MAGENTA:
+        case LEDMAGENTA:
             RGB1_1_Write(0);
             RGB2_1_Write(0);
             RGB3_1_Write(1); 
         break;
-        case OFF:
+        case LEDOFF:
             RGB1_1_Write(1);
             RGB2_1_Write(1);
             RGB3_1_Write(1);

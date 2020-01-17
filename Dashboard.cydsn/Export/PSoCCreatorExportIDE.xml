@@ -40,13 +40,25 @@
           <File BuildType="BUILD" Toolchain="">data.h</File>
           <File BuildType="BUILD" Toolchain="">can_manga.c</File>
           <File BuildType="BUILD" Toolchain="">can_manga.h</File>
+          <File BuildType="BUILD" Toolchain="">TFT_Library.c</File>
+          <File BuildType="BUILD" Toolchain="">TFT_Library.h</File>
+          <File BuildType="BUILD" Toolchain="">fonts.h</File>
           <File BuildType="BUILD" Toolchain="">glcdfont.h</File>
-          <File BuildType="BUILD" Toolchain="">graphic.c</File>
-          <File BuildType="BUILD" Toolchain="">graphic.h</File>
-          <File BuildType="BUILD" Toolchain="">T6963C.c</File>
-          <File BuildType="BUILD" Toolchain="">T6963C.h</File>
           <File BuildType="BUILD" Toolchain="">LED.h</File>
+          <File BuildType="BUILD" Toolchain="">device.h</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
+        </Files>
+      </Folder>
+      <Folder BuildType="STRICT" Path="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn">
+        <Files Root="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn">
+          <File BuildType="BUILD" Toolchain="">TFT_Source\TFT.c</File>
+          <File BuildType="BUILD" Toolchain="">TFT_Source\TFT.h</File>
+          <File BuildType="BUILD" Toolchain="">TFT_Source\cyfitter.h</File>
+          <File BuildType="BUILD" Toolchain="">TFT_Source\CyLib.h</File>
+          <File BuildType="BUILD" Toolchain="">TFT_Source\cytypes.h</File>
+          <File BuildType="BUILD" Toolchain="">TFT_Source\PWM_BLED.c</File>
+          <File BuildType="BUILD" Toolchain="">TFT_Source\PWM_BLED.h</File>
+          <File BuildType="BUILD" Toolchain="">TFT_Source\PWM_BLED_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\Generated_Source\PSoC5">

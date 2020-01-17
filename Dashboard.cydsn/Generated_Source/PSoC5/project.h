@@ -60,7 +60,6 @@
 #include "WDT_Reset.h"
 #include "WDT_Timer.h"
 #include "isr_wdt.h"
-#include "cy_em_eeprom.h"
 #include "core_cm3_psoc5.h"
 #include "core_cm3.h"
 #include "CyDmac.h"
@@ -72,6 +71,7 @@
 #include "cytypes.h"
 #include "core_cmFunc.h"
 #include "core_cmInstr.h"
+#include "cy_em_eeprom.h"
 
 /*[]*/
 
