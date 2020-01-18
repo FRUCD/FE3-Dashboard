@@ -1,5 +1,22 @@
---------------- Build Started: 01/16/2020 16:34:19 Project: Dashboard, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
-The code generation step is up to date.
-The compile step is up to date, no work needs to be done.
-The link step is up to date, no work needs to be done.
---------------- Build Succeeded: 01/16/2020 16:34:20 ---------------
+--------------- Build Started: 01/18/2020 10:03:13 Project: Dashboard, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+cydsfit.exe -.appdatapath "C:\Users\ianrd\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\Dashboard.cyprj -d CY8C5868AXI-LP035 -s C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+ADD: sdb.M0025: error: No input on Instance "GraphicLCDIntf_1", terminal "di_lsb[7:0]".
+ * C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\TopDesign\TopDesign.cysch (Signal: Net_163)
+ * C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\TopDesign\TopDesign.cysch (Shape_89.1)
+ADD: sdb.M0050: error: Terminal "di_lsb[7:0]" requires connection when it is visible.
+ * C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\TopDesign\TopDesign.cysch (Signal: Net_163)
+ * C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\TopDesign\TopDesign.cysch (Shape_89.1)
+ADD: sdb.M0050: error: Terminal "di_msb[7:0]" requires connection when it is visible.
+ * C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\TopDesign\TopDesign.cysch (Signal: Net_164)
+ * C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\TopDesign\TopDesign.cysch (Shape_89.3)
+ADD: sdb.M0025: error: No input on Instance "GraphicLCDIntf_1", terminal "clock".
+ * C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\TopDesign\TopDesign.cysch (Signal: Net_165)
+ * C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\TopDesign\TopDesign.cysch (Shape_89.5)
+ADD: sdb.M0050: error: Terminal "clock" requires connection when it is visible.
+ * C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\TopDesign\TopDesign.cysch (Signal: Net_165)
+ * C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\TopDesign\TopDesign.cysch (Shape_89.5)
+ADD: sdb.M0060: warning: Warning in component: CAN. The BUS_CLK clock accuracy should be 0.5% or better. Please, use an external XTAL or external clock source to meet the CAN accurate clocking requirements.
+ * C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\TopDesign\TopDesign.cysch (Instance:CAN)
+Error: fit.M0050: The fitter aborted due to errors, please address all errors and rebuild. (App=cydsfit)
+--------------- Build Failed: 01/18/2020 10:03:20 ---------------
