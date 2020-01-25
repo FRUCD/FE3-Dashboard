@@ -60,6 +60,13 @@
 #include "WDT_Reset.h"
 #include "WDT_Timer.h"
 #include "isr_wdt.h"
+#include "TFT.h"
+#include "Clock_1.h"
+#include "PWM_BLED.h"
+#include "BLED_clock.h"
+#include "TFT_BLED_aliases.h"
+#include "TFT_BLED.h"
+#include "cy_em_eeprom.h"
 #include "core_cm3_psoc5.h"
 #include "core_cm3.h"
 #include "CyDmac.h"
@@ -71,7 +78,6 @@
 #include "cytypes.h"
 #include "core_cmFunc.h"
 #include "core_cmInstr.h"
-#include "cy_em_eeprom.h"
 
 /*[]*/
 

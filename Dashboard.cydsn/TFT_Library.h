@@ -60,9 +60,9 @@ typedef struct {
 
 //****************************************************************************************
 void libTFT_Start_TFT(void);
-void libTFT_SendCMD(uint8_t cmd);
-void libTFT_WriteData(uint8_t data);
-void libTFT_WriteMData(uint8_t *data, uint16 count);
+void libTFT_SendCMD(uint16_t cmd);
+void libTFT_WriteData(uint16_t data);
+void libTFT_WriteMData(uint16_t *data, uint16 count);
 void libTFT_SendData(uint16_t data);
 void libTFT_Init(uint8_t orient);
 void libTFT_ClearScreen(void);

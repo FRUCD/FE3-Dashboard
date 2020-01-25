@@ -30,28 +30,31 @@ uint16_t constrain(uint16_t a, uint16_t b, uint16_t c)
 	else return a;
 }
 //*************************************************************************************
-void libTFT_SendCMD(uint8_t cmd)
+void libTFT_SendCMD(uint16_t cmd)
 { 
-    TFT_Write8(0,cmd);
+    TFT_Write16(0,cmd);
 }
 //*************************************************************************************
-void libTFT_WriteData(uint8_t Data)
+void libTFT_WriteData(uint16_t Data)
 { 
-    TFT_Write8(1,Data);
+    TFT_Write16(1,Data);
 }
 //*************************************************************************************
-void libTFT_WriteMData(uint8_t *data, uint16 count)
+void libTFT_WriteMData(uint16_t *data, uint16 count)
 { 
 //    TFT_Write8(1,Data);
-    TFT_WriteM8(1, data, count);
+    TFT_WriteM16(1, data, count);
 }
 //*************************************************************************************
 void libTFT_SendData(uint16_t Data)
 {
+    /*
 	uint8_t data1 = Data>>8;
 	uint8_t data2 = Data&0xff;
 	libTFT_WriteData(data1);
 	libTFT_WriteData(data2);
+    */
+    libTFT_WriteData(Data);
 }
 //*************************************************************************************
 void libTFT_Init(uint8_t orient)
@@ -238,13 +241,18 @@ void libTFT_FillScreen(uint16_t XL, uint16_t XR, uint16_t YU, uint16_t YD, uint1
 	libTFT_SendCMD(0x2c);         /* start to write to display ra */
 	/* m                            */
 
+    /*
 	uint8_t Hcolor = color>>8;
 	uint8_t Lcolor = color&0xff;
+    */
         
 	for(i=0; i < XY; i++)
-	{
+	{\
+        /*
 		libTFT_WriteData(Hcolor);
 		libTFT_WriteData(Lcolor);
+        */
+        libTFT_WriteData(color);
 	}
 
 }
