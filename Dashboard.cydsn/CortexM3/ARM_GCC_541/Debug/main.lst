@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
   28:main.c        **** // so master board can send SOC back and forth
   29:main.c        **** // 240 values taken from data sheet
   30:main.c        **** // used to approximate state of charge
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 2
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 2
 
 
   31:main.c        **** int SOC_LUT[240] =  {
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
   85:main.c        **** int firstLV = 0;
   86:main.c        **** int firstHV = 0;
   87:main.c        **** int firstDrive = 0;
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 3
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 3
 
 
   88:main.c        **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  142:main.c        **** CY_ISR(ISR_WDT){
   28              		.loc 1 142 0
   29              		.cfi_startproc
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 4
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 4
 
 
   30              		@ args = 0, pretend = 0, frame = 0
@@ -210,7 +210,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
   52              	.L4:
   53 001a 00BF     		.align	2
   54              	.L3:
-  55 001c 63640040 		.word	1073767523
+  55 001c 66650040 		.word	1073767782
   56              		.cfi_endproc
   57              	.LFE68:
   58              		.size	ISR_WDT, .-ISR_WDT
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
   13:LED.h         **** #include "project.h"
   14:LED.h         **** 
   15:LED.h         **** #if !defined(LED_H)
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 5
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 5
 
 
   16:LED.h         **** #define LED_H
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  102 001e 0020     		movs	r0, #0
  103 0020 FFF7FEFF 		bl	RGB3_1_Write
  104              	.LVL7:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 6
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 6
 
 
   36:LED.h         ****         break;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  146 0050 FFF7FEFF 		bl	RGB1_1_Write
  147              	.LVL20:
   49:LED.h         ****             RGB2_1_Write(1);
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 7
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 7
 
 
  148              		.loc 2 49 0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  190              		.loc 2 61 0
  191 0088 08BD     		pop	{r3, pc}
  192              	.LVL33:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 8
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 8
 
 
  193              	.L14:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
   72:LED.h         ****     }
   73:LED.h         **** }
   74:LED.h         **** 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 9
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 9
 
 
   75:LED.h         **** void LED_color_wheel(int ms) {
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  283              	nodeCheckStart:
  284              	.LFB66:
  116:main.c        ****     Node_Timer_Start();
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 10
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 10
 
 
  285              		.loc 1 116 0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  333 0018 0823     		movs	r3, #8
  334 001a 0022     		movs	r2, #0
  335 001c 1146     		mov	r1, r2
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 11
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 11
 
 
  336 001e 1348     		ldr	r0, .L27+4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  384              		.align	2
  385              	.L27:
  386 0068 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 12
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 12
 
 
  387 006c 00000000 		.word	.LC0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  186:main.c        **** //volatile Dash_State state = Startup;
  187:main.c        **** 
  188:main.c        **** // Global variables used to track status of nodes
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 13
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 13
 
 
  189:main.c        **** volatile uint32_t pedalOK = 0; // for pedal node
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  224:main.c        ****     int8_t direction=1;
  225:main.c        ****     
  226:main.c        ****     //precharging time counter
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 14
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 14
 
 
  227:main.c        ****     volatile uint32_t PrechargingTimeCount = 0;
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  245:main.c        ****     for(;;)
  246:main.c        ****     {
  247:main.c        ****         
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 15
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 15
 
 
  248:main.c        ****         LED_Write(1);
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  259:main.c        ****             state = Fault;
  492              		.loc 1 259 0
  493 0058 0524     		movs	r4, #5
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 16
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 16
 
 
  494              	.LVL72:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  280:main.c        ****                 CAN_GlobalIntEnable();
  531              		.loc 1 280 0
  532 008e FFF7FEFF 		bl	CAN_GlobalIntEnable
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 17
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 17
 
 
  533              	.LVL76:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  570 00c2 63B9     		cbnz	r3, .L44
  298:main.c        ****                     libTFT_ClearScreen();
  571              		.loc 1 298 0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 18
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 18
 
 
  572 00c4 FFF7FEFF 		bl	libTFT_ClearScreen
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  310:main.c        ****                 
  311:main.c        ****                 can_send_cmd(0, 0, 0);
  615              		.loc 1 311 0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 19
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 19
 
 
  616 0112 0022     		movs	r2, #0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  645              	.L37:
  337:main.c        ****                 {
  338:main.c        ****                     state = Precharging;
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 20
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 20
 
 
  339:main.c        ****                     break;
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  359:main.c        ****                 PrechargingTimeCount = 0;
  680              		.loc 1 359 0
  681 017e CDF83CA0 		str	r10, [sp, #60]
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 21
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 21
 
 
  682              	.L46:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  711 01ac E9E7     		b	.L46
  712              	.L38:
  385:main.c        ****                 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 22
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 22
 
 
  386:main.c        ****             break;
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  753 01f6 FFF7FEFF 		bl	CAN_GlobalIntEnable
  754              	.LVL112:
  400:main.c        ****                 CAN_Init();
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 23
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 23
 
 
  755              		.loc 1 400 0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  782              		.loc 1 427 0
  783 0224 FFF7FEFF 		bl	getErrorTolerance
  784              	.LVL120:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 24
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 24
 
 
  785 0228 0128     		cmp	r0, #1
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  451:main.c        ****             break;
  452:main.c        ****                 
  453:main.c        **** 	        case Drive:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 25
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 25
 
 
  454:main.c        ****                 if(firstDrive == 0) {
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  859 02ac FFF7FEFF 		bl	displayData
  860              	.LVL129:
  861              	.L51:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 26
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 26
 
 
  465:main.c        ****                 }
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  898 02ec 18000000 		.word	.LC2
  899 02f0 1F85EB51 		.word	1374389535
  900 02f4 00000000 		.word	.LANCHOR1
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 27
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 27
 
 
  901 02f8 1C000000 		.word	.LC3
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  493:main.c        ****                 
  494:main.c        ****                 // send attenuated throttle and interlock to motor controller
  495:main.c        ****                 can_send_cmd(1, Throttle_High, Throttle_Low); // setInterlock 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 28
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 28
 
 
  943              		.loc 1 495 0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  978 0368 FFF7FEFF 		bl	can_send_cmd
  979              	.LVL158:
  515:main.c        ****                     can_send_charge(charge, 1);
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 29
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 29
 
 
  980              		.loc 1 515 0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1018 03a4 754B     		ldr	r3, .L77+8
  1019 03a6 C3F8C823 		str	r2, [r3, #968]
  528:main.c        ****             break;
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 30
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 30
 
 
  1020              		.loc 1 528 0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1055 03dc 0020     		movs	r0, #0
  1056 03de FFF7FEFF 		bl	Buzzer_Write
  1057              	.LVL173:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 31
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 31
 
 
  548:main.c        ****                 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1102 0438 0223     		movs	r3, #2
  1103 043a 2022     		movs	r2, #32
  1104 043c 6E21     		movs	r1, #110
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 32
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 32
 
 
  1105 043e 5348     		ldr	r0, .L77+24
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1146              	.LVL185:
  571:main.c        ****                 libTFT_DrawString(bms_error_str, 180, 32, 2, BLACK);
  1147              		.loc 1 571 0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 33
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 33
 
 
  1148 0486 CDF800A0 		str	r10, [sp]
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  583:main.c        ****                         error_state = OK;
  584:main.c        ****                     }
  585:main.c        ****                 }
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 34
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 34
 
 
  586:main.c        ****                 else if (error_state == fromPrecharging)
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1224 0508 C820     		movs	r0, #200
  1225 050a FFF7FEFF 		bl	CyDelay
  1226              	.LVL195:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 35
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 35
 
 
  607:main.c        ****                     
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1253 0534 0125     		movs	r5, #1
  1254              	.LVL201:
  331:main.c        ****                     error_state = fromLV;
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 36
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 36
 
 
  1255              		.loc 1 331 0
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1301              	.L69:
  583:main.c        ****                     }
  1302              		.loc 1 583 0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 37
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 37
 
 
  1303 0556 0025     		movs	r5, #0
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1348 0574 C0030000 		.word	.LANCHOR1+960
  1349 0578 00000000 		.word	.LANCHOR0
  1350 057c 00000000 		.word	.LANCHOR1
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 38
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 38
 
 
  1351 0580 34000000 		.word	.LC6
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1378 0004 5A70     		strb	r2, [r3, #1]
  661:main.c        **** 
  662:main.c        ****     /* Set the isrFlag */
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 39
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 39
 
 
  663:main.c        ****     //isrFlag = 1u;    
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1429 002c 00003740 		.word	1077346304
  1430 0030 00000000 		.word	0
  1431 0034 00002640 		.word	1076232192
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 40
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 40
 
 
  1432 0038 00000000 		.word	0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1486 00b8 B6040000 		.word	1206
  1487 00bc E5040000 		.word	1253
  1488 00c0 13050000 		.word	1299
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 41
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 41
 
 
  1489 00c4 40050000 		.word	1344
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1543 019c 8E150000 		.word	5518
  1544 01a0 C5150000 		.word	5573
  1545 01a4 FC150000 		.word	5628
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 42
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 42
 
 
  1546 01a8 30160000 		.word	5680
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1600 0280 C91D0000 		.word	7625
  1601 0284 EB1D0000 		.word	7659
  1602 0288 0E1E0000 		.word	7694
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 43
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 43
 
 
  1603 028c 301E0000 		.word	7728
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1657 0364 E7240000 		.word	9447
  1658 0368 03250000 		.word	9475
  1659 036c 1F250000 		.word	9503
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 44
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 44
 
 
  1660 0370 3B250000 		.word	9531
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1707      4500
  1708 0032 0000     		.space	2
  1709              	.LC6:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 45
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 45
 
 
  1710 0034 44415348 		.ascii	"DASH\000"
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1761              		.size	firstHV, 4
  1762              	firstHV:
  1763 0018 00000000 		.space	4
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 46
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 46
 
 
  1764              		.type	firstDrive, %object
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1818 0011 25000000 		.4byte	.LASF158
  1819 0015 DC020000 		.4byte	.LASF159
  1820 0019 18000000 		.4byte	.Ldebug_ranges0+0x18
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 47
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 47
 
 
  1821 001d 00000000 		.4byte	0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1875 0089 F5030000 		.4byte	.LASF11
  1876 008d 03       		.uleb128 0x3
  1877 008e 08       		.byte	0x8
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 48
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 48
 
 
  1878 008f 07       		.byte	0x7
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1932 0100 01       		.byte	0x1
  1933 0101 08       		.byte	0x8
  1934 0102 64030000 		.4byte	.LASF23
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 49
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 49
 
 
  1935 0106 05       		.uleb128 0x5
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  1989 0173 00       		.byte	0
  1990 0174 00       		.byte	0
  1991 0175 0A       		.uleb128 0xa
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 50
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 50
 
 
  1992 0176 06010000 		.4byte	0x106
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2046 01e5 09       		.uleb128 0x9
  2047 01e6 C6030000 		.4byte	.LASF36
  2048 01ea 06       		.byte	0x6
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 51
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 51
 
 
  2049 01eb A8       		.byte	0xa8
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2103 025a 0D       		.uleb128 0xd
  2104 025b CD030000 		.4byte	.LASF47
  2105 025f 00       		.byte	0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 52
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 52
 
 
  2106 0260 0D       		.uleb128 0xd
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2160 02d4 0E       		.uleb128 0xe
  2161 02d5 01       		.byte	0x1
  2162 02d6 42000000 		.4byte	0x42
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 53
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 53
 
 
  2163 02da 01       		.byte	0x1
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2217 0344 0D       		.uleb128 0xd
  2218 0345 DA060000 		.4byte	.LASF77
  2219 0349 07       		.byte	0x7
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 54
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 54
 
 
  2220 034a 00       		.byte	0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2274 03b3 8B050000 		.4byte	0x58b
  2275 03b7 15       		.uleb128 0x15
  2276 03b8 B7050000 		.4byte	.LASF82
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 55
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 55
 
 
  2277 03bc 02       		.byte	0x2
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2331 0425 12       		.uleb128 0x12
  2332 0426 38000000 		.4byte	.LVL12
  2333 042a 1A130000 		.4byte	0x131a
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 56
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 56
 
 
  2334 042e 38040000 		.4byte	0x438
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2388 0494 01       		.uleb128 0x1
  2389 0495 31       		.byte	0x31
  2390 0496 00       		.byte	0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 57
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 57
 
 
  2391 0497 12       		.uleb128 0x12
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2445 0503 13       		.uleb128 0x13
  2446 0504 01       		.uleb128 0x1
  2447 0505 50       		.byte	0x50
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 58
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 58
 
 
  2448 0506 01       		.uleb128 0x1
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2502 0569 AA000000 		.4byte	.LVL41
  2503 056d 0F130000 		.4byte	0x130f
  2504 0571 7B050000 		.4byte	0x57b
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 59
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 59
 
 
  2505 0575 13       		.uleb128 0x13
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2559 05e1 13       		.uleb128 0x13
  2560 05e2 01       		.uleb128 0x1
  2561 05e3 50       		.byte	0x50
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 60
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 60
 
 
  2562 05e4 02       		.uleb128 0x2
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2616 0659 12       		.uleb128 0x12
  2617 065a 36000000 		.4byte	.LVL54
  2618 065e 46130000 		.4byte	0x1346
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 61
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 61
 
 
  2619 0662 72060000 		.4byte	0x672
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2673 06ad 6C       		.sleb128 -20
  2674 06ae 13       		.uleb128 0x13
  2675 06af 01       		.uleb128 0x1
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 62
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 62
 
 
  2676 06b0 52       		.byte	0x52
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2730 06fc 30       		.byte	0x30
  2731 06fd 13       		.uleb128 0x13
  2732 06fe 01       		.uleb128 0x1
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 63
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 63
 
 
  2733 06ff 52       		.byte	0x52
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2787 0769 01       		.byte	0x1
  2788 076a E0       		.byte	0xe0
  2789 076b A2000000 		.4byte	0xa2
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 64
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 64
 
 
  2790 076f 01       		.byte	0x1
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2844 07ee 59       		.byte	0x59
  2845 07ef 22       		.uleb128 0x22
  2846 07f0 20070000 		.4byte	.LASF97
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 65
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 65
 
 
  2847 07f4 01       		.byte	0x1
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2901 0865 13       		.uleb128 0x13
  2902 0866 01       		.uleb128 0x1
  2903 0867 50       		.byte	0x50
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 66
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 66
 
 
  2904 0868 03       		.uleb128 0x3
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  2958 08d0 01       		.uleb128 0x1
  2959 08d1 3A       		.byte	0x3a
  2960 08d2 00       		.byte	0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 67
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 67
 
 
  2961 08d3 12       		.uleb128 0x12
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3015 0925 12       		.uleb128 0x12
  3016 0926 86040000 		.4byte	.LVL185
  3017 092a 51130000 		.4byte	0x1351
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 68
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 68
 
 
  3018 092e 52090000 		.4byte	0x952
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3072 0972 13       		.uleb128 0x13
  3073 0973 01       		.uleb128 0x1
  3074 0974 53       		.byte	0x53
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 69
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 69
 
 
  3075 0975 01       		.uleb128 0x1
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3129 09bd 50000000 		.4byte	.LC10
  3130 09c1 13       		.uleb128 0x13
  3131 09c2 01       		.uleb128 0x1
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 70
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 70
 
 
  3132 09c3 51       		.byte	0x51
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3186 09ff 7A       		.byte	0x7a
  3187 0a00 00       		.sleb128 0
  3188 0a01 00       		.byte	0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 71
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 71
 
 
  3189 0a02 00       		.byte	0
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3243 0a6b 50       		.byte	0x50
  3244 0a6c 02       		.uleb128 0x2
  3245 0a6d 08       		.byte	0x8
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 72
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 72
 
 
  3246 0a6e C8       		.byte	0xc8
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3300 0ace D6000000 		.4byte	.LVL86
  3301 0ad2 51130000 		.4byte	0x1351
  3302 0ad6 F90A0000 		.4byte	0xaf9
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 73
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 73
 
 
  3303 0ada 13       		.uleb128 0x13
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3357 0b34 13       		.uleb128 0x13
  3358 0b35 01       		.uleb128 0x1
  3359 0b36 52       		.byte	0x52
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 74
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 74
 
 
  3360 0b37 01       		.uleb128 0x1
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3414 0ba3 13       		.uleb128 0x13
  3415 0ba4 01       		.uleb128 0x1
  3416 0ba5 50       		.byte	0x50
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 75
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 75
 
 
  3417 0ba6 05       		.uleb128 0x5
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3471 0bfa 12       		.uleb128 0x12
  3472 0bfb 78010000 		.4byte	.LVL103
  3473 0bff A2030000 		.4byte	0x3a2
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 76
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 76
 
 
  3474 0c03 0D0C0000 		.4byte	0xc0d
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3528 0c57 F6010000 		.4byte	.LVL111
  3529 0c5b 12060000 		.4byte	0x612
  3530 0c5f 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 77
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 77
 
 
  3531 0c60 FA010000 		.4byte	.LVL112
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3585 0cd2 50       		.byte	0x50
  3586 0cd3 03       		.uleb128 0x3
  3587 0cd4 0A       		.byte	0xa
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 78
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 78
 
 
  3588 0cd5 E803     		.2byte	0x3e8
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3642 0d49 01       		.uleb128 0x1
  3643 0d4a 52       		.byte	0x52
  3644 0d4b 01       		.uleb128 0x1
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 79
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 79
 
 
  3645 0d4c 30       		.byte	0x30
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3699 0da3 1A       		.uleb128 0x1a
  3700 0da4 D6020000 		.4byte	.LVL135
  3701 0da8 D5130000 		.4byte	0x13d5
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 80
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 80
 
 
  3702 0dac 1A       		.uleb128 0x1a
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3756 0e15 51       		.byte	0x51
  3757 0e16 01       		.uleb128 0x1
  3758 0e17 31       		.byte	0x31
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 81
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 81
 
 
  3759 0e18 00       		.byte	0
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3813 0e75 01       		.uleb128 0x1
  3814 0e76 30       		.byte	0x30
  3815 0e77 00       		.byte	0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 82
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 82
 
 
  3816 0e78 1A       		.uleb128 0x1a
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3870 0ee5 01       		.uleb128 0x1
  3871 0ee6 37       		.byte	0x37
  3872 0ee7 00       		.byte	0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 83
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 83
 
 
  3873 0ee8 12       		.uleb128 0x12
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3927 0f43 00       		.sleb128 0
  3928 0f44 02       		.uleb128 0x2
  3929 0f45 7A       		.byte	0x7a
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 84
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 84
 
 
  3930 0f46 00       		.sleb128 0
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  3984 0f92 01       		.uleb128 0x1
  3985 0f93 52       		.byte	0x52
  3986 0f94 01       		.uleb128 0x1
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 85
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 85
 
 
  3987 0f95 3A       		.byte	0x3a
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4041 0fe1 01       		.uleb128 0x1
  4042 0fe2 52       		.byte	0x52
  4043 0fe3 02       		.uleb128 0x2
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 86
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 86
 
 
  4044 0fe4 7A       		.byte	0x7a
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4098 102c DC040000 		.4byte	.LVL191
  4099 1030 A9130000 		.4byte	0x13a9
  4100 1034 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 87
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 87
 
 
  4101 1035 E6040000 		.4byte	.LVL192
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4155 109e 12       		.uleb128 0x12
  4156 109f 2C050000 		.4byte	.LVL199
  4157 10a3 0F130000 		.4byte	0x130f
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 88
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 88
 
 
  4158 10a7 B1100000 		.4byte	0x10b1
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4212 1119 01       		.uleb128 0x1
  4213 111a 50       		.byte	0x50
  4214 111b 01       		.uleb128 0x1
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 89
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 89
 
 
  4215 111c 30       		.byte	0x30
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4269 1184 FB000000 		.4byte	.LASF108
  4270 1188 01       		.byte	0x1
  4271 1189 12       		.byte	0x12
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 90
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 90
 
 
  4272 118a 12010000 		.4byte	0x112
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4326 1202 00       		.byte	0
  4327 1203 28       		.uleb128 0x28
  4328 1204 F8000000 		.4byte	0xf8
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 91
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 91
 
 
  4329 1208 27       		.uleb128 0x27
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4383 127d 05       		.uleb128 0x5
  4384 127e 03       		.byte	0x3
  4385 127f 00000000 		.4byte	firstHV
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 92
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 92
 
 
  4386 1283 27       		.uleb128 0x27
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4440 12f8 26       		.byte	0x26
  4441 12f9 29       		.uleb128 0x29
  4442 12fa 1D000000 		.4byte	.LASF127
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 93
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 93
 
 
  4443 12fe 1D000000 		.4byte	.LASF127
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4497 1373 74050000 		.4byte	.LASF138
  4498 1377 74050000 		.4byte	.LASF138
  4499 137b 06       		.byte	0x6
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 94
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 94
 
 
  4500 137c C8       		.byte	0xc8
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4554 13f4 12       		.byte	0x12
  4555 13f5 24       		.byte	0x24
  4556 13f6 29       		.uleb128 0x29
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 95
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 95
 
 
  4557 13f7 BA000000 		.4byte	.LASF150
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4611 0011 00       		.byte	0
  4612 0012 00       		.byte	0
  4613 0013 02       		.uleb128 0x2
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 96
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 96
 
 
  4614 0014 16       		.uleb128 0x16
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4668 004a 07       		.uleb128 0x7
  4669 004b 0F       		.uleb128 0xf
  4670 004c 00       		.byte	0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 97
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 97
 
 
  4671 004d 0B       		.uleb128 0xb
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4725 0083 01       		.byte	0x1
  4726 0084 03       		.uleb128 0x3
  4727 0085 0E       		.uleb128 0xe
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 98
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 98
 
 
  4728 0086 0B       		.uleb128 0xb
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4782 00bc 11       		.uleb128 0x11
  4783 00bd 2E       		.uleb128 0x2e
  4784 00be 01       		.byte	0x1
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 99
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 99
 
 
  4785 00bf 3F       		.uleb128 0x3f
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4839 00fd 03       		.uleb128 0x3
  4840 00fe 0E       		.uleb128 0xe
  4841 00ff 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 100
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 100
 
 
  4842 0100 0B       		.uleb128 0xb
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4896 0136 0E       		.uleb128 0xe
  4897 0137 3A       		.uleb128 0x3a
  4898 0138 0B       		.uleb128 0xb
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 101
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 101
 
 
  4899 0139 3B       		.uleb128 0x3b
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  4953 0172 03       		.uleb128 0x3
  4954 0173 0E       		.uleb128 0xe
  4955 0174 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 102
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 102
 
 
  4956 0175 0B       		.uleb128 0xb
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5010 01ad 3A       		.uleb128 0x3a
  5011 01ae 0B       		.uleb128 0xb
  5012 01af 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 103
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 103
 
 
  5013 01b0 05       		.uleb128 0x5
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5067 01e6 17       		.uleb128 0x17
  5068 01e7 01       		.uleb128 0x1
  5069 01e8 13       		.uleb128 0x13
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 104
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 104
 
 
  5070 01e9 00       		.byte	0
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5124 0220 19       		.uleb128 0x19
  5125 0221 02       		.uleb128 0x2
  5126 0222 18       		.uleb128 0x18
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 105
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 105
 
 
  5127 0223 00       		.byte	0
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5181 003a 0100     		.2byte	0x1
  5182 003c 50       		.byte	0x50
  5183 003d 3C000000 		.4byte	.LVL14
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 106
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 106
 
 
  5184 0041 4E000000 		.4byte	.LVL18
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5238 00ba A0000000 		.4byte	.LVL39
  5239 00be B2000000 		.4byte	.LFE64
  5240 00c2 0400     		.2byte	0x4
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 107
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 107
 
 
  5241 00c4 F3       		.byte	0xf3
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5295 014b BA000000 		.4byte	.LVL83
  5296 014f 0100     		.2byte	0x1
  5297 0151 54       		.byte	0x54
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 108
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 108
 
 
  5298 0152 BA000000 		.4byte	.LVL83
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5352 01df 46050000 		.4byte	.LVL209
  5353 01e3 0100     		.2byte	0x1
  5354 01e5 54       		.byte	0x54
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 109
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 109
 
 
  5355 01e6 48050000 		.4byte	.LVL210
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5409 0275 50000000 		.4byte	.LVL69
  5410 0279 5A000000 		.4byte	.LVL72
  5411 027d 0200     		.2byte	0x2
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 110
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 110
 
 
  5412 027f 36       		.byte	0x36
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5466 030e 30       		.byte	0x30
  5467 030f 9F       		.byte	0x9f
  5468 0310 2A000000 		.4byte	.LVL65
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 111
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 111
 
 
  5469 0314 D2020000 		.4byte	.LVL134
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5523 039e 9F       		.byte	0x9f
  5524 039f 08030000 		.4byte	.LVL138
  5525 03a3 AC030000 		.4byte	.LVL164
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 112
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 112
 
 
  5526 03a7 0100     		.2byte	0x1
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5580 0010 00000000 		.4byte	.LFB68
  5581 0014 20000000 		.4byte	.LFE68-.LFB68
  5582 0018 00000000 		.4byte	.LFB64
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 113
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 113
 
 
  5583 001c B2000000 		.4byte	.LFE64-.LFB64
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5627              	.LASF127:
  5628 001d 43794465 		.ascii	"CyDelay\000"
  5628      6C617900 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 114
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 114
 
 
  5629              	.LASF158:
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5656 00ad 52474233 		.ascii	"RGB3_1_Write\000"
  5656      5F315F57 
  5656      72697465 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 115
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 115
 
 
  5656      00
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5684 0144 5041434B 		.ascii	"PACK_TEMP\000"
  5684      5F54454D 
  5684      5000
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 116
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 116
 
 
  5685              	.LASF12:
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5710 01ec 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
  5710      43313120 
  5710      352E342E 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 117
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 117
 
 
  5710      31203230 
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5731 0311 4552524F 		.ascii	"ERROR_NODE\000"
  5731      525F4E4F 
  5731      444500
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 118
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 118
 
 
  5732              	.LASF119:
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5760              	.LASF88:
  5761 03af 6572726F 		.ascii	"error_state\000"
  5761      725F7374 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 119
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 119
 
 
  5761      61746500 
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5789 043d 66726F6D 		.ascii	"fromPrecharging\000"
  5789      50726563 
  5789      68617267 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 120
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 120
 
 
  5789      696E6700 
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5814              	.LASF16:
  5815 04df 75696E74 		.ascii	"uint16_t\000"
  5815      31365F74 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 121
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 121
 
 
  5815      00
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5842              	.LASF138:
  5843 0574 43414E5F 		.ascii	"CAN_GlobalIntEnable\000"
  5843      476C6F62 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 122
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 122
 
 
  5843      616C496E 
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5869      454400
  5870              	.LASF145:
  5871 060e 67657445 		.ascii	"getErrorTolerance\000"
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 123
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 123
 
 
  5871      72726F72 
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5896              	.LASF115:
  5897 06ac 534F435F 		.ascii	"SOC_LUT\000"
  5897      4C555400 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 124
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 124
 
 
  5898              	.LASF71:
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 1
  5925 0744 73686F72 		.ascii	"short unsigned int\000"
  5925      7420756E 
  5925      7369676E 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccYYbL38.s 			page 125
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cc8qgC0o.s 			page 125
 
 
  5925      65642069 

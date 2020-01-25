@@ -1,4 +1,4 @@
---------------- Rebuild Started: 01/23/2020 16:33:44 Project: Dashboard, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Rebuild Started: 01/25/2020 11:42:12 Project: Dashboard, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\TFT_Library.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\main.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\can_manga.o"
@@ -47,6 +47,12 @@ Deleting file ".\CortexM3\ARM_GCC_541\Debug\WDT_Reset.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\TFT.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\TFT_PM.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\Clock_1.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\PWM_BLED.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\PWM_BLED_PM.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\BLED_clock.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\TFT_BLED.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\Dashboard.hex"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\Dashboard.elf"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\Dashboard.map"
 Deleting file ".\Dashboard.cycdx"
 Deleting file ".\Dashboard.svd"
@@ -61,7 +67,7 @@ ADD: sdb.M0060: warning: Warning in component: CAN. The BUS_CLK clock accuracy s
 HDL Generation...
 Synthesis...
 Tech Mapping...
-ADD: pft.M0040: information: The following 21 pin(s) will be assigned a location by the fitter: Buzzer(0), CTRL(0), CTRL(1), CTRL(2), CTRL(3), CTRL(4), CTRL(5), d_c(0), LED(0), LED_1(0), ncs(0), nrd(0), nwr(0), RGB1_1(0), RGB1_2(0), RGB2_1(0), RGB2_2(0), RGB3_1(0), RGB3_2(0), TFT_BLED(0), WDT_Reset(0)
+ADD: pft.M0040: information: The following 14 pin(s) will be assigned a location by the fitter: LED(0), LED_1(0), RGB1_2(0), RGB2_2(0), RGB3_2(0), SD(0), SD(1), SD(2), SD(3), SD(4), SD(5), SD(6), SD(7), WDT_Reset(0)
 Analog Placement...
 Analog Routing...
 Analog Code Generation...
@@ -75,7 +81,7 @@ Dependency Generation...
 Cleanup...
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/TFT_Library.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c TFT_Library.c -o .\CortexM3\ARM_GCC_541\Debug\TFT_Library.o
 TFT_Library.c: In function 'libTFT_ClearScreen':
-TFT_Library.c:207:21: warning: passing argument 1 of 'libTFT_WriteMData' from incompatible pointer type [-Wincompatible-pointer-types]
+TFT_Library.c:210:21: warning: passing argument 1 of 'libTFT_WriteMData' from incompatible pointer type [-Wincompatible-pointer-types]
    libTFT_WriteMData(value0,4);
                      ^
 TFT_Library.c:43:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'uint8 * {aka unsigned char *}'
@@ -172,7 +178,6 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/cy_em_eeprom.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\cy_em_eeprom.c -o .\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/LED_1.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\LED_1.c -o .\CortexM3\ARM_GCC_541\Debug\LED_1.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/EEPROM_1.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\EEPROM_1.c -o .\CortexM3\ARM_GCC_541\Debug\EEPROM_1.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/CTRL.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\CTRL.c -o .\CortexM3\ARM_GCC_541\Debug\CTRL.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/SD.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\SD.c -o .\CortexM3\ARM_GCC_541\Debug\SD.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/WDT_Timer.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\WDT_Timer.c -o .\CortexM3\ARM_GCC_541\Debug\WDT_Timer.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/WDT_Timer_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\WDT_Timer_PM.c -o .\CortexM3\ARM_GCC_541\Debug\WDT_Timer_PM.o
@@ -185,8 +190,9 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/PWM_BLED_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\PWM_BLED_PM.c -o .\CortexM3\ARM_GCC_541\Debug\PWM_BLED_PM.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/BLED_clock.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\BLED_clock.c -o .\CortexM3\ARM_GCC_541\Debug\BLED_clock.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/TFT_BLED.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\TFT_BLED.c -o .\CortexM3\ARM_GCC_541\Debug\TFT_BLED.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/TFT_reset.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\TFT_reset.c -o .\CortexM3\ARM_GCC_541\Debug\TFT_reset.o
 arm-none-eabi-as.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=.\CortexM3\ARM_GCC_541\Debug/CyBootAsmGnu.lst -g -W -o .\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o Generated_Source\PSoC5\CyBootAsmGnu.s
-arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_541\Debug\Dashboard.a .\CortexM3\ARM_GCC_541\Debug\RX.o .\CortexM3\ARM_GCC_541\Debug\TX.o .\CortexM3\ARM_GCC_541\Debug\CAN.o .\CortexM3\ARM_GCC_541\Debug\CAN_INT.o .\CortexM3\ARM_GCC_541\Debug\CAN_PM.o .\CortexM3\ARM_GCC_541\Debug\CAN_TX_RX_func.o .\CortexM3\ARM_GCC_541\Debug\CyDmac.o .\CortexM3\ARM_GCC_541\Debug\CyFlash.o .\CortexM3\ARM_GCC_541\Debug\CyLib.o .\CortexM3\ARM_GCC_541\Debug\cyPm.o .\CortexM3\ARM_GCC_541\Debug\CySpc.o .\CortexM3\ARM_GCC_541\Debug\cyutils.o .\CortexM3\ARM_GCC_541\Debug\LED.o .\CortexM3\ARM_GCC_541\Debug\Buzzer.o .\CortexM3\ARM_GCC_541\Debug\HV.o .\CortexM3\ARM_GCC_541\Debug\Drive.o .\CortexM3\ARM_GCC_541\Debug\RGB3_1.o .\CortexM3\ARM_GCC_541\Debug\RGB2_1.o .\CortexM3\ARM_GCC_541\Debug\RGB1_1.o .\CortexM3\ARM_GCC_541\Debug\RGB3_2.o .\CortexM3\ARM_GCC_541\Debug\RGB2_2.o .\CortexM3\ARM_GCC_541\Debug\RGB1_2.o .\CortexM3\ARM_GCC_541\Debug\timer_clock.o .\CortexM3\ARM_GCC_541\Debug\CAN_Timer.o .\CortexM3\ARM_GCC_541\Debug\CAN_Timer_PM.o .\CortexM3\ARM_GCC_541\Debug\isr_can.o .\CortexM3\ARM_GCC_541\Debug\Node_Timer.o .\CortexM3\ARM_GCC_541\Debug\Node_Timer_PM.o .\CortexM3\ARM_GCC_541\Debug\isr_nodeok.o .\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM3\ARM_GCC_541\Debug\LED_1.o .\CortexM3\ARM_GCC_541\Debug\EEPROM_1.o .\CortexM3\ARM_GCC_541\Debug\CTRL.o .\CortexM3\ARM_GCC_541\Debug\SD.o .\CortexM3\ARM_GCC_541\Debug\WDT_Timer.o .\CortexM3\ARM_GCC_541\Debug\WDT_Timer_PM.o .\CortexM3\ARM_GCC_541\Debug\isr_wdt.o .\CortexM3\ARM_GCC_541\Debug\WDT_Reset.o .\CortexM3\ARM_GCC_541\Debug\TFT.o .\CortexM3\ARM_GCC_541\Debug\TFT_PM.o .\CortexM3\ARM_GCC_541\Debug\Clock_1.o .\CortexM3\ARM_GCC_541\Debug\PWM_BLED.o .\CortexM3\ARM_GCC_541\Debug\PWM_BLED_PM.o .\CortexM3\ARM_GCC_541\Debug\BLED_clock.o .\CortexM3\ARM_GCC_541\Debug\TFT_BLED.o .\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o
+arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_541\Debug\Dashboard.a .\CortexM3\ARM_GCC_541\Debug\RX.o .\CortexM3\ARM_GCC_541\Debug\TX.o .\CortexM3\ARM_GCC_541\Debug\CAN.o .\CortexM3\ARM_GCC_541\Debug\CAN_INT.o .\CortexM3\ARM_GCC_541\Debug\CAN_PM.o .\CortexM3\ARM_GCC_541\Debug\CAN_TX_RX_func.o .\CortexM3\ARM_GCC_541\Debug\CyDmac.o .\CortexM3\ARM_GCC_541\Debug\CyFlash.o .\CortexM3\ARM_GCC_541\Debug\CyLib.o .\CortexM3\ARM_GCC_541\Debug\cyPm.o .\CortexM3\ARM_GCC_541\Debug\CySpc.o .\CortexM3\ARM_GCC_541\Debug\cyutils.o .\CortexM3\ARM_GCC_541\Debug\LED.o .\CortexM3\ARM_GCC_541\Debug\Buzzer.o .\CortexM3\ARM_GCC_541\Debug\HV.o .\CortexM3\ARM_GCC_541\Debug\Drive.o .\CortexM3\ARM_GCC_541\Debug\RGB3_1.o .\CortexM3\ARM_GCC_541\Debug\RGB2_1.o .\CortexM3\ARM_GCC_541\Debug\RGB1_1.o .\CortexM3\ARM_GCC_541\Debug\RGB3_2.o .\CortexM3\ARM_GCC_541\Debug\RGB2_2.o .\CortexM3\ARM_GCC_541\Debug\RGB1_2.o .\CortexM3\ARM_GCC_541\Debug\timer_clock.o .\CortexM3\ARM_GCC_541\Debug\CAN_Timer.o .\CortexM3\ARM_GCC_541\Debug\CAN_Timer_PM.o .\CortexM3\ARM_GCC_541\Debug\isr_can.o .\CortexM3\ARM_GCC_541\Debug\Node_Timer.o .\CortexM3\ARM_GCC_541\Debug\Node_Timer_PM.o .\CortexM3\ARM_GCC_541\Debug\isr_nodeok.o .\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM3\ARM_GCC_541\Debug\LED_1.o .\CortexM3\ARM_GCC_541\Debug\EEPROM_1.o .\CortexM3\ARM_GCC_541\Debug\SD.o .\CortexM3\ARM_GCC_541\Debug\WDT_Timer.o .\CortexM3\ARM_GCC_541\Debug\WDT_Timer_PM.o .\CortexM3\ARM_GCC_541\Debug\isr_wdt.o .\CortexM3\ARM_GCC_541\Debug\WDT_Reset.o .\CortexM3\ARM_GCC_541\Debug\TFT.o .\CortexM3\ARM_GCC_541\Debug\TFT_PM.o .\CortexM3\ARM_GCC_541\Debug\Clock_1.o .\CortexM3\ARM_GCC_541\Debug\PWM_BLED.o .\CortexM3\ARM_GCC_541\Debug\PWM_BLED_PM.o .\CortexM3\ARM_GCC_541\Debug\BLED_clock.o .\CortexM3\ARM_GCC_541\Debug\TFT_BLED.o .\CortexM3\ARM_GCC_541\Debug\TFT_reset.o .\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o
 arm-none-eabi-ar.exe: creating .\CortexM3\ARM_GCC_541\Debug\Dashboard.a
 arm-none-eabi-gcc.exe -Wl,--start-group -o C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\CortexM3\ARM_GCC_541\Debug\Dashboard.elf .\CortexM3\ARM_GCC_541\Debug\TFT_Library.o .\CortexM3\ARM_GCC_541\Debug\main.o .\CortexM3\ARM_GCC_541\Debug\can_manga.o .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM3\ARM_GCC_541\Debug\cymetadata.o .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o .\CortexM3\ARM_GCC_541\Debug\Dashboard.a "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,.\CortexM3\ARM_GCC_541\Debug/Dashboard.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
 cyelftool.exe -C C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\CortexM3\ARM_GCC_541\Debug\Dashboard.elf --flash_row_size 256 --flash_size 262144 --flash_offset 0x00000000
@@ -196,4 +202,4 @@ Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\CortexM3\ARM_GCC_541\Debug\Dashboard.elf
 Flash used: 14788 of 262144 bytes (5.6%).
 SRAM used: 3481 of 65536 bytes (5.3%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Rebuild Succeeded: 01/23/2020 16:34:32 ---------------
+--------------- Rebuild Succeeded: 01/25/2020 11:43:10 ---------------

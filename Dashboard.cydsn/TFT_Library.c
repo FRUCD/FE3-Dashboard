@@ -198,7 +198,7 @@ void libTFT_SetPage(uint16_t StartPage,uint16_t EndPage)
 void libTFT_ClearScreen(void)
 {
 	uint16_t i=0, total_count;
-    uint8 value0[4] = {0x00,0x00,0x00,0x00};
+    uint16 value0[8] = {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
 
     libTFT_SetCol(0, MAX_X);
 	libTFT_SetPage(0, MAX_Y);

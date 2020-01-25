@@ -318,6 +318,7 @@
       <Data key="7993237e-a418-4494-a4de-0f0058916a02" value="WDT_Reset" />
       <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="Tach" />
       <Data key="93647039-822b-46d0-9290-2e205b13cc4c" value="LED_1" />
+      <Data key="a6973a90-3ed8-4d2b-b54f-642e2ddfe103" value="TFT_reset" />
       <Data key="a5665507-a489-4063-8ce2-fa8bd2118c51" value="Digit1Bit4" />
       <Data key="ab72fb08-18bd-466e-9cb1-ca7d4d9db39a" value="Digit1Bit1" />
       <Data key="b47e7ac4-a41f-40fc-a6ff-79b26208156c" value="d_lsb" />
@@ -1133,9 +1134,19 @@
         <Data key="Port Format" value="4,4" />
       </Group>
     </Group>
+    <Group key="4da11063-6e5d-46ee-ad8f-d5d399df80cd">
+      <Group key="0">
+        <Data key="Port Format" value="5,0" />
+      </Group>
+    </Group>
     <Group key="47d48273-a6cf-4137-859c-52be0f69eb01">
       <Group key="0">
         <Data key="Port Format" value="15,5" />
+      </Group>
+    </Group>
+    <Group key="89fd86b3-bbbb-497a-8e6f-33ad71078341">
+      <Group key="0">
+        <Data key="Port Format" value="4,6" />
       </Group>
     </Group>
     <Group key="233d6e1a-d38d-483f-8be4-56ffc0437865">
@@ -1191,6 +1202,11 @@
     <Group key="6859228a-80ea-4c66-8d88-99945cc5f4f5">
       <Group key="0">
         <Data key="Port Format" value="4,7" />
+      </Group>
+    </Group>
+    <Group key="a6973a90-3ed8-4d2b-b54f-642e2ddfe103">
+      <Group key="0">
+        <Data key="Port Format" value="12,0" />
       </Group>
     </Group>
     <Group key="a5665507-a489-4063-8ce2-fa8bd2118c51">
@@ -1309,9 +1325,6 @@
       <Group key="0e0c9380-6965-4440-8709-ce08a91e474c">
         <Data key="0" value="132238454296917516" />
       </Group>
-      <Group key="4da11063-6e5d-46ee-ad8f-d5d399df80cd">
-        <Data key="0" value="132238454296917516" />
-      </Group>
       <Group key="6e4d8f88-4505-4117-a171-d0bf748d8520/ed092b9b-d398-4703-be89-cebf998501f6">
         <Data key="0" value="131566402236214901" />
         <Data key="1" value="131566402236214901" />
@@ -1341,12 +1354,12 @@
         <Data key="0" value="132238454296914743" />
       </Group>
       <Group key="e851a3b9-efb8-48be-bbb8-b303b216c393">
-        <Data key="0" value="132238461459114596" />
-        <Data key="1" value="132238461459114596" />
-        <Data key="2" value="132238461459114596" />
-        <Data key="3" value="132238461459114596" />
-        <Data key="4" value="132238461459114596" />
-        <Data key="5" value="132238461459114596" />
+        <Data key="0" value="132244510564888772" />
+        <Data key="1" value="132244510564888772" />
+        <Data key="2" value="132244510564888772" />
+        <Data key="3" value="132244510564888772" />
+        <Data key="4" value="132244510564888772" />
+        <Data key="5" value="132244510564888772" />
       </Group>
       <Group key="ed6ff306-ca67-4a93-b565-7e0b7d82e239">
         <Data key="0" value="132238456857608708" />
