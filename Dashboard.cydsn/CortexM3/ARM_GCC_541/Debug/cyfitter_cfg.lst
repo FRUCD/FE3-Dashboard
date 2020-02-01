@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
   29:Generated_Source\PSoC5/cyfitter_cfg.c **** 
   30:Generated_Source\PSoC5/cyfitter_cfg.c **** #if defined(__GNUC__) || defined(__ARMCC_VERSION)
   31:Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYPACKED 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 2
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 2
 
 
   32:Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYPACKED_ATTR __attribute__ ((packed))
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
   86:Generated_Source\PSoC5/cyfitter_cfg.c **** 	(void)memcpy(dest, src, n);
   87:Generated_Source\PSoC5/cyfitter_cfg.c **** }
   88:Generated_Source\PSoC5/cyfitter_cfg.c **** CY_CFG_UNUSED
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 3
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 3
 
 
   89:Generated_Source\PSoC5/cyfitter_cfg.c **** static void CYCONFIGCPYCODE(void *dest, const void *src, size_t n);
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
   41              		.thumb
   42              		.thumb_func
   43              		.type	cfg_write_bytes32, %function
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 4
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 4
 
 
   44              	cfg_write_bytes32:
@@ -238,23 +238,23 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  181:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_1 Address: CYREG_PRT1_DR Size (bytes): 10 */
  182:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x48000728u)
  183:Generated_Source\PSoC5/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 5
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 5
 
 
  184:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_2 Address: CYREG_PRT2_DR Size (bytes): 10 */
  185:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x48000734u)
  186:Generated_Source\PSoC5/cyfitter_cfg.c **** 
- 187:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_3 Address: CYREG_PRT3_DM0 Size (bytes): 8 */
+ 187:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_3 Address: CYREG_PRT3_DR Size (bytes): 10 */
  188:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_3_VAL ((const uint8 CYFAR *)0x48000740u)
  189:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  190:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_4 Address: CYREG_PRT4_DM0 Size (bytes): 8 */
- 191:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_4_VAL ((const uint8 CYFAR *)0x48000748u)
+ 191:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_4_VAL ((const uint8 CYFAR *)0x4800074Cu)
  192:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  193:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_5 Address: CYREG_PRT5_DM0 Size (bytes): 8 */
- 194:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_5_VAL ((const uint8 CYFAR *)0x48000750u)
+ 194:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_5_VAL ((const uint8 CYFAR *)0x48000754u)
  195:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  196:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_6 Address: CYREG_PRT6_DM0 Size (bytes): 8 */
- 197:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_6_VAL ((const uint8 CYFAR *)0x48000758u)
+ 197:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_6_VAL ((const uint8 CYFAR *)0x4800075Cu)
  198:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  199:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  200:Generated_Source\PSoC5/cyfitter_cfg.c **** /*******************************************************************************
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
   64 0006 11E0     		b	.L4
   65              	.LVL3:
   66              	.L7:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 6
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 6
 
 
   67              	.LBB2:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  106 0030 F0BC     		pop	{r4, r5, r6, r7}
  107              		.cfi_restore 7
  108              		.cfi_restore 6
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 7
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 7
 
 
  109              		.cfi_restore 5
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  271:Generated_Source\PSoC5/cyfitter_cfg.c **** 	/* Configure PLL based on settings from Clock DWR */
  272:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG16((void CYFAR *)(CYREG_FASTCLK_PLL_P), 0x0708u);
  273:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG16((void CYFAR *)(CYREG_FASTCLK_PLL_CFG0), 0x1251u);
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 8
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 8
 
 
  274:Generated_Source\PSoC5/cyfitter_cfg.c **** 	/* Wait up to 250us for the PLL to lock */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  131 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  132 0004 DBB2     		uxtb	r3, r3
  133              	.LVL12:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 9
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 9
 
 
  321:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_BG_DFT0), (bg_xover_inl_trim & 0x07u));
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  183              		.section	.text.ClockSetup,"ax",%progbits
  184              		.align	2
  185              		.thumb
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 10
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 10
 
 
  186              		.thumb_func
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  269:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  231              		.loc 1 269 0
  232 0034 1F4B     		ldr	r3, .L20+12
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 11
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 11
 
 
  233 0036 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  277 0076 FFF7FEFF 		bl	CyClockStartupError
  278              	.LVL23:
  279              	.L18:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 12
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 12
 
 
  288:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_MSTR0), 0x07u);
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  327              		.thumb_func
  328              		.type	CYCONFIGCPY, %function
  329              	CYCONFIGCPY:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 13
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 13
 
 
  330              	.LFB1:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  360              	.LVL27:
  346:Generated_Source\PSoC5/cyfitter_cfg.c **** 	uint8 regValue = CY_GET_XTND_REG8((void CYFAR *)CYREG_PUMP_CR0);
  361              		.loc 1 346 0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 14
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 14
 
 
  362 0000 024A     		ldr	r2, .L25
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  379:Generated_Source\PSoC5/cyfitter_cfg.c **** {
  384              		.loc 1 379 0
  385              		.cfi_startproc
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 15
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 15
 
 
  386              		@ args = 0, pretend = 0, frame = 0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  412:Generated_Source\PSoC5/cyfitter_cfg.c **** 		static const cfg_memcpy_t CYCODE cfg_memcpy_list [] = {
  413:Generated_Source\PSoC5/cyfitter_cfg.c **** 			/* dest, src, size */
  414:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_PRTDSI_PRT0_BASE), BS_IOPORT_0_VAL, 7u},
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 16
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 16
 
 
  415:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_PRTDSI_PRT4_BASE), BS_IOPORT_4_VAL, 7u},
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  442              		.loc 1 432 0 is_stmt 1 discriminator 3
  443 0034 3748     		ldr	r0, .L33+4
  444 0036 A200     		lsls	r2, r4, #2
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 17
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 17
 
 
  445 0038 1119     		adds	r1, r2, r4
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  484              	.LVL43:
  485 0070 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
  486 0072 43F04003 		orr	r3, r3, #64
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 18
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 18
 
 
  487 0076 2370     		strb	r3, [r4]
@@ -1069,16 +1069,16 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  522 00b2 2548     		ldr	r0, .L33+56
  523 00b4 FFF7FEFF 		bl	CYCONFIGCPY
  524              	.LVL48:
- 456:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CYCONFIGCPY((void CYFAR *)(CYREG_PRT3_DM0), (const void CYFAR *)(BS_IOPINS0_3_VAL), 8u);
+ 456:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CYCONFIGCPY((void CYFAR *)(CYREG_PRT3_DR), (const void CYFAR *)(BS_IOPINS0_3_VAL), 10u);
  525              		.loc 1 456 0
- 526 00b8 0822     		movs	r2, #8
+ 526 00b8 0A22     		movs	r2, #10
  527 00ba 2449     		ldr	r1, .L33+60
  528 00bc 2448     		ldr	r0, .L33+64
  529 00be FFF7FEFF 		bl	CYCONFIGCPY
  530              	.LVL49:
  457:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CYCONFIGCPY((void CYFAR *)(CYREG_PRT4_DM0), (const void CYFAR *)(BS_IOPINS0_4_VAL), 8u);
  531              		.loc 1 457 0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 19
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 19
 
 
  532 00c2 0822     		movs	r2, #8
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  473:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  474:Generated_Source\PSoC5/cyfitter_cfg.c **** 	/* Configure alternate active mode */
  475:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CYCONFIGCPY((void CYFAR *)CYDEV_PM_STBY_BASE, (const void CYFAR *)CYDEV_PM_ACT_BASE, 14u);
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 20
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 20
 
 
  571              		.loc 1 475 0
@@ -1167,12 +1167,12 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  594 0144 34070048 		.word	1207961396
  595 0148 20510040 		.word	1073762592
  596 014c 40070048 		.word	1207961408
- 597 0150 32510040 		.word	1073762610
- 598 0154 48070048 		.word	1207961416
+ 597 0150 30510040 		.word	1073762608
+ 598 0154 4C070048 		.word	1207961420
  599 0158 42510040 		.word	1073762626
- 600 015c 50070048 		.word	1207961424
+ 600 015c 54070048 		.word	1207961428
  601 0160 52510040 		.word	1073762642
- 602 0164 58070048 		.word	1207961432
+ 602 0164 5C070048 		.word	1207961436
  603 0168 62510040 		.word	1073762658
  604 016c 22430040 		.word	1073759010
  605 0170 00480040 		.word	1073760256
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  625 0018 004C0140 		.word	1073826816
  626 001c 0002     		.short	512
  627 001e 00500140 		.4byte	1073827840
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 21
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 21
 
 
  628 0022 2000     		.short	32
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  682 004d 01       		.byte	0x1
  683 004e 06       		.byte	0x6
  684 004f B2000000 		.4byte	.LASF3
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 22
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 22
 
 
  685 0053 04       		.uleb128 0x4
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  739 00b9 08       		.byte	0x8
  740 00ba 04       		.byte	0x4
  741 00bb 01010000 		.4byte	.LASF17
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 23
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 23
 
 
  742 00bf 06       		.uleb128 0x6
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  796 0130 0C       		.uleb128 0xc
  797 0131 BE000000 		.4byte	.LASF28
  798 0135 01       		.byte	0x1
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 24
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 24
 
 
  799 0136 D7       		.byte	0xd7
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  853 01ad 10       		.uleb128 0x10
  854 01ae 04       		.byte	0x4
  855 01af B3010000 		.4byte	0x1b3
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 25
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 25
 
 
  856 01b3 11       		.uleb128 0x11
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  910 0223 16       		.uleb128 0x16
  911 0224 01       		.uleb128 0x1
  912 0225 52       		.byte	0x52
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 26
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 26
 
 
  913 0226 03       		.uleb128 0x3
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  967 0293 01       		.uleb128 0x1
  968 0294 9C       		.byte	0x9c
  969 0295 E4020000 		.4byte	0x2e4
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 27
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 27
 
 
  970 0299 18       		.uleb128 0x18
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1024 02fb 01       		.uleb128 0x1
  1025 02fc 9C       		.byte	0x9c
  1026 02fd 1E030000 		.4byte	0x31e
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 28
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 28
 
 
  1027 0301 1B       		.uleb128 0x1b
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1081 0374 8C01     		.2byte	0x18c
  1082 0376 A2030000 		.4byte	0x3a2
  1083 037a 1F       		.uleb128 0x1f
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 29
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 29
 
 
  1084 037b C1010000 		.4byte	.LASF36
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1138 03f5 9C01     		.2byte	0x19c
  1139 03f7 01040000 		.4byte	0x401
  1140 03fb 05       		.uleb128 0x5
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 30
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 30
 
 
  1141 03fc 03       		.byte	0x3
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1195 0462 CF040000 		.4byte	0x4cf
  1196 0466 23       		.uleb128 0x23
  1197 0467 6D6300   		.ascii	"mc\000"
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 31
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 31
 
 
  1198 046a 01       		.byte	0x1
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1252 04d8 16       		.uleb128 0x16
  1253 04d9 01       		.uleb128 0x1
  1254 04da 50       		.byte	0x50
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 32
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 32
 
 
  1255 04db 03       		.uleb128 0x3
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1309 0532 3A       		.byte	0x3a
  1310 0533 00       		.byte	0
  1311 0534 17       		.uleb128 0x17
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 33
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 33
 
 
  1312 0535 A4000000 		.4byte	.LVL46
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1366 0595 01       		.uleb128 0x1
  1367 0596 51       		.byte	0x51
  1368 0597 05       		.uleb128 0x5
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 34
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 34
 
 
  1369 0598 0C       		.byte	0xc
@@ -1998,7 +1998,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1383 05b2 50       		.byte	0x50
  1384 05b3 05       		.uleb128 0x5
  1385 05b4 0C       		.byte	0xc
- 1386 05b5 32510040 		.4byte	0x40005132
+ 1386 05b5 30510040 		.4byte	0x40005130
  1387 05b9 16       		.uleb128 0x16
  1388 05ba 01       		.uleb128 0x1
  1389 05bb 51       		.byte	0x51
@@ -2009,7 +2009,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1394 05c3 01       		.uleb128 0x1
  1395 05c4 52       		.byte	0x52
  1396 05c5 01       		.uleb128 0x1
- 1397 05c6 38       		.byte	0x38
+ 1397 05c6 3A       		.byte	0x3a
  1398 05c7 00       		.byte	0
  1399 05c8 17       		.uleb128 0x17
  1400 05c9 CC000000 		.4byte	.LVL50
@@ -2026,7 +2026,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1411 05e0 51       		.byte	0x51
  1412 05e1 05       		.uleb128 0x5
  1413 05e2 0C       		.byte	0xc
- 1414 05e3 48070048 		.4byte	0x48000748
+ 1414 05e3 4C070048 		.4byte	0x4800074c
  1415 05e7 16       		.uleb128 0x16
  1416 05e8 01       		.uleb128 0x1
  1417 05e9 52       		.byte	0x52
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1423 05f2 84020000 		.4byte	0x284
  1424 05f6 12060000 		.4byte	0x612
  1425 05fa 16       		.uleb128 0x16
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 35
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 35
 
 
  1426 05fb 01       		.uleb128 0x1
@@ -2051,7 +2051,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1433 0605 51       		.byte	0x51
  1434 0606 05       		.uleb128 0x5
  1435 0607 0C       		.byte	0xc
- 1436 0608 50070048 		.4byte	0x48000750
+ 1436 0608 54070048 		.4byte	0x48000754
  1437 060c 16       		.uleb128 0x16
  1438 060d 01       		.uleb128 0x1
  1439 060e 52       		.byte	0x52
@@ -2073,7 +2073,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1455 062a 51       		.byte	0x51
  1456 062b 05       		.uleb128 0x5
  1457 062c 0C       		.byte	0xc
- 1458 062d 58070048 		.4byte	0x48000758
+ 1458 062d 5C070048 		.4byte	0x4800075c
  1459 0631 16       		.uleb128 0x16
  1460 0632 01       		.uleb128 0x1
  1461 0633 52       		.byte	0x52
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1480 065b 16       		.uleb128 0x16
  1481 065c 01       		.uleb128 0x1
  1482 065d 51       		.byte	0x51
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 36
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 36
 
 
  1483 065e 02       		.uleb128 0x2
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1537 001e 03       		.uleb128 0x3
  1538 001f 16       		.uleb128 0x16
  1539 0020 00       		.byte	0
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 37
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 37
 
 
  1540 0021 03       		.uleb128 0x3
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1594 0057 0B       		.uleb128 0xb
  1595 0058 3B       		.uleb128 0x3b
  1596 0059 0B       		.uleb128 0xb
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 38
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 38
 
 
  1597 005a 01       		.uleb128 0x1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1651 0092 13       		.uleb128 0x13
  1652 0093 02       		.uleb128 0x2
  1653 0094 18       		.uleb128 0x18
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 39
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 39
 
 
  1654 0095 00       		.byte	0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1708 00cc 3A       		.uleb128 0x3a
  1709 00cd 0B       		.uleb128 0xb
  1710 00ce 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 40
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 40
 
 
  1711 00cf 0B       		.uleb128 0xb
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1765 0106 05       		.uleb128 0x5
  1766 0107 49       		.uleb128 0x49
  1767 0108 13       		.uleb128 0x13
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 41
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 41
 
 
  1768 0109 02       		.uleb128 0x2
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1822 0146 0B       		.uleb128 0xb
  1823 0147 3B       		.uleb128 0x3b
  1824 0148 0B       		.uleb128 0xb
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 42
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 42
 
 
  1825 0149 49       		.uleb128 0x49
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1879 0180 03       		.uleb128 0x3
  1880 0181 0E       		.uleb128 0xe
  1881 0182 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 43
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 43
 
 
  1882 0183 0B       		.uleb128 0xb
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1936 01b9 0B       		.uleb128 0xb
  1937 01ba 3B       		.uleb128 0x3b
  1938 01bb 05       		.uleb128 0x5
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 44
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 44
 
 
  1939 01bc 49       		.uleb128 0x49
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  1993 01f4 19       		.uleb128 0x19
  1994 01f5 6E       		.uleb128 0x6e
  1995 01f6 0E       		.uleb128 0xe
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 45
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 45
 
 
  1996 01f7 03       		.uleb128 0x3
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  2050 004d 00000000 		.4byte	0
  2051              	.LLST3:
  2052 0051 0E000000 		.4byte	.LVL5
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 46
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 46
 
 
  2053 0055 24000000 		.4byte	.LVL8
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  2107 00db 52000000 		.4byte	.LVL18
  2108 00df A6000000 		.4byte	.LVL24
  2109 00e3 0100     		.2byte	0x1
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 47
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 47
 
 
  2110 00e5 55       		.byte	0x55
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  2164 016d 0400     		.2byte	0x4
  2165 016f F3       		.byte	0xf3
  2166 0170 01       		.uleb128 0x1
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 48
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 48
 
 
  2167 0171 52       		.byte	0x52
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  2221 01ed 34000000 		.4byte	.LVL35
  2222 01f1 4A000000 		.4byte	.LVL40
  2223 01f5 0B00     		.2byte	0xb
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 49
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 49
 
 
  2224 01f7 74       		.byte	0x74
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  2278 0265 2C000000 		.4byte	.LANCHOR0+44
  2279 0269 22       		.byte	0x22
  2280 026a 4A000000 		.4byte	.LVL40
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 50
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 50
 
 
  2281 026e 4C000000 		.4byte	.LVL41
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  2335 0034 10000000 		.4byte	.LFE7
  2336 0038 00000000 		.4byte	.LFB8
  2337 003c 7C010000 		.4byte	.LFE8
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 51
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 51
 
 
  2338 0040 00000000 		.4byte	0
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  2363      61756C74 
  2363      00
  2364              	.LASF1:
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 52
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 52
 
 
  2365 00a4 6C6F6E67 		.ascii	"long long int\000"
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  2393      676E6564 
  2393      20696E74 
  2393      00
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 53
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 53
 
 
  2394              	.LASF49:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  2418              	.LASF16:
  2419 01c6 666C6F61 		.ascii	"float\000"
  2419      7400
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 54
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 54
 
 
  2420              	.LASF56:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 1
  2443      67526F75 
  2443      74696E67 
  2443      50756D70 
-ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cczIHKUf.s 			page 55
+ARM GAS  C:\Users\ianrd\AppData\Local\Temp\cciY13se.s 			page 55
 
 
  2444              	.LASF20:

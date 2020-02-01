@@ -77,6 +77,7 @@ void libTFT_FillCircle(int poX, int poY, int r,uint16_t color);
 void libTFT_SetOrientation(uint8_t orient);
 void libTFT_DrawChar( uint8_t ascii, uint16_t poX, uint16_t poY,uint16_t size, uint16_t fgcolor);
 void libTFT_DrawString(char *string,uint16_t poX, uint16_t poY, uint16_t size,uint16_t fgcolor);
+void libTFT_DrawInt(int i,uint16_t poX, uint16_t poY, uint16_t size,uint16_t fgcolor);
 void libTFT_SetPixel(uint16_t poX, uint16_t poY,uint16_t color);
 //***************************************************************************************
 

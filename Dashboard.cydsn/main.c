@@ -126,14 +126,8 @@ void displayData() {
     }
     else{
         libTFT_ClearScreen();
-        char pack_temp_str[10]; //no DrawInt avalible, assuming 10 digits max for conversion
-        //TFT has no DrawInt, so right now itoa is being used to convert for DrawString. a better way would be to implement DrawInt.
-        itoa(PACK_TEMP, pack_temp_str,10);
-        libTFT_DrawString(pack_temp_str,0,0,8,BLUE); //size 8 is left over from previous version.
-
-        char charge_str[10]; //no DrawInt avalible, assuming 3 digits for conversion
-        itoa(charge, charge_str,10);
-        libTFT_DrawString(charge_str,120,0,8,BLUE2); //size 8 is left over from previous version.
+        libTFT_DrawInt(PACK_TEMP,0,0,8,BLUE); //size 8 is left over from previous version.
+        libTFT_DrawInt(charge,120,0,8,BLUE2); //size 8 is left over from previous version.
 
         //GLCD_Write_Frame();
     }
@@ -215,6 +209,8 @@ volatile BMS_STATUS bms_status = NO_ERROR;
 int main()
 {   
     EEPROM_1_Start();
+    
+    DISP_Write(0x1);
     
     Dash_State state = Startup;
     Error_State error_state = OK;
@@ -550,28 +546,18 @@ int main()
                 libTFT_ClearScreen();;
                 libTFT_DrawString("DASH",0,0,2,BLACK);
                 libTFT_DrawString("FAULT",0,0,2,BLACK);
-                char error_state_string[1]; //again, converting to string. possibly can just change enum table.
-                itoa(error_state, error_state_string, 10);
-                libTFT_DrawString(error_state_string,80,32,2,BLACK);
+                libTFT_DrawInt(error_state,80,32,2,BLACK);
                 libTFT_DrawString("T:",110, 0, 2, BLACK);
                 libTFT_DrawString("FALUT:", 110, 32, 2, BLACK);
                 char* bms_f;
                 //sprintf(bms_f, "%x", bms_error);
                 if(error_state == fromBMS) {
                     
-                char pack_temp_str[10];
-                char bms_error_str[10];
-                char error_node_str[10];
-                char error_idx_str[10];
-                itoa(PACK_TEMP, pack_temp_str, 10);
-                itoa(bms_error, bms_error_str, 10);
-                itoa(ERROR_NODE, error_node_str, 10);
-                itoa(ERROR_IDX, error_idx_str, 10);
-                libTFT_DrawString(pack_temp_str, 110, 0, 2, BLACK);
-                libTFT_DrawString(bms_error_str, 180, 32, 2, BLACK);
-                libTFT_DrawString(error_node_str, 180, 0, 2, BLACK);
+                libTFT_DrawInt(PACK_TEMP, 110, 0, 2, BLACK);
+                libTFT_DrawInt(bms_error, 180, 32, 2, BLACK);
+                libTFT_DrawInt(ERROR_NODE, 180, 0, 2, BLACK);
                 libTFT_DrawString(",",184, 0, 2, BLACK);
-                libTFT_DrawString(error_idx_str, 188, 0, 2, BLACK);
+                libTFT_DrawInt(ERROR_IDX, 188, 0, 2, BLACK);
                 }
                 //GLCD_Write_Frame();
                 

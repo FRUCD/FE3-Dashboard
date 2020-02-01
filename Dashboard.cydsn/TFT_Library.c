@@ -420,6 +420,13 @@ void libTFT_DrawString(char *string,uint16_t poX, uint16_t poY, uint16_t size,ui
 	}
 }
 
+//*************************************************************************************
+void libTFT_DrawInt(int i,uint16_t poX, uint16_t poY, uint16_t size,uint16_t fgcolor){
+    char stringi[10];
+    itoa(i, stringi, 10);
+    libTFT_DrawString(stringi, poX, poY, size, fgcolor);
+}
+
 //************************************************************************************++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 void libTFT_FillBitmap(uint16_t XL, uint16_t XR, uint16_t YU, uint16_t YD, unsigned short *Bitmap)
 {

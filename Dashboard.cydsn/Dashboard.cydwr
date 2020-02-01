@@ -297,6 +297,7 @@
       <Data key="2e856ece-823a-4a66-91d7-726c591f7a8d" value="Digit1Bit2" />
       <Data key="3cb74875-149e-48ab-a7dd-e97984d13bfe" value="RGB1_2" />
       <Data key="3e6a0968-2299-403f-88bd-14f34182515f" value="nrd" />
+      <Data key="4bad6052-c8d9-44e6-a98b-b687ac32f1d4" value="DISP" />
       <Data key="4da11063-6e5d-46ee-ad8f-d5d399df80cd" value="Buzzer" />
       <Data key="6e4d8f88-4505-4117-a171-d0bf748d8520/ed092b9b-d398-4703-be89-cebf998501f6" value="LCD_LCDPort" />
       <Data key="8b16168b-1702-4717-87a6-ae63a9e36fe7" value="RGB3_2" />
@@ -1132,6 +1133,11 @@
     <Group key="3e6a0968-2299-403f-88bd-14f34182515f">
       <Group key="0">
         <Data key="Port Format" value="4,4" />
+      </Group>
+    </Group>
+    <Group key="4bad6052-c8d9-44e6-a98b-b687ac32f1d4">
+      <Group key="0">
+        <Data key="Port Format" value="3,7" />
       </Group>
     </Group>
     <Group key="4da11063-6e5d-46ee-ad8f-d5d399df80cd">

@@ -66,6 +66,8 @@
 #include "BLED_clock.h"
 #include "TFT_BLED_aliases.h"
 #include "TFT_BLED.h"
+#include "DISP_aliases.h"
+#include "DISP.h"
 #include "cy_em_eeprom.h"
 #include "core_cm3_psoc5.h"
 #include "core_cm3.h"
