@@ -34,6 +34,7 @@ uint8_t getErrorTolerance();
 uint8_t getABSMotorRPM();
 uint8_t getPedalLow();
 uint8_t getPedalHigh();
+uint8_t getEStop(); //Tehya test
 void tempAttenuate();
 
 #endif

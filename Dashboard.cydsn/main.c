@@ -456,6 +456,11 @@ int main()
                     if(CURRENT < 2500) {
                         charge = SOC_LUT[(voltage - 93400) / 100] / 100;
                     } 
+                    /*if(getEStop() ==1){
+                        GLCD_Clear_Frame();
+                        GLCD_DrawString(0,0,"ESTOP",8);
+                        GLCD_Write_Frame();
+                    }*/
                     displayData();
                 }
                 
@@ -477,6 +482,8 @@ int main()
                 }
    
                 uint8_t ABS_Motor_RPM = getABSMotorRPM();
+                
+                
                 
                 uint16_t Throttle_Total = 0x0;
                 Throttle_Total |= getPedalHigh() << 8;
