@@ -133,6 +133,18 @@ void displayData() {
     }
 }
 
+void calibrateScreen() {
+    //just a test function that displays elements at the supposed corners of the screen
+    libTFT_FillRectangle(0, 0, 10, 10, RED);
+    libTFT_FillRectangle(0, 262, 10, 10, BLUE);
+    libTFT_FillRectangle(470, 0, 10, 10, GREEN);
+    libTFT_FillRectangle(470, 262, 10, 10, YELLOW);
+    libTFT_DrawString("Screen test size 10", 10, 10, 10, BLACK);
+    libTFT_DrawString("Screen test size 20", 10, 30, 20, BLACK);
+    libTFT_DrawString("Screen test size 25", 10, 50, 25, BLACK);
+    CyDelay(300);
+}
+
 CY_ISR(ISR_WDT){
     WDT_Timer_STATUS;
     WDT_Reset_Write(0);
@@ -211,6 +223,8 @@ int main()
     EEPROM_1_Start();
     
     DISP_Write(0x1);
+    
+    calibrateScreen();
     
     Dash_State state = Startup;
     Error_State error_state = OK;

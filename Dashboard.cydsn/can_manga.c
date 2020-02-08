@@ -34,6 +34,8 @@ volatile uint8_t ABS_MOTOR_RPM = 0;
 volatile uint8_t THROTTLE_HIGH = 0;
 volatile uint8_t THROTTLE_LOW = 0;
 
+volatile uint8_t ESTOP; //Tehya test
+
 volatile uint8_t VOLT_B1;
 volatile uint8_t VOLT_B2;
 volatile uint8_t VOLT_B3;
@@ -95,6 +97,13 @@ uint8_t getPedalHigh()
     return THROTTLE_HIGH;
 }
 
+//Tehya test
+//will be a 1 if the estop was pressed (I'm making it a special case because I want to test rn)
+uint8_t getEStop()
+{
+    return ESTOP;
+}
+
 // called from CAN_TX_RX_func.c in the generic RX func
 // tldr: part of an interrupt service routine
 void can_receive(uint8_t *msg, int ID)
@@ -153,6 +162,9 @@ void can_receive(uint8_t *msg, int ID)
             break;
         case 0x188:
             bms_status = (data[CAN_DATA_BYTE_3] << 8) | data[CAN_DATA_BYTE_4];  
+            break;
+        case 0x366: //Tehya test
+            ESTOP = data[CAN_DATA_BYTE_1];
             break;
     }
     

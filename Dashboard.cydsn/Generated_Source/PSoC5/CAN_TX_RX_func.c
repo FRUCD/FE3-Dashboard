@@ -640,7 +640,7 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
             
             
             int ID = CAN_GET_RX_ID(rxMailbox);
-            CAN_RX_STRUCT test = CAN_RX[rxMailbox]; // is test always 0s?
+            //CAN_RX_STRUCT test = CAN_RX[rxMailbox]; // is test always 0s?
             uint8_t data[8];
             int i = 0;
             for (i = 0; i < 8; i++)

@@ -1,4 +1,4 @@
---------------- Rebuild Started: 02/01/2020 11:18:02 Project: Dashboard, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Rebuild Started: 02/08/2020 10:43:14 Project: Dashboard, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\TFT_Library.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\main.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\can_manga.o"
@@ -51,6 +51,7 @@ Deleting file ".\CortexM3\ARM_GCC_541\Debug\PWM_BLED_PM.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\BLED_clock.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\TFT_BLED.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\TFT_reset.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\DISP.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\Dashboard.hex"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\Dashboard.elf"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\Dashboard.map"
@@ -86,41 +87,41 @@ main.c: In function 'main':
 TFT_Library.h:22:16: warning: large integer implicitly truncated to unsigned type [-Woverflow]
  #define YELLOW 0xffe0
                 ^
-main.c:327:27: note: in expansion of macro 'YELLOW'
+main.c:337:27: note: in expansion of macro 'YELLOW'
                  LED_color(YELLOW);
                            ^
 TFT_Library.h:26:17: warning: large integer implicitly truncated to unsigned type [-Woverflow]
  #define MAGENTA 0xF81F
                  ^
-main.c:356:27: note: in expansion of macro 'MAGENTA'
+main.c:366:27: note: in expansion of macro 'MAGENTA'
                  LED_color(MAGENTA);
                            ^
 TFT_Library.h:23:15: warning: large integer implicitly truncated to unsigned type [-Woverflow]
  #define GREEN 0x07e0
                ^
-main.c:473:27: note: in expansion of macro 'GREEN'
+main.c:483:27: note: in expansion of macro 'GREEN'
                  LED_color(GREEN);
                            ^
 TFT_Library.h:21:15: warning: large integer implicitly truncated to unsigned type [-Woverflow]
  #define RED   0xf800
                ^
-main.c:542:27: note: in expansion of macro 'RED'
+main.c:552:27: note: in expansion of macro 'RED'
                  LED_color(RED);
                            ^
-main.c:558:23: warning: unused variable 'bms_f' [-Wunused-variable]
+main.c:566:23: warning: unused variable 'bms_f' [-Wunused-variable]
                  char* bms_f;
                        ^
-main.c:484:25: warning: unused variable 'ABS_Motor_RPM' [-Wunused-variable]
+main.c:494:25: warning: unused variable 'ABS_Motor_RPM' [-Wunused-variable]
                  uint8_t ABS_Motor_RPM = getABSMotorRPM();
                          ^
-main.c:224:12: warning: unused variable 'direction' [-Wunused-variable]
+main.c:234:12: warning: unused variable 'direction' [-Wunused-variable]
      int8_t direction=1;
             ^
-main.c:223:13: warning: unused variable 'value' [-Wunused-variable]
+main.c:233:13: warning: unused variable 'value' [-Wunused-variable]
      uint8_t value=0; // replace the value with 
              ^
 main.c: At top level:
-main.c:181:15: warning: 'ReadSwSwitch' declared 'static' but never defined [-Wunused-function]
+main.c:187:15: warning: 'ReadSwSwitch' declared 'static' but never defined [-Wunused-function]
  static uint32 ReadSwSwitch(void);
                ^
 main.c: In function 'main':
@@ -128,8 +129,8 @@ main.c:604:21: warning: 'Throttle_Low' may be used uninitialized in this functio
                      can_send_cmd(1, Throttle_High, Throttle_Low); // setInterlock
                      ^
 main.c:604:21: warning: 'Throttle_High' may be used uninitialized in this function [-Wmaybe-uninitialized]
-main.c:567:17: warning: 'bms_error' may be used uninitialized in this function [-Wmaybe-uninitialized]
-                 itoa(bms_error, bms_error_str, 10);
+main.c:571:17: warning: 'bms_error' may be used uninitialized in this function [-Wmaybe-uninitialized]
+                 libTFT_DrawInt(bms_error, 180, 32, 2, BLACK);
                  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/can_manga.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c can_manga.c -o .\CortexM3\ARM_GCC_541\Debug\can_manga.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/cyfitter_cfg.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\cyfitter_cfg.c -o .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
@@ -140,10 +141,6 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/CAN_INT.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\CAN_INT.c -o .\CortexM3\ARM_GCC_541\Debug\CAN_INT.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/CAN_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\CAN_PM.c -o .\CortexM3\ARM_GCC_541\Debug\CAN_PM.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/CAN_TX_RX_func.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\CAN_TX_RX_func.c -o .\CortexM3\ARM_GCC_541\Debug\CAN_TX_RX_func.o
-Generated_Source\PSoC5\CAN_TX_RX_func.c: In function 'CAN_ReceiveMsg':
-Generated_Source\PSoC5\CAN_TX_RX_func.c:643:27: warning: unused variable 'test' [-Wunused-variable]
-             CAN_RX_STRUCT test = CAN_RX[rxMailbox]; // is test always 0s?
-                           ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/Cm3Start.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\Cm3Start.c -o .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/CyDmac.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\CyDmac.c -o .\CortexM3\ARM_GCC_541\Debug\CyDmac.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/CyFlash.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC5\CyFlash.c -o .\CortexM3\ARM_GCC_541\Debug\CyFlash.o
@@ -194,6 +191,6 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\CortexM3\ARM_GCC_541\Debug\Dashboard.elf
-Flash used: 14796 of 262144 bytes (5.6%).
-SRAM used: 3481 of 65536 bytes (5.3%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Rebuild Succeeded: 02/01/2020 11:18:41 ---------------
+Flash used: 15020 of 262144 bytes (5.7%).
+SRAM used: 3489 of 65536 bytes (5.3%). Stack: 2048 bytes. Heap: 128 bytes.
+--------------- Rebuild Succeeded: 02/08/2020 10:44:07 ---------------
