@@ -245,7 +245,7 @@ int main()
         // Check if all nodes are OK
         if (pedalOK > PEDAL_TIMEOUT)
         {
-            can_send_cmd(0, 0, 0); // setInterlock. 
+            can_send_cmd(0, 0, 0, 0); // setInterlock. 
             state = Fault;
             error_state = nodeFailure;
         }
@@ -303,7 +303,7 @@ int main()
                 CAN_Init();
                 CAN_Start();
                 
-                can_send_cmd(0, 0, 0);
+                can_send_cmd(0, 0, 0, 0); // clear e_stop_check if need be
                 //nodeCheckStart();
           
                 can_send_status(state, error_state);
@@ -355,7 +355,7 @@ int main()
                 
                 while(1)
                 {
-                    can_send_cmd(1, 0, 0); // setInterlock
+                    can_send_cmd(1, 0, 0, 0); // setInterlock
                 
                     uint8_t CapacitorVolt = getCapacitorVoltage(); //can_read(data_queue, data_head, data_tail, 0x0566, 0);
                    
@@ -456,12 +456,20 @@ int main()
                     if(CURRENT < 2500) {
                         charge = SOC_LUT[(voltage - 93400) / 100] / 100;
                     } 
-                    /*if(getEStop() ==1){
+                    /*if(getEStop() ==1){ //Tehya check
                         GLCD_Clear_Frame();
                         GLCD_DrawString(0,0,"ESTOP",8);
                         GLCD_Write_Frame();
                     }*/
                     displayData();
+                }
+                
+                if(getEStop() == 1){ //Tehya check
+                    while(Drive_Read() || HV_Read()){ // stuck here until both switches are turned off
+                    }
+                    state = LV;
+                    can_send_cmd(0, 0, 0, 1); 
+                    break;
                 }
                 
                 can_send_charge(charge, 0);
@@ -494,7 +502,7 @@ int main()
                 uint8_t Throttle_Low = Throttle_Total & 0x00FF;
                 
                 // send attenuated throttle and interlock to motor controller
-                can_send_cmd(1, Throttle_High, Throttle_Low); // setInterlock 
+                can_send_cmd(1, Throttle_High, Throttle_Low, 0); // setInterlock 
 
 
                 
@@ -505,7 +513,7 @@ int main()
                 // if exiting drive improperly also send charge
                 // probably kyle just turing the car off wrong
                 if (!HV_Read()) {
-                    can_send_cmd(0, 0, 0);   
+                    can_send_cmd(0, 0, 0, 0);   
                     can_send_charge(charge, 1); 
                     state = LV;
                 }
@@ -513,13 +521,13 @@ int main()
                 // likely that car is about to shut down
                 if (!Drive_Read()) {
                     state = HV_Enabled;
-                    can_send_cmd(1, 0, 0);
+                    can_send_cmd(1, 0, 0, 0);
                     can_send_charge(charge, 1);
                 }
                 if ((ACK != 0xFF) | 
                     (!getCurtisHeartBeatCheck())) // TODO: Heart beat message is never cleared
                 {
-                    can_send_cmd(0, 0, 0);
+                    can_send_cmd(0, 0, 0, 0);
                     state = Fault;
                     error_state = fromDrive;
                     DriveTimeCount = 0;
@@ -592,7 +600,7 @@ int main()
                 }
                 else if (error_state == fromDrive)
                 {   
-                    can_send_cmd(1, Throttle_High, Throttle_Low); // setInterlock
+                    can_send_cmd(1, Throttle_High, Throttle_Low, 0); // setInterlock
                     
                     CyDelay(200);
                     

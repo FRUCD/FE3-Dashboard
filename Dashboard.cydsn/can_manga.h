@@ -22,7 +22,7 @@ void can_test_send();
 void can_send(uint8_t data[8], uint32_t ID);
 
 // Advanced CAN functionality
-void can_send_cmd(uint8_t SetInterlock, uint16_t VCL_Throttle_High, uint16_t VCL_Throttle_Low);
+void can_send_cmd(uint8_t SetInterlock, uint16_t VCL_Throttle_High, uint16_t VCL_Throttle_Low, uint8_t E_Stop_Check);
 void can_send_status(uint8_t state, uint8_t errorState);
 void can_send_charge(uint8_t charge, uint8_t save_soc);
 
