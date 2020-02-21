@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 1
+>>>>>>> branch_tehya
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
   28:can_manga.c   **** volatile uint8_t CAPACITOR_VOLT = 0;
   29:can_manga.c   **** volatile uint8_t CURTIS_FAULT_CHECK = 0;
   30:can_manga.c   **** volatile uint8_t CURTIS_HEART_BEAT_CHECK = 0;
+<<<<<<< HEAD
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 2
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 2
+>>>>>>> branch_tehya
 
 
   31:can_manga.c   **** volatile uint8_t ACK_RX = 0;
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
   55              		@ args = 0, pretend = 0, frame = 0
   56              		@ frame_needed = 0, uses_anonymous_args = 0
   57              		@ link register save eliminated.
+<<<<<<< HEAD
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 3
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 3
+>>>>>>> branch_tehya
 
 
   58:can_manga.c   ****     return CURTIS_FAULT_CHECK;
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
   67:can_manga.c   **** 
   68:can_manga.c   **** // returns 1 always... not sure whats up in the motor controller
   69:can_manga.c   **** uint8_t getAckRx()
+<<<<<<< HEAD
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 4
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 4
+>>>>>>> branch_tehya
 
 
   70:can_manga.c   **** {
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
  147              		.global	getABSMotorRPM
  148              		.thumb
  149              		.thumb_func
+<<<<<<< HEAD
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 5
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 5
+>>>>>>> branch_tehya
 
 
  150              		.type	getABSMotorRPM, %function
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
  190              	.L20:
  191 0008 00000000 		.word	.LANCHOR0
  192              		.cfi_endproc
+<<<<<<< HEAD
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 6
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 6
+>>>>>>> branch_tehya
 
 
  193              	.LFE69:
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
  105:can_manga.c   **** }
  236              		.loc 1 105 0
  237 0004 7047     		bx	lr
+<<<<<<< HEAD
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 7
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 7
+>>>>>>> branch_tehya
 
 
  238              	.L27:
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
  145:can_manga.c   ****             VOLT_B3 = data[CAN_DATA_BYTE_6];
  146:can_manga.c   ****             VOLT_B2 = data[CAN_DATA_BYTE_7];
  147:can_manga.c   ****             VOLT_B1 = data[CAN_DATA_BYTE_8];
+<<<<<<< HEAD
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 8
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 8
+>>>>>>> branch_tehya
 
 
  148:can_manga.c   ****             voltage = (VOLT_B4 << 24) | (VOLT_B3 << 16) | (VOLT_B2 << 8) | VOLT_B1; 
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
  272 0016 8DF80A30 		strb	r3, [sp, #10]
  183:can_manga.c   ****     
  184:can_manga.c   ****     HeartB.irq = 0;
+<<<<<<< HEAD
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 9
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 9
+>>>>>>> branch_tehya
 
 
  273              		.loc 1 184 0
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
  315              		.thumb_func
  316              		.type	can_send, %function
  317              	can_send:
+<<<<<<< HEAD
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 10
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 10
+>>>>>>> branch_tehya
 
 
  318              	.LFB74:
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
  357 002c DBB2     		uxtb	r3, r3
  358              	.LVL5:
  359              	.L31:
+<<<<<<< HEAD
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 11
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 11
+>>>>>>> branch_tehya
 
 
  209:can_manga.c   **** 	for(i=0;i<8;i++)
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
  399 000c 0023     		movs	r3, #0
  400 000e 8DF80230 		strb	r3, [sp, #2]
  225:can_manga.c   ****         data[3] = 0;
+<<<<<<< HEAD
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 12
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 12
+>>>>>>> branch_tehya
 
 
  401              		.loc 1 225 0
@@ -708,15 +756,24 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
  237:can_manga.c   **** void can_send_cmd(
  238:can_manga.c   ****     uint8_t SetInterlock,
  239:can_manga.c   ****     uint16_t VCL_Throttle_High,
+<<<<<<< HEAD
  240:can_manga.c   ****     uint16_t VCL_Throttle_Low
  241:can_manga.c   **** )
  242:can_manga.c   **** {
  434              		.loc 1 242 0
+=======
+ 240:can_manga.c   ****     uint16_t VCL_Throttle_Low,
+ 241:can_manga.c   ****     uint8_t E_Stop_Check
+ 242:can_manga.c   **** )
+ 243:can_manga.c   **** {
+ 434              		.loc 1 243 0
+>>>>>>> branch_tehya
  435              		.cfi_startproc
  436              		@ args = 0, pretend = 0, frame = 8
  437              		@ frame_needed = 0, uses_anonymous_args = 0
  438              	.LVL12:
  439 0000 00B5     		push	{lr}
+<<<<<<< HEAD
  440              		.cfi_def_cfa_offset 4
 ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 13
 
@@ -3737,3 +3794,4466 @@ ARM GAS  C:\Users\ianrd\AppData\Local\Temp\ccoJ4SFP.s 			page 1
  2959 05ab 7061796C 		.ascii	"payload\000"
  2959      6F616400 
  2960              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+=======
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 13
+
+
+ 440              		.cfi_def_cfa_offset 4
+ 441              		.cfi_offset 14, -4
+ 442 0002 83B0     		sub	sp, sp, #12
+ 443              		.cfi_def_cfa_offset 16
+ 244:can_manga.c   ****     //max and min voltage means the voltage of single cell
+ 245:can_manga.c   ****         
+ 246:can_manga.c   ****         uint8_t data[8];
+ 247:can_manga.c   ****         
+ 248:can_manga.c   ****         data[0] = SetInterlock;
+ 444              		.loc 1 248 0
+ 445 0004 8DF80000 		strb	r0, [sp]
+ 249:can_manga.c   ****         
+ 250:can_manga.c   ****         data[1] = VCL_Throttle_High;
+ 446              		.loc 1 250 0
+ 447 0008 8DF80110 		strb	r1, [sp, #1]
+ 251:can_manga.c   ****         data[2] = VCL_Throttle_Low;
+ 448              		.loc 1 251 0
+ 449 000c 8DF80220 		strb	r2, [sp, #2]
+ 252:can_manga.c   ****         
+ 253:can_manga.c   ****         data[3] = 0;
+ 450              		.loc 1 253 0
+ 451 0010 0022     		movs	r2, #0
+ 452              	.LVL13:
+ 453 0012 8DF80320 		strb	r2, [sp, #3]
+ 254:can_manga.c   ****         data[4] = E_Stop_Check;
+ 454              		.loc 1 254 0
+ 455 0016 8DF80430 		strb	r3, [sp, #4]
+ 255:can_manga.c   ****         
+ 256:can_manga.c   ****         data[5] = 0;
+ 456              		.loc 1 256 0
+ 457 001a 8DF80520 		strb	r2, [sp, #5]
+ 257:can_manga.c   ****         data[6] = 0;
+ 458              		.loc 1 257 0
+ 459 001e 8DF80620 		strb	r2, [sp, #6]
+ 258:can_manga.c   ****         data[7] = 0;
+ 460              		.loc 1 258 0
+ 461 0022 8DF80720 		strb	r2, [sp, #7]
+ 259:can_manga.c   **** 
+ 260:can_manga.c   ****         can_send(data, 0x766);
+ 462              		.loc 1 260 0
+ 463 0026 40F26671 		movw	r1, #1894
+ 464              	.LVL14:
+ 465 002a 6846     		mov	r0, sp
+ 466              	.LVL15:
+ 467 002c FFF7FEFF 		bl	can_send
+ 468              	.LVL16:
+ 261:can_manga.c   ****         CyDelay(1); // Wtf is this shit?
+ 469              		.loc 1 261 0
+ 470 0030 0120     		movs	r0, #1
+ 471 0032 FFF7FEFF 		bl	CyDelay
+ 472              	.LVL17:
+ 262:can_manga.c   **** 
+ 263:can_manga.c   **** } // can_send_cmd()
+ 473              		.loc 1 263 0
+ 474 0036 03B0     		add	sp, sp, #12
+ 475              		.cfi_def_cfa_offset 4
+ 476              		@ sp needed
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 14
+
+
+ 477 0038 5DF804FB 		ldr	pc, [sp], #4
+ 478              		.cfi_endproc
+ 479              	.LFE76:
+ 480              		.size	can_send_cmd, .-can_send_cmd
+ 481              		.section	.text.can_send_charge,"ax",%progbits
+ 482              		.align	2
+ 483              		.global	can_send_charge
+ 484              		.thumb
+ 485              		.thumb_func
+ 486              		.type	can_send_charge, %function
+ 487              	can_send_charge:
+ 488              	.LFB77:
+ 264:can_manga.c   **** 
+ 265:can_manga.c   **** void can_send_charge(uint8_t charge, uint8_t save_soc) {
+ 489              		.loc 1 265 0
+ 490              		.cfi_startproc
+ 491              		@ args = 0, pretend = 0, frame = 8
+ 492              		@ frame_needed = 0, uses_anonymous_args = 0
+ 493              	.LVL18:
+ 494 0000 00B5     		push	{lr}
+ 495              		.cfi_def_cfa_offset 4
+ 496              		.cfi_offset 14, -4
+ 497 0002 83B0     		sub	sp, sp, #12
+ 498              		.cfi_def_cfa_offset 16
+ 266:can_manga.c   ****     uint8_t data[8] = {0};
+ 499              		.loc 1 266 0
+ 500 0004 0023     		movs	r3, #0
+ 501 0006 0093     		str	r3, [sp]
+ 502 0008 0193     		str	r3, [sp, #4]
+ 267:can_manga.c   ****     data[0] = charge;
+ 503              		.loc 1 267 0
+ 504 000a 8DF80000 		strb	r0, [sp]
+ 268:can_manga.c   ****     data[1] = save_soc;
+ 505              		.loc 1 268 0
+ 506 000e 8DF80110 		strb	r1, [sp, #1]
+ 269:can_manga.c   ****     
+ 270:can_manga.c   ****     can_send(data, 0x389);
+ 507              		.loc 1 270 0
+ 508 0012 40F28931 		movw	r1, #905
+ 509              	.LVL19:
+ 510 0016 6846     		mov	r0, sp
+ 511              	.LVL20:
+ 512 0018 FFF7FEFF 		bl	can_send
+ 513              	.LVL21:
+ 271:can_manga.c   **** }
+ 514              		.loc 1 271 0
+ 515 001c 03B0     		add	sp, sp, #12
+ 516              		.cfi_def_cfa_offset 4
+ 517              		@ sp needed
+ 518 001e 5DF804FB 		ldr	pc, [sp], #4
+ 519              		.cfi_endproc
+ 520              	.LFE77:
+ 521              		.size	can_send_charge, .-can_send_charge
+ 522              		.global	__aeabi_ddiv
+ 523 0022 00BF     		.section	.text.tempAttenuate,"ax",%progbits
+ 524              		.align	2
+ 525              		.global	tempAttenuate
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 15
+
+
+ 526              		.thumb
+ 527              		.thumb_func
+ 528              		.type	tempAttenuate, %function
+ 529              	tempAttenuate:
+ 530              	.LFB78:
+ 272:can_manga.c   **** 
+ 273:can_manga.c   **** void tempAttenuate() {
+ 531              		.loc 1 273 0
+ 532              		.cfi_startproc
+ 533              		@ args = 0, pretend = 0, frame = 0
+ 534              		@ frame_needed = 0, uses_anonymous_args = 0
+ 535 0000 08B5     		push	{r3, lr}
+ 536              		.cfi_def_cfa_offset 8
+ 537              		.cfi_offset 3, -8
+ 538              		.cfi_offset 14, -4
+ 274:can_manga.c   ****     int t = PACK_TEMP - 50;
+ 539              		.loc 1 274 0
+ 540 0002 134B     		ldr	r3, .L45
+ 541 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 542              	.LVL22:
+ 275:can_manga.c   ****     if (t < 0) {
+ 543              		.loc 1 275 0
+ 544 0006 323B     		subs	r3, r3, #50
+ 545              	.LVL23:
+ 546 0008 05D5     		bpl	.L41
+ 276:can_manga.c   ****         THROTTLE_MULTIPLIER = 1;   
+ 547              		.loc 1 276 0
+ 548 000a 0020     		movs	r0, #0
+ 549 000c 1149     		ldr	r1, .L45+4
+ 550 000e 124B     		ldr	r3, .L45+8
+ 551              	.LVL24:
+ 552 0010 C3E90001 		strd	r0, [r3]
+ 553 0014 08BD     		pop	{r3, pc}
+ 554              	.LVL25:
+ 555              	.L41:
+ 277:can_manga.c   ****     } else if (t < 8) {
+ 556              		.loc 1 277 0
+ 557 0016 072B     		cmp	r3, #7
+ 558 0018 0CDC     		bgt	.L43
+ 278:can_manga.c   ****         THROTTLE_MULTIPLIER = THROTTLE_MAP[t] / 100.0; 
+ 559              		.loc 1 278 0
+ 560 001a 1049     		ldr	r1, .L45+12
+ 561 001c 01EBC301 		add	r1, r1, r3, lsl #3
+ 562 0020 0022     		movs	r2, #0
+ 563 0022 0F4B     		ldr	r3, .L45+16
+ 564              	.LVL26:
+ 565 0024 D1E90001 		ldrd	r0, [r1]
+ 566 0028 FFF7FEFF 		bl	__aeabi_ddiv
+ 567              	.LVL27:
+ 568 002c 0A4B     		ldr	r3, .L45+8
+ 569 002e C3E90001 		strd	r0, [r3]
+ 570 0032 08BD     		pop	{r3, pc}
+ 571              	.LVL28:
+ 572              	.L43:
+ 279:can_manga.c   ****     } else if (t >= 8) {
+ 573              		.loc 1 279 0
+ 574 0034 072B     		cmp	r3, #7
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 16
+
+
+ 575 0036 09DD     		ble	.L40
+ 280:can_manga.c   ****         THROTTLE_MULTIPLIER = THROTTLE_MAP[7] / 100.0; 
+ 576              		.loc 1 280 0
+ 577 0038 0022     		movs	r2, #0
+ 578 003a 094B     		ldr	r3, .L45+16
+ 579              	.LVL29:
+ 580 003c 0749     		ldr	r1, .L45+12
+ 581 003e D1E90E01 		ldrd	r0, [r1, #56]
+ 582 0042 FFF7FEFF 		bl	__aeabi_ddiv
+ 583              	.LVL30:
+ 584 0046 044B     		ldr	r3, .L45+8
+ 585 0048 C3E90001 		strd	r0, [r3]
+ 586              	.L40:
+ 587 004c 08BD     		pop	{r3, pc}
+ 588              	.L46:
+ 589 004e 00BF     		.align	2
+ 590              	.L45:
+ 591 0050 00000000 		.word	PACK_TEMP
+ 592 0054 0000F03F 		.word	1072693248
+ 593 0058 00000000 		.word	THROTTLE_MULTIPLIER
+ 594 005c 00000000 		.word	THROTTLE_MAP
+ 595 0060 00005940 		.word	1079574528
+ 596              		.cfi_endproc
+ 597              	.LFE78:
+ 598              		.size	tempAttenuate, .-tempAttenuate
+ 599              		.section	.text.can_receive,"ax",%progbits
+ 600              		.align	2
+ 601              		.global	can_receive
+ 602              		.thumb
+ 603              		.thumb_func
+ 604              		.type	can_receive, %function
+ 605              	can_receive:
+ 606              	.LFB72:
+ 110:can_manga.c   ****     uint8 InterruptState = CyEnterCriticalSection();
+ 607              		.loc 1 110 0
+ 608              		.cfi_startproc
+ 609              		@ args = 0, pretend = 0, frame = 8
+ 610              		@ frame_needed = 0, uses_anonymous_args = 0
+ 611              	.LVL31:
+ 612 0000 70B5     		push	{r4, r5, r6, lr}
+ 613              		.cfi_def_cfa_offset 16
+ 614              		.cfi_offset 4, -16
+ 615              		.cfi_offset 5, -12
+ 616              		.cfi_offset 6, -8
+ 617              		.cfi_offset 14, -4
+ 618 0002 82B0     		sub	sp, sp, #8
+ 619              		.cfi_def_cfa_offset 24
+ 620 0004 0446     		mov	r4, r0
+ 621 0006 0D46     		mov	r5, r1
+ 111:can_manga.c   ****     
+ 622              		.loc 1 111 0
+ 623 0008 FFF7FEFF 		bl	CyEnterCriticalSection
+ 624              	.LVL32:
+ 625 000c 0646     		mov	r6, r0
+ 626              	.LVL33:
+ 116:can_manga.c   ****         data[i] = msg[i];
+ 627              		.loc 1 116 0
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 17
+
+
+ 628 000e 0023     		movs	r3, #0
+ 629 0010 05E0     		b	.L48
+ 630              	.LVL34:
+ 631              	.L49:
+ 117:can_manga.c   ****         
+ 632              		.loc 1 117 0 discriminator 3
+ 633 0012 E15C     		ldrb	r1, [r4, r3]	@ zero_extendqisi2
+ 634 0014 02AA     		add	r2, sp, #8
+ 635 0016 1A44     		add	r2, r2, r3
+ 636 0018 02F8081C 		strb	r1, [r2, #-8]
+ 116:can_manga.c   ****         data[i] = msg[i];
+ 637              		.loc 1 116 0 discriminator 3
+ 638 001c 0133     		adds	r3, r3, #1
+ 639              	.LVL35:
+ 640              	.L48:
+ 116:can_manga.c   ****         data[i] = msg[i];
+ 641              		.loc 1 116 0 is_stmt 0 discriminator 1
+ 642 001e 072B     		cmp	r3, #7
+ 643 0020 F7DD     		ble	.L49
+ 119:can_manga.c   ****     {
+ 644              		.loc 1 119 0 is_stmt 1
+ 645 0022 B5F5627F 		cmp	r5, #904
+ 646 0026 4FD0     		beq	.L51
+ 647 0028 14DC     		bgt	.L52
+ 648 002a B5F5007F 		cmp	r5, #512
+ 649 002e 40D0     		beq	.L53
+ 650 0030 06DC     		bgt	.L54
+ 651 0032 A62D     		cmp	r5, #166
+ 652 0034 2AD0     		beq	.L55
+ 653 0036 B5F5C47F 		cmp	r5, #392
+ 654 003a 00F08780 		beq	.L56
+ 655 003e 92E0     		b	.L50
+ 656              	.L54:
+ 657 0040 40F20123 		movw	r3, #513
+ 658              	.LVL36:
+ 659 0044 9D42     		cmp	r5, r3
+ 660 0046 2DD0     		beq	.L57
+ 661 0048 40F26633 		movw	r3, #870
+ 662 004c 9D42     		cmp	r5, r3
+ 663 004e 00F08680 		beq	.L58
+ 664 0052 88E0     		b	.L50
+ 665              	.LVL37:
+ 666              	.L52:
+ 667 0054 40F26653 		movw	r3, #1382
+ 668              	.LVL38:
+ 669 0058 9D42     		cmp	r5, r3
+ 670 005a 11D0     		beq	.L59
+ 671 005c 07DC     		bgt	.L60
+ 672 005e B5F5916F 		cmp	r5, #1160
+ 673 0062 4ED0     		beq	.L61
+ 674 0064 40F22153 		movw	r3, #1313
+ 675 0068 9D42     		cmp	r5, r3
+ 676 006a 59D0     		beq	.L62
+ 677 006c 7BE0     		b	.L50
+ 678              	.L60:
+ 679 006e 40F26663 		movw	r3, #1638
+ 680 0072 9D42     		cmp	r5, r3
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 18
+
+
+ 681 0074 12D0     		beq	.L63
+ 682 0076 40F22673 		movw	r3, #1830
+ 683 007a 9D42     		cmp	r5, r3
+ 684 007c 0AD0     		beq	.L64
+ 685 007e 72E0     		b	.L50
+ 686              	.L59:
+ 122:can_manga.c   ****             ABS_MOTOR_RPM = msg[CAN_DATA_BYTE_5];
+ 687              		.loc 1 122 0
+ 688 0080 E278     		ldrb	r2, [r4, #3]	@ zero_extendqisi2
+ 689 0082 3B4B     		ldr	r3, .L66
+ 690 0084 1A70     		strb	r2, [r3]
+ 123:can_manga.c   ****             break;
+ 691              		.loc 1 123 0
+ 692 0086 E279     		ldrb	r2, [r4, #7]	@ zero_extendqisi2
+ 693 0088 5A71     		strb	r2, [r3, #5]
+ 124:can_manga.c   ****         case 0xA6:  // errors sent from MC node
+ 694              		.loc 1 124 0
+ 695 008a 6CE0     		b	.L50
+ 696              	.LVL39:
+ 697              	.L55:
+ 126:can_manga.c   ****             break;
+ 698              		.loc 1 126 0
+ 699 008c 0122     		movs	r2, #1
+ 700 008e 384B     		ldr	r3, .L66
+ 701              	.LVL40:
+ 702 0090 5A70     		strb	r2, [r3, #1]
+ 127:can_manga.c   ****         case 0x726:     // from motor controller to confirm that node is still active
+ 703              		.loc 1 127 0
+ 704 0092 68E0     		b	.L50
+ 705              	.L64:
+ 129:can_manga.c   ****             break;
+ 706              		.loc 1 129 0
+ 707 0094 0122     		movs	r2, #1
+ 708 0096 364B     		ldr	r3, .L66
+ 709 0098 9A70     		strb	r2, [r3, #2]
+ 130:can_manga.c   ****         case 0x0666:    // pdoAwk from motor controller
+ 710              		.loc 1 130 0
+ 711 009a 64E0     		b	.L50
+ 712              	.L63:
+ 132:can_manga.c   ****             break;
+ 713              		.loc 1 132 0
+ 714 009c E278     		ldrb	r2, [r4, #3]	@ zero_extendqisi2
+ 715 009e 344B     		ldr	r3, .L66
+ 716 00a0 DA70     		strb	r2, [r3, #3]
+ 133:can_manga.c   ****         case 0x0201:    // BSPD (brake position from pedal node)
+ 717              		.loc 1 133 0
+ 718 00a2 60E0     		b	.L50
+ 719              	.L57:
+ 135:can_manga.c   ****             BSPD_CATCH = msg[CAN_DATA_BYTE_5];
+ 720              		.loc 1 135 0
+ 721 00a4 E278     		ldrb	r2, [r4, #3]	@ zero_extendqisi2
+ 722 00a6 324B     		ldr	r3, .L66
+ 723 00a8 1A71     		strb	r2, [r3, #4]
+ 136:can_manga.c   ****             break;
+ 724              		.loc 1 136 0
+ 725 00aa E279     		ldrb	r2, [r4, #7]	@ zero_extendqisi2
+ 726 00ac 314B     		ldr	r3, .L66+4
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 19
+
+
+ 727 00ae 1A70     		strb	r2, [r3]
+ 137:can_manga.c   ****         case 0x0200:    // throttle
+ 728              		.loc 1 137 0
+ 729 00b0 59E0     		b	.L50
+ 730              	.LVL41:
+ 731              	.L53:
+ 139:can_manga.c   ****             THROTTLE_HIGH = data[CAN_DATA_BYTE_2];
+ 732              		.loc 1 139 0
+ 733 00b2 0022     		movs	r2, #0
+ 734 00b4 304B     		ldr	r3, .L66+8
+ 735              	.LVL42:
+ 736 00b6 1A60     		str	r2, [r3]
+ 140:can_manga.c   ****             THROTTLE_LOW = data[CAN_DATA_BYTE_3];
+ 737              		.loc 1 140 0
+ 738 00b8 9DF80220 		ldrb	r2, [sp, #2]	@ zero_extendqisi2
+ 739 00bc 2C4B     		ldr	r3, .L66
+ 740 00be DA71     		strb	r2, [r3, #7]
+ 141:can_manga.c   ****             break;
+ 741              		.loc 1 141 0
+ 742 00c0 9DF80120 		ldrb	r2, [sp, #1]	@ zero_extendqisi2
+ 743 00c4 9A71     		strb	r2, [r3, #6]
+ 142:can_manga.c   ****         case 0x388:    // BMS voltage data 
+ 744              		.loc 1 142 0
+ 745 00c6 4EE0     		b	.L50
+ 746              	.LVL43:
+ 747              	.L51:
+ 144:can_manga.c   ****             VOLT_B3 = data[CAN_DATA_BYTE_6];
+ 748              		.loc 1 144 0
+ 749 00c8 9DF80720 		ldrb	r2, [sp, #7]	@ zero_extendqisi2
+ 750 00cc 2B4B     		ldr	r3, .L66+12
+ 751              	.LVL44:
+ 752 00ce 1A70     		strb	r2, [r3]
+ 145:can_manga.c   ****             VOLT_B2 = data[CAN_DATA_BYTE_7];
+ 753              		.loc 1 145 0
+ 754 00d0 9DF80620 		ldrb	r2, [sp, #6]	@ zero_extendqisi2
+ 755 00d4 2A48     		ldr	r0, .L66+16
+ 756 00d6 0270     		strb	r2, [r0]
+ 146:can_manga.c   ****             VOLT_B1 = data[CAN_DATA_BYTE_8];
+ 757              		.loc 1 146 0
+ 758 00d8 9DF80520 		ldrb	r2, [sp, #5]	@ zero_extendqisi2
+ 759 00dc 2949     		ldr	r1, .L66+20
+ 760 00de 0A70     		strb	r2, [r1]
+ 147:can_manga.c   ****             voltage = (VOLT_B4 << 24) | (VOLT_B3 << 16) | (VOLT_B2 << 8) | VOLT_B1; 
+ 761              		.loc 1 147 0
+ 762 00e0 9DF80440 		ldrb	r4, [sp, #4]	@ zero_extendqisi2
+ 763              	.LVL45:
+ 764 00e4 284A     		ldr	r2, .L66+24
+ 765 00e6 1470     		strb	r4, [r2]
+ 148:can_manga.c   ****             break;
+ 766              		.loc 1 148 0
+ 767 00e8 1C78     		ldrb	r4, [r3]	@ zero_extendqisi2
+ 768 00ea 0378     		ldrb	r3, [r0]	@ zero_extendqisi2
+ 769 00ec 1B04     		lsls	r3, r3, #16
+ 770 00ee 43EA0463 		orr	r3, r3, r4, lsl #24
+ 771 00f2 0978     		ldrb	r1, [r1]	@ zero_extendqisi2
+ 772 00f4 43EA0123 		orr	r3, r3, r1, lsl #8
+ 773 00f8 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 20
+
+
+ 774 00fa 1343     		orrs	r3, r3, r2
+ 775 00fc 234A     		ldr	r2, .L66+28
+ 776 00fe 1360     		str	r3, [r2]
+ 149:can_manga.c   ****         case 0x0488:   // BMS Temp data
+ 777              		.loc 1 149 0
+ 778 0100 31E0     		b	.L50
+ 779              	.LVL46:
+ 780              	.L61:
+ 151:can_manga.c   ****             ERROR_NODE = data[CAN_DATA_BYTE_7];
+ 781              		.loc 1 151 0
+ 782 0102 9DF80620 		ldrb	r2, [sp, #6]	@ zero_extendqisi2
+ 783 0106 224B     		ldr	r3, .L66+32
+ 784 0108 1A60     		str	r2, [r3]
+ 152:can_manga.c   ****             PACK_TEMP = data[CAN_DATA_BYTE_8];
+ 785              		.loc 1 152 0
+ 786 010a 9DF80520 		ldrb	r2, [sp, #5]	@ zero_extendqisi2
+ 787 010e 214B     		ldr	r3, .L66+36
+ 788 0110 1A60     		str	r2, [r3]
+ 153:can_manga.c   ****             tempAttenuate();
+ 789              		.loc 1 153 0
+ 790 0112 9DF80420 		ldrb	r2, [sp, #4]	@ zero_extendqisi2
+ 791 0116 204B     		ldr	r3, .L66+40
+ 792 0118 1A70     		strb	r2, [r3]
+ 154:can_manga.c   ****             break;
+ 793              		.loc 1 154 0
+ 794 011a FFF7FEFF 		bl	tempAttenuate
+ 795              	.LVL47:
+ 155:can_manga.c   ****         case 0x521: // current data from IVT
+ 796              		.loc 1 155 0
+ 797 011e 22E0     		b	.L50
+ 798              	.L62:
+ 157:can_manga.c   ****             current_bytes[1] = data[CAN_DATA_BYTE_4];
+ 799              		.loc 1 157 0
+ 800 0120 9DF80140 		ldrb	r4, [sp, #1]	@ zero_extendqisi2
+ 801              	.LVL48:
+ 802 0124 1249     		ldr	r1, .L66
+ 803 0126 0C72     		strb	r4, [r1, #8]
+ 158:can_manga.c   ****             current_bytes[2] = data[CAN_DATA_BYTE_5];
+ 804              		.loc 1 158 0
+ 805 0128 9DF80030 		ldrb	r3, [sp]	@ zero_extendqisi2
+ 806 012c 4B72     		strb	r3, [r1, #9]
+ 159:can_manga.c   ****             current_bytes[3] = data[CAN_DATA_BYTE_6];
+ 807              		.loc 1 159 0
+ 808 012e 9DF80700 		ldrb	r0, [sp, #7]	@ zero_extendqisi2
+ 809 0132 8872     		strb	r0, [r1, #10]
+ 160:can_manga.c   ****             CURRENT = (current_bytes[0] << 24) + (current_bytes[1] << 16) + (current_bytes[2] << 8)
+ 810              		.loc 1 160 0
+ 811 0134 9DF80620 		ldrb	r2, [sp, #6]	@ zero_extendqisi2
+ 812 0138 CA72     		strb	r2, [r1, #11]
+ 161:can_manga.c   ****             break;
+ 813              		.loc 1 161 0
+ 814 013a 1B04     		lsls	r3, r3, #16
+ 815 013c 03EB0463 		add	r3, r3, r4, lsl #24
+ 816 0140 03EB0023 		add	r3, r3, r0, lsl #8
+ 817 0144 1344     		add	r3, r3, r2
+ 818 0146 154A     		ldr	r2, .L66+44
+ 819 0148 1360     		str	r3, [r2]
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 21
+
+
+ 162:can_manga.c   ****         case 0x188:
+ 820              		.loc 1 162 0
+ 821 014a 0CE0     		b	.L50
+ 822              	.LVL49:
+ 823              	.L56:
+ 164:can_manga.c   ****             break;
+ 824              		.loc 1 164 0
+ 825 014c 9DF80120 		ldrb	r2, [sp, #1]	@ zero_extendqisi2
+ 826 0150 9DF80030 		ldrb	r3, [sp]	@ zero_extendqisi2
+ 827              	.LVL50:
+ 828 0154 43EA0223 		orr	r3, r3, r2, lsl #8
+ 829 0158 114A     		ldr	r2, .L66+48
+ 830 015a 1380     		strh	r3, [r2]	@ movhi
+ 165:can_manga.c   ****         case 0x366: //Tehya test
+ 831              		.loc 1 165 0
+ 832 015c 03E0     		b	.L50
+ 833              	.L58:
+ 167:can_manga.c   ****             break;
+ 834              		.loc 1 167 0
+ 835 015e 9DF80320 		ldrb	r2, [sp, #3]	@ zero_extendqisi2
+ 836 0162 104B     		ldr	r3, .L66+52
+ 837 0164 1A70     		strb	r2, [r3]
+ 838              	.LVL51:
+ 839              	.L50:
+ 171:can_manga.c   **** }
+ 840              		.loc 1 171 0
+ 841 0166 3046     		mov	r0, r6
+ 842 0168 FFF7FEFF 		bl	CyExitCriticalSection
+ 843              	.LVL52:
+ 172:can_manga.c   **** 
+ 844              		.loc 1 172 0
+ 845 016c 02B0     		add	sp, sp, #8
+ 846              		.cfi_def_cfa_offset 16
+ 847              		@ sp needed
+ 848 016e 70BD     		pop	{r4, r5, r6, pc}
+ 849              	.LVL53:
+ 850              	.L67:
+ 851              		.align	2
+ 852              	.L66:
+ 853 0170 00000000 		.word	.LANCHOR0
+ 854 0174 00000000 		.word	BSPD_CATCH
+ 855 0178 00000000 		.word	pedalOK
+ 856 017c 00000000 		.word	VOLT_B4
+ 857 0180 00000000 		.word	VOLT_B3
+ 858 0184 00000000 		.word	VOLT_B2
+ 859 0188 00000000 		.word	VOLT_B1
+ 860 018c 00000000 		.word	voltage
+ 861 0190 00000000 		.word	ERROR_IDX
+ 862 0194 00000000 		.word	ERROR_NODE
+ 863 0198 00000000 		.word	PACK_TEMP
+ 864 019c 00000000 		.word	CURRENT
+ 865 01a0 00000000 		.word	bms_status
+ 866 01a4 00000000 		.word	ESTOP
+ 867              		.cfi_endproc
+ 868              	.LFE72:
+ 869              		.size	can_receive, .-can_receive
+ 870              		.global	current_bytes
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 22
+
+
+ 871              		.comm	VOLT_B4,1,1
+ 872              		.comm	VOLT_B3,1,1
+ 873              		.comm	VOLT_B2,1,1
+ 874              		.comm	VOLT_B1,1,1
+ 875              		.comm	ESTOP,1,1
+ 876              		.global	THROTTLE_LOW
+ 877              		.global	THROTTLE_HIGH
+ 878              		.global	ABS_MOTOR_RPM
+ 879              		.global	ERROR_TOLERANCE
+ 880              		.global	ACK_RX
+ 881              		.global	CURTIS_HEART_BEAT_CHECK
+ 882              		.global	CURTIS_FAULT_CHECK
+ 883              		.global	CAPACITOR_VOLT
+ 884              		.comm	FRAME,30,4
+ 885              		.bss
+ 886              		.align	2
+ 887              		.set	.LANCHOR0,. + 0
+ 888              		.type	CAPACITOR_VOLT, %object
+ 889              		.size	CAPACITOR_VOLT, 1
+ 890              	CAPACITOR_VOLT:
+ 891 0000 00       		.space	1
+ 892              		.type	CURTIS_FAULT_CHECK, %object
+ 893              		.size	CURTIS_FAULT_CHECK, 1
+ 894              	CURTIS_FAULT_CHECK:
+ 895 0001 00       		.space	1
+ 896              		.type	CURTIS_HEART_BEAT_CHECK, %object
+ 897              		.size	CURTIS_HEART_BEAT_CHECK, 1
+ 898              	CURTIS_HEART_BEAT_CHECK:
+ 899 0002 00       		.space	1
+ 900              		.type	ACK_RX, %object
+ 901              		.size	ACK_RX, 1
+ 902              	ACK_RX:
+ 903 0003 00       		.space	1
+ 904              		.type	ERROR_TOLERANCE, %object
+ 905              		.size	ERROR_TOLERANCE, 1
+ 906              	ERROR_TOLERANCE:
+ 907 0004 00       		.space	1
+ 908              		.type	ABS_MOTOR_RPM, %object
+ 909              		.size	ABS_MOTOR_RPM, 1
+ 910              	ABS_MOTOR_RPM:
+ 911 0005 00       		.space	1
+ 912              		.type	THROTTLE_LOW, %object
+ 913              		.size	THROTTLE_LOW, 1
+ 914              	THROTTLE_LOW:
+ 915 0006 00       		.space	1
+ 916              		.type	THROTTLE_HIGH, %object
+ 917              		.size	THROTTLE_HIGH, 1
+ 918              	THROTTLE_HIGH:
+ 919 0007 00       		.space	1
+ 920              		.type	current_bytes, %object
+ 921              		.size	current_bytes, 4
+ 922              	current_bytes:
+ 923 0008 00000000 		.space	4
+ 924              		.text
+ 925              	.Letext0:
+ 926              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 927              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 23
+
+
+ 928              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 929              		.file 5 "Generated_Source\\PSoC5/CAN.h"
+ 930              		.file 6 "data.h"
+ 931              		.file 7 "glcdfont.h"
+ 932              		.file 8 "Generated_Source\\PSoC5/core_cm3.h"
+ 933              		.file 9 "T6963C.h"
+ 934              		.file 10 "Generated_Source\\PSoC5/CyLib.h"
+ 935              		.section	.debug_info,"",%progbits
+ 936              	.Ldebug_info0:
+ 937 0000 9B0C0000 		.4byte	0xc9b
+ 938 0004 0400     		.2byte	0x4
+ 939 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 940 000a 04       		.byte	0x4
+ 941 000b 01       		.uleb128 0x1
+ 942 000c 04050000 		.4byte	.LASF106
+ 943 0010 0C       		.byte	0xc
+ 944 0011 32040000 		.4byte	.LASF107
+ 945 0015 73040000 		.4byte	.LASF108
+ 946 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 947 001d 00000000 		.4byte	0
+ 948 0021 00000000 		.4byte	.Ldebug_line0
+ 949 0025 02       		.uleb128 0x2
+ 950 0026 01       		.byte	0x1
+ 951 0027 06       		.byte	0x6
+ 952 0028 96020000 		.4byte	.LASF0
+ 953 002c 03       		.uleb128 0x3
+ 954 002d 05020000 		.4byte	.LASF3
+ 955 0031 02       		.byte	0x2
+ 956 0032 1D       		.byte	0x1d
+ 957 0033 37000000 		.4byte	0x37
+ 958 0037 02       		.uleb128 0x2
+ 959 0038 01       		.byte	0x1
+ 960 0039 08       		.byte	0x8
+ 961 003a 7F020000 		.4byte	.LASF1
+ 962 003e 02       		.uleb128 0x2
+ 963 003f 02       		.byte	0x2
+ 964 0040 05       		.byte	0x5
+ 965 0041 A2000000 		.4byte	.LASF2
+ 966 0045 03       		.uleb128 0x3
+ 967 0046 F5000000 		.4byte	.LASF4
+ 968 004a 02       		.byte	0x2
+ 969 004b 2B       		.byte	0x2b
+ 970 004c 50000000 		.4byte	0x50
+ 971 0050 02       		.uleb128 0x2
+ 972 0051 02       		.byte	0x2
+ 973 0052 07       		.byte	0x7
+ 974 0053 31030000 		.4byte	.LASF5
+ 975 0057 03       		.uleb128 0x3
+ 976 0058 28040000 		.4byte	.LASF6
+ 977 005c 02       		.byte	0x2
+ 978 005d 3F       		.byte	0x3f
+ 979 005e 62000000 		.4byte	0x62
+ 980 0062 02       		.uleb128 0x2
+ 981 0063 04       		.byte	0x4
+ 982 0064 05       		.byte	0x5
+ 983 0065 D3010000 		.4byte	.LASF7
+ 984 0069 03       		.uleb128 0x3
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 24
+
+
+ 985 006a EA000000 		.4byte	.LASF8
+ 986 006e 02       		.byte	0x2
+ 987 006f 41       		.byte	0x41
+ 988 0070 74000000 		.4byte	0x74
+ 989 0074 02       		.uleb128 0x2
+ 990 0075 04       		.byte	0x4
+ 991 0076 07       		.byte	0x7
+ 992 0077 F3010000 		.4byte	.LASF9
+ 993 007b 02       		.uleb128 0x2
+ 994 007c 08       		.byte	0x8
+ 995 007d 05       		.byte	0x5
+ 996 007e A0010000 		.4byte	.LASF10
+ 997 0082 02       		.uleb128 0x2
+ 998 0083 08       		.byte	0x8
+ 999 0084 07       		.byte	0x7
+ 1000 0085 AF020000 		.4byte	.LASF11
+ 1001 0089 04       		.uleb128 0x4
+ 1002 008a 04       		.byte	0x4
+ 1003 008b 05       		.byte	0x5
+ 1004 008c 696E7400 		.ascii	"int\000"
+ 1005 0090 02       		.uleb128 0x2
+ 1006 0091 04       		.byte	0x4
+ 1007 0092 07       		.byte	0x7
+ 1008 0093 CF020000 		.4byte	.LASF12
+ 1009 0097 03       		.uleb128 0x3
+ 1010 0098 39010000 		.4byte	.LASF13
+ 1011 009c 03       		.byte	0x3
+ 1012 009d 18       		.byte	0x18
+ 1013 009e 2C000000 		.4byte	0x2c
+ 1014 00a2 03       		.uleb128 0x3
+ 1015 00a3 DC020000 		.4byte	.LASF14
+ 1016 00a7 03       		.byte	0x3
+ 1017 00a8 24       		.byte	0x24
+ 1018 00a9 45000000 		.4byte	0x45
+ 1019 00ad 03       		.uleb128 0x3
+ 1020 00ae 83030000 		.4byte	.LASF15
+ 1021 00b2 03       		.byte	0x3
+ 1022 00b3 2C       		.byte	0x2c
+ 1023 00b4 57000000 		.4byte	0x57
+ 1024 00b8 03       		.uleb128 0x3
+ 1025 00b9 C6020000 		.4byte	.LASF16
+ 1026 00bd 03       		.byte	0x3
+ 1027 00be 30       		.byte	0x30
+ 1028 00bf 69000000 		.4byte	0x69
+ 1029 00c3 05       		.uleb128 0x5
+ 1030 00c4 50010000 		.4byte	.LASF17
+ 1031 00c8 04       		.byte	0x4
+ 1032 00c9 3801     		.2byte	0x138
+ 1033 00cb 37000000 		.4byte	0x37
+ 1034 00cf 05       		.uleb128 0x5
+ 1035 00d0 D3030000 		.4byte	.LASF18
+ 1036 00d4 04       		.byte	0x4
+ 1037 00d5 3A01     		.2byte	0x13a
+ 1038 00d7 74000000 		.4byte	0x74
+ 1039 00db 05       		.uleb128 0x5
+ 1040 00dc 9A010000 		.4byte	.LASF19
+ 1041 00e0 04       		.byte	0x4
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 25
+
+
+ 1042 00e1 3D01     		.2byte	0x13d
+ 1043 00e3 62000000 		.4byte	0x62
+ 1044 00e7 02       		.uleb128 0x2
+ 1045 00e8 04       		.byte	0x4
+ 1046 00e9 04       		.byte	0x4
+ 1047 00ea 94010000 		.4byte	.LASF20
+ 1048 00ee 02       		.uleb128 0x2
+ 1049 00ef 08       		.byte	0x8
+ 1050 00f0 04       		.byte	0x4
+ 1051 00f1 00010000 		.4byte	.LASF21
+ 1052 00f5 02       		.uleb128 0x2
+ 1053 00f6 01       		.byte	0x1
+ 1054 00f7 08       		.byte	0x8
+ 1055 00f8 C1010000 		.4byte	.LASF22
+ 1056 00fc 02       		.uleb128 0x2
+ 1057 00fd 08       		.byte	0x8
+ 1058 00fe 04       		.byte	0x4
+ 1059 00ff 49020000 		.4byte	.LASF23
+ 1060 0103 02       		.uleb128 0x2
+ 1061 0104 04       		.byte	0x4
+ 1062 0105 07       		.byte	0x7
+ 1063 0106 C0000000 		.4byte	.LASF24
+ 1064 010a 06       		.uleb128 0x6
+ 1065 010b 08       		.byte	0x8
+ 1066 010c 05       		.byte	0x5
+ 1067 010d 6F       		.byte	0x6f
+ 1068 010e 1F010000 		.4byte	0x11f
+ 1069 0112 07       		.uleb128 0x7
+ 1070 0113 23040000 		.4byte	.LASF26
+ 1071 0117 05       		.byte	0x5
+ 1072 0118 71       		.byte	0x71
+ 1073 0119 1F010000 		.4byte	0x11f
+ 1074 011d 00       		.byte	0
+ 1075 011e 00       		.byte	0
+ 1076 011f 08       		.uleb128 0x8
+ 1077 0120 C3000000 		.4byte	0xc3
+ 1078 0124 2F010000 		.4byte	0x12f
+ 1079 0128 09       		.uleb128 0x9
+ 1080 0129 03010000 		.4byte	0x103
+ 1081 012d 07       		.byte	0x7
+ 1082 012e 00       		.byte	0
+ 1083 012f 03       		.uleb128 0x3
+ 1084 0130 EA020000 		.4byte	.LASF25
+ 1085 0134 05       		.byte	0x5
+ 1086 0135 72       		.byte	0x72
+ 1087 0136 0A010000 		.4byte	0x10a
+ 1088 013a 06       		.uleb128 0x6
+ 1089 013b 0C       		.byte	0xc
+ 1090 013c 05       		.byte	0x5
+ 1091 013d 81       		.byte	0x81
+ 1092 013e 8A010000 		.4byte	0x18a
+ 1093 0142 0A       		.uleb128 0xa
+ 1094 0143 696400   		.ascii	"id\000"
+ 1095 0146 05       		.byte	0x5
+ 1096 0147 83       		.byte	0x83
+ 1097 0148 CF000000 		.4byte	0xcf
+ 1098 014c 00       		.byte	0
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 26
+
+
+ 1099 014d 0A       		.uleb128 0xa
+ 1100 014e 72747200 		.ascii	"rtr\000"
+ 1101 0152 05       		.byte	0x5
+ 1102 0153 84       		.byte	0x84
+ 1103 0154 C3000000 		.4byte	0xc3
+ 1104 0158 04       		.byte	0x4
+ 1105 0159 0A       		.uleb128 0xa
+ 1106 015a 69646500 		.ascii	"ide\000"
+ 1107 015e 05       		.byte	0x5
+ 1108 015f 85       		.byte	0x85
+ 1109 0160 C3000000 		.4byte	0xc3
+ 1110 0164 05       		.byte	0x5
+ 1111 0165 0A       		.uleb128 0xa
+ 1112 0166 646C6300 		.ascii	"dlc\000"
+ 1113 016a 05       		.byte	0x5
+ 1114 016b 86       		.byte	0x86
+ 1115 016c C3000000 		.4byte	0xc3
+ 1116 0170 06       		.byte	0x6
+ 1117 0171 0A       		.uleb128 0xa
+ 1118 0172 69727100 		.ascii	"irq\000"
+ 1119 0176 05       		.byte	0x5
+ 1120 0177 87       		.byte	0x87
+ 1121 0178 C3000000 		.4byte	0xc3
+ 1122 017c 07       		.byte	0x7
+ 1123 017d 0A       		.uleb128 0xa
+ 1124 017e 6D736700 		.ascii	"msg\000"
+ 1125 0182 05       		.byte	0x5
+ 1126 0183 8B       		.byte	0x8b
+ 1127 0184 8A010000 		.4byte	0x18a
+ 1128 0188 08       		.byte	0x8
+ 1129 0189 00       		.byte	0
+ 1130 018a 0B       		.uleb128 0xb
+ 1131 018b 04       		.byte	0x4
+ 1132 018c 2F010000 		.4byte	0x12f
+ 1133 0190 03       		.uleb128 0x3
+ 1134 0191 E2030000 		.4byte	.LASF27
+ 1135 0195 05       		.byte	0x5
+ 1136 0196 8C       		.byte	0x8c
+ 1137 0197 3A010000 		.4byte	0x13a
+ 1138 019b 0C       		.uleb128 0xc
+ 1139 019c B8000000 		.4byte	0xb8
+ 1140 01a0 0C       		.uleb128 0xc
+ 1141 01a1 97000000 		.4byte	0x97
+ 1142 01a5 0D       		.uleb128 0xd
+ 1143 01a6 02       		.byte	0x2
+ 1144 01a7 50000000 		.4byte	0x50
+ 1145 01ab 06       		.byte	0x6
+ 1146 01ac 09       		.byte	0x9
+ 1147 01ad 20020000 		.4byte	0x220
+ 1148 01b1 0E       		.uleb128 0xe
+ 1149 01b2 58000000 		.4byte	.LASF28
+ 1150 01b6 00       		.byte	0
+ 1151 01b7 0E       		.uleb128 0xe
+ 1152 01b8 0B000000 		.4byte	.LASF29
+ 1153 01bc 01       		.byte	0x1
+ 1154 01bd 0E       		.uleb128 0xe
+ 1155 01be 16000000 		.4byte	.LASF30
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 27
+
+
+ 1156 01c2 02       		.byte	0x2
+ 1157 01c3 0E       		.uleb128 0xe
+ 1158 01c4 72010000 		.4byte	.LASF31
+ 1159 01c8 04       		.byte	0x4
+ 1160 01c9 0E       		.uleb128 0xe
+ 1161 01ca 2E000000 		.4byte	.LASF32
+ 1162 01ce 08       		.byte	0x8
+ 1163 01cf 0E       		.uleb128 0xe
+ 1164 01d0 11030000 		.4byte	.LASF33
+ 1165 01d4 10       		.byte	0x10
+ 1166 01d5 0E       		.uleb128 0xe
+ 1167 01d6 A2020000 		.4byte	.LASF34
+ 1168 01da 20       		.byte	0x20
+ 1169 01db 0E       		.uleb128 0xe
+ 1170 01dc 97030000 		.4byte	.LASF35
+ 1171 01e0 40       		.byte	0x40
+ 1172 01e1 0E       		.uleb128 0xe
+ 1173 01e2 73020000 		.4byte	.LASF36
+ 1174 01e6 80       		.byte	0x80
+ 1175 01e7 0F       		.uleb128 0xf
+ 1176 01e8 69030000 		.4byte	.LASF37
+ 1177 01ec 0001     		.2byte	0x100
+ 1178 01ee 0F       		.uleb128 0xf
+ 1179 01ef 84010000 		.4byte	.LASF38
+ 1180 01f3 0002     		.2byte	0x200
+ 1181 01f5 0F       		.uleb128 0xf
+ 1182 01f6 5C020000 		.4byte	.LASF39
+ 1183 01fa 0004     		.2byte	0x400
+ 1184 01fc 0F       		.uleb128 0xf
+ 1185 01fd 1C020000 		.4byte	.LASF40
+ 1186 0201 0008     		.2byte	0x800
+ 1187 0203 0F       		.uleb128 0xf
+ 1188 0204 3E040000 		.4byte	.LASF41
+ 1189 0208 0010     		.2byte	0x1000
+ 1190 020a 0F       		.uleb128 0xf
+ 1191 020b ED030000 		.4byte	.LASF42
+ 1192 020f 0020     		.2byte	0x2000
+ 1193 0211 0F       		.uleb128 0xf
+ 1194 0212 E5020000 		.4byte	.LASF43
+ 1195 0216 0040     		.2byte	0x4000
+ 1196 0218 0F       		.uleb128 0xf
+ 1197 0219 C2030000 		.4byte	.LASF44
+ 1198 021d 0080     		.2byte	0x8000
+ 1199 021f 00       		.byte	0
+ 1200 0220 03       		.uleb128 0x3
+ 1201 0221 44030000 		.4byte	.LASF45
+ 1202 0225 06       		.byte	0x6
+ 1203 0226 1B       		.byte	0x1b
+ 1204 0227 A5010000 		.4byte	0x1a5
+ 1205 022b 08       		.uleb128 0x8
+ 1206 022c 97000000 		.4byte	0x97
+ 1207 0230 3B020000 		.4byte	0x23b
+ 1208 0234 09       		.uleb128 0x9
+ 1209 0235 03010000 		.4byte	0x103
+ 1210 0239 07       		.byte	0x7
+ 1211 023a 00       		.byte	0
+ 1212 023b 10       		.uleb128 0x10
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 28
+
+
+ 1213 023c FD020000 		.4byte	.LASF46
+ 1214 0240 01       		.byte	0x1
+ 1215 0241 32       		.byte	0x32
+ 1216 0242 97000000 		.4byte	0x97
+ 1217 0246 00000000 		.4byte	.LFB63
+ 1218 024a 0C000000 		.4byte	.LFE63-.LFB63
+ 1219 024e 01       		.uleb128 0x1
+ 1220 024f 9C       		.byte	0x9c
+ 1221 0250 10       		.uleb128 0x10
+ 1222 0251 AC000000 		.4byte	.LASF47
+ 1223 0255 01       		.byte	0x1
+ 1224 0256 38       		.byte	0x38
+ 1225 0257 97000000 		.4byte	0x97
+ 1226 025b 00000000 		.4byte	.LFB64
+ 1227 025f 0C000000 		.4byte	.LFE64-.LFB64
+ 1228 0263 01       		.uleb128 0x1
+ 1229 0264 9C       		.byte	0x9c
+ 1230 0265 10       		.uleb128 0x10
+ 1231 0266 03040000 		.4byte	.LASF48
+ 1232 026a 01       		.byte	0x1
+ 1233 026b 3F       		.byte	0x3f
+ 1234 026c 97000000 		.4byte	0x97
+ 1235 0270 00000000 		.4byte	.LFB65
+ 1236 0274 0C000000 		.4byte	.LFE65-.LFB65
+ 1237 0278 01       		.uleb128 0x1
+ 1238 0279 9C       		.byte	0x9c
+ 1239 027a 10       		.uleb128 0x10
+ 1240 027b 8D020000 		.4byte	.LASF49
+ 1241 027f 01       		.byte	0x1
+ 1242 0280 45       		.byte	0x45
+ 1243 0281 97000000 		.4byte	0x97
+ 1244 0285 00000000 		.4byte	.LFB66
+ 1245 0289 0C000000 		.4byte	.LFE66-.LFB66
+ 1246 028d 01       		.uleb128 0x1
+ 1247 028e 9C       		.byte	0x9c
+ 1248 028f 10       		.uleb128 0x10
+ 1249 0290 90000000 		.4byte	.LASF50
+ 1250 0294 01       		.byte	0x1
+ 1251 0295 4C       		.byte	0x4c
+ 1252 0296 97000000 		.4byte	0x97
+ 1253 029a 00000000 		.4byte	.LFB67
+ 1254 029e 0C000000 		.4byte	.LFE67-.LFB67
+ 1255 02a2 01       		.uleb128 0x1
+ 1256 02a3 9C       		.byte	0x9c
+ 1257 02a4 10       		.uleb128 0x10
+ 1258 02a5 41010000 		.4byte	.LASF51
+ 1259 02a9 01       		.byte	0x1
+ 1260 02aa 53       		.byte	0x53
+ 1261 02ab 97000000 		.4byte	0x97
+ 1262 02af 00000000 		.4byte	.LFB68
+ 1263 02b3 0C000000 		.4byte	.LFE68-.LFB68
+ 1264 02b7 01       		.uleb128 0x1
+ 1265 02b8 9C       		.byte	0x9c
+ 1266 02b9 10       		.uleb128 0x10
+ 1267 02ba AE010000 		.4byte	.LASF52
+ 1268 02be 01       		.byte	0x1
+ 1269 02bf 5A       		.byte	0x5a
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 29
+
+
+ 1270 02c0 97000000 		.4byte	0x97
+ 1271 02c4 00000000 		.4byte	.LFB69
+ 1272 02c8 0C000000 		.4byte	.LFE69-.LFB69
+ 1273 02cc 01       		.uleb128 0x1
+ 1274 02cd 9C       		.byte	0x9c
+ 1275 02ce 10       		.uleb128 0x10
+ 1276 02cf 0F020000 		.4byte	.LASF53
+ 1277 02d3 01       		.byte	0x1
+ 1278 02d4 5F       		.byte	0x5f
+ 1279 02d5 97000000 		.4byte	0x97
+ 1280 02d9 00000000 		.4byte	.LFB70
+ 1281 02dd 0C000000 		.4byte	.LFE70-.LFB70
+ 1282 02e1 01       		.uleb128 0x1
+ 1283 02e2 9C       		.byte	0x9c
+ 1284 02e3 10       		.uleb128 0x10
+ 1285 02e4 40020000 		.4byte	.LASF54
+ 1286 02e8 01       		.byte	0x1
+ 1287 02e9 66       		.byte	0x66
+ 1288 02ea 97000000 		.4byte	0x97
+ 1289 02ee 00000000 		.4byte	.LFB71
+ 1290 02f2 0C000000 		.4byte	.LFE71-.LFB71
+ 1291 02f6 01       		.uleb128 0x1
+ 1292 02f7 9C       		.byte	0x9c
+ 1293 02f8 11       		.uleb128 0x11
+ 1294 02f9 77000000 		.4byte	.LASF71
+ 1295 02fd 01       		.byte	0x1
+ 1296 02fe AE       		.byte	0xae
+ 1297 02ff 00000000 		.4byte	.LFB73
+ 1298 0303 4A000000 		.4byte	.LFE73-.LFB73
+ 1299 0307 01       		.uleb128 0x1
+ 1300 0308 9C       		.byte	0x9c
+ 1301 0309 2C030000 		.4byte	0x32c
+ 1302 030d 12       		.uleb128 0x12
+ 1303 030e BA010000 		.4byte	.LASF56
+ 1304 0312 01       		.byte	0x1
+ 1305 0313 B1       		.byte	0xb1
+ 1306 0314 90010000 		.4byte	0x190
+ 1307 0318 02       		.uleb128 0x2
+ 1308 0319 91       		.byte	0x91
+ 1309 031a 6C       		.sleb128 -20
+ 1310 031b 13       		.uleb128 0x13
+ 1311 031c 44000000 		.4byte	.LVL0
+ 1312 0320 710C0000 		.4byte	0xc71
+ 1313 0324 14       		.uleb128 0x14
+ 1314 0325 01       		.uleb128 0x1
+ 1315 0326 50       		.byte	0x50
+ 1316 0327 02       		.uleb128 0x2
+ 1317 0328 91       		.byte	0x91
+ 1318 0329 6C       		.sleb128 -20
+ 1319 032a 00       		.byte	0
+ 1320 032b 00       		.byte	0
+ 1321 032c 15       		.uleb128 0x15
+ 1322 032d 25000000 		.4byte	.LASF59
+ 1323 0331 01       		.byte	0x1
+ 1324 0332 C6       		.byte	0xc6
+ 1325 0333 00000000 		.4byte	.LFB74
+ 1326 0337 3E000000 		.4byte	.LFE74-.LFB74
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 30
+
+
+ 1327 033b 01       		.uleb128 0x1
+ 1328 033c 9C       		.byte	0x9c
+ 1329 033d 98030000 		.4byte	0x398
+ 1330 0341 16       		.uleb128 0x16
+ 1331 0342 A1030000 		.4byte	.LASF55
+ 1332 0346 01       		.byte	0x1
+ 1333 0347 C6       		.byte	0xc6
+ 1334 0348 98030000 		.4byte	0x398
+ 1335 034c 00000000 		.4byte	.LLST0
+ 1336 0350 17       		.uleb128 0x17
+ 1337 0351 494400   		.ascii	"ID\000"
+ 1338 0354 01       		.byte	0x1
+ 1339 0355 C6       		.byte	0xc6
+ 1340 0356 B8000000 		.4byte	0xb8
+ 1341 035a 21000000 		.4byte	.LLST1
+ 1342 035e 18       		.uleb128 0x18
+ 1343 035f 6900     		.ascii	"i\000"
+ 1344 0361 01       		.byte	0x1
+ 1345 0362 C8       		.byte	0xc8
+ 1346 0363 97000000 		.4byte	0x97
+ 1347 0367 5A000000 		.4byte	.LLST2
+ 1348 036b 12       		.uleb128 0x12
+ 1349 036c DA030000 		.4byte	.LASF57
+ 1350 0370 01       		.byte	0x1
+ 1351 0371 C9       		.byte	0xc9
+ 1352 0372 90010000 		.4byte	0x190
+ 1353 0376 02       		.uleb128 0x2
+ 1354 0377 91       		.byte	0x91
+ 1355 0378 6C       		.sleb128 -20
+ 1356 0379 12       		.uleb128 0x12
+ 1357 037a D2050000 		.4byte	.LASF58
+ 1358 037e 01       		.byte	0x1
+ 1359 037f CA       		.byte	0xca
+ 1360 0380 2F010000 		.4byte	0x12f
+ 1361 0384 02       		.uleb128 0x2
+ 1362 0385 91       		.byte	0x91
+ 1363 0386 64       		.sleb128 -28
+ 1364 0387 13       		.uleb128 0x13
+ 1365 0388 38000000 		.4byte	.LVL7
+ 1366 038c 710C0000 		.4byte	0xc71
+ 1367 0390 14       		.uleb128 0x14
+ 1368 0391 01       		.uleb128 0x1
+ 1369 0392 50       		.byte	0x50
+ 1370 0393 02       		.uleb128 0x2
+ 1371 0394 91       		.byte	0x91
+ 1372 0395 6C       		.sleb128 -20
+ 1373 0396 00       		.byte	0
+ 1374 0397 00       		.byte	0
+ 1375 0398 0B       		.uleb128 0xb
+ 1376 0399 04       		.byte	0x4
+ 1377 039a 97000000 		.4byte	0x97
+ 1378 039e 15       		.uleb128 0x15
+ 1379 039f 4F030000 		.4byte	.LASF60
+ 1380 03a3 01       		.byte	0x1
+ 1381 03a4 D6       		.byte	0xd6
+ 1382 03a5 00000000 		.4byte	.LFB75
+ 1383 03a9 36000000 		.4byte	.LFE75-.LFB75
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 31
+
+
+ 1384 03ad 01       		.uleb128 0x1
+ 1385 03ae 9C       		.byte	0x9c
+ 1386 03af F7030000 		.4byte	0x3f7
+ 1387 03b3 16       		.uleb128 0x16
+ 1388 03b4 85000000 		.4byte	.LASF61
+ 1389 03b8 01       		.byte	0x1
+ 1390 03b9 D7       		.byte	0xd7
+ 1391 03ba 97000000 		.4byte	0x97
+ 1392 03be 84000000 		.4byte	.LLST3
+ 1393 03c2 16       		.uleb128 0x16
+ 1394 03c3 00000000 		.4byte	.LASF62
+ 1395 03c7 01       		.byte	0x1
+ 1396 03c8 D8       		.byte	0xd8
+ 1397 03c9 97000000 		.4byte	0x97
+ 1398 03cd B1000000 		.4byte	.LLST4
+ 1399 03d1 12       		.uleb128 0x12
+ 1400 03d2 A1030000 		.4byte	.LASF55
+ 1401 03d6 01       		.byte	0x1
+ 1402 03d7 DB       		.byte	0xdb
+ 1403 03d8 2B020000 		.4byte	0x22b
+ 1404 03dc 02       		.uleb128 0x2
+ 1405 03dd 91       		.byte	0x91
+ 1406 03de 70       		.sleb128 -16
+ 1407 03df 13       		.uleb128 0x13
+ 1408 03e0 30000000 		.4byte	.LVL11
+ 1409 03e4 2C030000 		.4byte	0x32c
+ 1410 03e8 14       		.uleb128 0x14
+ 1411 03e9 01       		.uleb128 0x1
+ 1412 03ea 50       		.byte	0x50
+ 1413 03eb 02       		.uleb128 0x2
+ 1414 03ec 7D       		.byte	0x7d
+ 1415 03ed 00       		.sleb128 0
+ 1416 03ee 14       		.uleb128 0x14
+ 1417 03ef 01       		.uleb128 0x1
+ 1418 03f0 51       		.byte	0x51
+ 1419 03f1 03       		.uleb128 0x3
+ 1420 03f2 0A       		.byte	0xa
+ 1421 03f3 2606     		.2byte	0x626
+ 1422 03f5 00       		.byte	0
+ 1423 03f6 00       		.byte	0
+ 1424 03f7 15       		.uleb128 0x15
+ 1425 03f8 0F010000 		.4byte	.LASF63
+ 1426 03fc 01       		.byte	0x1
+ 1427 03fd ED       		.byte	0xed
+ 1428 03fe 00000000 		.4byte	.LFB76
+ 1429 0402 3C000000 		.4byte	.LFE76-.LFB76
+ 1430 0406 01       		.uleb128 0x1
+ 1431 0407 9C       		.byte	0x9c
+ 1432 0408 81040000 		.4byte	0x481
+ 1433 040c 16       		.uleb128 0x16
+ 1434 040d C9000000 		.4byte	.LASF64
+ 1435 0411 01       		.byte	0x1
+ 1436 0412 EE       		.byte	0xee
+ 1437 0413 97000000 		.4byte	0x97
+ 1438 0417 DE000000 		.4byte	.LLST5
+ 1439 041b 16       		.uleb128 0x16
+ 1440 041c 27010000 		.4byte	.LASF65
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 32
+
+
+ 1441 0420 01       		.byte	0x1
+ 1442 0421 EF       		.byte	0xef
+ 1443 0422 A2000000 		.4byte	0xa2
+ 1444 0426 0B010000 		.4byte	.LLST6
+ 1445 042a 16       		.uleb128 0x16
+ 1446 042b A6030000 		.4byte	.LASF66
+ 1447 042f 01       		.byte	0x1
+ 1448 0430 F0       		.byte	0xf0
+ 1449 0431 A2000000 		.4byte	0xa2
+ 1450 0435 2C010000 		.4byte	.LLST7
+ 1451 0439 16       		.uleb128 0x16
+ 1452 043a 4E040000 		.4byte	.LASF67
+ 1453 043e 01       		.byte	0x1
+ 1454 043f F1       		.byte	0xf1
+ 1455 0440 97000000 		.4byte	0x97
+ 1456 0444 4D010000 		.4byte	.LLST8
+ 1457 0448 12       		.uleb128 0x12
+ 1458 0449 A1030000 		.4byte	.LASF55
+ 1459 044d 01       		.byte	0x1
+ 1460 044e F6       		.byte	0xf6
+ 1461 044f 2B020000 		.4byte	0x22b
+ 1462 0453 02       		.uleb128 0x2
+ 1463 0454 91       		.byte	0x91
+ 1464 0455 70       		.sleb128 -16
+ 1465 0456 19       		.uleb128 0x19
+ 1466 0457 30000000 		.4byte	.LVL16
+ 1467 045b 2C030000 		.4byte	0x32c
+ 1468 045f 71040000 		.4byte	0x471
+ 1469 0463 14       		.uleb128 0x14
+ 1470 0464 01       		.uleb128 0x1
+ 1471 0465 50       		.byte	0x50
+ 1472 0466 02       		.uleb128 0x2
+ 1473 0467 7D       		.byte	0x7d
+ 1474 0468 00       		.sleb128 0
+ 1475 0469 14       		.uleb128 0x14
+ 1476 046a 01       		.uleb128 0x1
+ 1477 046b 51       		.byte	0x51
+ 1478 046c 03       		.uleb128 0x3
+ 1479 046d 0A       		.byte	0xa
+ 1480 046e 6607     		.2byte	0x766
+ 1481 0470 00       		.byte	0
+ 1482 0471 13       		.uleb128 0x13
+ 1483 0472 36000000 		.4byte	.LVL17
+ 1484 0476 7D0C0000 		.4byte	0xc7d
+ 1485 047a 14       		.uleb128 0x14
+ 1486 047b 01       		.uleb128 0x1
+ 1487 047c 50       		.byte	0x50
+ 1488 047d 01       		.uleb128 0x1
+ 1489 047e 31       		.byte	0x31
+ 1490 047f 00       		.byte	0
+ 1491 0480 00       		.byte	0
+ 1492 0481 1A       		.uleb128 0x1a
+ 1493 0482 A6050000 		.4byte	.LASF68
+ 1494 0486 01       		.byte	0x1
+ 1495 0487 0901     		.2byte	0x109
+ 1496 0489 00000000 		.4byte	.LFB77
+ 1497 048d 22000000 		.4byte	.LFE77-.LFB77
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 33
+
+
+ 1498 0491 01       		.uleb128 0x1
+ 1499 0492 9C       		.byte	0x9c
+ 1500 0493 DE040000 		.4byte	0x4de
+ 1501 0497 1B       		.uleb128 0x1b
+ 1502 0498 55020000 		.4byte	.LASF69
+ 1503 049c 01       		.byte	0x1
+ 1504 049d 0901     		.2byte	0x109
+ 1505 049f 97000000 		.4byte	0x97
+ 1506 04a3 6E010000 		.4byte	.LLST9
+ 1507 04a7 1B       		.uleb128 0x1b
+ 1508 04a8 FA030000 		.4byte	.LASF70
+ 1509 04ac 01       		.byte	0x1
+ 1510 04ad 0901     		.2byte	0x109
+ 1511 04af 97000000 		.4byte	0x97
+ 1512 04b3 9B010000 		.4byte	.LLST10
+ 1513 04b7 1C       		.uleb128 0x1c
+ 1514 04b8 A1030000 		.4byte	.LASF55
+ 1515 04bc 01       		.byte	0x1
+ 1516 04bd 0A01     		.2byte	0x10a
+ 1517 04bf 2B020000 		.4byte	0x22b
+ 1518 04c3 02       		.uleb128 0x2
+ 1519 04c4 91       		.byte	0x91
+ 1520 04c5 70       		.sleb128 -16
+ 1521 04c6 13       		.uleb128 0x13
+ 1522 04c7 1C000000 		.4byte	.LVL21
+ 1523 04cb 2C030000 		.4byte	0x32c
+ 1524 04cf 14       		.uleb128 0x14
+ 1525 04d0 01       		.uleb128 0x1
+ 1526 04d1 50       		.byte	0x50
+ 1527 04d2 02       		.uleb128 0x2
+ 1528 04d3 7D       		.byte	0x7d
+ 1529 04d4 00       		.sleb128 0
+ 1530 04d5 14       		.uleb128 0x14
+ 1531 04d6 01       		.uleb128 0x1
+ 1532 04d7 51       		.byte	0x51
+ 1533 04d8 03       		.uleb128 0x3
+ 1534 04d9 0A       		.byte	0xa
+ 1535 04da 8903     		.2byte	0x389
+ 1536 04dc 00       		.byte	0
+ 1537 04dd 00       		.byte	0
+ 1538 04de 1D       		.uleb128 0x1d
+ 1539 04df D6000000 		.4byte	.LASF72
+ 1540 04e3 01       		.byte	0x1
+ 1541 04e4 1101     		.2byte	0x111
+ 1542 04e6 00000000 		.4byte	.LFB78
+ 1543 04ea 64000000 		.4byte	.LFE78-.LFB78
+ 1544 04ee 01       		.uleb128 0x1
+ 1545 04ef 9C       		.byte	0x9c
+ 1546 04f0 03050000 		.4byte	0x503
+ 1547 04f4 1E       		.uleb128 0x1e
+ 1548 04f5 7400     		.ascii	"t\000"
+ 1549 04f7 01       		.byte	0x1
+ 1550 04f8 1201     		.2byte	0x112
+ 1551 04fa 89000000 		.4byte	0x89
+ 1552 04fe C8010000 		.4byte	.LLST11
+ 1553 0502 00       		.byte	0
+ 1554 0503 15       		.uleb128 0x15
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 34
+
+
+ 1555 0504 9A050000 		.4byte	.LASF73
+ 1556 0508 01       		.byte	0x1
+ 1557 0509 6D       		.byte	0x6d
+ 1558 050a 00000000 		.4byte	.LFB72
+ 1559 050e A8010000 		.4byte	.LFE72-.LFB72
+ 1560 0512 01       		.uleb128 0x1
+ 1561 0513 9C       		.byte	0x9c
+ 1562 0514 82050000 		.4byte	0x582
+ 1563 0518 17       		.uleb128 0x17
+ 1564 0519 6D736700 		.ascii	"msg\000"
+ 1565 051d 01       		.byte	0x1
+ 1566 051e 6D       		.byte	0x6d
+ 1567 051f 98030000 		.4byte	0x398
+ 1568 0523 FE010000 		.4byte	.LLST12
+ 1569 0527 17       		.uleb128 0x17
+ 1570 0528 494400   		.ascii	"ID\000"
+ 1571 052b 01       		.byte	0x1
+ 1572 052c 6D       		.byte	0x6d
+ 1573 052d 89000000 		.4byte	0x89
+ 1574 0531 5C020000 		.4byte	.LLST13
+ 1575 0535 1F       		.uleb128 0x1f
+ 1576 0536 E4010000 		.4byte	.LASF74
+ 1577 053a 01       		.byte	0x1
+ 1578 053b 6F       		.byte	0x6f
+ 1579 053c C3000000 		.4byte	0xc3
+ 1580 0540 88020000 		.4byte	.LLST14
+ 1581 0544 12       		.uleb128 0x12
+ 1582 0545 A1030000 		.4byte	.LASF55
+ 1583 0549 01       		.byte	0x1
+ 1584 054a 72       		.byte	0x72
+ 1585 054b 2B020000 		.4byte	0x22b
+ 1586 054f 02       		.uleb128 0x2
+ 1587 0550 91       		.byte	0x91
+ 1588 0551 68       		.sleb128 -24
+ 1589 0552 18       		.uleb128 0x18
+ 1590 0553 6900     		.ascii	"i\000"
+ 1591 0555 01       		.byte	0x1
+ 1592 0556 73       		.byte	0x73
+ 1593 0557 89000000 		.4byte	0x89
+ 1594 055b 9B020000 		.4byte	.LLST15
+ 1595 055f 20       		.uleb128 0x20
+ 1596 0560 0C000000 		.4byte	.LVL32
+ 1597 0564 880C0000 		.4byte	0xc88
+ 1598 0568 20       		.uleb128 0x20
+ 1599 0569 1E010000 		.4byte	.LVL47
+ 1600 056d DE040000 		.4byte	0x4de
+ 1601 0571 13       		.uleb128 0x13
+ 1602 0572 6C010000 		.4byte	.LVL52
+ 1603 0576 930C0000 		.4byte	0xc93
+ 1604 057a 14       		.uleb128 0x14
+ 1605 057b 01       		.uleb128 0x1
+ 1606 057c 50       		.byte	0x50
+ 1607 057d 02       		.uleb128 0x2
+ 1608 057e 76       		.byte	0x76
+ 1609 057f 00       		.sleb128 0
+ 1610 0580 00       		.byte	0
+ 1611 0581 00       		.byte	0
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 35
+
+
+ 1612 0582 08       		.uleb128 0x8
+ 1613 0583 93050000 		.4byte	0x593
+ 1614 0587 93050000 		.4byte	0x593
+ 1615 058b 21       		.uleb128 0x21
+ 1616 058c 03010000 		.4byte	0x103
+ 1617 0590 FA04     		.2byte	0x4fa
+ 1618 0592 00       		.byte	0
+ 1619 0593 22       		.uleb128 0x22
+ 1620 0594 37000000 		.4byte	0x37
+ 1621 0598 23       		.uleb128 0x23
+ 1622 0599 8B000000 		.4byte	.LASF75
+ 1623 059d 07       		.byte	0x7
+ 1624 059e 06       		.byte	0x6
+ 1625 059f A00A0000 		.4byte	0xaa0
+ 1626 05a3 FB04     		.2byte	0x4fb
+ 1627 05a5 00       		.byte	0
+ 1628 05a6 00       		.byte	0
+ 1629 05a7 00       		.byte	0
+ 1630 05a8 00       		.byte	0
+ 1631 05a9 00       		.byte	0
+ 1632 05aa 3E       		.byte	0x3e
+ 1633 05ab 5B       		.byte	0x5b
+ 1634 05ac 4F       		.byte	0x4f
+ 1635 05ad 5B       		.byte	0x5b
+ 1636 05ae 3E       		.byte	0x3e
+ 1637 05af 3E       		.byte	0x3e
+ 1638 05b0 6B       		.byte	0x6b
+ 1639 05b1 4F       		.byte	0x4f
+ 1640 05b2 6B       		.byte	0x6b
+ 1641 05b3 3E       		.byte	0x3e
+ 1642 05b4 1C       		.byte	0x1c
+ 1643 05b5 3E       		.byte	0x3e
+ 1644 05b6 7C       		.byte	0x7c
+ 1645 05b7 3E       		.byte	0x3e
+ 1646 05b8 1C       		.byte	0x1c
+ 1647 05b9 18       		.byte	0x18
+ 1648 05ba 3C       		.byte	0x3c
+ 1649 05bb 7E       		.byte	0x7e
+ 1650 05bc 3C       		.byte	0x3c
+ 1651 05bd 18       		.byte	0x18
+ 1652 05be 1C       		.byte	0x1c
+ 1653 05bf 57       		.byte	0x57
+ 1654 05c0 7D       		.byte	0x7d
+ 1655 05c1 57       		.byte	0x57
+ 1656 05c2 1C       		.byte	0x1c
+ 1657 05c3 1C       		.byte	0x1c
+ 1658 05c4 5E       		.byte	0x5e
+ 1659 05c5 7F       		.byte	0x7f
+ 1660 05c6 5E       		.byte	0x5e
+ 1661 05c7 1C       		.byte	0x1c
+ 1662 05c8 00       		.byte	0
+ 1663 05c9 18       		.byte	0x18
+ 1664 05ca 3C       		.byte	0x3c
+ 1665 05cb 18       		.byte	0x18
+ 1666 05cc 00       		.byte	0
+ 1667 05cd FF       		.byte	0xff
+ 1668 05ce E7       		.byte	0xe7
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 36
+
+
+ 1669 05cf C3       		.byte	0xc3
+ 1670 05d0 E7       		.byte	0xe7
+ 1671 05d1 FF       		.byte	0xff
+ 1672 05d2 00       		.byte	0
+ 1673 05d3 18       		.byte	0x18
+ 1674 05d4 24       		.byte	0x24
+ 1675 05d5 18       		.byte	0x18
+ 1676 05d6 00       		.byte	0
+ 1677 05d7 FF       		.byte	0xff
+ 1678 05d8 E7       		.byte	0xe7
+ 1679 05d9 DB       		.byte	0xdb
+ 1680 05da E7       		.byte	0xe7
+ 1681 05db FF       		.byte	0xff
+ 1682 05dc 30       		.byte	0x30
+ 1683 05dd 48       		.byte	0x48
+ 1684 05de 3A       		.byte	0x3a
+ 1685 05df 06       		.byte	0x6
+ 1686 05e0 0E       		.byte	0xe
+ 1687 05e1 26       		.byte	0x26
+ 1688 05e2 29       		.byte	0x29
+ 1689 05e3 79       		.byte	0x79
+ 1690 05e4 29       		.byte	0x29
+ 1691 05e5 26       		.byte	0x26
+ 1692 05e6 40       		.byte	0x40
+ 1693 05e7 7F       		.byte	0x7f
+ 1694 05e8 05       		.byte	0x5
+ 1695 05e9 05       		.byte	0x5
+ 1696 05ea 07       		.byte	0x7
+ 1697 05eb 40       		.byte	0x40
+ 1698 05ec 7F       		.byte	0x7f
+ 1699 05ed 05       		.byte	0x5
+ 1700 05ee 25       		.byte	0x25
+ 1701 05ef 3F       		.byte	0x3f
+ 1702 05f0 5A       		.byte	0x5a
+ 1703 05f1 3C       		.byte	0x3c
+ 1704 05f2 E7       		.byte	0xe7
+ 1705 05f3 3C       		.byte	0x3c
+ 1706 05f4 5A       		.byte	0x5a
+ 1707 05f5 7F       		.byte	0x7f
+ 1708 05f6 3E       		.byte	0x3e
+ 1709 05f7 1C       		.byte	0x1c
+ 1710 05f8 1C       		.byte	0x1c
+ 1711 05f9 08       		.byte	0x8
+ 1712 05fa 08       		.byte	0x8
+ 1713 05fb 1C       		.byte	0x1c
+ 1714 05fc 1C       		.byte	0x1c
+ 1715 05fd 3E       		.byte	0x3e
+ 1716 05fe 7F       		.byte	0x7f
+ 1717 05ff 14       		.byte	0x14
+ 1718 0600 22       		.byte	0x22
+ 1719 0601 7F       		.byte	0x7f
+ 1720 0602 22       		.byte	0x22
+ 1721 0603 14       		.byte	0x14
+ 1722 0604 5F       		.byte	0x5f
+ 1723 0605 5F       		.byte	0x5f
+ 1724 0606 00       		.byte	0
+ 1725 0607 5F       		.byte	0x5f
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 37
+
+
+ 1726 0608 5F       		.byte	0x5f
+ 1727 0609 06       		.byte	0x6
+ 1728 060a 09       		.byte	0x9
+ 1729 060b 7F       		.byte	0x7f
+ 1730 060c 01       		.byte	0x1
+ 1731 060d 7F       		.byte	0x7f
+ 1732 060e 00       		.byte	0
+ 1733 060f 66       		.byte	0x66
+ 1734 0610 89       		.byte	0x89
+ 1735 0611 95       		.byte	0x95
+ 1736 0612 6A       		.byte	0x6a
+ 1737 0613 60       		.byte	0x60
+ 1738 0614 60       		.byte	0x60
+ 1739 0615 60       		.byte	0x60
+ 1740 0616 60       		.byte	0x60
+ 1741 0617 60       		.byte	0x60
+ 1742 0618 94       		.byte	0x94
+ 1743 0619 A2       		.byte	0xa2
+ 1744 061a FF       		.byte	0xff
+ 1745 061b A2       		.byte	0xa2
+ 1746 061c 94       		.byte	0x94
+ 1747 061d 08       		.byte	0x8
+ 1748 061e 04       		.byte	0x4
+ 1749 061f 7E       		.byte	0x7e
+ 1750 0620 04       		.byte	0x4
+ 1751 0621 08       		.byte	0x8
+ 1752 0622 10       		.byte	0x10
+ 1753 0623 20       		.byte	0x20
+ 1754 0624 7E       		.byte	0x7e
+ 1755 0625 20       		.byte	0x20
+ 1756 0626 10       		.byte	0x10
+ 1757 0627 08       		.byte	0x8
+ 1758 0628 08       		.byte	0x8
+ 1759 0629 2A       		.byte	0x2a
+ 1760 062a 1C       		.byte	0x1c
+ 1761 062b 08       		.byte	0x8
+ 1762 062c 08       		.byte	0x8
+ 1763 062d 1C       		.byte	0x1c
+ 1764 062e 2A       		.byte	0x2a
+ 1765 062f 08       		.byte	0x8
+ 1766 0630 08       		.byte	0x8
+ 1767 0631 1E       		.byte	0x1e
+ 1768 0632 10       		.byte	0x10
+ 1769 0633 10       		.byte	0x10
+ 1770 0634 10       		.byte	0x10
+ 1771 0635 10       		.byte	0x10
+ 1772 0636 0C       		.byte	0xc
+ 1773 0637 1E       		.byte	0x1e
+ 1774 0638 0C       		.byte	0xc
+ 1775 0639 1E       		.byte	0x1e
+ 1776 063a 0C       		.byte	0xc
+ 1777 063b 30       		.byte	0x30
+ 1778 063c 38       		.byte	0x38
+ 1779 063d 3E       		.byte	0x3e
+ 1780 063e 38       		.byte	0x38
+ 1781 063f 30       		.byte	0x30
+ 1782 0640 06       		.byte	0x6
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 38
+
+
+ 1783 0641 0E       		.byte	0xe
+ 1784 0642 3E       		.byte	0x3e
+ 1785 0643 0E       		.byte	0xe
+ 1786 0644 06       		.byte	0x6
+ 1787 0645 00       		.byte	0
+ 1788 0646 00       		.byte	0
+ 1789 0647 00       		.byte	0
+ 1790 0648 00       		.byte	0
+ 1791 0649 00       		.byte	0
+ 1792 064a 00       		.byte	0
+ 1793 064b 00       		.byte	0
+ 1794 064c 5F       		.byte	0x5f
+ 1795 064d 00       		.byte	0
+ 1796 064e 00       		.byte	0
+ 1797 064f 00       		.byte	0
+ 1798 0650 07       		.byte	0x7
+ 1799 0651 00       		.byte	0
+ 1800 0652 07       		.byte	0x7
+ 1801 0653 00       		.byte	0
+ 1802 0654 14       		.byte	0x14
+ 1803 0655 7F       		.byte	0x7f
+ 1804 0656 14       		.byte	0x14
+ 1805 0657 7F       		.byte	0x7f
+ 1806 0658 14       		.byte	0x14
+ 1807 0659 24       		.byte	0x24
+ 1808 065a 2A       		.byte	0x2a
+ 1809 065b 7F       		.byte	0x7f
+ 1810 065c 2A       		.byte	0x2a
+ 1811 065d 12       		.byte	0x12
+ 1812 065e 23       		.byte	0x23
+ 1813 065f 13       		.byte	0x13
+ 1814 0660 08       		.byte	0x8
+ 1815 0661 64       		.byte	0x64
+ 1816 0662 62       		.byte	0x62
+ 1817 0663 36       		.byte	0x36
+ 1818 0664 49       		.byte	0x49
+ 1819 0665 56       		.byte	0x56
+ 1820 0666 20       		.byte	0x20
+ 1821 0667 50       		.byte	0x50
+ 1822 0668 00       		.byte	0
+ 1823 0669 08       		.byte	0x8
+ 1824 066a 07       		.byte	0x7
+ 1825 066b 03       		.byte	0x3
+ 1826 066c 00       		.byte	0
+ 1827 066d 00       		.byte	0
+ 1828 066e 1C       		.byte	0x1c
+ 1829 066f 22       		.byte	0x22
+ 1830 0670 41       		.byte	0x41
+ 1831 0671 00       		.byte	0
+ 1832 0672 00       		.byte	0
+ 1833 0673 41       		.byte	0x41
+ 1834 0674 22       		.byte	0x22
+ 1835 0675 1C       		.byte	0x1c
+ 1836 0676 00       		.byte	0
+ 1837 0677 2A       		.byte	0x2a
+ 1838 0678 1C       		.byte	0x1c
+ 1839 0679 7F       		.byte	0x7f
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 39
+
+
+ 1840 067a 1C       		.byte	0x1c
+ 1841 067b 2A       		.byte	0x2a
+ 1842 067c 08       		.byte	0x8
+ 1843 067d 08       		.byte	0x8
+ 1844 067e 3E       		.byte	0x3e
+ 1845 067f 08       		.byte	0x8
+ 1846 0680 08       		.byte	0x8
+ 1847 0681 00       		.byte	0
+ 1848 0682 80       		.byte	0x80
+ 1849 0683 70       		.byte	0x70
+ 1850 0684 30       		.byte	0x30
+ 1851 0685 00       		.byte	0
+ 1852 0686 08       		.byte	0x8
+ 1853 0687 08       		.byte	0x8
+ 1854 0688 08       		.byte	0x8
+ 1855 0689 08       		.byte	0x8
+ 1856 068a 08       		.byte	0x8
+ 1857 068b 00       		.byte	0
+ 1858 068c 00       		.byte	0
+ 1859 068d 60       		.byte	0x60
+ 1860 068e 60       		.byte	0x60
+ 1861 068f 00       		.byte	0
+ 1862 0690 20       		.byte	0x20
+ 1863 0691 10       		.byte	0x10
+ 1864 0692 08       		.byte	0x8
+ 1865 0693 04       		.byte	0x4
+ 1866 0694 02       		.byte	0x2
+ 1867 0695 3E       		.byte	0x3e
+ 1868 0696 51       		.byte	0x51
+ 1869 0697 49       		.byte	0x49
+ 1870 0698 45       		.byte	0x45
+ 1871 0699 3E       		.byte	0x3e
+ 1872 069a 00       		.byte	0
+ 1873 069b 42       		.byte	0x42
+ 1874 069c 7F       		.byte	0x7f
+ 1875 069d 40       		.byte	0x40
+ 1876 069e 00       		.byte	0
+ 1877 069f 72       		.byte	0x72
+ 1878 06a0 49       		.byte	0x49
+ 1879 06a1 49       		.byte	0x49
+ 1880 06a2 49       		.byte	0x49
+ 1881 06a3 46       		.byte	0x46
+ 1882 06a4 21       		.byte	0x21
+ 1883 06a5 41       		.byte	0x41
+ 1884 06a6 49       		.byte	0x49
+ 1885 06a7 4D       		.byte	0x4d
+ 1886 06a8 33       		.byte	0x33
+ 1887 06a9 18       		.byte	0x18
+ 1888 06aa 14       		.byte	0x14
+ 1889 06ab 12       		.byte	0x12
+ 1890 06ac 7F       		.byte	0x7f
+ 1891 06ad 10       		.byte	0x10
+ 1892 06ae 27       		.byte	0x27
+ 1893 06af 45       		.byte	0x45
+ 1894 06b0 45       		.byte	0x45
+ 1895 06b1 45       		.byte	0x45
+ 1896 06b2 39       		.byte	0x39
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 40
+
+
+ 1897 06b3 3C       		.byte	0x3c
+ 1898 06b4 4A       		.byte	0x4a
+ 1899 06b5 49       		.byte	0x49
+ 1900 06b6 49       		.byte	0x49
+ 1901 06b7 31       		.byte	0x31
+ 1902 06b8 41       		.byte	0x41
+ 1903 06b9 21       		.byte	0x21
+ 1904 06ba 11       		.byte	0x11
+ 1905 06bb 09       		.byte	0x9
+ 1906 06bc 07       		.byte	0x7
+ 1907 06bd 36       		.byte	0x36
+ 1908 06be 49       		.byte	0x49
+ 1909 06bf 49       		.byte	0x49
+ 1910 06c0 49       		.byte	0x49
+ 1911 06c1 36       		.byte	0x36
+ 1912 06c2 46       		.byte	0x46
+ 1913 06c3 49       		.byte	0x49
+ 1914 06c4 49       		.byte	0x49
+ 1915 06c5 29       		.byte	0x29
+ 1916 06c6 1E       		.byte	0x1e
+ 1917 06c7 00       		.byte	0
+ 1918 06c8 00       		.byte	0
+ 1919 06c9 14       		.byte	0x14
+ 1920 06ca 00       		.byte	0
+ 1921 06cb 00       		.byte	0
+ 1922 06cc 00       		.byte	0
+ 1923 06cd 40       		.byte	0x40
+ 1924 06ce 34       		.byte	0x34
+ 1925 06cf 00       		.byte	0
+ 1926 06d0 00       		.byte	0
+ 1927 06d1 00       		.byte	0
+ 1928 06d2 08       		.byte	0x8
+ 1929 06d3 14       		.byte	0x14
+ 1930 06d4 22       		.byte	0x22
+ 1931 06d5 41       		.byte	0x41
+ 1932 06d6 14       		.byte	0x14
+ 1933 06d7 14       		.byte	0x14
+ 1934 06d8 14       		.byte	0x14
+ 1935 06d9 14       		.byte	0x14
+ 1936 06da 14       		.byte	0x14
+ 1937 06db 00       		.byte	0
+ 1938 06dc 41       		.byte	0x41
+ 1939 06dd 22       		.byte	0x22
+ 1940 06de 14       		.byte	0x14
+ 1941 06df 08       		.byte	0x8
+ 1942 06e0 02       		.byte	0x2
+ 1943 06e1 01       		.byte	0x1
+ 1944 06e2 59       		.byte	0x59
+ 1945 06e3 09       		.byte	0x9
+ 1946 06e4 06       		.byte	0x6
+ 1947 06e5 3E       		.byte	0x3e
+ 1948 06e6 41       		.byte	0x41
+ 1949 06e7 5D       		.byte	0x5d
+ 1950 06e8 59       		.byte	0x59
+ 1951 06e9 4E       		.byte	0x4e
+ 1952 06ea 7C       		.byte	0x7c
+ 1953 06eb 12       		.byte	0x12
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 41
+
+
+ 1954 06ec 11       		.byte	0x11
+ 1955 06ed 12       		.byte	0x12
+ 1956 06ee 7C       		.byte	0x7c
+ 1957 06ef 7F       		.byte	0x7f
+ 1958 06f0 49       		.byte	0x49
+ 1959 06f1 49       		.byte	0x49
+ 1960 06f2 49       		.byte	0x49
+ 1961 06f3 36       		.byte	0x36
+ 1962 06f4 3E       		.byte	0x3e
+ 1963 06f5 41       		.byte	0x41
+ 1964 06f6 41       		.byte	0x41
+ 1965 06f7 41       		.byte	0x41
+ 1966 06f8 22       		.byte	0x22
+ 1967 06f9 7F       		.byte	0x7f
+ 1968 06fa 41       		.byte	0x41
+ 1969 06fb 41       		.byte	0x41
+ 1970 06fc 41       		.byte	0x41
+ 1971 06fd 3E       		.byte	0x3e
+ 1972 06fe 7F       		.byte	0x7f
+ 1973 06ff 49       		.byte	0x49
+ 1974 0700 49       		.byte	0x49
+ 1975 0701 49       		.byte	0x49
+ 1976 0702 41       		.byte	0x41
+ 1977 0703 7F       		.byte	0x7f
+ 1978 0704 09       		.byte	0x9
+ 1979 0705 09       		.byte	0x9
+ 1980 0706 09       		.byte	0x9
+ 1981 0707 01       		.byte	0x1
+ 1982 0708 3E       		.byte	0x3e
+ 1983 0709 41       		.byte	0x41
+ 1984 070a 41       		.byte	0x41
+ 1985 070b 51       		.byte	0x51
+ 1986 070c 73       		.byte	0x73
+ 1987 070d 7F       		.byte	0x7f
+ 1988 070e 08       		.byte	0x8
+ 1989 070f 08       		.byte	0x8
+ 1990 0710 08       		.byte	0x8
+ 1991 0711 7F       		.byte	0x7f
+ 1992 0712 00       		.byte	0
+ 1993 0713 41       		.byte	0x41
+ 1994 0714 7F       		.byte	0x7f
+ 1995 0715 41       		.byte	0x41
+ 1996 0716 00       		.byte	0
+ 1997 0717 20       		.byte	0x20
+ 1998 0718 40       		.byte	0x40
+ 1999 0719 41       		.byte	0x41
+ 2000 071a 3F       		.byte	0x3f
+ 2001 071b 01       		.byte	0x1
+ 2002 071c 7F       		.byte	0x7f
+ 2003 071d 08       		.byte	0x8
+ 2004 071e 14       		.byte	0x14
+ 2005 071f 22       		.byte	0x22
+ 2006 0720 41       		.byte	0x41
+ 2007 0721 7F       		.byte	0x7f
+ 2008 0722 40       		.byte	0x40
+ 2009 0723 40       		.byte	0x40
+ 2010 0724 40       		.byte	0x40
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 42
+
+
+ 2011 0725 40       		.byte	0x40
+ 2012 0726 7F       		.byte	0x7f
+ 2013 0727 02       		.byte	0x2
+ 2014 0728 1C       		.byte	0x1c
+ 2015 0729 02       		.byte	0x2
+ 2016 072a 7F       		.byte	0x7f
+ 2017 072b 7F       		.byte	0x7f
+ 2018 072c 04       		.byte	0x4
+ 2019 072d 08       		.byte	0x8
+ 2020 072e 10       		.byte	0x10
+ 2021 072f 7F       		.byte	0x7f
+ 2022 0730 3E       		.byte	0x3e
+ 2023 0731 41       		.byte	0x41
+ 2024 0732 41       		.byte	0x41
+ 2025 0733 41       		.byte	0x41
+ 2026 0734 3E       		.byte	0x3e
+ 2027 0735 7F       		.byte	0x7f
+ 2028 0736 09       		.byte	0x9
+ 2029 0737 09       		.byte	0x9
+ 2030 0738 09       		.byte	0x9
+ 2031 0739 06       		.byte	0x6
+ 2032 073a 3E       		.byte	0x3e
+ 2033 073b 41       		.byte	0x41
+ 2034 073c 51       		.byte	0x51
+ 2035 073d 21       		.byte	0x21
+ 2036 073e 5E       		.byte	0x5e
+ 2037 073f 7F       		.byte	0x7f
+ 2038 0740 09       		.byte	0x9
+ 2039 0741 19       		.byte	0x19
+ 2040 0742 29       		.byte	0x29
+ 2041 0743 46       		.byte	0x46
+ 2042 0744 26       		.byte	0x26
+ 2043 0745 49       		.byte	0x49
+ 2044 0746 49       		.byte	0x49
+ 2045 0747 49       		.byte	0x49
+ 2046 0748 32       		.byte	0x32
+ 2047 0749 03       		.byte	0x3
+ 2048 074a 01       		.byte	0x1
+ 2049 074b 7F       		.byte	0x7f
+ 2050 074c 01       		.byte	0x1
+ 2051 074d 03       		.byte	0x3
+ 2052 074e 3F       		.byte	0x3f
+ 2053 074f 40       		.byte	0x40
+ 2054 0750 40       		.byte	0x40
+ 2055 0751 40       		.byte	0x40
+ 2056 0752 3F       		.byte	0x3f
+ 2057 0753 1F       		.byte	0x1f
+ 2058 0754 20       		.byte	0x20
+ 2059 0755 40       		.byte	0x40
+ 2060 0756 20       		.byte	0x20
+ 2061 0757 1F       		.byte	0x1f
+ 2062 0758 3F       		.byte	0x3f
+ 2063 0759 40       		.byte	0x40
+ 2064 075a 38       		.byte	0x38
+ 2065 075b 40       		.byte	0x40
+ 2066 075c 3F       		.byte	0x3f
+ 2067 075d 63       		.byte	0x63
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 43
+
+
+ 2068 075e 14       		.byte	0x14
+ 2069 075f 08       		.byte	0x8
+ 2070 0760 14       		.byte	0x14
+ 2071 0761 63       		.byte	0x63
+ 2072 0762 03       		.byte	0x3
+ 2073 0763 04       		.byte	0x4
+ 2074 0764 78       		.byte	0x78
+ 2075 0765 04       		.byte	0x4
+ 2076 0766 03       		.byte	0x3
+ 2077 0767 61       		.byte	0x61
+ 2078 0768 59       		.byte	0x59
+ 2079 0769 49       		.byte	0x49
+ 2080 076a 4D       		.byte	0x4d
+ 2081 076b 43       		.byte	0x43
+ 2082 076c 00       		.byte	0
+ 2083 076d 7F       		.byte	0x7f
+ 2084 076e 41       		.byte	0x41
+ 2085 076f 41       		.byte	0x41
+ 2086 0770 41       		.byte	0x41
+ 2087 0771 02       		.byte	0x2
+ 2088 0772 04       		.byte	0x4
+ 2089 0773 08       		.byte	0x8
+ 2090 0774 10       		.byte	0x10
+ 2091 0775 20       		.byte	0x20
+ 2092 0776 00       		.byte	0
+ 2093 0777 41       		.byte	0x41
+ 2094 0778 41       		.byte	0x41
+ 2095 0779 41       		.byte	0x41
+ 2096 077a 7F       		.byte	0x7f
+ 2097 077b 04       		.byte	0x4
+ 2098 077c 02       		.byte	0x2
+ 2099 077d 01       		.byte	0x1
+ 2100 077e 02       		.byte	0x2
+ 2101 077f 04       		.byte	0x4
+ 2102 0780 40       		.byte	0x40
+ 2103 0781 40       		.byte	0x40
+ 2104 0782 40       		.byte	0x40
+ 2105 0783 40       		.byte	0x40
+ 2106 0784 40       		.byte	0x40
+ 2107 0785 00       		.byte	0
+ 2108 0786 03       		.byte	0x3
+ 2109 0787 07       		.byte	0x7
+ 2110 0788 08       		.byte	0x8
+ 2111 0789 00       		.byte	0
+ 2112 078a 20       		.byte	0x20
+ 2113 078b 54       		.byte	0x54
+ 2114 078c 54       		.byte	0x54
+ 2115 078d 78       		.byte	0x78
+ 2116 078e 40       		.byte	0x40
+ 2117 078f 7F       		.byte	0x7f
+ 2118 0790 28       		.byte	0x28
+ 2119 0791 44       		.byte	0x44
+ 2120 0792 44       		.byte	0x44
+ 2121 0793 38       		.byte	0x38
+ 2122 0794 38       		.byte	0x38
+ 2123 0795 44       		.byte	0x44
+ 2124 0796 44       		.byte	0x44
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 44
+
+
+ 2125 0797 44       		.byte	0x44
+ 2126 0798 28       		.byte	0x28
+ 2127 0799 38       		.byte	0x38
+ 2128 079a 44       		.byte	0x44
+ 2129 079b 44       		.byte	0x44
+ 2130 079c 28       		.byte	0x28
+ 2131 079d 7F       		.byte	0x7f
+ 2132 079e 38       		.byte	0x38
+ 2133 079f 54       		.byte	0x54
+ 2134 07a0 54       		.byte	0x54
+ 2135 07a1 54       		.byte	0x54
+ 2136 07a2 18       		.byte	0x18
+ 2137 07a3 00       		.byte	0
+ 2138 07a4 08       		.byte	0x8
+ 2139 07a5 7E       		.byte	0x7e
+ 2140 07a6 09       		.byte	0x9
+ 2141 07a7 02       		.byte	0x2
+ 2142 07a8 18       		.byte	0x18
+ 2143 07a9 A4       		.byte	0xa4
+ 2144 07aa A4       		.byte	0xa4
+ 2145 07ab 9C       		.byte	0x9c
+ 2146 07ac 78       		.byte	0x78
+ 2147 07ad 7F       		.byte	0x7f
+ 2148 07ae 08       		.byte	0x8
+ 2149 07af 04       		.byte	0x4
+ 2150 07b0 04       		.byte	0x4
+ 2151 07b1 78       		.byte	0x78
+ 2152 07b2 00       		.byte	0
+ 2153 07b3 44       		.byte	0x44
+ 2154 07b4 7D       		.byte	0x7d
+ 2155 07b5 40       		.byte	0x40
+ 2156 07b6 00       		.byte	0
+ 2157 07b7 20       		.byte	0x20
+ 2158 07b8 40       		.byte	0x40
+ 2159 07b9 40       		.byte	0x40
+ 2160 07ba 3D       		.byte	0x3d
+ 2161 07bb 00       		.byte	0
+ 2162 07bc 7F       		.byte	0x7f
+ 2163 07bd 10       		.byte	0x10
+ 2164 07be 28       		.byte	0x28
+ 2165 07bf 44       		.byte	0x44
+ 2166 07c0 00       		.byte	0
+ 2167 07c1 00       		.byte	0
+ 2168 07c2 41       		.byte	0x41
+ 2169 07c3 7F       		.byte	0x7f
+ 2170 07c4 40       		.byte	0x40
+ 2171 07c5 00       		.byte	0
+ 2172 07c6 7C       		.byte	0x7c
+ 2173 07c7 04       		.byte	0x4
+ 2174 07c8 78       		.byte	0x78
+ 2175 07c9 04       		.byte	0x4
+ 2176 07ca 78       		.byte	0x78
+ 2177 07cb 7C       		.byte	0x7c
+ 2178 07cc 08       		.byte	0x8
+ 2179 07cd 04       		.byte	0x4
+ 2180 07ce 04       		.byte	0x4
+ 2181 07cf 78       		.byte	0x78
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 45
+
+
+ 2182 07d0 38       		.byte	0x38
+ 2183 07d1 44       		.byte	0x44
+ 2184 07d2 44       		.byte	0x44
+ 2185 07d3 44       		.byte	0x44
+ 2186 07d4 38       		.byte	0x38
+ 2187 07d5 FC       		.byte	0xfc
+ 2188 07d6 18       		.byte	0x18
+ 2189 07d7 24       		.byte	0x24
+ 2190 07d8 24       		.byte	0x24
+ 2191 07d9 18       		.byte	0x18
+ 2192 07da 18       		.byte	0x18
+ 2193 07db 24       		.byte	0x24
+ 2194 07dc 24       		.byte	0x24
+ 2195 07dd 18       		.byte	0x18
+ 2196 07de FC       		.byte	0xfc
+ 2197 07df 7C       		.byte	0x7c
+ 2198 07e0 08       		.byte	0x8
+ 2199 07e1 04       		.byte	0x4
+ 2200 07e2 04       		.byte	0x4
+ 2201 07e3 08       		.byte	0x8
+ 2202 07e4 48       		.byte	0x48
+ 2203 07e5 54       		.byte	0x54
+ 2204 07e6 54       		.byte	0x54
+ 2205 07e7 54       		.byte	0x54
+ 2206 07e8 24       		.byte	0x24
+ 2207 07e9 04       		.byte	0x4
+ 2208 07ea 04       		.byte	0x4
+ 2209 07eb 3F       		.byte	0x3f
+ 2210 07ec 44       		.byte	0x44
+ 2211 07ed 24       		.byte	0x24
+ 2212 07ee 3C       		.byte	0x3c
+ 2213 07ef 40       		.byte	0x40
+ 2214 07f0 40       		.byte	0x40
+ 2215 07f1 20       		.byte	0x20
+ 2216 07f2 7C       		.byte	0x7c
+ 2217 07f3 1C       		.byte	0x1c
+ 2218 07f4 20       		.byte	0x20
+ 2219 07f5 40       		.byte	0x40
+ 2220 07f6 20       		.byte	0x20
+ 2221 07f7 1C       		.byte	0x1c
+ 2222 07f8 3C       		.byte	0x3c
+ 2223 07f9 40       		.byte	0x40
+ 2224 07fa 30       		.byte	0x30
+ 2225 07fb 40       		.byte	0x40
+ 2226 07fc 3C       		.byte	0x3c
+ 2227 07fd 44       		.byte	0x44
+ 2228 07fe 28       		.byte	0x28
+ 2229 07ff 10       		.byte	0x10
+ 2230 0800 28       		.byte	0x28
+ 2231 0801 44       		.byte	0x44
+ 2232 0802 4C       		.byte	0x4c
+ 2233 0803 90       		.byte	0x90
+ 2234 0804 90       		.byte	0x90
+ 2235 0805 90       		.byte	0x90
+ 2236 0806 7C       		.byte	0x7c
+ 2237 0807 44       		.byte	0x44
+ 2238 0808 64       		.byte	0x64
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 46
+
+
+ 2239 0809 54       		.byte	0x54
+ 2240 080a 4C       		.byte	0x4c
+ 2241 080b 44       		.byte	0x44
+ 2242 080c 00       		.byte	0
+ 2243 080d 08       		.byte	0x8
+ 2244 080e 36       		.byte	0x36
+ 2245 080f 41       		.byte	0x41
+ 2246 0810 00       		.byte	0
+ 2247 0811 00       		.byte	0
+ 2248 0812 00       		.byte	0
+ 2249 0813 77       		.byte	0x77
+ 2250 0814 00       		.byte	0
+ 2251 0815 00       		.byte	0
+ 2252 0816 00       		.byte	0
+ 2253 0817 41       		.byte	0x41
+ 2254 0818 36       		.byte	0x36
+ 2255 0819 08       		.byte	0x8
+ 2256 081a 00       		.byte	0
+ 2257 081b 02       		.byte	0x2
+ 2258 081c 01       		.byte	0x1
+ 2259 081d 02       		.byte	0x2
+ 2260 081e 04       		.byte	0x4
+ 2261 081f 02       		.byte	0x2
+ 2262 0820 3C       		.byte	0x3c
+ 2263 0821 26       		.byte	0x26
+ 2264 0822 23       		.byte	0x23
+ 2265 0823 26       		.byte	0x26
+ 2266 0824 3C       		.byte	0x3c
+ 2267 0825 1E       		.byte	0x1e
+ 2268 0826 A1       		.byte	0xa1
+ 2269 0827 A1       		.byte	0xa1
+ 2270 0828 61       		.byte	0x61
+ 2271 0829 12       		.byte	0x12
+ 2272 082a 3A       		.byte	0x3a
+ 2273 082b 40       		.byte	0x40
+ 2274 082c 40       		.byte	0x40
+ 2275 082d 20       		.byte	0x20
+ 2276 082e 7A       		.byte	0x7a
+ 2277 082f 38       		.byte	0x38
+ 2278 0830 54       		.byte	0x54
+ 2279 0831 54       		.byte	0x54
+ 2280 0832 55       		.byte	0x55
+ 2281 0833 59       		.byte	0x59
+ 2282 0834 21       		.byte	0x21
+ 2283 0835 55       		.byte	0x55
+ 2284 0836 55       		.byte	0x55
+ 2285 0837 79       		.byte	0x79
+ 2286 0838 41       		.byte	0x41
+ 2287 0839 22       		.byte	0x22
+ 2288 083a 54       		.byte	0x54
+ 2289 083b 54       		.byte	0x54
+ 2290 083c 78       		.byte	0x78
+ 2291 083d 42       		.byte	0x42
+ 2292 083e 21       		.byte	0x21
+ 2293 083f 55       		.byte	0x55
+ 2294 0840 54       		.byte	0x54
+ 2295 0841 78       		.byte	0x78
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 47
+
+
+ 2296 0842 40       		.byte	0x40
+ 2297 0843 20       		.byte	0x20
+ 2298 0844 54       		.byte	0x54
+ 2299 0845 55       		.byte	0x55
+ 2300 0846 79       		.byte	0x79
+ 2301 0847 40       		.byte	0x40
+ 2302 0848 0C       		.byte	0xc
+ 2303 0849 1E       		.byte	0x1e
+ 2304 084a 52       		.byte	0x52
+ 2305 084b 72       		.byte	0x72
+ 2306 084c 12       		.byte	0x12
+ 2307 084d 39       		.byte	0x39
+ 2308 084e 55       		.byte	0x55
+ 2309 084f 55       		.byte	0x55
+ 2310 0850 55       		.byte	0x55
+ 2311 0851 59       		.byte	0x59
+ 2312 0852 39       		.byte	0x39
+ 2313 0853 54       		.byte	0x54
+ 2314 0854 54       		.byte	0x54
+ 2315 0855 54       		.byte	0x54
+ 2316 0856 59       		.byte	0x59
+ 2317 0857 39       		.byte	0x39
+ 2318 0858 55       		.byte	0x55
+ 2319 0859 54       		.byte	0x54
+ 2320 085a 54       		.byte	0x54
+ 2321 085b 58       		.byte	0x58
+ 2322 085c 00       		.byte	0
+ 2323 085d 00       		.byte	0
+ 2324 085e 45       		.byte	0x45
+ 2325 085f 7C       		.byte	0x7c
+ 2326 0860 41       		.byte	0x41
+ 2327 0861 00       		.byte	0
+ 2328 0862 02       		.byte	0x2
+ 2329 0863 45       		.byte	0x45
+ 2330 0864 7D       		.byte	0x7d
+ 2331 0865 42       		.byte	0x42
+ 2332 0866 00       		.byte	0
+ 2333 0867 01       		.byte	0x1
+ 2334 0868 45       		.byte	0x45
+ 2335 0869 7C       		.byte	0x7c
+ 2336 086a 40       		.byte	0x40
+ 2337 086b 7D       		.byte	0x7d
+ 2338 086c 12       		.byte	0x12
+ 2339 086d 11       		.byte	0x11
+ 2340 086e 12       		.byte	0x12
+ 2341 086f 7D       		.byte	0x7d
+ 2342 0870 F0       		.byte	0xf0
+ 2343 0871 28       		.byte	0x28
+ 2344 0872 25       		.byte	0x25
+ 2345 0873 28       		.byte	0x28
+ 2346 0874 F0       		.byte	0xf0
+ 2347 0875 7C       		.byte	0x7c
+ 2348 0876 54       		.byte	0x54
+ 2349 0877 55       		.byte	0x55
+ 2350 0878 45       		.byte	0x45
+ 2351 0879 00       		.byte	0
+ 2352 087a 20       		.byte	0x20
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 48
+
+
+ 2353 087b 54       		.byte	0x54
+ 2354 087c 54       		.byte	0x54
+ 2355 087d 7C       		.byte	0x7c
+ 2356 087e 54       		.byte	0x54
+ 2357 087f 7C       		.byte	0x7c
+ 2358 0880 0A       		.byte	0xa
+ 2359 0881 09       		.byte	0x9
+ 2360 0882 7F       		.byte	0x7f
+ 2361 0883 49       		.byte	0x49
+ 2362 0884 32       		.byte	0x32
+ 2363 0885 49       		.byte	0x49
+ 2364 0886 49       		.byte	0x49
+ 2365 0887 49       		.byte	0x49
+ 2366 0888 32       		.byte	0x32
+ 2367 0889 3A       		.byte	0x3a
+ 2368 088a 44       		.byte	0x44
+ 2369 088b 44       		.byte	0x44
+ 2370 088c 44       		.byte	0x44
+ 2371 088d 3A       		.byte	0x3a
+ 2372 088e 32       		.byte	0x32
+ 2373 088f 4A       		.byte	0x4a
+ 2374 0890 48       		.byte	0x48
+ 2375 0891 48       		.byte	0x48
+ 2376 0892 30       		.byte	0x30
+ 2377 0893 3A       		.byte	0x3a
+ 2378 0894 41       		.byte	0x41
+ 2379 0895 41       		.byte	0x41
+ 2380 0896 21       		.byte	0x21
+ 2381 0897 7A       		.byte	0x7a
+ 2382 0898 3A       		.byte	0x3a
+ 2383 0899 42       		.byte	0x42
+ 2384 089a 40       		.byte	0x40
+ 2385 089b 20       		.byte	0x20
+ 2386 089c 78       		.byte	0x78
+ 2387 089d 00       		.byte	0
+ 2388 089e 9D       		.byte	0x9d
+ 2389 089f A0       		.byte	0xa0
+ 2390 08a0 A0       		.byte	0xa0
+ 2391 08a1 7D       		.byte	0x7d
+ 2392 08a2 3D       		.byte	0x3d
+ 2393 08a3 42       		.byte	0x42
+ 2394 08a4 42       		.byte	0x42
+ 2395 08a5 42       		.byte	0x42
+ 2396 08a6 3D       		.byte	0x3d
+ 2397 08a7 3D       		.byte	0x3d
+ 2398 08a8 40       		.byte	0x40
+ 2399 08a9 40       		.byte	0x40
+ 2400 08aa 40       		.byte	0x40
+ 2401 08ab 3D       		.byte	0x3d
+ 2402 08ac 3C       		.byte	0x3c
+ 2403 08ad 24       		.byte	0x24
+ 2404 08ae FF       		.byte	0xff
+ 2405 08af 24       		.byte	0x24
+ 2406 08b0 24       		.byte	0x24
+ 2407 08b1 48       		.byte	0x48
+ 2408 08b2 7E       		.byte	0x7e
+ 2409 08b3 49       		.byte	0x49
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 49
+
+
+ 2410 08b4 43       		.byte	0x43
+ 2411 08b5 66       		.byte	0x66
+ 2412 08b6 2B       		.byte	0x2b
+ 2413 08b7 2F       		.byte	0x2f
+ 2414 08b8 FC       		.byte	0xfc
+ 2415 08b9 2F       		.byte	0x2f
+ 2416 08ba 2B       		.byte	0x2b
+ 2417 08bb FF       		.byte	0xff
+ 2418 08bc 09       		.byte	0x9
+ 2419 08bd 29       		.byte	0x29
+ 2420 08be F6       		.byte	0xf6
+ 2421 08bf 20       		.byte	0x20
+ 2422 08c0 C0       		.byte	0xc0
+ 2423 08c1 88       		.byte	0x88
+ 2424 08c2 7E       		.byte	0x7e
+ 2425 08c3 09       		.byte	0x9
+ 2426 08c4 03       		.byte	0x3
+ 2427 08c5 20       		.byte	0x20
+ 2428 08c6 54       		.byte	0x54
+ 2429 08c7 54       		.byte	0x54
+ 2430 08c8 79       		.byte	0x79
+ 2431 08c9 41       		.byte	0x41
+ 2432 08ca 00       		.byte	0
+ 2433 08cb 00       		.byte	0
+ 2434 08cc 44       		.byte	0x44
+ 2435 08cd 7D       		.byte	0x7d
+ 2436 08ce 41       		.byte	0x41
+ 2437 08cf 30       		.byte	0x30
+ 2438 08d0 48       		.byte	0x48
+ 2439 08d1 48       		.byte	0x48
+ 2440 08d2 4A       		.byte	0x4a
+ 2441 08d3 32       		.byte	0x32
+ 2442 08d4 38       		.byte	0x38
+ 2443 08d5 40       		.byte	0x40
+ 2444 08d6 40       		.byte	0x40
+ 2445 08d7 22       		.byte	0x22
+ 2446 08d8 7A       		.byte	0x7a
+ 2447 08d9 00       		.byte	0
+ 2448 08da 7A       		.byte	0x7a
+ 2449 08db 0A       		.byte	0xa
+ 2450 08dc 0A       		.byte	0xa
+ 2451 08dd 72       		.byte	0x72
+ 2452 08de 7D       		.byte	0x7d
+ 2453 08df 0D       		.byte	0xd
+ 2454 08e0 19       		.byte	0x19
+ 2455 08e1 31       		.byte	0x31
+ 2456 08e2 7D       		.byte	0x7d
+ 2457 08e3 26       		.byte	0x26
+ 2458 08e4 29       		.byte	0x29
+ 2459 08e5 29       		.byte	0x29
+ 2460 08e6 2F       		.byte	0x2f
+ 2461 08e7 28       		.byte	0x28
+ 2462 08e8 26       		.byte	0x26
+ 2463 08e9 29       		.byte	0x29
+ 2464 08ea 29       		.byte	0x29
+ 2465 08eb 29       		.byte	0x29
+ 2466 08ec 26       		.byte	0x26
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 50
+
+
+ 2467 08ed 30       		.byte	0x30
+ 2468 08ee 48       		.byte	0x48
+ 2469 08ef 4D       		.byte	0x4d
+ 2470 08f0 40       		.byte	0x40
+ 2471 08f1 20       		.byte	0x20
+ 2472 08f2 38       		.byte	0x38
+ 2473 08f3 08       		.byte	0x8
+ 2474 08f4 08       		.byte	0x8
+ 2475 08f5 08       		.byte	0x8
+ 2476 08f6 08       		.byte	0x8
+ 2477 08f7 08       		.byte	0x8
+ 2478 08f8 08       		.byte	0x8
+ 2479 08f9 08       		.byte	0x8
+ 2480 08fa 08       		.byte	0x8
+ 2481 08fb 38       		.byte	0x38
+ 2482 08fc 2F       		.byte	0x2f
+ 2483 08fd 10       		.byte	0x10
+ 2484 08fe C8       		.byte	0xc8
+ 2485 08ff AC       		.byte	0xac
+ 2486 0900 BA       		.byte	0xba
+ 2487 0901 2F       		.byte	0x2f
+ 2488 0902 10       		.byte	0x10
+ 2489 0903 28       		.byte	0x28
+ 2490 0904 34       		.byte	0x34
+ 2491 0905 FA       		.byte	0xfa
+ 2492 0906 00       		.byte	0
+ 2493 0907 00       		.byte	0
+ 2494 0908 7B       		.byte	0x7b
+ 2495 0909 00       		.byte	0
+ 2496 090a 00       		.byte	0
+ 2497 090b 08       		.byte	0x8
+ 2498 090c 14       		.byte	0x14
+ 2499 090d 2A       		.byte	0x2a
+ 2500 090e 14       		.byte	0x14
+ 2501 090f 22       		.byte	0x22
+ 2502 0910 22       		.byte	0x22
+ 2503 0911 14       		.byte	0x14
+ 2504 0912 2A       		.byte	0x2a
+ 2505 0913 14       		.byte	0x14
+ 2506 0914 08       		.byte	0x8
+ 2507 0915 AA       		.byte	0xaa
+ 2508 0916 00       		.byte	0
+ 2509 0917 55       		.byte	0x55
+ 2510 0918 00       		.byte	0
+ 2511 0919 AA       		.byte	0xaa
+ 2512 091a AA       		.byte	0xaa
+ 2513 091b 55       		.byte	0x55
+ 2514 091c AA       		.byte	0xaa
+ 2515 091d 55       		.byte	0x55
+ 2516 091e AA       		.byte	0xaa
+ 2517 091f 00       		.byte	0
+ 2518 0920 00       		.byte	0
+ 2519 0921 00       		.byte	0
+ 2520 0922 FF       		.byte	0xff
+ 2521 0923 00       		.byte	0
+ 2522 0924 10       		.byte	0x10
+ 2523 0925 10       		.byte	0x10
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 51
+
+
+ 2524 0926 10       		.byte	0x10
+ 2525 0927 FF       		.byte	0xff
+ 2526 0928 00       		.byte	0
+ 2527 0929 14       		.byte	0x14
+ 2528 092a 14       		.byte	0x14
+ 2529 092b 14       		.byte	0x14
+ 2530 092c FF       		.byte	0xff
+ 2531 092d 00       		.byte	0
+ 2532 092e 10       		.byte	0x10
+ 2533 092f 10       		.byte	0x10
+ 2534 0930 FF       		.byte	0xff
+ 2535 0931 00       		.byte	0
+ 2536 0932 FF       		.byte	0xff
+ 2537 0933 10       		.byte	0x10
+ 2538 0934 10       		.byte	0x10
+ 2539 0935 F0       		.byte	0xf0
+ 2540 0936 10       		.byte	0x10
+ 2541 0937 F0       		.byte	0xf0
+ 2542 0938 14       		.byte	0x14
+ 2543 0939 14       		.byte	0x14
+ 2544 093a 14       		.byte	0x14
+ 2545 093b FC       		.byte	0xfc
+ 2546 093c 00       		.byte	0
+ 2547 093d 14       		.byte	0x14
+ 2548 093e 14       		.byte	0x14
+ 2549 093f F7       		.byte	0xf7
+ 2550 0940 00       		.byte	0
+ 2551 0941 FF       		.byte	0xff
+ 2552 0942 00       		.byte	0
+ 2553 0943 00       		.byte	0
+ 2554 0944 FF       		.byte	0xff
+ 2555 0945 00       		.byte	0
+ 2556 0946 FF       		.byte	0xff
+ 2557 0947 14       		.byte	0x14
+ 2558 0948 14       		.byte	0x14
+ 2559 0949 F4       		.byte	0xf4
+ 2560 094a 04       		.byte	0x4
+ 2561 094b FC       		.byte	0xfc
+ 2562 094c 14       		.byte	0x14
+ 2563 094d 14       		.byte	0x14
+ 2564 094e 17       		.byte	0x17
+ 2565 094f 10       		.byte	0x10
+ 2566 0950 1F       		.byte	0x1f
+ 2567 0951 10       		.byte	0x10
+ 2568 0952 10       		.byte	0x10
+ 2569 0953 1F       		.byte	0x1f
+ 2570 0954 10       		.byte	0x10
+ 2571 0955 1F       		.byte	0x1f
+ 2572 0956 14       		.byte	0x14
+ 2573 0957 14       		.byte	0x14
+ 2574 0958 14       		.byte	0x14
+ 2575 0959 1F       		.byte	0x1f
+ 2576 095a 00       		.byte	0
+ 2577 095b 10       		.byte	0x10
+ 2578 095c 10       		.byte	0x10
+ 2579 095d 10       		.byte	0x10
+ 2580 095e F0       		.byte	0xf0
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 52
+
+
+ 2581 095f 00       		.byte	0
+ 2582 0960 00       		.byte	0
+ 2583 0961 00       		.byte	0
+ 2584 0962 00       		.byte	0
+ 2585 0963 1F       		.byte	0x1f
+ 2586 0964 10       		.byte	0x10
+ 2587 0965 10       		.byte	0x10
+ 2588 0966 10       		.byte	0x10
+ 2589 0967 10       		.byte	0x10
+ 2590 0968 1F       		.byte	0x1f
+ 2591 0969 10       		.byte	0x10
+ 2592 096a 10       		.byte	0x10
+ 2593 096b 10       		.byte	0x10
+ 2594 096c 10       		.byte	0x10
+ 2595 096d F0       		.byte	0xf0
+ 2596 096e 10       		.byte	0x10
+ 2597 096f 00       		.byte	0
+ 2598 0970 00       		.byte	0
+ 2599 0971 00       		.byte	0
+ 2600 0972 FF       		.byte	0xff
+ 2601 0973 10       		.byte	0x10
+ 2602 0974 10       		.byte	0x10
+ 2603 0975 10       		.byte	0x10
+ 2604 0976 10       		.byte	0x10
+ 2605 0977 10       		.byte	0x10
+ 2606 0978 10       		.byte	0x10
+ 2607 0979 10       		.byte	0x10
+ 2608 097a 10       		.byte	0x10
+ 2609 097b 10       		.byte	0x10
+ 2610 097c FF       		.byte	0xff
+ 2611 097d 10       		.byte	0x10
+ 2612 097e 00       		.byte	0
+ 2613 097f 00       		.byte	0
+ 2614 0980 00       		.byte	0
+ 2615 0981 FF       		.byte	0xff
+ 2616 0982 14       		.byte	0x14
+ 2617 0983 00       		.byte	0
+ 2618 0984 00       		.byte	0
+ 2619 0985 FF       		.byte	0xff
+ 2620 0986 00       		.byte	0
+ 2621 0987 FF       		.byte	0xff
+ 2622 0988 00       		.byte	0
+ 2623 0989 00       		.byte	0
+ 2624 098a 1F       		.byte	0x1f
+ 2625 098b 10       		.byte	0x10
+ 2626 098c 17       		.byte	0x17
+ 2627 098d 00       		.byte	0
+ 2628 098e 00       		.byte	0
+ 2629 098f FC       		.byte	0xfc
+ 2630 0990 04       		.byte	0x4
+ 2631 0991 F4       		.byte	0xf4
+ 2632 0992 14       		.byte	0x14
+ 2633 0993 14       		.byte	0x14
+ 2634 0994 17       		.byte	0x17
+ 2635 0995 10       		.byte	0x10
+ 2636 0996 17       		.byte	0x17
+ 2637 0997 14       		.byte	0x14
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 53
+
+
+ 2638 0998 14       		.byte	0x14
+ 2639 0999 F4       		.byte	0xf4
+ 2640 099a 04       		.byte	0x4
+ 2641 099b F4       		.byte	0xf4
+ 2642 099c 00       		.byte	0
+ 2643 099d 00       		.byte	0
+ 2644 099e FF       		.byte	0xff
+ 2645 099f 00       		.byte	0
+ 2646 09a0 F7       		.byte	0xf7
+ 2647 09a1 14       		.byte	0x14
+ 2648 09a2 14       		.byte	0x14
+ 2649 09a3 14       		.byte	0x14
+ 2650 09a4 14       		.byte	0x14
+ 2651 09a5 14       		.byte	0x14
+ 2652 09a6 14       		.byte	0x14
+ 2653 09a7 14       		.byte	0x14
+ 2654 09a8 F7       		.byte	0xf7
+ 2655 09a9 00       		.byte	0
+ 2656 09aa F7       		.byte	0xf7
+ 2657 09ab 14       		.byte	0x14
+ 2658 09ac 14       		.byte	0x14
+ 2659 09ad 14       		.byte	0x14
+ 2660 09ae 17       		.byte	0x17
+ 2661 09af 14       		.byte	0x14
+ 2662 09b0 10       		.byte	0x10
+ 2663 09b1 10       		.byte	0x10
+ 2664 09b2 1F       		.byte	0x1f
+ 2665 09b3 10       		.byte	0x10
+ 2666 09b4 1F       		.byte	0x1f
+ 2667 09b5 14       		.byte	0x14
+ 2668 09b6 14       		.byte	0x14
+ 2669 09b7 14       		.byte	0x14
+ 2670 09b8 F4       		.byte	0xf4
+ 2671 09b9 14       		.byte	0x14
+ 2672 09ba 10       		.byte	0x10
+ 2673 09bb 10       		.byte	0x10
+ 2674 09bc F0       		.byte	0xf0
+ 2675 09bd 10       		.byte	0x10
+ 2676 09be F0       		.byte	0xf0
+ 2677 09bf 00       		.byte	0
+ 2678 09c0 00       		.byte	0
+ 2679 09c1 1F       		.byte	0x1f
+ 2680 09c2 10       		.byte	0x10
+ 2681 09c3 1F       		.byte	0x1f
+ 2682 09c4 00       		.byte	0
+ 2683 09c5 00       		.byte	0
+ 2684 09c6 00       		.byte	0
+ 2685 09c7 1F       		.byte	0x1f
+ 2686 09c8 14       		.byte	0x14
+ 2687 09c9 00       		.byte	0
+ 2688 09ca 00       		.byte	0
+ 2689 09cb 00       		.byte	0
+ 2690 09cc FC       		.byte	0xfc
+ 2691 09cd 14       		.byte	0x14
+ 2692 09ce 00       		.byte	0
+ 2693 09cf 00       		.byte	0
+ 2694 09d0 F0       		.byte	0xf0
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 54
+
+
+ 2695 09d1 10       		.byte	0x10
+ 2696 09d2 F0       		.byte	0xf0
+ 2697 09d3 10       		.byte	0x10
+ 2698 09d4 10       		.byte	0x10
+ 2699 09d5 FF       		.byte	0xff
+ 2700 09d6 10       		.byte	0x10
+ 2701 09d7 FF       		.byte	0xff
+ 2702 09d8 14       		.byte	0x14
+ 2703 09d9 14       		.byte	0x14
+ 2704 09da 14       		.byte	0x14
+ 2705 09db FF       		.byte	0xff
+ 2706 09dc 14       		.byte	0x14
+ 2707 09dd 10       		.byte	0x10
+ 2708 09de 10       		.byte	0x10
+ 2709 09df 10       		.byte	0x10
+ 2710 09e0 1F       		.byte	0x1f
+ 2711 09e1 00       		.byte	0
+ 2712 09e2 00       		.byte	0
+ 2713 09e3 00       		.byte	0
+ 2714 09e4 00       		.byte	0
+ 2715 09e5 F0       		.byte	0xf0
+ 2716 09e6 10       		.byte	0x10
+ 2717 09e7 FF       		.byte	0xff
+ 2718 09e8 FF       		.byte	0xff
+ 2719 09e9 FF       		.byte	0xff
+ 2720 09ea FF       		.byte	0xff
+ 2721 09eb FF       		.byte	0xff
+ 2722 09ec F0       		.byte	0xf0
+ 2723 09ed F0       		.byte	0xf0
+ 2724 09ee F0       		.byte	0xf0
+ 2725 09ef F0       		.byte	0xf0
+ 2726 09f0 F0       		.byte	0xf0
+ 2727 09f1 FF       		.byte	0xff
+ 2728 09f2 FF       		.byte	0xff
+ 2729 09f3 FF       		.byte	0xff
+ 2730 09f4 00       		.byte	0
+ 2731 09f5 00       		.byte	0
+ 2732 09f6 00       		.byte	0
+ 2733 09f7 00       		.byte	0
+ 2734 09f8 00       		.byte	0
+ 2735 09f9 FF       		.byte	0xff
+ 2736 09fa FF       		.byte	0xff
+ 2737 09fb 0F       		.byte	0xf
+ 2738 09fc 0F       		.byte	0xf
+ 2739 09fd 0F       		.byte	0xf
+ 2740 09fe 0F       		.byte	0xf
+ 2741 09ff 0F       		.byte	0xf
+ 2742 0a00 38       		.byte	0x38
+ 2743 0a01 44       		.byte	0x44
+ 2744 0a02 44       		.byte	0x44
+ 2745 0a03 38       		.byte	0x38
+ 2746 0a04 44       		.byte	0x44
+ 2747 0a05 FC       		.byte	0xfc
+ 2748 0a06 4A       		.byte	0x4a
+ 2749 0a07 4A       		.byte	0x4a
+ 2750 0a08 4A       		.byte	0x4a
+ 2751 0a09 34       		.byte	0x34
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 55
+
+
+ 2752 0a0a 7E       		.byte	0x7e
+ 2753 0a0b 02       		.byte	0x2
+ 2754 0a0c 02       		.byte	0x2
+ 2755 0a0d 06       		.byte	0x6
+ 2756 0a0e 06       		.byte	0x6
+ 2757 0a0f 02       		.byte	0x2
+ 2758 0a10 7E       		.byte	0x7e
+ 2759 0a11 02       		.byte	0x2
+ 2760 0a12 7E       		.byte	0x7e
+ 2761 0a13 02       		.byte	0x2
+ 2762 0a14 63       		.byte	0x63
+ 2763 0a15 55       		.byte	0x55
+ 2764 0a16 49       		.byte	0x49
+ 2765 0a17 41       		.byte	0x41
+ 2766 0a18 63       		.byte	0x63
+ 2767 0a19 38       		.byte	0x38
+ 2768 0a1a 44       		.byte	0x44
+ 2769 0a1b 44       		.byte	0x44
+ 2770 0a1c 3C       		.byte	0x3c
+ 2771 0a1d 04       		.byte	0x4
+ 2772 0a1e 40       		.byte	0x40
+ 2773 0a1f 7E       		.byte	0x7e
+ 2774 0a20 20       		.byte	0x20
+ 2775 0a21 1E       		.byte	0x1e
+ 2776 0a22 20       		.byte	0x20
+ 2777 0a23 06       		.byte	0x6
+ 2778 0a24 02       		.byte	0x2
+ 2779 0a25 7E       		.byte	0x7e
+ 2780 0a26 02       		.byte	0x2
+ 2781 0a27 02       		.byte	0x2
+ 2782 0a28 99       		.byte	0x99
+ 2783 0a29 A5       		.byte	0xa5
+ 2784 0a2a E7       		.byte	0xe7
+ 2785 0a2b A5       		.byte	0xa5
+ 2786 0a2c 99       		.byte	0x99
+ 2787 0a2d 1C       		.byte	0x1c
+ 2788 0a2e 2A       		.byte	0x2a
+ 2789 0a2f 49       		.byte	0x49
+ 2790 0a30 2A       		.byte	0x2a
+ 2791 0a31 1C       		.byte	0x1c
+ 2792 0a32 4C       		.byte	0x4c
+ 2793 0a33 72       		.byte	0x72
+ 2794 0a34 01       		.byte	0x1
+ 2795 0a35 72       		.byte	0x72
+ 2796 0a36 4C       		.byte	0x4c
+ 2797 0a37 30       		.byte	0x30
+ 2798 0a38 4A       		.byte	0x4a
+ 2799 0a39 4D       		.byte	0x4d
+ 2800 0a3a 4D       		.byte	0x4d
+ 2801 0a3b 30       		.byte	0x30
+ 2802 0a3c 30       		.byte	0x30
+ 2803 0a3d 48       		.byte	0x48
+ 2804 0a3e 78       		.byte	0x78
+ 2805 0a3f 48       		.byte	0x48
+ 2806 0a40 30       		.byte	0x30
+ 2807 0a41 BC       		.byte	0xbc
+ 2808 0a42 62       		.byte	0x62
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 56
+
+
+ 2809 0a43 5A       		.byte	0x5a
+ 2810 0a44 46       		.byte	0x46
+ 2811 0a45 3D       		.byte	0x3d
+ 2812 0a46 3E       		.byte	0x3e
+ 2813 0a47 49       		.byte	0x49
+ 2814 0a48 49       		.byte	0x49
+ 2815 0a49 49       		.byte	0x49
+ 2816 0a4a 00       		.byte	0
+ 2817 0a4b 7E       		.byte	0x7e
+ 2818 0a4c 01       		.byte	0x1
+ 2819 0a4d 01       		.byte	0x1
+ 2820 0a4e 01       		.byte	0x1
+ 2821 0a4f 7E       		.byte	0x7e
+ 2822 0a50 2A       		.byte	0x2a
+ 2823 0a51 2A       		.byte	0x2a
+ 2824 0a52 2A       		.byte	0x2a
+ 2825 0a53 2A       		.byte	0x2a
+ 2826 0a54 2A       		.byte	0x2a
+ 2827 0a55 44       		.byte	0x44
+ 2828 0a56 44       		.byte	0x44
+ 2829 0a57 5F       		.byte	0x5f
+ 2830 0a58 44       		.byte	0x44
+ 2831 0a59 44       		.byte	0x44
+ 2832 0a5a 40       		.byte	0x40
+ 2833 0a5b 51       		.byte	0x51
+ 2834 0a5c 4A       		.byte	0x4a
+ 2835 0a5d 44       		.byte	0x44
+ 2836 0a5e 40       		.byte	0x40
+ 2837 0a5f 40       		.byte	0x40
+ 2838 0a60 44       		.byte	0x44
+ 2839 0a61 4A       		.byte	0x4a
+ 2840 0a62 51       		.byte	0x51
+ 2841 0a63 40       		.byte	0x40
+ 2842 0a64 00       		.byte	0
+ 2843 0a65 00       		.byte	0
+ 2844 0a66 FF       		.byte	0xff
+ 2845 0a67 01       		.byte	0x1
+ 2846 0a68 03       		.byte	0x3
+ 2847 0a69 E0       		.byte	0xe0
+ 2848 0a6a 80       		.byte	0x80
+ 2849 0a6b FF       		.byte	0xff
+ 2850 0a6c 00       		.byte	0
+ 2851 0a6d 00       		.byte	0
+ 2852 0a6e 08       		.byte	0x8
+ 2853 0a6f 08       		.byte	0x8
+ 2854 0a70 6B       		.byte	0x6b
+ 2855 0a71 6B       		.byte	0x6b
+ 2856 0a72 08       		.byte	0x8
+ 2857 0a73 36       		.byte	0x36
+ 2858 0a74 12       		.byte	0x12
+ 2859 0a75 36       		.byte	0x36
+ 2860 0a76 24       		.byte	0x24
+ 2861 0a77 36       		.byte	0x36
+ 2862 0a78 06       		.byte	0x6
+ 2863 0a79 0F       		.byte	0xf
+ 2864 0a7a 09       		.byte	0x9
+ 2865 0a7b 0F       		.byte	0xf
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 57
+
+
+ 2866 0a7c 06       		.byte	0x6
+ 2867 0a7d 00       		.byte	0
+ 2868 0a7e 00       		.byte	0
+ 2869 0a7f 18       		.byte	0x18
+ 2870 0a80 18       		.byte	0x18
+ 2871 0a81 00       		.byte	0
+ 2872 0a82 00       		.byte	0
+ 2873 0a83 00       		.byte	0
+ 2874 0a84 10       		.byte	0x10
+ 2875 0a85 10       		.byte	0x10
+ 2876 0a86 00       		.byte	0
+ 2877 0a87 30       		.byte	0x30
+ 2878 0a88 40       		.byte	0x40
+ 2879 0a89 FF       		.byte	0xff
+ 2880 0a8a 01       		.byte	0x1
+ 2881 0a8b 01       		.byte	0x1
+ 2882 0a8c 00       		.byte	0
+ 2883 0a8d 1F       		.byte	0x1f
+ 2884 0a8e 01       		.byte	0x1
+ 2885 0a8f 01       		.byte	0x1
+ 2886 0a90 1E       		.byte	0x1e
+ 2887 0a91 00       		.byte	0
+ 2888 0a92 19       		.byte	0x19
+ 2889 0a93 1D       		.byte	0x1d
+ 2890 0a94 17       		.byte	0x17
+ 2891 0a95 12       		.byte	0x12
+ 2892 0a96 00       		.byte	0
+ 2893 0a97 3C       		.byte	0x3c
+ 2894 0a98 3C       		.byte	0x3c
+ 2895 0a99 3C       		.byte	0x3c
+ 2896 0a9a 3C       		.byte	0x3c
+ 2897 0a9b 00       		.byte	0
+ 2898 0a9c 00       		.byte	0
+ 2899 0a9d 00       		.byte	0
+ 2900 0a9e 00       		.byte	0
+ 2901 0a9f 00       		.byte	0
+ 2902 0aa0 22       		.uleb128 0x22
+ 2903 0aa1 82050000 		.4byte	0x582
+ 2904 0aa5 24       		.uleb128 0x24
+ 2905 0aa6 F7040000 		.4byte	.LASF76
+ 2906 0aaa 08       		.byte	0x8
+ 2907 0aab 5506     		.2byte	0x655
+ 2908 0aad B10A0000 		.4byte	0xab1
+ 2909 0ab1 0C       		.uleb128 0xc
+ 2910 0ab2 AD000000 		.4byte	0xad
+ 2911 0ab6 08       		.uleb128 0x8
+ 2912 0ab7 97000000 		.4byte	0x97
+ 2913 0abb C60A0000 		.4byte	0xac6
+ 2914 0abf 09       		.uleb128 0x9
+ 2915 0ac0 03010000 		.4byte	0x103
+ 2916 0ac4 1D       		.byte	0x1d
+ 2917 0ac5 00       		.byte	0
+ 2918 0ac6 25       		.uleb128 0x25
+ 2919 0ac7 E4000000 		.4byte	.LASF77
+ 2920 0acb 09       		.byte	0x9
+ 2921 0acc 57       		.byte	0x57
+ 2922 0acd B60A0000 		.4byte	0xab6
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 58
+
+
+ 2923 0ad1 05       		.uleb128 0x5
+ 2924 0ad2 03       		.byte	0x3
+ 2925 0ad3 00000000 		.4byte	FRAME
+ 2926 0ad7 26       		.uleb128 0x26
+ 2927 0ad8 07010000 		.4byte	.LASF78
+ 2928 0adc 01       		.byte	0x1
+ 2929 0add 13       		.byte	0x13
+ 2930 0ade 9B010000 		.4byte	0x19b
+ 2931 0ae2 26       		.uleb128 0x26
+ 2932 0ae3 B6050000 		.4byte	.LASF79
+ 2933 0ae7 01       		.byte	0x1
+ 2934 0ae8 14       		.byte	0x14
+ 2935 0ae9 ED0A0000 		.4byte	0xaed
+ 2936 0aed 0C       		.uleb128 0xc
+ 2937 0aee EE000000 		.4byte	0xee
+ 2938 0af2 08       		.uleb128 0x8
+ 2939 0af3 020B0000 		.4byte	0xb02
+ 2940 0af7 020B0000 		.4byte	0xb02
+ 2941 0afb 09       		.uleb128 0x9
+ 2942 0afc 03010000 		.4byte	0x103
+ 2943 0b00 07       		.byte	0x7
+ 2944 0b01 00       		.byte	0
+ 2945 0b02 22       		.uleb128 0x22
+ 2946 0b03 EE000000 		.4byte	0xee
+ 2947 0b07 26       		.uleb128 0x26
+ 2948 0b08 66020000 		.4byte	.LASF80
+ 2949 0b0c 01       		.byte	0x1
+ 2950 0b0d 15       		.byte	0x15
+ 2951 0b0e 120B0000 		.4byte	0xb12
+ 2952 0b12 22       		.uleb128 0x22
+ 2953 0b13 F20A0000 		.4byte	0xaf2
+ 2954 0b17 26       		.uleb128 0x26
+ 2955 0b18 5F030000 		.4byte	.LASF81
+ 2956 0b1c 01       		.byte	0x1
+ 2957 0b1d 16       		.byte	0x16
+ 2958 0b1e A0010000 		.4byte	0x1a0
+ 2959 0b22 26       		.uleb128 0x26
+ 2960 0b23 DC040000 		.4byte	.LASF82
+ 2961 0b27 01       		.byte	0x1
+ 2962 0b28 17       		.byte	0x17
+ 2963 0b29 A0010000 		.4byte	0x1a0
+ 2964 0b2d 26       		.uleb128 0x26
+ 2965 0b2e CA050000 		.4byte	.LASF83
+ 2966 0b32 01       		.byte	0x1
+ 2967 0b33 18       		.byte	0x18
+ 2968 0b34 380B0000 		.4byte	0xb38
+ 2969 0b38 0C       		.uleb128 0xc
+ 2970 0b39 DB000000 		.4byte	0xdb
+ 2971 0b3d 26       		.uleb128 0x26
+ 2972 0b3e 1C010000 		.4byte	.LASF84
+ 2973 0b42 01       		.byte	0x1
+ 2974 0b43 19       		.byte	0x19
+ 2975 0b44 480B0000 		.4byte	0xb48
+ 2976 0b48 0C       		.uleb128 0xc
+ 2977 0b49 89000000 		.4byte	0x89
+ 2978 0b4d 26       		.uleb128 0x26
+ 2979 0b4e 79030000 		.4byte	.LASF85
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 59
+
+
+ 2980 0b52 01       		.byte	0x1
+ 2981 0b53 1A       		.byte	0x1a
+ 2982 0b54 480B0000 		.4byte	0xb48
+ 2983 0b58 25       		.uleb128 0x25
+ 2984 0b59 2B020000 		.4byte	.LASF86
+ 2985 0b5d 01       		.byte	0x1
+ 2986 0b5e 1C       		.byte	0x1c
+ 2987 0b5f A0010000 		.4byte	0x1a0
+ 2988 0b63 05       		.uleb128 0x5
+ 2989 0b64 03       		.byte	0x3
+ 2990 0b65 00000000 		.4byte	CAPACITOR_VOLT
+ 2991 0b69 25       		.uleb128 0x25
+ 2992 0b6a 45000000 		.4byte	.LASF87
+ 2993 0b6e 01       		.byte	0x1
+ 2994 0b6f 1D       		.byte	0x1d
+ 2995 0b70 A0010000 		.4byte	0x1a0
+ 2996 0b74 05       		.uleb128 0x5
+ 2997 0b75 03       		.byte	0x3
+ 2998 0b76 00000000 		.4byte	CURTIS_FAULT_CHECK
+ 2999 0b7a 25       		.uleb128 0x25
+ 3000 0b7b 19030000 		.4byte	.LASF88
+ 3001 0b7f 01       		.byte	0x1
+ 3002 0b80 1E       		.byte	0x1e
+ 3003 0b81 A0010000 		.4byte	0x1a0
+ 3004 0b85 05       		.uleb128 0x5
+ 3005 0b86 03       		.byte	0x3
+ 3006 0b87 00000000 		.4byte	CURTIS_HEART_BEAT_CHECK
+ 3007 0b8b 25       		.uleb128 0x25
+ 3008 0b8c 3E000000 		.4byte	.LASF89
+ 3009 0b90 01       		.byte	0x1
+ 3010 0b91 1F       		.byte	0x1f
+ 3011 0b92 A0010000 		.4byte	0x1a0
+ 3012 0b96 05       		.uleb128 0x5
+ 3013 0b97 03       		.byte	0x3
+ 3014 0b98 00000000 		.4byte	ACK_RX
+ 3015 0b9c 25       		.uleb128 0x25
+ 3016 0b9d E7040000 		.4byte	.LASF90
+ 3017 0ba1 01       		.byte	0x1
+ 3018 0ba2 20       		.byte	0x20
+ 3019 0ba3 A0010000 		.4byte	0x1a0
+ 3020 0ba7 05       		.uleb128 0x5
+ 3021 0ba8 03       		.byte	0x3
+ 3022 0ba9 00000000 		.4byte	ERROR_TOLERANCE
+ 3023 0bad 25       		.uleb128 0x25
+ 3024 0bae CE040000 		.4byte	.LASF91
+ 3025 0bb2 01       		.byte	0x1
+ 3026 0bb3 21       		.byte	0x21
+ 3027 0bb4 A0010000 		.4byte	0x1a0
+ 3028 0bb8 05       		.uleb128 0x5
+ 3029 0bb9 03       		.byte	0x3
+ 3030 0bba 00000000 		.4byte	ABS_MOTOR_RPM
+ 3031 0bbe 25       		.uleb128 0x25
+ 3032 0bbf 56010000 		.4byte	.LASF92
+ 3033 0bc3 01       		.byte	0x1
+ 3034 0bc4 22       		.byte	0x22
+ 3035 0bc5 A0010000 		.4byte	0x1a0
+ 3036 0bc9 05       		.uleb128 0x5
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 60
+
+
+ 3037 0bca 03       		.byte	0x3
+ 3038 0bcb 00000000 		.4byte	THROTTLE_HIGH
+ 3039 0bcf 25       		.uleb128 0x25
+ 3040 0bd0 C6010000 		.4byte	.LASF93
+ 3041 0bd4 01       		.byte	0x1
+ 3042 0bd5 23       		.byte	0x23
+ 3043 0bd6 A0010000 		.4byte	0x1a0
+ 3044 0bda 05       		.uleb128 0x5
+ 3045 0bdb 03       		.byte	0x3
+ 3046 0bdc 00000000 		.4byte	THROTTLE_LOW
+ 3047 0be0 25       		.uleb128 0x25
+ 3048 0be1 3A020000 		.4byte	.LASF94
+ 3049 0be5 01       		.byte	0x1
+ 3050 0be6 25       		.byte	0x25
+ 3051 0be7 A0010000 		.4byte	0x1a0
+ 3052 0beb 05       		.uleb128 0x5
+ 3053 0bec 03       		.byte	0x3
+ 3054 0bed 00000000 		.4byte	ESTOP
+ 3055 0bf1 25       		.uleb128 0x25
+ 3056 0bf2 5B040000 		.4byte	.LASF95
+ 3057 0bf6 01       		.byte	0x1
+ 3058 0bf7 27       		.byte	0x27
+ 3059 0bf8 A0010000 		.4byte	0x1a0
+ 3060 0bfc 05       		.uleb128 0x5
+ 3061 0bfd 03       		.byte	0x3
+ 3062 0bfe 00000000 		.4byte	VOLT_B1
+ 3063 0c02 25       		.uleb128 0x25
+ 3064 0c03 63040000 		.4byte	.LASF96
+ 3065 0c07 01       		.byte	0x1
+ 3066 0c08 28       		.byte	0x28
+ 3067 0c09 A0010000 		.4byte	0x1a0
+ 3068 0c0d 05       		.uleb128 0x5
+ 3069 0c0e 03       		.byte	0x3
+ 3070 0c0f 00000000 		.4byte	VOLT_B2
+ 3071 0c13 25       		.uleb128 0x25
+ 3072 0c14 6B040000 		.4byte	.LASF97
+ 3073 0c18 01       		.byte	0x1
+ 3074 0c19 29       		.byte	0x29
+ 3075 0c1a A0010000 		.4byte	0x1a0
+ 3076 0c1e 05       		.uleb128 0x5
+ 3077 0c1f 03       		.byte	0x3
+ 3078 0c20 00000000 		.4byte	VOLT_B3
+ 3079 0c24 25       		.uleb128 0x25
+ 3080 0c25 1B040000 		.4byte	.LASF98
+ 3081 0c29 01       		.byte	0x1
+ 3082 0c2a 2A       		.byte	0x2a
+ 3083 0c2b A0010000 		.4byte	0x1a0
+ 3084 0c2f 05       		.uleb128 0x5
+ 3085 0c30 03       		.byte	0x3
+ 3086 0c31 00000000 		.4byte	VOLT_B4
+ 3087 0c35 26       		.uleb128 0x26
+ 3088 0c36 DC010000 		.4byte	.LASF99
+ 3089 0c3a 01       		.byte	0x1
+ 3090 0c3b 2B       		.byte	0x2b
+ 3091 0c3c 9B010000 		.4byte	0x19b
+ 3092 0c40 26       		.uleb128 0x26
+ 3093 0c41 B7030000 		.4byte	.LASF100
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 61
+
+
+ 3094 0c45 01       		.byte	0x1
+ 3095 0c46 2C       		.byte	0x2c
+ 3096 0c47 4B0C0000 		.4byte	0xc4b
+ 3097 0c4b 0C       		.uleb128 0xc
+ 3098 0c4c 20020000 		.4byte	0x220
+ 3099 0c50 08       		.uleb128 0x8
+ 3100 0c51 C3000000 		.4byte	0xc3
+ 3101 0c55 600C0000 		.4byte	0xc60
+ 3102 0c59 09       		.uleb128 0x9
+ 3103 0c5a 03010000 		.4byte	0x103
+ 3104 0c5e 03       		.byte	0x3
+ 3105 0c5f 00       		.byte	0
+ 3106 0c60 25       		.uleb128 0x25
+ 3107 0c61 64010000 		.4byte	.LASF101
+ 3108 0c65 01       		.byte	0x1
+ 3109 0c66 2F       		.byte	0x2f
+ 3110 0c67 500C0000 		.4byte	0xc50
+ 3111 0c6b 05       		.uleb128 0x5
+ 3112 0c6c 03       		.byte	0x3
+ 3113 0c6d 00000000 		.4byte	current_bytes
+ 3114 0c71 27       		.uleb128 0x27
+ 3115 0c72 8B030000 		.4byte	.LASF102
+ 3116 0c76 8B030000 		.4byte	.LASF102
+ 3117 0c7a 05       		.byte	0x5
+ 3118 0c7b 1801     		.2byte	0x118
+ 3119 0c7d 28       		.uleb128 0x28
+ 3120 0c7e 92050000 		.4byte	.LASF103
+ 3121 0c82 92050000 		.4byte	.LASF103
+ 3122 0c86 0A       		.byte	0xa
+ 3123 0c87 77       		.byte	0x77
+ 3124 0c88 28       		.uleb128 0x28
+ 3125 0c89 B7040000 		.4byte	.LASF104
+ 3126 0c8d B7040000 		.4byte	.LASF104
+ 3127 0c91 0A       		.byte	0xa
+ 3128 0c92 7E       		.byte	0x7e
+ 3129 0c93 28       		.uleb128 0x28
+ 3130 0c94 61000000 		.4byte	.LASF105
+ 3131 0c98 61000000 		.4byte	.LASF105
+ 3132 0c9c 0A       		.byte	0xa
+ 3133 0c9d 7F       		.byte	0x7f
+ 3134 0c9e 00       		.byte	0
+ 3135              		.section	.debug_abbrev,"",%progbits
+ 3136              	.Ldebug_abbrev0:
+ 3137 0000 01       		.uleb128 0x1
+ 3138 0001 11       		.uleb128 0x11
+ 3139 0002 01       		.byte	0x1
+ 3140 0003 25       		.uleb128 0x25
+ 3141 0004 0E       		.uleb128 0xe
+ 3142 0005 13       		.uleb128 0x13
+ 3143 0006 0B       		.uleb128 0xb
+ 3144 0007 03       		.uleb128 0x3
+ 3145 0008 0E       		.uleb128 0xe
+ 3146 0009 1B       		.uleb128 0x1b
+ 3147 000a 0E       		.uleb128 0xe
+ 3148 000b 55       		.uleb128 0x55
+ 3149 000c 17       		.uleb128 0x17
+ 3150 000d 11       		.uleb128 0x11
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 62
+
+
+ 3151 000e 01       		.uleb128 0x1
+ 3152 000f 10       		.uleb128 0x10
+ 3153 0010 17       		.uleb128 0x17
+ 3154 0011 00       		.byte	0
+ 3155 0012 00       		.byte	0
+ 3156 0013 02       		.uleb128 0x2
+ 3157 0014 24       		.uleb128 0x24
+ 3158 0015 00       		.byte	0
+ 3159 0016 0B       		.uleb128 0xb
+ 3160 0017 0B       		.uleb128 0xb
+ 3161 0018 3E       		.uleb128 0x3e
+ 3162 0019 0B       		.uleb128 0xb
+ 3163 001a 03       		.uleb128 0x3
+ 3164 001b 0E       		.uleb128 0xe
+ 3165 001c 00       		.byte	0
+ 3166 001d 00       		.byte	0
+ 3167 001e 03       		.uleb128 0x3
+ 3168 001f 16       		.uleb128 0x16
+ 3169 0020 00       		.byte	0
+ 3170 0021 03       		.uleb128 0x3
+ 3171 0022 0E       		.uleb128 0xe
+ 3172 0023 3A       		.uleb128 0x3a
+ 3173 0024 0B       		.uleb128 0xb
+ 3174 0025 3B       		.uleb128 0x3b
+ 3175 0026 0B       		.uleb128 0xb
+ 3176 0027 49       		.uleb128 0x49
+ 3177 0028 13       		.uleb128 0x13
+ 3178 0029 00       		.byte	0
+ 3179 002a 00       		.byte	0
+ 3180 002b 04       		.uleb128 0x4
+ 3181 002c 24       		.uleb128 0x24
+ 3182 002d 00       		.byte	0
+ 3183 002e 0B       		.uleb128 0xb
+ 3184 002f 0B       		.uleb128 0xb
+ 3185 0030 3E       		.uleb128 0x3e
+ 3186 0031 0B       		.uleb128 0xb
+ 3187 0032 03       		.uleb128 0x3
+ 3188 0033 08       		.uleb128 0x8
+ 3189 0034 00       		.byte	0
+ 3190 0035 00       		.byte	0
+ 3191 0036 05       		.uleb128 0x5
+ 3192 0037 16       		.uleb128 0x16
+ 3193 0038 00       		.byte	0
+ 3194 0039 03       		.uleb128 0x3
+ 3195 003a 0E       		.uleb128 0xe
+ 3196 003b 3A       		.uleb128 0x3a
+ 3197 003c 0B       		.uleb128 0xb
+ 3198 003d 3B       		.uleb128 0x3b
+ 3199 003e 05       		.uleb128 0x5
+ 3200 003f 49       		.uleb128 0x49
+ 3201 0040 13       		.uleb128 0x13
+ 3202 0041 00       		.byte	0
+ 3203 0042 00       		.byte	0
+ 3204 0043 06       		.uleb128 0x6
+ 3205 0044 13       		.uleb128 0x13
+ 3206 0045 01       		.byte	0x1
+ 3207 0046 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 63
+
+
+ 3208 0047 0B       		.uleb128 0xb
+ 3209 0048 3A       		.uleb128 0x3a
+ 3210 0049 0B       		.uleb128 0xb
+ 3211 004a 3B       		.uleb128 0x3b
+ 3212 004b 0B       		.uleb128 0xb
+ 3213 004c 01       		.uleb128 0x1
+ 3214 004d 13       		.uleb128 0x13
+ 3215 004e 00       		.byte	0
+ 3216 004f 00       		.byte	0
+ 3217 0050 07       		.uleb128 0x7
+ 3218 0051 0D       		.uleb128 0xd
+ 3219 0052 00       		.byte	0
+ 3220 0053 03       		.uleb128 0x3
+ 3221 0054 0E       		.uleb128 0xe
+ 3222 0055 3A       		.uleb128 0x3a
+ 3223 0056 0B       		.uleb128 0xb
+ 3224 0057 3B       		.uleb128 0x3b
+ 3225 0058 0B       		.uleb128 0xb
+ 3226 0059 49       		.uleb128 0x49
+ 3227 005a 13       		.uleb128 0x13
+ 3228 005b 38       		.uleb128 0x38
+ 3229 005c 0B       		.uleb128 0xb
+ 3230 005d 00       		.byte	0
+ 3231 005e 00       		.byte	0
+ 3232 005f 08       		.uleb128 0x8
+ 3233 0060 01       		.uleb128 0x1
+ 3234 0061 01       		.byte	0x1
+ 3235 0062 49       		.uleb128 0x49
+ 3236 0063 13       		.uleb128 0x13
+ 3237 0064 01       		.uleb128 0x1
+ 3238 0065 13       		.uleb128 0x13
+ 3239 0066 00       		.byte	0
+ 3240 0067 00       		.byte	0
+ 3241 0068 09       		.uleb128 0x9
+ 3242 0069 21       		.uleb128 0x21
+ 3243 006a 00       		.byte	0
+ 3244 006b 49       		.uleb128 0x49
+ 3245 006c 13       		.uleb128 0x13
+ 3246 006d 2F       		.uleb128 0x2f
+ 3247 006e 0B       		.uleb128 0xb
+ 3248 006f 00       		.byte	0
+ 3249 0070 00       		.byte	0
+ 3250 0071 0A       		.uleb128 0xa
+ 3251 0072 0D       		.uleb128 0xd
+ 3252 0073 00       		.byte	0
+ 3253 0074 03       		.uleb128 0x3
+ 3254 0075 08       		.uleb128 0x8
+ 3255 0076 3A       		.uleb128 0x3a
+ 3256 0077 0B       		.uleb128 0xb
+ 3257 0078 3B       		.uleb128 0x3b
+ 3258 0079 0B       		.uleb128 0xb
+ 3259 007a 49       		.uleb128 0x49
+ 3260 007b 13       		.uleb128 0x13
+ 3261 007c 38       		.uleb128 0x38
+ 3262 007d 0B       		.uleb128 0xb
+ 3263 007e 00       		.byte	0
+ 3264 007f 00       		.byte	0
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 64
+
+
+ 3265 0080 0B       		.uleb128 0xb
+ 3266 0081 0F       		.uleb128 0xf
+ 3267 0082 00       		.byte	0
+ 3268 0083 0B       		.uleb128 0xb
+ 3269 0084 0B       		.uleb128 0xb
+ 3270 0085 49       		.uleb128 0x49
+ 3271 0086 13       		.uleb128 0x13
+ 3272 0087 00       		.byte	0
+ 3273 0088 00       		.byte	0
+ 3274 0089 0C       		.uleb128 0xc
+ 3275 008a 35       		.uleb128 0x35
+ 3276 008b 00       		.byte	0
+ 3277 008c 49       		.uleb128 0x49
+ 3278 008d 13       		.uleb128 0x13
+ 3279 008e 00       		.byte	0
+ 3280 008f 00       		.byte	0
+ 3281 0090 0D       		.uleb128 0xd
+ 3282 0091 04       		.uleb128 0x4
+ 3283 0092 01       		.byte	0x1
+ 3284 0093 0B       		.uleb128 0xb
+ 3285 0094 0B       		.uleb128 0xb
+ 3286 0095 49       		.uleb128 0x49
+ 3287 0096 13       		.uleb128 0x13
+ 3288 0097 3A       		.uleb128 0x3a
+ 3289 0098 0B       		.uleb128 0xb
+ 3290 0099 3B       		.uleb128 0x3b
+ 3291 009a 0B       		.uleb128 0xb
+ 3292 009b 01       		.uleb128 0x1
+ 3293 009c 13       		.uleb128 0x13
+ 3294 009d 00       		.byte	0
+ 3295 009e 00       		.byte	0
+ 3296 009f 0E       		.uleb128 0xe
+ 3297 00a0 28       		.uleb128 0x28
+ 3298 00a1 00       		.byte	0
+ 3299 00a2 03       		.uleb128 0x3
+ 3300 00a3 0E       		.uleb128 0xe
+ 3301 00a4 1C       		.uleb128 0x1c
+ 3302 00a5 0B       		.uleb128 0xb
+ 3303 00a6 00       		.byte	0
+ 3304 00a7 00       		.byte	0
+ 3305 00a8 0F       		.uleb128 0xf
+ 3306 00a9 28       		.uleb128 0x28
+ 3307 00aa 00       		.byte	0
+ 3308 00ab 03       		.uleb128 0x3
+ 3309 00ac 0E       		.uleb128 0xe
+ 3310 00ad 1C       		.uleb128 0x1c
+ 3311 00ae 05       		.uleb128 0x5
+ 3312 00af 00       		.byte	0
+ 3313 00b0 00       		.byte	0
+ 3314 00b1 10       		.uleb128 0x10
+ 3315 00b2 2E       		.uleb128 0x2e
+ 3316 00b3 00       		.byte	0
+ 3317 00b4 3F       		.uleb128 0x3f
+ 3318 00b5 19       		.uleb128 0x19
+ 3319 00b6 03       		.uleb128 0x3
+ 3320 00b7 0E       		.uleb128 0xe
+ 3321 00b8 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 65
+
+
+ 3322 00b9 0B       		.uleb128 0xb
+ 3323 00ba 3B       		.uleb128 0x3b
+ 3324 00bb 0B       		.uleb128 0xb
+ 3325 00bc 49       		.uleb128 0x49
+ 3326 00bd 13       		.uleb128 0x13
+ 3327 00be 11       		.uleb128 0x11
+ 3328 00bf 01       		.uleb128 0x1
+ 3329 00c0 12       		.uleb128 0x12
+ 3330 00c1 06       		.uleb128 0x6
+ 3331 00c2 40       		.uleb128 0x40
+ 3332 00c3 18       		.uleb128 0x18
+ 3333 00c4 9742     		.uleb128 0x2117
+ 3334 00c6 19       		.uleb128 0x19
+ 3335 00c7 00       		.byte	0
+ 3336 00c8 00       		.byte	0
+ 3337 00c9 11       		.uleb128 0x11
+ 3338 00ca 2E       		.uleb128 0x2e
+ 3339 00cb 01       		.byte	0x1
+ 3340 00cc 3F       		.uleb128 0x3f
+ 3341 00cd 19       		.uleb128 0x19
+ 3342 00ce 03       		.uleb128 0x3
+ 3343 00cf 0E       		.uleb128 0xe
+ 3344 00d0 3A       		.uleb128 0x3a
+ 3345 00d1 0B       		.uleb128 0xb
+ 3346 00d2 3B       		.uleb128 0x3b
+ 3347 00d3 0B       		.uleb128 0xb
+ 3348 00d4 11       		.uleb128 0x11
+ 3349 00d5 01       		.uleb128 0x1
+ 3350 00d6 12       		.uleb128 0x12
+ 3351 00d7 06       		.uleb128 0x6
+ 3352 00d8 40       		.uleb128 0x40
+ 3353 00d9 18       		.uleb128 0x18
+ 3354 00da 9742     		.uleb128 0x2117
+ 3355 00dc 19       		.uleb128 0x19
+ 3356 00dd 01       		.uleb128 0x1
+ 3357 00de 13       		.uleb128 0x13
+ 3358 00df 00       		.byte	0
+ 3359 00e0 00       		.byte	0
+ 3360 00e1 12       		.uleb128 0x12
+ 3361 00e2 34       		.uleb128 0x34
+ 3362 00e3 00       		.byte	0
+ 3363 00e4 03       		.uleb128 0x3
+ 3364 00e5 0E       		.uleb128 0xe
+ 3365 00e6 3A       		.uleb128 0x3a
+ 3366 00e7 0B       		.uleb128 0xb
+ 3367 00e8 3B       		.uleb128 0x3b
+ 3368 00e9 0B       		.uleb128 0xb
+ 3369 00ea 49       		.uleb128 0x49
+ 3370 00eb 13       		.uleb128 0x13
+ 3371 00ec 02       		.uleb128 0x2
+ 3372 00ed 18       		.uleb128 0x18
+ 3373 00ee 00       		.byte	0
+ 3374 00ef 00       		.byte	0
+ 3375 00f0 13       		.uleb128 0x13
+ 3376 00f1 898201   		.uleb128 0x4109
+ 3377 00f4 01       		.byte	0x1
+ 3378 00f5 11       		.uleb128 0x11
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 66
+
+
+ 3379 00f6 01       		.uleb128 0x1
+ 3380 00f7 31       		.uleb128 0x31
+ 3381 00f8 13       		.uleb128 0x13
+ 3382 00f9 00       		.byte	0
+ 3383 00fa 00       		.byte	0
+ 3384 00fb 14       		.uleb128 0x14
+ 3385 00fc 8A8201   		.uleb128 0x410a
+ 3386 00ff 00       		.byte	0
+ 3387 0100 02       		.uleb128 0x2
+ 3388 0101 18       		.uleb128 0x18
+ 3389 0102 9142     		.uleb128 0x2111
+ 3390 0104 18       		.uleb128 0x18
+ 3391 0105 00       		.byte	0
+ 3392 0106 00       		.byte	0
+ 3393 0107 15       		.uleb128 0x15
+ 3394 0108 2E       		.uleb128 0x2e
+ 3395 0109 01       		.byte	0x1
+ 3396 010a 3F       		.uleb128 0x3f
+ 3397 010b 19       		.uleb128 0x19
+ 3398 010c 03       		.uleb128 0x3
+ 3399 010d 0E       		.uleb128 0xe
+ 3400 010e 3A       		.uleb128 0x3a
+ 3401 010f 0B       		.uleb128 0xb
+ 3402 0110 3B       		.uleb128 0x3b
+ 3403 0111 0B       		.uleb128 0xb
+ 3404 0112 27       		.uleb128 0x27
+ 3405 0113 19       		.uleb128 0x19
+ 3406 0114 11       		.uleb128 0x11
+ 3407 0115 01       		.uleb128 0x1
+ 3408 0116 12       		.uleb128 0x12
+ 3409 0117 06       		.uleb128 0x6
+ 3410 0118 40       		.uleb128 0x40
+ 3411 0119 18       		.uleb128 0x18
+ 3412 011a 9742     		.uleb128 0x2117
+ 3413 011c 19       		.uleb128 0x19
+ 3414 011d 01       		.uleb128 0x1
+ 3415 011e 13       		.uleb128 0x13
+ 3416 011f 00       		.byte	0
+ 3417 0120 00       		.byte	0
+ 3418 0121 16       		.uleb128 0x16
+ 3419 0122 05       		.uleb128 0x5
+ 3420 0123 00       		.byte	0
+ 3421 0124 03       		.uleb128 0x3
+ 3422 0125 0E       		.uleb128 0xe
+ 3423 0126 3A       		.uleb128 0x3a
+ 3424 0127 0B       		.uleb128 0xb
+ 3425 0128 3B       		.uleb128 0x3b
+ 3426 0129 0B       		.uleb128 0xb
+ 3427 012a 49       		.uleb128 0x49
+ 3428 012b 13       		.uleb128 0x13
+ 3429 012c 02       		.uleb128 0x2
+ 3430 012d 17       		.uleb128 0x17
+ 3431 012e 00       		.byte	0
+ 3432 012f 00       		.byte	0
+ 3433 0130 17       		.uleb128 0x17
+ 3434 0131 05       		.uleb128 0x5
+ 3435 0132 00       		.byte	0
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 67
+
+
+ 3436 0133 03       		.uleb128 0x3
+ 3437 0134 08       		.uleb128 0x8
+ 3438 0135 3A       		.uleb128 0x3a
+ 3439 0136 0B       		.uleb128 0xb
+ 3440 0137 3B       		.uleb128 0x3b
+ 3441 0138 0B       		.uleb128 0xb
+ 3442 0139 49       		.uleb128 0x49
+ 3443 013a 13       		.uleb128 0x13
+ 3444 013b 02       		.uleb128 0x2
+ 3445 013c 17       		.uleb128 0x17
+ 3446 013d 00       		.byte	0
+ 3447 013e 00       		.byte	0
+ 3448 013f 18       		.uleb128 0x18
+ 3449 0140 34       		.uleb128 0x34
+ 3450 0141 00       		.byte	0
+ 3451 0142 03       		.uleb128 0x3
+ 3452 0143 08       		.uleb128 0x8
+ 3453 0144 3A       		.uleb128 0x3a
+ 3454 0145 0B       		.uleb128 0xb
+ 3455 0146 3B       		.uleb128 0x3b
+ 3456 0147 0B       		.uleb128 0xb
+ 3457 0148 49       		.uleb128 0x49
+ 3458 0149 13       		.uleb128 0x13
+ 3459 014a 02       		.uleb128 0x2
+ 3460 014b 17       		.uleb128 0x17
+ 3461 014c 00       		.byte	0
+ 3462 014d 00       		.byte	0
+ 3463 014e 19       		.uleb128 0x19
+ 3464 014f 898201   		.uleb128 0x4109
+ 3465 0152 01       		.byte	0x1
+ 3466 0153 11       		.uleb128 0x11
+ 3467 0154 01       		.uleb128 0x1
+ 3468 0155 31       		.uleb128 0x31
+ 3469 0156 13       		.uleb128 0x13
+ 3470 0157 01       		.uleb128 0x1
+ 3471 0158 13       		.uleb128 0x13
+ 3472 0159 00       		.byte	0
+ 3473 015a 00       		.byte	0
+ 3474 015b 1A       		.uleb128 0x1a
+ 3475 015c 2E       		.uleb128 0x2e
+ 3476 015d 01       		.byte	0x1
+ 3477 015e 3F       		.uleb128 0x3f
+ 3478 015f 19       		.uleb128 0x19
+ 3479 0160 03       		.uleb128 0x3
+ 3480 0161 0E       		.uleb128 0xe
+ 3481 0162 3A       		.uleb128 0x3a
+ 3482 0163 0B       		.uleb128 0xb
+ 3483 0164 3B       		.uleb128 0x3b
+ 3484 0165 05       		.uleb128 0x5
+ 3485 0166 27       		.uleb128 0x27
+ 3486 0167 19       		.uleb128 0x19
+ 3487 0168 11       		.uleb128 0x11
+ 3488 0169 01       		.uleb128 0x1
+ 3489 016a 12       		.uleb128 0x12
+ 3490 016b 06       		.uleb128 0x6
+ 3491 016c 40       		.uleb128 0x40
+ 3492 016d 18       		.uleb128 0x18
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 68
+
+
+ 3493 016e 9742     		.uleb128 0x2117
+ 3494 0170 19       		.uleb128 0x19
+ 3495 0171 01       		.uleb128 0x1
+ 3496 0172 13       		.uleb128 0x13
+ 3497 0173 00       		.byte	0
+ 3498 0174 00       		.byte	0
+ 3499 0175 1B       		.uleb128 0x1b
+ 3500 0176 05       		.uleb128 0x5
+ 3501 0177 00       		.byte	0
+ 3502 0178 03       		.uleb128 0x3
+ 3503 0179 0E       		.uleb128 0xe
+ 3504 017a 3A       		.uleb128 0x3a
+ 3505 017b 0B       		.uleb128 0xb
+ 3506 017c 3B       		.uleb128 0x3b
+ 3507 017d 05       		.uleb128 0x5
+ 3508 017e 49       		.uleb128 0x49
+ 3509 017f 13       		.uleb128 0x13
+ 3510 0180 02       		.uleb128 0x2
+ 3511 0181 17       		.uleb128 0x17
+ 3512 0182 00       		.byte	0
+ 3513 0183 00       		.byte	0
+ 3514 0184 1C       		.uleb128 0x1c
+ 3515 0185 34       		.uleb128 0x34
+ 3516 0186 00       		.byte	0
+ 3517 0187 03       		.uleb128 0x3
+ 3518 0188 0E       		.uleb128 0xe
+ 3519 0189 3A       		.uleb128 0x3a
+ 3520 018a 0B       		.uleb128 0xb
+ 3521 018b 3B       		.uleb128 0x3b
+ 3522 018c 05       		.uleb128 0x5
+ 3523 018d 49       		.uleb128 0x49
+ 3524 018e 13       		.uleb128 0x13
+ 3525 018f 02       		.uleb128 0x2
+ 3526 0190 18       		.uleb128 0x18
+ 3527 0191 00       		.byte	0
+ 3528 0192 00       		.byte	0
+ 3529 0193 1D       		.uleb128 0x1d
+ 3530 0194 2E       		.uleb128 0x2e
+ 3531 0195 01       		.byte	0x1
+ 3532 0196 3F       		.uleb128 0x3f
+ 3533 0197 19       		.uleb128 0x19
+ 3534 0198 03       		.uleb128 0x3
+ 3535 0199 0E       		.uleb128 0xe
+ 3536 019a 3A       		.uleb128 0x3a
+ 3537 019b 0B       		.uleb128 0xb
+ 3538 019c 3B       		.uleb128 0x3b
+ 3539 019d 05       		.uleb128 0x5
+ 3540 019e 11       		.uleb128 0x11
+ 3541 019f 01       		.uleb128 0x1
+ 3542 01a0 12       		.uleb128 0x12
+ 3543 01a1 06       		.uleb128 0x6
+ 3544 01a2 40       		.uleb128 0x40
+ 3545 01a3 18       		.uleb128 0x18
+ 3546 01a4 9642     		.uleb128 0x2116
+ 3547 01a6 19       		.uleb128 0x19
+ 3548 01a7 01       		.uleb128 0x1
+ 3549 01a8 13       		.uleb128 0x13
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 69
+
+
+ 3550 01a9 00       		.byte	0
+ 3551 01aa 00       		.byte	0
+ 3552 01ab 1E       		.uleb128 0x1e
+ 3553 01ac 34       		.uleb128 0x34
+ 3554 01ad 00       		.byte	0
+ 3555 01ae 03       		.uleb128 0x3
+ 3556 01af 08       		.uleb128 0x8
+ 3557 01b0 3A       		.uleb128 0x3a
+ 3558 01b1 0B       		.uleb128 0xb
+ 3559 01b2 3B       		.uleb128 0x3b
+ 3560 01b3 05       		.uleb128 0x5
+ 3561 01b4 49       		.uleb128 0x49
+ 3562 01b5 13       		.uleb128 0x13
+ 3563 01b6 02       		.uleb128 0x2
+ 3564 01b7 17       		.uleb128 0x17
+ 3565 01b8 00       		.byte	0
+ 3566 01b9 00       		.byte	0
+ 3567 01ba 1F       		.uleb128 0x1f
+ 3568 01bb 34       		.uleb128 0x34
+ 3569 01bc 00       		.byte	0
+ 3570 01bd 03       		.uleb128 0x3
+ 3571 01be 0E       		.uleb128 0xe
+ 3572 01bf 3A       		.uleb128 0x3a
+ 3573 01c0 0B       		.uleb128 0xb
+ 3574 01c1 3B       		.uleb128 0x3b
+ 3575 01c2 0B       		.uleb128 0xb
+ 3576 01c3 49       		.uleb128 0x49
+ 3577 01c4 13       		.uleb128 0x13
+ 3578 01c5 02       		.uleb128 0x2
+ 3579 01c6 17       		.uleb128 0x17
+ 3580 01c7 00       		.byte	0
+ 3581 01c8 00       		.byte	0
+ 3582 01c9 20       		.uleb128 0x20
+ 3583 01ca 898201   		.uleb128 0x4109
+ 3584 01cd 00       		.byte	0
+ 3585 01ce 11       		.uleb128 0x11
+ 3586 01cf 01       		.uleb128 0x1
+ 3587 01d0 31       		.uleb128 0x31
+ 3588 01d1 13       		.uleb128 0x13
+ 3589 01d2 00       		.byte	0
+ 3590 01d3 00       		.byte	0
+ 3591 01d4 21       		.uleb128 0x21
+ 3592 01d5 21       		.uleb128 0x21
+ 3593 01d6 00       		.byte	0
+ 3594 01d7 49       		.uleb128 0x49
+ 3595 01d8 13       		.uleb128 0x13
+ 3596 01d9 2F       		.uleb128 0x2f
+ 3597 01da 05       		.uleb128 0x5
+ 3598 01db 00       		.byte	0
+ 3599 01dc 00       		.byte	0
+ 3600 01dd 22       		.uleb128 0x22
+ 3601 01de 26       		.uleb128 0x26
+ 3602 01df 00       		.byte	0
+ 3603 01e0 49       		.uleb128 0x49
+ 3604 01e1 13       		.uleb128 0x13
+ 3605 01e2 00       		.byte	0
+ 3606 01e3 00       		.byte	0
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 70
+
+
+ 3607 01e4 23       		.uleb128 0x23
+ 3608 01e5 34       		.uleb128 0x34
+ 3609 01e6 00       		.byte	0
+ 3610 01e7 03       		.uleb128 0x3
+ 3611 01e8 0E       		.uleb128 0xe
+ 3612 01e9 3A       		.uleb128 0x3a
+ 3613 01ea 0B       		.uleb128 0xb
+ 3614 01eb 3B       		.uleb128 0x3b
+ 3615 01ec 0B       		.uleb128 0xb
+ 3616 01ed 49       		.uleb128 0x49
+ 3617 01ee 13       		.uleb128 0x13
+ 3618 01ef 1C       		.uleb128 0x1c
+ 3619 01f0 03       		.uleb128 0x3
+ 3620 01f1 00       		.byte	0
+ 3621 01f2 00       		.byte	0
+ 3622 01f3 24       		.uleb128 0x24
+ 3623 01f4 34       		.uleb128 0x34
+ 3624 01f5 00       		.byte	0
+ 3625 01f6 03       		.uleb128 0x3
+ 3626 01f7 0E       		.uleb128 0xe
+ 3627 01f8 3A       		.uleb128 0x3a
+ 3628 01f9 0B       		.uleb128 0xb
+ 3629 01fa 3B       		.uleb128 0x3b
+ 3630 01fb 05       		.uleb128 0x5
+ 3631 01fc 49       		.uleb128 0x49
+ 3632 01fd 13       		.uleb128 0x13
+ 3633 01fe 3F       		.uleb128 0x3f
+ 3634 01ff 19       		.uleb128 0x19
+ 3635 0200 3C       		.uleb128 0x3c
+ 3636 0201 19       		.uleb128 0x19
+ 3637 0202 00       		.byte	0
+ 3638 0203 00       		.byte	0
+ 3639 0204 25       		.uleb128 0x25
+ 3640 0205 34       		.uleb128 0x34
+ 3641 0206 00       		.byte	0
+ 3642 0207 03       		.uleb128 0x3
+ 3643 0208 0E       		.uleb128 0xe
+ 3644 0209 3A       		.uleb128 0x3a
+ 3645 020a 0B       		.uleb128 0xb
+ 3646 020b 3B       		.uleb128 0x3b
+ 3647 020c 0B       		.uleb128 0xb
+ 3648 020d 49       		.uleb128 0x49
+ 3649 020e 13       		.uleb128 0x13
+ 3650 020f 3F       		.uleb128 0x3f
+ 3651 0210 19       		.uleb128 0x19
+ 3652 0211 02       		.uleb128 0x2
+ 3653 0212 18       		.uleb128 0x18
+ 3654 0213 00       		.byte	0
+ 3655 0214 00       		.byte	0
+ 3656 0215 26       		.uleb128 0x26
+ 3657 0216 34       		.uleb128 0x34
+ 3658 0217 00       		.byte	0
+ 3659 0218 03       		.uleb128 0x3
+ 3660 0219 0E       		.uleb128 0xe
+ 3661 021a 3A       		.uleb128 0x3a
+ 3662 021b 0B       		.uleb128 0xb
+ 3663 021c 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 71
+
+
+ 3664 021d 0B       		.uleb128 0xb
+ 3665 021e 49       		.uleb128 0x49
+ 3666 021f 13       		.uleb128 0x13
+ 3667 0220 3F       		.uleb128 0x3f
+ 3668 0221 19       		.uleb128 0x19
+ 3669 0222 3C       		.uleb128 0x3c
+ 3670 0223 19       		.uleb128 0x19
+ 3671 0224 00       		.byte	0
+ 3672 0225 00       		.byte	0
+ 3673 0226 27       		.uleb128 0x27
+ 3674 0227 2E       		.uleb128 0x2e
+ 3675 0228 00       		.byte	0
+ 3676 0229 3F       		.uleb128 0x3f
+ 3677 022a 19       		.uleb128 0x19
+ 3678 022b 3C       		.uleb128 0x3c
+ 3679 022c 19       		.uleb128 0x19
+ 3680 022d 6E       		.uleb128 0x6e
+ 3681 022e 0E       		.uleb128 0xe
+ 3682 022f 03       		.uleb128 0x3
+ 3683 0230 0E       		.uleb128 0xe
+ 3684 0231 3A       		.uleb128 0x3a
+ 3685 0232 0B       		.uleb128 0xb
+ 3686 0233 3B       		.uleb128 0x3b
+ 3687 0234 05       		.uleb128 0x5
+ 3688 0235 00       		.byte	0
+ 3689 0236 00       		.byte	0
+ 3690 0237 28       		.uleb128 0x28
+ 3691 0238 2E       		.uleb128 0x2e
+ 3692 0239 00       		.byte	0
+ 3693 023a 3F       		.uleb128 0x3f
+ 3694 023b 19       		.uleb128 0x19
+ 3695 023c 3C       		.uleb128 0x3c
+ 3696 023d 19       		.uleb128 0x19
+ 3697 023e 6E       		.uleb128 0x6e
+ 3698 023f 0E       		.uleb128 0xe
+ 3699 0240 03       		.uleb128 0x3
+ 3700 0241 0E       		.uleb128 0xe
+ 3701 0242 3A       		.uleb128 0x3a
+ 3702 0243 0B       		.uleb128 0xb
+ 3703 0244 3B       		.uleb128 0x3b
+ 3704 0245 0B       		.uleb128 0xb
+ 3705 0246 00       		.byte	0
+ 3706 0247 00       		.byte	0
+ 3707 0248 00       		.byte	0
+ 3708              		.section	.debug_loc,"",%progbits
+ 3709              	.Ldebug_loc0:
+ 3710              	.LLST0:
+ 3711 0000 00000000 		.4byte	.LVL1
+ 3712 0004 34000000 		.4byte	.LVL6
+ 3713 0008 0100     		.2byte	0x1
+ 3714 000a 50       		.byte	0x50
+ 3715 000b 34000000 		.4byte	.LVL6
+ 3716 000f 3E000000 		.4byte	.LFE74
+ 3717 0013 0400     		.2byte	0x4
+ 3718 0015 F3       		.byte	0xf3
+ 3719 0016 01       		.uleb128 0x1
+ 3720 0017 50       		.byte	0x50
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 72
+
+
+ 3721 0018 9F       		.byte	0x9f
+ 3722 0019 00000000 		.4byte	0
+ 3723 001d 00000000 		.4byte	0
+ 3724              	.LLST1:
+ 3725 0021 00000000 		.4byte	.LVL1
+ 3726 0025 20000000 		.4byte	.LVL3
+ 3727 0029 0100     		.2byte	0x1
+ 3728 002b 51       		.byte	0x51
+ 3729 002c 20000000 		.4byte	.LVL3
+ 3730 0030 34000000 		.4byte	.LVL6
+ 3731 0034 0200     		.2byte	0x2
+ 3732 0036 91       		.byte	0x91
+ 3733 0037 6C       		.sleb128 -20
+ 3734 0038 34000000 		.4byte	.LVL6
+ 3735 003c 37000000 		.4byte	.LVL7-1
+ 3736 0040 0200     		.2byte	0x2
+ 3737 0042 70       		.byte	0x70
+ 3738 0043 00       		.sleb128 0
+ 3739 0044 37000000 		.4byte	.LVL7-1
+ 3740 0048 3E000000 		.4byte	.LFE74
+ 3741 004c 0400     		.2byte	0x4
+ 3742 004e F3       		.byte	0xf3
+ 3743 004f 01       		.uleb128 0x1
+ 3744 0050 51       		.byte	0x51
+ 3745 0051 9F       		.byte	0x9f
+ 3746 0052 00000000 		.4byte	0
+ 3747 0056 00000000 		.4byte	0
+ 3748              	.LLST2:
+ 3749 005a 1E000000 		.4byte	.LVL2
+ 3750 005e 20000000 		.4byte	.LVL3
+ 3751 0062 0200     		.2byte	0x2
+ 3752 0064 30       		.byte	0x30
+ 3753 0065 9F       		.byte	0x9f
+ 3754 0066 20000000 		.4byte	.LVL3
+ 3755 006a 2C000000 		.4byte	.LVL4
+ 3756 006e 0100     		.2byte	0x1
+ 3757 0070 53       		.byte	0x53
+ 3758 0071 2E000000 		.4byte	.LVL5
+ 3759 0075 37000000 		.4byte	.LVL7-1
+ 3760 0079 0100     		.2byte	0x1
+ 3761 007b 53       		.byte	0x53
+ 3762 007c 00000000 		.4byte	0
+ 3763 0080 00000000 		.4byte	0
+ 3764              	.LLST3:
+ 3765 0084 00000000 		.4byte	.LVL8
+ 3766 0088 2C000000 		.4byte	.LVL10
+ 3767 008c 0100     		.2byte	0x1
+ 3768 008e 50       		.byte	0x50
+ 3769 008f 2C000000 		.4byte	.LVL10
+ 3770 0093 2F000000 		.4byte	.LVL11-1
+ 3771 0097 0200     		.2byte	0x2
+ 3772 0099 70       		.byte	0x70
+ 3773 009a 00       		.sleb128 0
+ 3774 009b 2F000000 		.4byte	.LVL11-1
+ 3775 009f 36000000 		.4byte	.LFE75
+ 3776 00a3 0400     		.2byte	0x4
+ 3777 00a5 F3       		.byte	0xf3
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 73
+
+
+ 3778 00a6 01       		.uleb128 0x1
+ 3779 00a7 50       		.byte	0x50
+ 3780 00a8 9F       		.byte	0x9f
+ 3781 00a9 00000000 		.4byte	0
+ 3782 00ad 00000000 		.4byte	0
+ 3783              	.LLST4:
+ 3784 00b1 00000000 		.4byte	.LVL8
+ 3785 00b5 2A000000 		.4byte	.LVL9
+ 3786 00b9 0100     		.2byte	0x1
+ 3787 00bb 51       		.byte	0x51
+ 3788 00bc 2A000000 		.4byte	.LVL9
+ 3789 00c0 2F000000 		.4byte	.LVL11-1
+ 3790 00c4 0200     		.2byte	0x2
+ 3791 00c6 91       		.byte	0x91
+ 3792 00c7 71       		.sleb128 -15
+ 3793 00c8 2F000000 		.4byte	.LVL11-1
+ 3794 00cc 36000000 		.4byte	.LFE75
+ 3795 00d0 0400     		.2byte	0x4
+ 3796 00d2 F3       		.byte	0xf3
+ 3797 00d3 01       		.uleb128 0x1
+ 3798 00d4 51       		.byte	0x51
+ 3799 00d5 9F       		.byte	0x9f
+ 3800 00d6 00000000 		.4byte	0
+ 3801 00da 00000000 		.4byte	0
+ 3802              	.LLST5:
+ 3803 00de 00000000 		.4byte	.LVL12
+ 3804 00e2 2C000000 		.4byte	.LVL15
+ 3805 00e6 0100     		.2byte	0x1
+ 3806 00e8 50       		.byte	0x50
+ 3807 00e9 2C000000 		.4byte	.LVL15
+ 3808 00ed 2F000000 		.4byte	.LVL16-1
+ 3809 00f1 0200     		.2byte	0x2
+ 3810 00f3 70       		.byte	0x70
+ 3811 00f4 00       		.sleb128 0
+ 3812 00f5 2F000000 		.4byte	.LVL16-1
+ 3813 00f9 3C000000 		.4byte	.LFE76
+ 3814 00fd 0400     		.2byte	0x4
+ 3815 00ff F3       		.byte	0xf3
+ 3816 0100 01       		.uleb128 0x1
+ 3817 0101 50       		.byte	0x50
+ 3818 0102 9F       		.byte	0x9f
+ 3819 0103 00000000 		.4byte	0
+ 3820 0107 00000000 		.4byte	0
+ 3821              	.LLST6:
+ 3822 010b 00000000 		.4byte	.LVL12
+ 3823 010f 2A000000 		.4byte	.LVL14
+ 3824 0113 0100     		.2byte	0x1
+ 3825 0115 51       		.byte	0x51
+ 3826 0116 2A000000 		.4byte	.LVL14
+ 3827 011a 3C000000 		.4byte	.LFE76
+ 3828 011e 0400     		.2byte	0x4
+ 3829 0120 F3       		.byte	0xf3
+ 3830 0121 01       		.uleb128 0x1
+ 3831 0122 51       		.byte	0x51
+ 3832 0123 9F       		.byte	0x9f
+ 3833 0124 00000000 		.4byte	0
+ 3834 0128 00000000 		.4byte	0
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 74
+
+
+ 3835              	.LLST7:
+ 3836 012c 00000000 		.4byte	.LVL12
+ 3837 0130 12000000 		.4byte	.LVL13
+ 3838 0134 0100     		.2byte	0x1
+ 3839 0136 52       		.byte	0x52
+ 3840 0137 12000000 		.4byte	.LVL13
+ 3841 013b 3C000000 		.4byte	.LFE76
+ 3842 013f 0400     		.2byte	0x4
+ 3843 0141 F3       		.byte	0xf3
+ 3844 0142 01       		.uleb128 0x1
+ 3845 0143 52       		.byte	0x52
+ 3846 0144 9F       		.byte	0x9f
+ 3847 0145 00000000 		.4byte	0
+ 3848 0149 00000000 		.4byte	0
+ 3849              	.LLST8:
+ 3850 014d 00000000 		.4byte	.LVL12
+ 3851 0151 2F000000 		.4byte	.LVL16-1
+ 3852 0155 0100     		.2byte	0x1
+ 3853 0157 53       		.byte	0x53
+ 3854 0158 2F000000 		.4byte	.LVL16-1
+ 3855 015c 3C000000 		.4byte	.LFE76
+ 3856 0160 0400     		.2byte	0x4
+ 3857 0162 F3       		.byte	0xf3
+ 3858 0163 01       		.uleb128 0x1
+ 3859 0164 53       		.byte	0x53
+ 3860 0165 9F       		.byte	0x9f
+ 3861 0166 00000000 		.4byte	0
+ 3862 016a 00000000 		.4byte	0
+ 3863              	.LLST9:
+ 3864 016e 00000000 		.4byte	.LVL18
+ 3865 0172 18000000 		.4byte	.LVL20
+ 3866 0176 0100     		.2byte	0x1
+ 3867 0178 50       		.byte	0x50
+ 3868 0179 18000000 		.4byte	.LVL20
+ 3869 017d 1B000000 		.4byte	.LVL21-1
+ 3870 0181 0200     		.2byte	0x2
+ 3871 0183 70       		.byte	0x70
+ 3872 0184 00       		.sleb128 0
+ 3873 0185 1B000000 		.4byte	.LVL21-1
+ 3874 0189 22000000 		.4byte	.LFE77
+ 3875 018d 0400     		.2byte	0x4
+ 3876 018f F3       		.byte	0xf3
+ 3877 0190 01       		.uleb128 0x1
+ 3878 0191 50       		.byte	0x50
+ 3879 0192 9F       		.byte	0x9f
+ 3880 0193 00000000 		.4byte	0
+ 3881 0197 00000000 		.4byte	0
+ 3882              	.LLST10:
+ 3883 019b 00000000 		.4byte	.LVL18
+ 3884 019f 16000000 		.4byte	.LVL19
+ 3885 01a3 0100     		.2byte	0x1
+ 3886 01a5 51       		.byte	0x51
+ 3887 01a6 16000000 		.4byte	.LVL19
+ 3888 01aa 1B000000 		.4byte	.LVL21-1
+ 3889 01ae 0200     		.2byte	0x2
+ 3890 01b0 91       		.byte	0x91
+ 3891 01b1 71       		.sleb128 -15
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 75
+
+
+ 3892 01b2 1B000000 		.4byte	.LVL21-1
+ 3893 01b6 22000000 		.4byte	.LFE77
+ 3894 01ba 0400     		.2byte	0x4
+ 3895 01bc F3       		.byte	0xf3
+ 3896 01bd 01       		.uleb128 0x1
+ 3897 01be 51       		.byte	0x51
+ 3898 01bf 9F       		.byte	0x9f
+ 3899 01c0 00000000 		.4byte	0
+ 3900 01c4 00000000 		.4byte	0
+ 3901              	.LLST11:
+ 3902 01c8 06000000 		.4byte	.LVL22
+ 3903 01cc 08000000 		.4byte	.LVL23
+ 3904 01d0 0300     		.2byte	0x3
+ 3905 01d2 73       		.byte	0x73
+ 3906 01d3 4E       		.sleb128 -50
+ 3907 01d4 9F       		.byte	0x9f
+ 3908 01d5 08000000 		.4byte	.LVL23
+ 3909 01d9 10000000 		.4byte	.LVL24
+ 3910 01dd 0100     		.2byte	0x1
+ 3911 01df 53       		.byte	0x53
+ 3912 01e0 16000000 		.4byte	.LVL25
+ 3913 01e4 24000000 		.4byte	.LVL26
+ 3914 01e8 0100     		.2byte	0x1
+ 3915 01ea 53       		.byte	0x53
+ 3916 01eb 34000000 		.4byte	.LVL28
+ 3917 01ef 3C000000 		.4byte	.LVL29
+ 3918 01f3 0100     		.2byte	0x1
+ 3919 01f5 53       		.byte	0x53
+ 3920 01f6 00000000 		.4byte	0
+ 3921 01fa 00000000 		.4byte	0
+ 3922              	.LLST12:
+ 3923 01fe 00000000 		.4byte	.LVL31
+ 3924 0202 0B000000 		.4byte	.LVL32-1
+ 3925 0206 0100     		.2byte	0x1
+ 3926 0208 50       		.byte	0x50
+ 3927 0209 0B000000 		.4byte	.LVL32-1
+ 3928 020d E4000000 		.4byte	.LVL45
+ 3929 0211 0100     		.2byte	0x1
+ 3930 0213 54       		.byte	0x54
+ 3931 0214 E4000000 		.4byte	.LVL45
+ 3932 0218 02010000 		.4byte	.LVL46
+ 3933 021c 0400     		.2byte	0x4
+ 3934 021e F3       		.byte	0xf3
+ 3935 021f 01       		.uleb128 0x1
+ 3936 0220 50       		.byte	0x50
+ 3937 0221 9F       		.byte	0x9f
+ 3938 0222 02010000 		.4byte	.LVL46
+ 3939 0226 24010000 		.4byte	.LVL48
+ 3940 022a 0100     		.2byte	0x1
+ 3941 022c 54       		.byte	0x54
+ 3942 022d 24010000 		.4byte	.LVL48
+ 3943 0231 4C010000 		.4byte	.LVL49
+ 3944 0235 0400     		.2byte	0x4
+ 3945 0237 F3       		.byte	0xf3
+ 3946 0238 01       		.uleb128 0x1
+ 3947 0239 50       		.byte	0x50
+ 3948 023a 9F       		.byte	0x9f
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 76
+
+
+ 3949 023b 4C010000 		.4byte	.LVL49
+ 3950 023f 66010000 		.4byte	.LVL51
+ 3951 0243 0100     		.2byte	0x1
+ 3952 0245 54       		.byte	0x54
+ 3953 0246 66010000 		.4byte	.LVL51
+ 3954 024a A8010000 		.4byte	.LFE72
+ 3955 024e 0400     		.2byte	0x4
+ 3956 0250 F3       		.byte	0xf3
+ 3957 0251 01       		.uleb128 0x1
+ 3958 0252 50       		.byte	0x50
+ 3959 0253 9F       		.byte	0x9f
+ 3960 0254 00000000 		.4byte	0
+ 3961 0258 00000000 		.4byte	0
+ 3962              	.LLST13:
+ 3963 025c 00000000 		.4byte	.LVL31
+ 3964 0260 0B000000 		.4byte	.LVL32-1
+ 3965 0264 0100     		.2byte	0x1
+ 3966 0266 51       		.byte	0x51
+ 3967 0267 0B000000 		.4byte	.LVL32-1
+ 3968 026b 70010000 		.4byte	.LVL53
+ 3969 026f 0100     		.2byte	0x1
+ 3970 0271 55       		.byte	0x55
+ 3971 0272 70010000 		.4byte	.LVL53
+ 3972 0276 A8010000 		.4byte	.LFE72
+ 3973 027a 0400     		.2byte	0x4
+ 3974 027c F3       		.byte	0xf3
+ 3975 027d 01       		.uleb128 0x1
+ 3976 027e 51       		.byte	0x51
+ 3977 027f 9F       		.byte	0x9f
+ 3978 0280 00000000 		.4byte	0
+ 3979 0284 00000000 		.4byte	0
+ 3980              	.LLST14:
+ 3981 0288 0E000000 		.4byte	.LVL33
+ 3982 028c 70010000 		.4byte	.LVL53
+ 3983 0290 0100     		.2byte	0x1
+ 3984 0292 56       		.byte	0x56
+ 3985 0293 00000000 		.4byte	0
+ 3986 0297 00000000 		.4byte	0
+ 3987              	.LLST15:
+ 3988 029b 0E000000 		.4byte	.LVL33
+ 3989 029f 12000000 		.4byte	.LVL34
+ 3990 02a3 0200     		.2byte	0x2
+ 3991 02a5 30       		.byte	0x30
+ 3992 02a6 9F       		.byte	0x9f
+ 3993 02a7 12000000 		.4byte	.LVL34
+ 3994 02ab 44000000 		.4byte	.LVL36
+ 3995 02af 0100     		.2byte	0x1
+ 3996 02b1 53       		.byte	0x53
+ 3997 02b2 54000000 		.4byte	.LVL37
+ 3998 02b6 58000000 		.4byte	.LVL38
+ 3999 02ba 0100     		.2byte	0x1
+ 4000 02bc 53       		.byte	0x53
+ 4001 02bd 8C000000 		.4byte	.LVL39
+ 4002 02c1 90000000 		.4byte	.LVL40
+ 4003 02c5 0100     		.2byte	0x1
+ 4004 02c7 53       		.byte	0x53
+ 4005 02c8 B2000000 		.4byte	.LVL41
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 77
+
+
+ 4006 02cc B6000000 		.4byte	.LVL42
+ 4007 02d0 0100     		.2byte	0x1
+ 4008 02d2 53       		.byte	0x53
+ 4009 02d3 C8000000 		.4byte	.LVL43
+ 4010 02d7 CE000000 		.4byte	.LVL44
+ 4011 02db 0100     		.2byte	0x1
+ 4012 02dd 53       		.byte	0x53
+ 4013 02de 4C010000 		.4byte	.LVL49
+ 4014 02e2 54010000 		.4byte	.LVL50
+ 4015 02e6 0100     		.2byte	0x1
+ 4016 02e8 53       		.byte	0x53
+ 4017 02e9 00000000 		.4byte	0
+ 4018 02ed 00000000 		.4byte	0
+ 4019              		.section	.debug_aranges,"",%progbits
+ 4020 0000 94000000 		.4byte	0x94
+ 4021 0004 0200     		.2byte	0x2
+ 4022 0006 00000000 		.4byte	.Ldebug_info0
+ 4023 000a 04       		.byte	0x4
+ 4024 000b 00       		.byte	0
+ 4025 000c 0000     		.2byte	0
+ 4026 000e 0000     		.2byte	0
+ 4027 0010 00000000 		.4byte	.LFB63
+ 4028 0014 0C000000 		.4byte	.LFE63-.LFB63
+ 4029 0018 00000000 		.4byte	.LFB64
+ 4030 001c 0C000000 		.4byte	.LFE64-.LFB64
+ 4031 0020 00000000 		.4byte	.LFB65
+ 4032 0024 0C000000 		.4byte	.LFE65-.LFB65
+ 4033 0028 00000000 		.4byte	.LFB66
+ 4034 002c 0C000000 		.4byte	.LFE66-.LFB66
+ 4035 0030 00000000 		.4byte	.LFB67
+ 4036 0034 0C000000 		.4byte	.LFE67-.LFB67
+ 4037 0038 00000000 		.4byte	.LFB68
+ 4038 003c 0C000000 		.4byte	.LFE68-.LFB68
+ 4039 0040 00000000 		.4byte	.LFB69
+ 4040 0044 0C000000 		.4byte	.LFE69-.LFB69
+ 4041 0048 00000000 		.4byte	.LFB70
+ 4042 004c 0C000000 		.4byte	.LFE70-.LFB70
+ 4043 0050 00000000 		.4byte	.LFB71
+ 4044 0054 0C000000 		.4byte	.LFE71-.LFB71
+ 4045 0058 00000000 		.4byte	.LFB73
+ 4046 005c 4A000000 		.4byte	.LFE73-.LFB73
+ 4047 0060 00000000 		.4byte	.LFB74
+ 4048 0064 3E000000 		.4byte	.LFE74-.LFB74
+ 4049 0068 00000000 		.4byte	.LFB75
+ 4050 006c 36000000 		.4byte	.LFE75-.LFB75
+ 4051 0070 00000000 		.4byte	.LFB76
+ 4052 0074 3C000000 		.4byte	.LFE76-.LFB76
+ 4053 0078 00000000 		.4byte	.LFB77
+ 4054 007c 22000000 		.4byte	.LFE77-.LFB77
+ 4055 0080 00000000 		.4byte	.LFB78
+ 4056 0084 64000000 		.4byte	.LFE78-.LFB78
+ 4057 0088 00000000 		.4byte	.LFB72
+ 4058 008c A8010000 		.4byte	.LFE72-.LFB72
+ 4059 0090 00000000 		.4byte	0
+ 4060 0094 00000000 		.4byte	0
+ 4061              		.section	.debug_ranges,"",%progbits
+ 4062              	.Ldebug_ranges0:
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 78
+
+
+ 4063 0000 00000000 		.4byte	.LFB63
+ 4064 0004 0C000000 		.4byte	.LFE63
+ 4065 0008 00000000 		.4byte	.LFB64
+ 4066 000c 0C000000 		.4byte	.LFE64
+ 4067 0010 00000000 		.4byte	.LFB65
+ 4068 0014 0C000000 		.4byte	.LFE65
+ 4069 0018 00000000 		.4byte	.LFB66
+ 4070 001c 0C000000 		.4byte	.LFE66
+ 4071 0020 00000000 		.4byte	.LFB67
+ 4072 0024 0C000000 		.4byte	.LFE67
+ 4073 0028 00000000 		.4byte	.LFB68
+ 4074 002c 0C000000 		.4byte	.LFE68
+ 4075 0030 00000000 		.4byte	.LFB69
+ 4076 0034 0C000000 		.4byte	.LFE69
+ 4077 0038 00000000 		.4byte	.LFB70
+ 4078 003c 0C000000 		.4byte	.LFE70
+ 4079 0040 00000000 		.4byte	.LFB71
+ 4080 0044 0C000000 		.4byte	.LFE71
+ 4081 0048 00000000 		.4byte	.LFB73
+ 4082 004c 4A000000 		.4byte	.LFE73
+ 4083 0050 00000000 		.4byte	.LFB74
+ 4084 0054 3E000000 		.4byte	.LFE74
+ 4085 0058 00000000 		.4byte	.LFB75
+ 4086 005c 36000000 		.4byte	.LFE75
+ 4087 0060 00000000 		.4byte	.LFB76
+ 4088 0064 3C000000 		.4byte	.LFE76
+ 4089 0068 00000000 		.4byte	.LFB77
+ 4090 006c 22000000 		.4byte	.LFE77
+ 4091 0070 00000000 		.4byte	.LFB78
+ 4092 0074 64000000 		.4byte	.LFE78
+ 4093 0078 00000000 		.4byte	.LFB72
+ 4094 007c A8010000 		.4byte	.LFE72
+ 4095 0080 00000000 		.4byte	0
+ 4096 0084 00000000 		.4byte	0
+ 4097              		.section	.debug_line,"",%progbits
+ 4098              	.Ldebug_line0:
+ 4099 0000 24030000 		.section	.debug_str,"MS",%progbits,1
+ 4099      02008901 
+ 4099      00000201 
+ 4099      FB0E0D00 
+ 4099      01010101 
+ 4100              	.LASF62:
+ 4101 0000 6572726F 		.ascii	"errorState\000"
+ 4101      72537461 
+ 4101      746500
+ 4102              	.LASF29:
+ 4103 000b 43484152 		.ascii	"CHARGEMODE\000"
+ 4103      47454D4F 
+ 4103      444500
+ 4104              	.LASF30:
+ 4105 0016 5041434B 		.ascii	"PACK_TEMP_OVER\000"
+ 4105      5F54454D 
+ 4105      505F4F56 
+ 4105      455200
+ 4106              	.LASF59:
+ 4107 0025 63616E5F 		.ascii	"can_send\000"
+ 4107      73656E64 
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 79
+
+
+ 4107      00
+ 4108              	.LASF32:
+ 4109 002e 5041434B 		.ascii	"PACK_TEMP_UNDER\000"
+ 4109      5F54454D 
+ 4109      505F554E 
+ 4109      44455200 
+ 4110              	.LASF89:
+ 4111 003e 41434B5F 		.ascii	"ACK_RX\000"
+ 4111      525800
+ 4112              	.LASF87:
+ 4113 0045 43555254 		.ascii	"CURTIS_FAULT_CHECK\000"
+ 4113      49535F46 
+ 4113      41554C54 
+ 4113      5F434845 
+ 4113      434B00
+ 4114              	.LASF28:
+ 4115 0058 4E4F5F45 		.ascii	"NO_ERROR\000"
+ 4115      52524F52 
+ 4115      00
+ 4116              	.LASF105:
+ 4117 0061 43794578 		.ascii	"CyExitCriticalSection\000"
+ 4117      69744372 
+ 4117      69746963 
+ 4117      616C5365 
+ 4117      6374696F 
+ 4118              	.LASF71:
+ 4119 0077 63616E5F 		.ascii	"can_test_send\000"
+ 4119      74657374 
+ 4119      5F73656E 
+ 4119      6400
+ 4120              	.LASF61:
+ 4121 0085 73746174 		.ascii	"state\000"
+ 4121      6500
+ 4122              	.LASF75:
+ 4123 008b 666F6E74 		.ascii	"font\000"
+ 4123      00
+ 4124              	.LASF50:
+ 4125 0090 67657445 		.ascii	"getErrorTolerance\000"
+ 4125      72726F72 
+ 4125      546F6C65 
+ 4125      72616E63 
+ 4125      6500
+ 4126              	.LASF2:
+ 4127 00a2 73686F72 		.ascii	"short int\000"
+ 4127      7420696E 
+ 4127      7400
+ 4128              	.LASF47:
+ 4129 00ac 67657443 		.ascii	"getCurtisFaultCheck\000"
+ 4129      75727469 
+ 4129      73466175 
+ 4129      6C744368 
+ 4129      65636B00 
+ 4130              	.LASF24:
+ 4131 00c0 73697A65 		.ascii	"sizetype\000"
+ 4131      74797065 
+ 4131      00
+ 4132              	.LASF64:
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 80
+
+
+ 4133 00c9 53657449 		.ascii	"SetInterlock\000"
+ 4133      6E746572 
+ 4133      6C6F636B 
+ 4133      00
+ 4134              	.LASF72:
+ 4135 00d6 74656D70 		.ascii	"tempAttenuate\000"
+ 4135      41747465 
+ 4135      6E756174 
+ 4135      6500
+ 4136              	.LASF77:
+ 4137 00e4 4652414D 		.ascii	"FRAME\000"
+ 4137      4500
+ 4138              	.LASF8:
+ 4139 00ea 5F5F7569 		.ascii	"__uint32_t\000"
+ 4139      6E743332 
+ 4139      5F7400
+ 4140              	.LASF4:
+ 4141 00f5 5F5F7569 		.ascii	"__uint16_t\000"
+ 4141      6E743136 
+ 4141      5F7400
+ 4142              	.LASF21:
+ 4143 0100 646F7562 		.ascii	"double\000"
+ 4143      6C6500
+ 4144              	.LASF78:
+ 4145 0107 70656461 		.ascii	"pedalOK\000"
+ 4145      6C4F4B00 
+ 4146              	.LASF63:
+ 4147 010f 63616E5F 		.ascii	"can_send_cmd\000"
+ 4147      73656E64 
+ 4147      5F636D64 
+ 4147      00
+ 4148              	.LASF84:
+ 4149 011c 4552524F 		.ascii	"ERROR_NODE\000"
+ 4149      525F4E4F 
+ 4149      444500
+ 4150              	.LASF65:
+ 4151 0127 56434C5F 		.ascii	"VCL_Throttle_High\000"
+ 4151      5468726F 
+ 4151      74746C65 
+ 4151      5F486967 
+ 4151      6800
+ 4152              	.LASF13:
+ 4153 0139 75696E74 		.ascii	"uint8_t\000"
+ 4153      385F7400 
+ 4154              	.LASF51:
+ 4155 0141 67657441 		.ascii	"getABSMotorRPM\000"
+ 4155      42534D6F 
+ 4155      746F7252 
+ 4155      504D00
+ 4156              	.LASF17:
+ 4157 0150 75696E74 		.ascii	"uint8\000"
+ 4157      3800
+ 4158              	.LASF92:
+ 4159 0156 5448524F 		.ascii	"THROTTLE_HIGH\000"
+ 4159      54544C45 
+ 4159      5F484947 
+ 4159      4800
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 81
+
+
+ 4160              	.LASF101:
+ 4161 0164 63757272 		.ascii	"current_bytes\000"
+ 4161      656E745F 
+ 4161      62797465 
+ 4161      7300
+ 4162              	.LASF31:
+ 4163 0172 53544143 		.ascii	"STACK_FUSE_BROKEN\000"
+ 4163      4B5F4655 
+ 4163      53455F42 
+ 4163      524F4B45 
+ 4163      4E00
+ 4164              	.LASF38:
+ 4165 0184 504F535F 		.ascii	"POS_CONT_CLOSED\000"
+ 4165      434F4E54 
+ 4165      5F434C4F 
+ 4165      53454400 
+ 4166              	.LASF20:
+ 4167 0194 666C6F61 		.ascii	"float\000"
+ 4167      7400
+ 4168              	.LASF19:
+ 4169 019a 696E7433 		.ascii	"int32\000"
+ 4169      3200
+ 4170              	.LASF10:
+ 4171 01a0 6C6F6E67 		.ascii	"long long int\000"
+ 4171      206C6F6E 
+ 4171      6720696E 
+ 4171      7400
+ 4172              	.LASF52:
+ 4173 01ae 67657450 		.ascii	"getPedalLow\000"
+ 4173      6564616C 
+ 4173      4C6F7700 
+ 4174              	.LASF56:
+ 4175 01ba 48656172 		.ascii	"HeartB\000"
+ 4175      744200
+ 4176              	.LASF22:
+ 4177 01c1 63686172 		.ascii	"char\000"
+ 4177      00
+ 4178              	.LASF93:
+ 4179 01c6 5448524F 		.ascii	"THROTTLE_LOW\000"
+ 4179      54544C45 
+ 4179      5F4C4F57 
+ 4179      00
+ 4180              	.LASF7:
+ 4181 01d3 6C6F6E67 		.ascii	"long int\000"
+ 4181      20696E74 
+ 4181      00
+ 4182              	.LASF99:
+ 4183 01dc 766F6C74 		.ascii	"voltage\000"
+ 4183      61676500 
+ 4184              	.LASF74:
+ 4185 01e4 496E7465 		.ascii	"InterruptState\000"
+ 4185      72727570 
+ 4185      74537461 
+ 4185      746500
+ 4186              	.LASF9:
+ 4187 01f3 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4187      20756E73 
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 82
+
+
+ 4187      69676E65 
+ 4187      6420696E 
+ 4187      7400
+ 4188              	.LASF3:
+ 4189 0205 5F5F7569 		.ascii	"__uint8_t\000"
+ 4189      6E74385F 
+ 4189      7400
+ 4190              	.LASF53:
+ 4191 020f 67657450 		.ascii	"getPedalHigh\000"
+ 4191      6564616C 
+ 4191      48696768 
+ 4191      00
+ 4192              	.LASF40:
+ 4193 021c 43454C4C 		.ascii	"CELL_VOLT_OVER\000"
+ 4193      5F564F4C 
+ 4193      545F4F56 
+ 4193      455200
+ 4194              	.LASF86:
+ 4195 022b 43415041 		.ascii	"CAPACITOR_VOLT\000"
+ 4195      4349544F 
+ 4195      525F564F 
+ 4195      4C5400
+ 4196              	.LASF94:
+ 4197 023a 4553544F 		.ascii	"ESTOP\000"
+ 4197      5000
+ 4198              	.LASF54:
+ 4199 0240 67657445 		.ascii	"getEStop\000"
+ 4199      53746F70 
+ 4199      00
+ 4200              	.LASF23:
+ 4201 0249 6C6F6E67 		.ascii	"long double\000"
+ 4201      20646F75 
+ 4201      626C6500 
+ 4202              	.LASF69:
+ 4203 0255 63686172 		.ascii	"charge\000"
+ 4203      676500
+ 4204              	.LASF39:
+ 4205 025c 49534F5F 		.ascii	"ISO_FAULT\000"
+ 4205      4641554C 
+ 4205      5400
+ 4206              	.LASF80:
+ 4207 0266 5448524F 		.ascii	"THROTTLE_MAP\000"
+ 4207      54544C45 
+ 4207      5F4D4150 
+ 4207      00
+ 4208              	.LASF36:
+ 4209 0273 434F4D5F 		.ascii	"COM_FAILURE\000"
+ 4209      4641494C 
+ 4209      55524500 
+ 4210              	.LASF1:
+ 4211 027f 756E7369 		.ascii	"unsigned char\000"
+ 4211      676E6564 
+ 4211      20636861 
+ 4211      7200
+ 4212              	.LASF49:
+ 4213 028d 67657441 		.ascii	"getAckRx\000"
+ 4213      636B5278 
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 83
+
+
+ 4213      00
+ 4214              	.LASF0:
+ 4215 0296 7369676E 		.ascii	"signed char\000"
+ 4215      65642063 
+ 4215      68617200 
+ 4216              	.LASF34:
+ 4217 02a2 43524954 		.ascii	"CRITICAL_SOC\000"
+ 4217      4943414C 
+ 4217      5F534F43 
+ 4217      00
+ 4218              	.LASF11:
+ 4219 02af 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 4219      206C6F6E 
+ 4219      6720756E 
+ 4219      7369676E 
+ 4219      65642069 
+ 4220              	.LASF16:
+ 4221 02c6 75696E74 		.ascii	"uint32_t\000"
+ 4221      33325F74 
+ 4221      00
+ 4222              	.LASF12:
+ 4223 02cf 756E7369 		.ascii	"unsigned int\000"
+ 4223      676E6564 
+ 4223      20696E74 
+ 4223      00
+ 4224              	.LASF14:
+ 4225 02dc 75696E74 		.ascii	"uint16_t\000"
+ 4225      31365F74 
+ 4225      00
+ 4226              	.LASF43:
+ 4227 02e5 46554C4C 		.ascii	"FULL\000"
+ 4227      00
+ 4228              	.LASF25:
+ 4229 02ea 43414E5F 		.ascii	"CAN_DATA_BYTES_MSG\000"
+ 4229      44415441 
+ 4229      5F425954 
+ 4229      45535F4D 
+ 4229      534700
+ 4230              	.LASF46:
+ 4231 02fd 67657443 		.ascii	"getCapacitorVoltage\000"
+ 4231      61706163 
+ 4231      69746F72 
+ 4231      566F6C74 
+ 4231      61676500 
+ 4232              	.LASF33:
+ 4233 0311 4C4F575F 		.ascii	"LOW_SOC\000"
+ 4233      534F4300 
+ 4234              	.LASF88:
+ 4235 0319 43555254 		.ascii	"CURTIS_HEART_BEAT_CHECK\000"
+ 4235      49535F48 
+ 4235      45415254 
+ 4235      5F424541 
+ 4235      545F4348 
+ 4236              	.LASF5:
+ 4237 0331 73686F72 		.ascii	"short unsigned int\000"
+ 4237      7420756E 
+ 4237      7369676E 
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 84
+
+
+ 4237      65642069 
+ 4237      6E7400
+ 4238              	.LASF45:
+ 4239 0344 424D535F 		.ascii	"BMS_STATUS\000"
+ 4239      53544154 
+ 4239      555300
+ 4240              	.LASF60:
+ 4241 034f 63616E5F 		.ascii	"can_send_status\000"
+ 4241      73656E64 
+ 4241      5F737461 
+ 4241      74757300 
+ 4242              	.LASF81:
+ 4243 035f 5041434B 		.ascii	"PACK_TEMP\000"
+ 4243      5F54454D 
+ 4243      5000
+ 4244              	.LASF37:
+ 4245 0369 4E45475F 		.ascii	"NEG_CONT_CLOSED\000"
+ 4245      434F4E54 
+ 4245      5F434C4F 
+ 4245      53454400 
+ 4246              	.LASF85:
+ 4247 0379 4552524F 		.ascii	"ERROR_IDX\000"
+ 4247      525F4944 
+ 4247      5800
+ 4248              	.LASF15:
+ 4249 0383 696E7433 		.ascii	"int32_t\000"
+ 4249      325F7400 
+ 4250              	.LASF102:
+ 4251 038b 43414E5F 		.ascii	"CAN_SendMsg\000"
+ 4251      53656E64 
+ 4251      4D736700 
+ 4252              	.LASF35:
+ 4253 0397 494D4241 		.ascii	"IMBALANCE\000"
+ 4253      4C414E43 
+ 4253      4500
+ 4254              	.LASF55:
+ 4255 03a1 64617461 		.ascii	"data\000"
+ 4255      00
+ 4256              	.LASF66:
+ 4257 03a6 56434C5F 		.ascii	"VCL_Throttle_Low\000"
+ 4257      5468726F 
+ 4257      74746C65 
+ 4257      5F4C6F77 
+ 4257      00
+ 4258              	.LASF100:
+ 4259 03b7 626D735F 		.ascii	"bms_status\000"
+ 4259      73746174 
+ 4259      757300
+ 4260              	.LASF44:
+ 4261 03c2 50524543 		.ascii	"PRECHARGE_CLOSED\000"
+ 4261      48415247 
+ 4261      455F434C 
+ 4261      4F534544 
+ 4261      00
+ 4262              	.LASF18:
+ 4263 03d3 75696E74 		.ascii	"uint32\000"
+ 4263      333200
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 85
+
+
+ 4264              	.LASF57:
+ 4265 03da 6D657373 		.ascii	"message\000"
+ 4265      61676500 
+ 4266              	.LASF27:
+ 4267 03e2 43414E5F 		.ascii	"CAN_TX_MSG\000"
+ 4267      54585F4D 
+ 4267      534700
+ 4268              	.LASF42:
+ 4269 03ed 43484152 		.ascii	"CHARGE_HAULT\000"
+ 4269      47455F48 
+ 4269      41554C54 
+ 4269      00
+ 4270              	.LASF70:
+ 4271 03fa 73617665 		.ascii	"save_soc\000"
+ 4271      5F736F63 
+ 4271      00
+ 4272              	.LASF48:
+ 4273 0403 67657443 		.ascii	"getCurtisHeartBeatCheck\000"
+ 4273      75727469 
+ 4273      73486561 
+ 4273      72744265 
+ 4273      61744368 
+ 4274              	.LASF98:
+ 4275 041b 564F4C54 		.ascii	"VOLT_B4\000"
+ 4275      5F423400 
+ 4276              	.LASF26:
+ 4277 0423 62797465 		.ascii	"byte\000"
+ 4277      00
+ 4278              	.LASF6:
+ 4279 0428 5F5F696E 		.ascii	"__int32_t\000"
+ 4279      7433325F 
+ 4279      7400
+ 4280              	.LASF107:
+ 4281 0432 63616E5F 		.ascii	"can_manga.c\000"
+ 4281      6D616E67 
+ 4281      612E6300 
+ 4282              	.LASF41:
+ 4283 043e 43454C4C 		.ascii	"CELL_VOLT_UNDER\000"
+ 4283      5F564F4C 
+ 4283      545F554E 
+ 4283      44455200 
+ 4284              	.LASF67:
+ 4285 044e 455F5374 		.ascii	"E_Stop_Check\000"
+ 4285      6F705F43 
+ 4285      6865636B 
+ 4285      00
+ 4286              	.LASF95:
+ 4287 045b 564F4C54 		.ascii	"VOLT_B1\000"
+ 4287      5F423100 
+ 4288              	.LASF96:
+ 4289 0463 564F4C54 		.ascii	"VOLT_B2\000"
+ 4289      5F423200 
+ 4290              	.LASF97:
+ 4291 046b 564F4C54 		.ascii	"VOLT_B3\000"
+ 4291      5F423300 
+ 4292              	.LASF108:
+ 4293 0473 433A5C55 		.ascii	"C:\\Users\\Tehya\\Documents\\FormulaFE7\\FRUCD-Dash"
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 86
+
+
+ 4293      73657273 
+ 4293      5C546568 
+ 4293      79615C44 
+ 4293      6F63756D 
+ 4294 04a1 626F6172 		.ascii	"board\\Dashboard.cydsn\000"
+ 4294      645C4461 
+ 4294      7368626F 
+ 4294      6172642E 
+ 4294      63796473 
+ 4295              	.LASF104:
+ 4296 04b7 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 4296      74657243 
+ 4296      72697469 
+ 4296      63616C53 
+ 4296      65637469 
+ 4297              	.LASF91:
+ 4298 04ce 4142535F 		.ascii	"ABS_MOTOR_RPM\000"
+ 4298      4D4F544F 
+ 4298      525F5250 
+ 4298      4D00
+ 4299              	.LASF82:
+ 4300 04dc 42535044 		.ascii	"BSPD_CATCH\000"
+ 4300      5F434154 
+ 4300      434800
+ 4301              	.LASF90:
+ 4302 04e7 4552524F 		.ascii	"ERROR_TOLERANCE\000"
+ 4302      525F544F 
+ 4302      4C455241 
+ 4302      4E434500 
+ 4303              	.LASF76:
+ 4304 04f7 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 4304      52784275 
+ 4304      66666572 
+ 4304      00
+ 4305              	.LASF106:
+ 4306 0504 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 4306      43313120 
+ 4306      352E342E 
+ 4306      31203230 
+ 4306      31363036 
+ 4307 0537 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 4307      20726576 
+ 4307      6973696F 
+ 4307      6E203233 
+ 4307      37373135 
+ 4308 056a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 4308      66756E63 
+ 4308      74696F6E 
+ 4308      2D736563 
+ 4308      74696F6E 
+ 4309              	.LASF103:
+ 4310 0592 43794465 		.ascii	"CyDelay\000"
+ 4310      6C617900 
+ 4311              	.LASF73:
+ 4312 059a 63616E5F 		.ascii	"can_receive\000"
+ 4312      72656365 
+ 4312      69766500 
+ARM GAS  C:\Users\Tehya\AppData\Local\Temp\cczWO4Ae.s 			page 87
+
+
+ 4313              	.LASF68:
+ 4314 05a6 63616E5F 		.ascii	"can_send_charge\000"
+ 4314      73656E64 
+ 4314      5F636861 
+ 4314      72676500 
+ 4315              	.LASF79:
+ 4316 05b6 5448524F 		.ascii	"THROTTLE_MULTIPLIER\000"
+ 4316      54544C45 
+ 4316      5F4D554C 
+ 4316      5449504C 
+ 4316      49455200 
+ 4317              	.LASF83:
+ 4318 05ca 43555252 		.ascii	"CURRENT\000"
+ 4318      454E5400 
+ 4319              	.LASF58:
+ 4320 05d2 7061796C 		.ascii	"payload\000"
+ 4320      6F616400 
+ 4321              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+>>>>>>> branch_tehya

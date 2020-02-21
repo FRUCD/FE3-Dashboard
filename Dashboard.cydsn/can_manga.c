@@ -237,7 +237,8 @@ void can_send_status(
 void can_send_cmd(
     uint8_t SetInterlock,
     uint16_t VCL_Throttle_High,
-    uint16_t VCL_Throttle_Low
+    uint16_t VCL_Throttle_Low,
+    uint8_t E_Stop_Check
 )
 {
     //max and min voltage means the voltage of single cell
@@ -250,7 +251,7 @@ void can_send_cmd(
         data[2] = VCL_Throttle_Low;
         
         data[3] = 0;
-        data[4] = 0;
+        data[4] = E_Stop_Check;
         
         data[5] = 0;
         data[6] = 0;
