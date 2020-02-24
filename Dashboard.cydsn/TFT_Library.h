@@ -75,18 +75,19 @@ void libTFT_DrawRectangle(uint16_t poX, uint16_t poY, uint16_t length, uint16_t 
 void libTFT_DrawCircle(int poX, int poY, int r,uint16_t color);
 void libTFT_FillCircle(int poX, int poY, int r,uint16_t color);
 void libTFT_SetOrientation(uint8_t orient);
-void libTFT_DrawChar( uint8_t ascii, uint16_t poX, uint16_t poY,uint16_t size, uint16_t fgcolor);
-void libTFT_DrawString(char *string,uint16_t poX, uint16_t poY, uint16_t size,uint16_t fgcolor);
-void libTFT_DrawInt(int i,uint16_t poX, uint16_t poY, uint16_t size,uint16_t fgcolor);
+void libTFT_DrawChar( uint8_t ascii, uint16_t poX, uint16_t poY,uint16_t size, uint16_t fgcolor, const char font[][16]);
+void libTFT_DrawString(char *string,uint16_t poX, uint16_t poY, uint16_t size,uint16_t fgcolor, const char font[][16]);
+void libTFT_DrawInt(int i,uint16_t poX, uint16_t poY, uint16_t size,uint16_t fgcolor, const char font[][16]);
 void libTFT_SetPixel(uint16_t poX, uint16_t poY,uint16_t color);
 //***************************************************************************************
 
+void libTFT_DrawBitmap(uint16_t poX, uint16_t poY, uint16_t length, uint16_t width, const char bitmap[]);
 void libTFT_FillBitmap(uint16_t poX, uint16_t poY, uint16_t length, uint16_t width, unsigned short *Bitmap);
 void libTFT_Graf(uint16_t XL, uint16_t YU, uint16_t YD, char  Ydata , char last);
 // void Read_SD_Pictute(uint16_t XL, uint16_t XR, uint16_t YU, uint16_t YD, unsigned short *FileName);
 //void libTFT_GrafN(unsigned int Xi, unsigned int Yo, uint16_t height, uint8*  Ydata , uint8* last, uint16_t *colors, uint16_t Blcolor, uint8 Nch);
 //void libTFT_DrawStringBl(char *string,uint16_t poX, uint16_t poY, uint16_t size,uint16_t fgcolor,uint16_t bgcolor);
-void libTFT_DrawButton(uint16 xpos,uint16 ypos,uint16 width,uint16 height,uint8 pressed,char *label);
-libTFT_Button* libTFT_CreateButton(uint16 xpos,uint16 ypos,uint16 width,uint16 height,char *label);
+void libTFT_DrawButton(uint16 xpos,uint16 ypos,uint16 width,uint16 height,uint8 pressed,char *label, const char font[][16]);
+libTFT_Button* libTFT_CreateButton(uint16 xpos,uint16 ypos,uint16 width,uint16 height,char *label, const char font[][16]);
 
 #endif /* libTFT_H_ */

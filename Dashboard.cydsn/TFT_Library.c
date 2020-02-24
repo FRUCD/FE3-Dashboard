@@ -9,6 +9,9 @@
 
 #include "TFT_Library.h"
 #include "fonts.h"
+#include "images.h"
+#include <stdio.h>
+#include <string.h>
 
 /* Variables going to extern */
 uint16_t MAX_X=320, MAX_Y = 240;
@@ -377,7 +380,7 @@ void libTFT_SetOrientation(uint8_t orient)
 	{ MAX_X = 319;	MAX_Y = 239;}
 }
 //*************************************************************************************
-void libTFT_DrawChar( uint8_t ascii, uint16_t poX, uint16_t poY,uint16_t size, uint16_t fgcolor)
+void libTFT_DrawChar( uint8_t ascii, uint16_t poX, uint16_t poY,uint16_t size, uint16_t fgcolor, const char font[][16])
 {
 	int i = 0;   uint8_t f =0 ;
 	uint8_t temp=0, k;
@@ -388,11 +391,11 @@ void libTFT_DrawChar( uint8_t ascii, uint16_t poX, uint16_t poY,uint16_t size, u
 	{
 		if ((ascii >= 0x20) && (ascii <= 0x7F))
 		{
-			temp = (Font16x16[ascii-0x20][i]);
+			temp = (font[ascii-0x20][i]);
 		}
 		else if ( ascii >= 0xC0 )
 		{
-			temp = (Font16x16[ascii-0x65][i]);
+			temp = (font[ascii-0x65][i]);
 		}
 		k=i / 8;
 		for(f =0 ; f < FONT_Y; f++)
@@ -407,13 +410,13 @@ void libTFT_DrawChar( uint8_t ascii, uint16_t poX, uint16_t poY,uint16_t size, u
 }
 
 //*************************************************************************************
-void libTFT_DrawString(char *string,uint16_t poX, uint16_t poY, uint16_t size,uint16_t fgcolor)
+void libTFT_DrawString(char *string,uint16_t poX, uint16_t poY, uint16_t size,uint16_t fgcolor, const char font[][16])
 {
 	while(*string)
 	{
 		if((poX + FONT_SPACE) > MAX_X)		{poX = 1; poY = poY + FONT_X*size;}
 		
-		libTFT_DrawChar(*string, poX, poY, size, fgcolor);
+		libTFT_DrawChar(*string, poX, poY, size, fgcolor, font);
 		if (size > 0) poX += FONT_SPACE*size;
 		else poX += FONT_SPACE;
 		string++;
@@ -421,13 +424,27 @@ void libTFT_DrawString(char *string,uint16_t poX, uint16_t poY, uint16_t size,ui
 }
 
 //*************************************************************************************
-void libTFT_DrawInt(int i,uint16_t poX, uint16_t poY, uint16_t size,uint16_t fgcolor){
+void libTFT_DrawInt(int i,uint16_t poX, uint16_t poY, uint16_t size,uint16_t fgcolor, const char font[][16]){
     char stringi[10];
     itoa(i, stringi, 10);
-    libTFT_DrawString(stringi, poX, poY, size, fgcolor);
+    libTFT_DrawString(stringi, poX, poY, size, fgcolor, font);
 }
 
 //************************************************************************************++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//DrawBitmap -- A backup bitmap function that handels raw hexdumps of bitmaps, as opposed to whatever the one that came with this library does (it frightens me)
+void libTFT_DrawBitmap(uint16_t poX, uint16_t poY, uint16_t length, uint16_t width, const char bitmap[]){
+    
+    //were not interested in color profile information so the first thing we need is the pixel offset.
+    //for all bitmaps, pixel offset is 10 bytes in and 4 bytes long, starting at index 20 and ending at index 27.
+    char parsePixelOffset[4];
+    int pixelOffset;
+    for(int i = 0; i < 4; i++){
+        parsePixelOffset[i] = bitmap[20 + i];
+    }
+    pixelOffset = stoi(parsePixelOffset,nullptr,16);
+    
+}
+
 void libTFT_FillBitmap(uint16_t XL, uint16_t XR, uint16_t YU, uint16_t YD, unsigned short *Bitmap)
 {
 	unsigned long  XY=0;
@@ -512,7 +529,7 @@ last =Ydata;
 
 }
 
-void libTFT_DrawButton(uint16 xpos,uint16 ypos,uint16 width,uint16 height,uint8 pressed,char *label)
+void libTFT_DrawButton(uint16 xpos,uint16 ypos,uint16 width,uint16 height,uint8 pressed,char *label, const char font[][16])
 {
     uint16 bgcolor, tcolor, lpos, tpos;
     
@@ -530,10 +547,10 @@ void libTFT_DrawButton(uint16 xpos,uint16 ypos,uint16 width,uint16 height,uint8 
     
     libTFT_DrawRectangle(xpos, ypos, width, height, BLACK);
     libTFT_FillRectangle(xpos+1, ypos+1, width+-2, height-2, bgcolor);
-    libTFT_DrawString(label, lpos, tpos, 1, tcolor);
+    libTFT_DrawString(label, lpos, tpos, 1, tcolor, font);
 }
 
-libTFT_Button *libTFT_CreateButton(uint16 xpos,uint16 ypos,uint16 width,uint16 height,char *label)
+libTFT_Button *libTFT_CreateButton(uint16 xpos,uint16 ypos,uint16 width,uint16 height,char *label, const char font[][16])
 {
     libTFT_Button *temp_button;
     temp_button = (libTFT_Button *) malloc(sizeof(libTFT_Button));
@@ -545,7 +562,7 @@ libTFT_Button *libTFT_CreateButton(uint16 xpos,uint16 ypos,uint16 width,uint16 h
         temp_button->height = height;
         temp_button->pressed = 0;
         temp_button->label = label;
-        libTFT_DrawButton(temp_button->xpos, temp_button->ypos, temp_button->width, temp_button->height, temp_button->pressed, temp_button->label); 
+        libTFT_DrawButton(temp_button->xpos, temp_button->ypos, temp_button->width, temp_button->height, temp_button->pressed, temp_button->label, font); 
     }
     return temp_button;
 }

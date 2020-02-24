@@ -6,6 +6,7 @@
 #include "TFT_Library.h"
 #include "LED.h"
 #include "can_manga.h"
+#include "fonts.h"
 
 
 // Uncomment THROTTLE_LIMITING to enable power reduction at high temperatures
@@ -121,13 +122,13 @@ void nodeCheckStart()
 void displayData() {
     if(BSPD_CATCH == 1){
         libTFT_ClearScreen(); //could this be improved with libTFT_Start_TFT()?
-        libTFT_DrawString("BSPD TRIGGERED",0,0,8,RED);
+        libTFT_DrawString("BSPD TRIGGERED",0,0,8,RED, Font16x16);
         //GLCD_Write_Frame(); //possibly no need for a write frame in this system.
     }
     else{
         libTFT_ClearScreen();
-        libTFT_DrawInt(PACK_TEMP,0,0,8,BLUE); //size 8 is left over from previous version.
-        libTFT_DrawInt(charge,120,0,8,BLUE2); //size 8 is left over from previous version.
+        libTFT_DrawInt(PACK_TEMP,0,0,8,BLUE, Font16x16); //size 8 is left over from previous version.
+        libTFT_DrawInt(charge,120,0,8,BLUE2, Font16x16); //size 8 is left over from previous version.
 
         //GLCD_Write_Frame();
     }
@@ -139,9 +140,9 @@ void calibrateScreen() {
     libTFT_FillRectangle(0, 262, 10, 10, BLUE);
     libTFT_FillRectangle(470, 0, 10, 10, GREEN);
     libTFT_FillRectangle(470, 262, 10, 10, YELLOW);
-    libTFT_DrawString("Screen test size 10", 10, 10, 10, BLACK);
-    libTFT_DrawString("Screen test size 20", 10, 30, 20, BLACK);
-    libTFT_DrawString("Screen test size 25", 10, 50, 25, BLACK);
+    libTFT_DrawString("Screen test size 10", 10, 10, 10, BLACK, Font16x16);
+    libTFT_DrawString("Screen test size 20", 10, 30, 20, BLACK, Font16x16);
+    libTFT_DrawString("Screen test size 25", 10, 50, 25, BLACK, Font16x16);
     CyDelay(300);
 }
 
@@ -280,7 +281,7 @@ int main()
             case Startup:
                 libTFT_ClearScreen();
                 if(firstStart == 0) {
-                    libTFT_DrawString("START",0,0,8,BLACK);
+                    libTFT_DrawString("START",0,0,8,BLACK, Font16x16);
                     //GLCD_Write_Frame();
                 } else {
                     displayData();
@@ -306,7 +307,7 @@ int main()
             case LV:
                 if(firstLV == 0) {
                     libTFT_ClearScreen();
-                    libTFT_DrawString("LV",0,0,8,BLACK);
+                    libTFT_DrawString("LV",0,0,8,BLACK, Font16x16);
                     //GLCD_Write_Frame();
                     firstLV = 1;
                 } else {
@@ -353,7 +354,7 @@ int main()
                 
             case Precharging:
                 libTFT_ClearScreen();
-                libTFT_DrawString("PRECHARGE",0,0,8,BLACK);
+                libTFT_DrawString("PRECHARGE",0,0,8,BLACK, Font16x16);
                 //GLCD_Write_Frame();
                 
                 CAN_GlobalIntEnable();
@@ -398,7 +399,7 @@ int main()
             case HV_Enabled:
                 if(firstHV == 0) {
                     libTFT_ClearScreen();
-                    libTFT_DrawString("HV",0,0,8,BLACK);
+                    libTFT_DrawString("HV",0,0,8,BLACK, Font16x16);
                     //GLCD_Write_Frame();
                     firstHV = 1;
                 } else {
@@ -463,7 +464,7 @@ int main()
 	        case Drive:
                 if(firstDrive == 0) {
                     libTFT_ClearScreen();;
-                    libTFT_DrawString("DRIVE",0,0,8,BLACK);
+                    libTFT_DrawString("DRIVE",0,0,8,BLACK, Font16x16);
                     //GLCD_Write_Frame();
                     firstDrive = 1;
                 } else {
@@ -573,20 +574,20 @@ int main()
                 
                 if(error_state == fromBMS) {}
                 libTFT_ClearScreen();;
-                libTFT_DrawString("DASH",0,0,2,BLACK);
-                libTFT_DrawString("FAULT",0,0,2,BLACK);
-                libTFT_DrawInt(error_state,80,32,2,BLACK);
-                libTFT_DrawString("T:",110, 0, 2, BLACK);
-                libTFT_DrawString("FALUT:", 110, 32, 2, BLACK);
+                libTFT_DrawString("DASH",0,0,2,BLACK, Font16x16);
+                libTFT_DrawString("FAULT",0,0,2,BLACK, Font16x16);
+                libTFT_DrawInt(error_state,80,32,2,BLACK, Font16x16);
+                libTFT_DrawString("T:",110, 0, 2, BLACK, Font16x16);
+                libTFT_DrawString("FALUT:", 110, 32, 2, BLACK, Font16x16);
                 char* bms_f;
                 //sprintf(bms_f, "%x", bms_error);
                 if(error_state == fromBMS) {
                     
-                libTFT_DrawInt(PACK_TEMP, 110, 0, 2, BLACK);
-                libTFT_DrawInt(bms_error, 180, 32, 2, BLACK);
-                libTFT_DrawInt(ERROR_NODE, 180, 0, 2, BLACK);
-                libTFT_DrawString(",",184, 0, 2, BLACK);
-                libTFT_DrawInt(ERROR_IDX, 188, 0, 2, BLACK);
+                libTFT_DrawInt(PACK_TEMP, 110, 0, 2, BLACK, Font16x16);
+                libTFT_DrawInt(bms_error, 180, 32, 2, BLACK, Font16x16);
+                libTFT_DrawInt(ERROR_NODE, 180, 0, 2, BLACK, Font16x16);
+                libTFT_DrawString(",",184, 0, 2, BLACK, Font16x16);
+                libTFT_DrawInt(ERROR_IDX, 188, 0, 2, BLACK, Font16x16);
                 }
                 //GLCD_Write_Frame();
                 

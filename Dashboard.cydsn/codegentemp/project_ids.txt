@@ -1,15 +1,6 @@
-<<<<<<< HEAD
-C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\Dashboard.cyprj|784c068d-ccf8-48c8-86eb-c8511102b346
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|912b2dc0-46ec-4c98-aad7-e5ac5aaf623b
-C:\Users\ianrd\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|ecc217f6-d59a-40e1-86ec-de5336e2b256
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|1a2deda0-511d-4cab-89ed-693fd78adaa4
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|c7416c35-7511-4d42-ac81-5c9766da3eb5
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|62993dd5-3846-41ba-8e7c-a608bb651f8d
-=======
-C:\Users\Tehya\Documents\FormulaFE7\FRUCD-Dashboard\Dashboard.cydsn\Dashboard.cyprj|ed679aa6-37e8-4052-98e8-10fccda5d59c
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|b38fa3c2-6cd7-42a8-8d55-dc27ad327dc1
-C:\Users\Tehya\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|69cb9402-61f6-4c0f-a1e9-9557828f88c1
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|78693084-c06e-4fe8-a1ac-3190cbc6f38a
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d27f7448-8e05-46ca-8480-0b0841fd75f5
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|c748e17a-7f22-41a7-b778-132fbf0e8beb
->>>>>>> branch_tehya
+C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\Dashboard.cyprj|0d94bfc5-2bf0-4526-9e4c-9e3232bb1e24
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e296d253-87da-4aea-b6d9-ea605dc1e295
+C:\Users\ianrd\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|cbde5c4b-b803-45f2-b853-5f932b0d268e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|cf0ae722-8dab-45ac-bc6e-dace4cf90ade
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|e3b69bc1-b180-49d7-9dae-565ef66b5307
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|ec92fbaa-31dd-477c-9771-32f65b5089c0
