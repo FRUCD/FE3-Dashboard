@@ -146,12 +146,13 @@ void displayData() {
 
 void calibrateScreen() {
     //just a test function that displays elements at the supposed corners of the screen
+    UG_FillScreen(C_WHITE);
     //libTFT_FillRectangle(0, 0, 10, 10, RED);
     UG_FillFrame(0, 0, 10, 10, C_RED);
     //libTFT_FillRectangle(0, 262, 10, 10, BLUE);
     UG_FillFrame(0, 262, 10, 272, C_BLUE);
     //libTFT_FillRectangle(470, 0, 10, 10, GREEN);
-    UG_FillFrame(480, 0, 480, 10, C_GREEN);
+    UG_FillFrame(470, 0, 480, 10, C_GREEN);
     //libTFT_FillRectangle(470, 262, 10, 10, YELLOW);
     UG_FillFrame(470, 262, 480, 272, C_YELLOW);
     CyDelay(300);
@@ -300,6 +301,7 @@ int main()
             // startup -- 
             case Startup:
                 //libTFT_ClearScreen();
+                UG_FillScreen(C_WHITE);
                 if(firstStart == 0) {
                     //libTFT_DrawString("START",0,0,8,BLACK, Font16x16);
                     UG_PutString(0, 0, "START");

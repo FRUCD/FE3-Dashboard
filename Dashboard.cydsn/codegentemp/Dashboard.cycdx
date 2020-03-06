@@ -12,7 +12,7 @@
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <register name="WDT_Timer_COUNTER" address="0x40006504" bitWidth="32" desc="UDB.A0 - Current Down Counter Value" hidden="false" />
     <register name="WDT_Timer_PERIOD" address="0x40006524" bitWidth="32" desc="UDB.D0 - Assigned Period" hidden="false" />
-    <register name="WDT_Timer_Control_Reg" address="0x40006574" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
+    <register name="WDT_Timer_Control_Reg" address="0x40006575" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
       <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the Timer" hidden="false" />
       <field name="CTRL_CMODE" from="6" to="5" access="RW" resetVal="" desc="Capture Mode" hidden="false" />
       <field name="CTRL_TEN" from="4" to="4" access="RW" resetVal="" desc="Trigger Enable Bit" hidden="false" />
@@ -106,17 +106,17 @@
   <block name="ZeroTerminal_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="isr_nodeok" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="SD" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="D_RST" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="nrd" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="nwr" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_RD" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="D_BL" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_WR" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_RST" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Em_EEPROM_Dynamic" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ncs" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_CS" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="GraphicLCDIntf" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="isr_wdt" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="d_lsb" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="d_c" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="d" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_RS" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="HVGND" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="GND_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />

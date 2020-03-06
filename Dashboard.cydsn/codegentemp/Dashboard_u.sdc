@@ -1,6 +1,6 @@
 # Component constraints for C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\TopDesign\TopDesign.cysch
 # Project: C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\Dashboard.cyprj
-# Date: Thu, 05 Mar 2020 23:56:53 GMT
+# Date: Fri, 06 Mar 2020 00:34:12 GMT
 # GraphicLCDIntf
 # False paths present for both 8 and 16 bits Graphic LCD Interface configurations 
 expr {(8) == 8 ?

@@ -71,9 +71,6 @@
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\Node_Timer_PM.c" value="SOURCE_C;CortexM3;;;;Node_Timer" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\isr_nodeok.c" value="SOURCE_C;CortexM3;;;;isr_nodeok" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\isr_nodeok.h" value="HEADER;;;;;isr_nodeok" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_RST_aliases.h" value="HEADER;;;;;D_RST" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_RST.c" value="SOURCE_C;CortexM3;;;;D_RST" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_RST.h" value="HEADER;;;;;D_RST" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\SD_aliases.h" value="HEADER;;;;;SD" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\SD.c" value="SOURCE_C;CortexM3;;;;SD" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\SD.h" value="HEADER;;;;;SD" />
@@ -98,6 +95,9 @@
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_BL_aliases.h" value="HEADER;;;;;D_BL" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_BL.c" value="SOURCE_C;CortexM3;;;;D_BL" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_BL.h" value="HEADER;;;;;D_BL" />
+  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_RST_aliases.h" value="HEADER;;;;;D_RST" />
+  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_RST.c" value="SOURCE_C;CortexM3;;;;D_RST" />
+  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_RST.h" value="HEADER;;;;;D_RST" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM3;;;;Em_EEPROM_Dynamic" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\cy_em_eeprom.h" value="HEADER;;;;;Em_EEPROM_Dynamic" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
