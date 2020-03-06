@@ -1,4 +1,6 @@
---------------- Rebuild Started: 02/22/2020 12:55:46 Project: Dashboard, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Rebuild Started: 03/05/2020 15:56:47 Project: Dashboard, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\ugui.o"
+Deleting file ".\CortexM3\ARM_GCC_541\Debug\ugui_SSD1963.o"
 Deleting file ".\Dashboard.cycdx"
 Deleting file ".\Dashboard.svd"
 Deleting file ".\Dashboard.rpt"
@@ -22,17 +24,59 @@ Static timing analysis...
 API Generation...
 Dependency Generation...
 Cleanup...
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/TFT_Library.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c TFT_Library.c -o .\CortexM3\ARM_GCC_541\Debug\TFT_Library.o
-TFT_Library.c: In function 'libTFT_DrawBitmap':
-TFT_Library.c:444:19: warning: implicit declaration of function 'stoi' [-Wimplicit-function-declaration]
-     pixelOffset = stoi(parsePixelOffset,nullptr,16);
-                   ^
-TFT_Library.c:444:41: error: 'nullptr' undeclared (first use in this function)
-     pixelOffset = stoi(parsePixelOffset,nullptr,16);
-                                         ^
-TFT_Library.c:444:41: note: each undeclared identifier is reported only once for each function it appears in
-TFT_Library.c:440:9: warning: variable 'pixelOffset' set but not used [-Wunused-but-set-variable]
-     int pixelOffset;
-         ^
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/ugui.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c ugui.c -o .\CortexM3\ARM_GCC_541\Debug\ugui.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/ugui_SSD1963.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c ugui_SSD1963.c -o .\CortexM3\ARM_GCC_541\Debug\ugui_SSD1963.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM3\ARM_GCC_541\Debug\main.o
+main.c: In function 'main':
+main.c:258:5: warning: implicit declaration of function 'libTFT_Start_TFT' [-Wimplicit-function-declaration]
+     libTFT_Start_TFT();
+     ^
+main.c:297:17: warning: implicit declaration of function 'libTFT_ClearScreen' [-Wimplicit-function-declaration]
+                 libTFT_ClearScreen();
+                 ^
+main.c:299:21: warning: implicit declaration of function 'libTFT_DrawString' [-Wimplicit-function-declaration]
+                     libTFT_DrawString("START",0,0,8,BLACK, Font16x16);
+                     ^
+main.c:299:53: error: 'BLACK' undeclared (first use in this function)
+                     libTFT_DrawString("START",0,0,8,BLACK, Font16x16);
+                                                     ^
+main.c:299:53: note: each undeclared identifier is reported only once for each function it appears in
+main.c:353:27: error: 'YELLOW' undeclared (first use in this function)
+                 LED_color(YELLOW);
+                           ^
+main.c:382:27: error: 'MAGENTA' undeclared (first use in this function)
+                 LED_color(MAGENTA);
+                           ^
+main.c:436:27: error: 'BLUE' undeclared (first use in this function)
+                 LED_color(BLUE);
+                           ^
+main.c:512:27: error: 'GREEN' undeclared (first use in this function)
+                 LED_color(GREEN);
+                           ^
+main.c:583:27: error: 'RED' undeclared (first use in this function)
+                 LED_color(RED);
+                           ^
+main.c:594:17: warning: implicit declaration of function 'libTFT_DrawInt' [-Wimplicit-function-declaration]
+                 libTFT_DrawInt(error_state,80,32,2,BLACK, Font16x16);
+                 ^
+main.c:597:23: warning: unused variable 'bms_f' [-Wunused-variable]
+                 char* bms_f;
+                       ^
+main.c:523:25: warning: unused variable 'ABS_Motor_RPM' [-Wunused-variable]
+                 uint8_t ABS_Motor_RPM = getABSMotorRPM();
+                         ^
 The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
---------------- Rebuild Failed: 02/22/2020 12:56:08 ---------------
+main.c:250:12: warning: unused variable 'direction' [-Wunused-variable]
+     int8_t direction=1;
+            ^
+main.c:249:13: warning: unused variable 'value' [-Wunused-variable]
+     uint8_t value=0; // replace the value with 
+             ^
+main.c:230:14: warning: variable 'color' set but not used [-Wunused-but-set-variable]
+     UG_COLOR color[3];
+              ^
+main.c: At top level:
+main.c:192:15: warning: 'ReadSwSwitch' declared 'static' but never defined [-Wunused-function]
+ static uint32 ReadSwSwitch(void);
+               ^
+--------------- Rebuild Failed: 03/05/2020 15:57:12 ---------------

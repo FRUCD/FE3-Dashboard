@@ -3,7 +3,8 @@
 #include <stdio.h>
 //#include "T6963C.h"
 //#include "graphic.h"
-#include "TFT_Library.h"
+#include "ugui.h"
+#include "ugui_SSD1963.h"
 #include "LED.h"
 #include "can_manga.h"
 #include "fonts.h"
@@ -121,14 +122,23 @@ void nodeCheckStart()
 
 void displayData() {
     if(BSPD_CATCH == 1){
-        libTFT_ClearScreen(); //could this be improved with libTFT_Start_TFT()?
-        libTFT_DrawString("BSPD TRIGGERED",0,0,8,RED, Font16x16);
+        //libTFT_ClearScreen(); //could this be improved with libTFT_Start_TFT()?
+        UG_FillScreen(C_WHITE);
+        //libTFT_DrawString("BSPD TRIGGERED",0,0,8,RED, Font16x16);
+        UG_PutString(100, 5 , "test");
         //GLCD_Write_Frame(); //possibly no need for a write frame in this system.
     }
     else{
-        libTFT_ClearScreen();
-        libTFT_DrawInt(PACK_TEMP,0,0,8,BLUE, Font16x16); //size 8 is left over from previous version.
-        libTFT_DrawInt(charge,120,0,8,BLUE2, Font16x16); //size 8 is left over from previous version.
+        //libTFT_ClearScreen();
+        UG_FillScreen(C_WHITE);
+        //libTFT_DrawInt(PACK_TEMP,0,0,8,BLUE, Font16x16); //size 8 is left over from previous version.
+        char PACK_TEMP_s[10];
+        sprintf(PACK_TEMP_s, "%d", PACK_TEMP);
+        UG_PutString(0, 0, PACK_TEMP_s);
+        //libTFT_DrawInt(charge,120,0,8,BLUE2, Font16x16); //size 8 is left over from previous version.
+        char charge_s[10];
+        sprintf(charge_s, "%d", charge);
+        UG_PutString(0, 100, charge_s);
 
         //GLCD_Write_Frame();
     }
@@ -136,13 +146,14 @@ void displayData() {
 
 void calibrateScreen() {
     //just a test function that displays elements at the supposed corners of the screen
-    libTFT_FillRectangle(0, 0, 10, 10, RED);
-    libTFT_FillRectangle(0, 262, 10, 10, BLUE);
-    libTFT_FillRectangle(470, 0, 10, 10, GREEN);
-    libTFT_FillRectangle(470, 262, 10, 10, YELLOW);
-    libTFT_DrawString("Screen test size 10", 10, 10, 10, BLACK, Font16x16);
-    libTFT_DrawString("Screen test size 20", 10, 30, 20, BLACK, Font16x16);
-    libTFT_DrawString("Screen test size 25", 10, 50, 25, BLACK, Font16x16);
+    //libTFT_FillRectangle(0, 0, 10, 10, RED);
+    UG_FillFrame(0, 0, 10, 10, C_RED);
+    //libTFT_FillRectangle(0, 262, 10, 10, BLUE);
+    UG_FillFrame(0, 262, 10, 272, C_BLUE);
+    //libTFT_FillRectangle(470, 0, 10, 10, GREEN);
+    UG_FillFrame(480, 0, 480, 10, C_GREEN);
+    //libTFT_FillRectangle(470, 262, 10, 10, YELLOW);
+    UG_FillFrame(470, 262, 480, 272, C_YELLOW);
     CyDelay(300);
 }
 
@@ -223,7 +234,18 @@ int main()
 {   
     EEPROM_1_Start();
     
-    DISP_Write(0x1);
+    UG_COLOR color[3];
+    color[0] = C_RED;
+    color[1] = C_GREEN;
+    color[2] = C_BLUE;
+    
+    D_BL_Write(1);
+    GraphicLCDIntf_Start();
+    Display_Init();
+    
+    UG_FontSelect(&FONT_12X16);
+    UG_SetBackcolor(C_BLACK);
+    UG_SetForecolor(C_YELLOW);
     
     calibrateScreen();
     
@@ -239,8 +261,6 @@ int main()
     uint32_t DriveTimeCount = 0;
 
     CyGlobalIntEnable;
-    
-    libTFT_Start_TFT();
     
     nodeCheckStart();
     
@@ -279,9 +299,10 @@ int main()
 
             // startup -- 
             case Startup:
-                libTFT_ClearScreen();
+                //libTFT_ClearScreen();
                 if(firstStart == 0) {
-                    libTFT_DrawString("START",0,0,8,BLACK, Font16x16);
+                    //libTFT_DrawString("START",0,0,8,BLACK, Font16x16);
+                    UG_PutString(0, 0, "START");
                     //GLCD_Write_Frame();
                 } else {
                     displayData();
@@ -306,8 +327,10 @@ int main()
                 
             case LV:
                 if(firstLV == 0) {
-                    libTFT_ClearScreen();
-                    libTFT_DrawString("LV",0,0,8,BLACK, Font16x16);
+                    //libTFT_ClearScreen();
+                    UG_FillScreen(C_WHITE);
+                   // libTFT_DrawString("LV",0,0,8,BLACK, Font16x16);
+                    UG_PutString(0, 0, "LV");
                     //GLCD_Write_Frame();
                     firstLV = 1;
                 } else {
@@ -335,7 +358,7 @@ int main()
                 // RGB code goes here
                 // pick a color
                 // all on. 
-                LED_color(YELLOW);
+                LED_color(C_YELLOW);
                 
                 if (Drive_Read())
                 {
@@ -353,8 +376,10 @@ int main()
             break;
                 
             case Precharging:
-                libTFT_ClearScreen();
-                libTFT_DrawString("PRECHARGE",0,0,8,BLACK, Font16x16);
+                //libTFT_ClearScreen();
+                UG_FillScreen(C_WHITE);
+                //libTFT_DrawString("PRECHARGE",0,0,8,BLACK, Font16x16);
+                UG_PutString(0, 0, "PRECHARGE");
                 //GLCD_Write_Frame();
                 
                 CAN_GlobalIntEnable();
@@ -364,7 +389,7 @@ int main()
                 
                 can_send_status(state, error_state);
                 
-                LED_color(MAGENTA);
+                LED_color(C_MAGENTA);
                 Buzzer_Write(0);
                 
                 PrechargingTimeCount = 0;
@@ -398,8 +423,10 @@ int main()
 	        
             case HV_Enabled:
                 if(firstHV == 0) {
-                    libTFT_ClearScreen();
-                    libTFT_DrawString("HV",0,0,8,BLACK, Font16x16);
+                    //libTFT_ClearScreen();
+                    UG_FillScreen(C_WHITE);
+                    //libTFT_DrawString("HV",0,0,8,BLACK, Font16x16);
+                    UG_PutString(0, 0, "HV");
                     //GLCD_Write_Frame();
                     firstHV = 1;
                 } else {
@@ -418,7 +445,7 @@ int main()
                 //
                 // RGB code goes here
                 // Blue
-                LED_color(BLUE);
+                LED_color(C_BLUE);
                 
                 /*
                 RGB3_2_Write(1);
@@ -463,8 +490,10 @@ int main()
                 
 	        case Drive:
                 if(firstDrive == 0) {
-                    libTFT_ClearScreen();;
-                    libTFT_DrawString("DRIVE",0,0,8,BLACK, Font16x16);
+                   // libTFT_ClearScreen();;
+                    UG_FillScreen(C_WHITE);
+                    //libTFT_DrawString("DRIVE",0,0,8,BLACK, Font16x16);
+                    UG_PutString(0, 0, "DRIVE");
                     //GLCD_Write_Frame();
                     firstDrive = 1;
                 } else {
@@ -494,7 +523,7 @@ int main()
                 //
                 // RGB code goes here
                 // Green
-                LED_color(GREEN);
+                LED_color(C_GREEN);
                    
                 uint8_t ACK = 0xFF;
                 
@@ -565,7 +594,7 @@ int main()
                 //
                 // RGB code goes here
                 // flashing red
-                LED_color(RED);
+                LED_color(C_RED);
                 CyDelay(1000);
                 LED_color(LEDOFF);
                 CyDelay(1000);
@@ -573,21 +602,46 @@ int main()
                 Buzzer_Write(0);
                 
                 if(error_state == fromBMS) {}
-                libTFT_ClearScreen();;
-                libTFT_DrawString("DASH",0,0,2,BLACK, Font16x16);
-                libTFT_DrawString("FAULT",0,0,2,BLACK, Font16x16);
-                libTFT_DrawInt(error_state,80,32,2,BLACK, Font16x16);
-                libTFT_DrawString("T:",110, 0, 2, BLACK, Font16x16);
-                libTFT_DrawString("FALUT:", 110, 32, 2, BLACK, Font16x16);
+                //libTFT_ClearScreen();;
+                UG_FillScreen(C_WHITE);
+                //libTFT_DrawString("DASH",0,0,2,BLACK, Font16x16);
+                //libTFT_DrawString("FAULT",0,0,2,BLACK, Font16x16);
+                UG_PutString(0, 0, "DASH FAULT");
+                //libTFT_DrawInt(error_state,80,32,2,BLACK, Font16x16);
+                char error_state_s[10];
+                sprintf(error_state_s, "%d", error_state);
+                UG_PutString(0, 100, error_state_s);
+                
+                //libTFT_DrawString("T:",110, 0, 2, BLACK, Font16x16);
+                UG_PutString(110, 0, "T:");
+                //libTFT_DrawString("FALUT:", 110, 32, 2, BLACK, Font16x16);
+                UG_PutString(110, 32, "FAULT:");
                 char* bms_f;
                 //sprintf(bms_f, "%x", bms_error);
                 if(error_state == fromBMS) {
                     
-                libTFT_DrawInt(PACK_TEMP, 110, 0, 2, BLACK, Font16x16);
-                libTFT_DrawInt(bms_error, 180, 32, 2, BLACK, Font16x16);
-                libTFT_DrawInt(ERROR_NODE, 180, 0, 2, BLACK, Font16x16);
-                libTFT_DrawString(",",184, 0, 2, BLACK, Font16x16);
-                libTFT_DrawInt(ERROR_IDX, 188, 0, 2, BLACK, Font16x16);
+                //libTFT_DrawInt(PACK_TEMP, 110, 0, 2, BLACK, Font16x16);
+                char PACK_TEMP_s[10];
+                sprintf(PACK_TEMP_s, "%d", PACK_TEMP);
+                UG_PutString(110, 20, PACK_TEMP_s);
+                    
+                //libTFT_DrawInt(bms_error, 180, 32, 2, BLACK, Font16x16);
+                char bms_error_s[10];
+                sprintf(bms_error_s, "%d", bms_error);
+                UG_PutString(110, 52, bms_error_s);
+                
+                //libTFT_DrawInt(ERROR_NODE, 180, 0, 2, BLACK, Font16x16);
+                char ERROR_NODE_s[10];
+                sprintf(ERROR_NODE_s, "%d", ERROR_NODE);
+                UG_PutString(180, 0, ERROR_NODE_s);
+                
+                //libTFT_DrawString(",",184, 0, 2, BLACK, Font16x16);
+                UG_PutString(184, 0, ",");
+                
+                //libTFT_DrawInt(ERROR_IDX, 188, 0, 2, BLACK, Font16x16);
+                char ERROR_IDX_s[10];
+                sprintf(ERROR_IDX_s, "%d", ERROR_IDX);
+                UG_PutString(188, 0, ERROR_IDX_s);
                 }
                 //GLCD_Write_Frame();
                 

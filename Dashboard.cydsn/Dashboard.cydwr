@@ -297,7 +297,7 @@
       <Data key="2e856ece-823a-4a66-91d7-726c591f7a8d" value="Digit1Bit2" />
       <Data key="3cb74875-149e-48ab-a7dd-e97984d13bfe" value="RGB1_2" />
       <Data key="3e6a0968-2299-403f-88bd-14f34182515f" value="nrd" />
-      <Data key="4bad6052-c8d9-44e6-a98b-b687ac32f1d4" value="DISP" />
+      <Data key="4bad6052-c8d9-44e6-a98b-b687ac32f1d4" value="D_BL" />
       <Data key="4da11063-6e5d-46ee-ad8f-d5d399df80cd" value="Buzzer" />
       <Data key="6e4d8f88-4505-4117-a171-d0bf748d8520/ed092b9b-d398-4703-be89-cebf998501f6" value="LCD_LCDPort" />
       <Data key="8b16168b-1702-4717-87a6-ae63a9e36fe7" value="RGB3_2" />
@@ -319,7 +319,7 @@
       <Data key="7993237e-a418-4494-a4de-0f0058916a02" value="WDT_Reset" />
       <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="Tach" />
       <Data key="93647039-822b-46d0-9290-2e205b13cc4c" value="LED_1" />
-      <Data key="a6973a90-3ed8-4d2b-b54f-642e2ddfe103" value="TFT_reset" />
+      <Data key="a6973a90-3ed8-4d2b-b54f-642e2ddfe103" value="D_RST" />
       <Data key="a5665507-a489-4063-8ce2-fa8bd2118c51" value="Digit1Bit4" />
       <Data key="ab72fb08-18bd-466e-9cb1-ca7d4d9db39a" value="Digit1Bit1" />
       <Data key="b47e7ac4-a41f-40fc-a6ff-79b26208156c" value="d_lsb" />
@@ -1137,7 +1137,7 @@
     </Group>
     <Group key="4bad6052-c8d9-44e6-a98b-b687ac32f1d4">
       <Group key="0">
-        <Data key="Port Format" value="3,7" />
+        <Data key="Port Format" value="4,7" />
       </Group>
     </Group>
     <Group key="4da11063-6e5d-46ee-ad8f-d5d399df80cd">

@@ -71,9 +71,9 @@
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\Node_Timer_PM.c" value="SOURCE_C;CortexM3;;;;Node_Timer" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\isr_nodeok.c" value="SOURCE_C;CortexM3;;;;isr_nodeok" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\isr_nodeok.h" value="HEADER;;;;;isr_nodeok" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\TFT_reset_aliases.h" value="HEADER;;;;;TFT_reset" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\TFT_reset.c" value="SOURCE_C;CortexM3;;;;TFT_reset" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\TFT_reset.h" value="HEADER;;;;;TFT_reset" />
+  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_RST_aliases.h" value="HEADER;;;;;D_RST" />
+  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_RST.c" value="SOURCE_C;CortexM3;;;;D_RST" />
+  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_RST.h" value="HEADER;;;;;D_RST" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\SD_aliases.h" value="HEADER;;;;;SD" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\SD.c" value="SOURCE_C;CortexM3;;;;SD" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\SD.h" value="HEADER;;;;;SD" />
@@ -90,22 +90,14 @@
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\WDT_Timer_PM.c" value="SOURCE_C;CortexM3;;;;WDT_Timer" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\isr_wdt.c" value="SOURCE_C;CortexM3;;;;isr_wdt" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\isr_wdt.h" value="HEADER;;;;;isr_wdt" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\TFT.c" value="SOURCE_C;CortexM3;;;;TFT" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\TFT.h" value="HEADER;;;;;TFT" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\TFT_PM.c" value="SOURCE_C;CortexM3;;;;TFT" />
+  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\GraphicLCDIntf.c" value="SOURCE_C;CortexM3;;;;GraphicLCDIntf" />
+  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\GraphicLCDIntf.h" value="HEADER;;;;;GraphicLCDIntf" />
+  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\GraphicLCDIntf_PM.c" value="SOURCE_C;CortexM3;;;;GraphicLCDIntf" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\Clock_1.c" value="SOURCE_C;CortexM3;;;;Clock_1" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\Clock_1.h" value="HEADER;;;;;Clock_1" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\PWM_BLED.c" value="SOURCE_C;CortexM3;;;;PWM_BLED" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\PWM_BLED.h" value="HEADER;;;;;PWM_BLED" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\PWM_BLED_PM.c" value="SOURCE_C;CortexM3;;;;PWM_BLED" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\BLED_clock.c" value="SOURCE_C;CortexM3;;;;BLED_clock" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\BLED_clock.h" value="HEADER;;;;;BLED_clock" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\TFT_BLED_aliases.h" value="HEADER;;;;;TFT_BLED" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\TFT_BLED.c" value="SOURCE_C;CortexM3;;;;TFT_BLED" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\TFT_BLED.h" value="HEADER;;;;;TFT_BLED" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\DISP_aliases.h" value="HEADER;;;;;DISP" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\DISP.c" value="SOURCE_C;CortexM3;;;;DISP" />
-  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\DISP.h" value="HEADER;;;;;DISP" />
+  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_BL_aliases.h" value="HEADER;;;;;D_BL" />
+  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_BL.c" value="SOURCE_C;CortexM3;;;;D_BL" />
+  <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\D_BL.h" value="HEADER;;;;;D_BL" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM3;;;;Em_EEPROM_Dynamic" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\cy_em_eeprom.h" value="HEADER;;;;;Em_EEPROM_Dynamic" />
   <file name="C:\cygwin\home\ianrd\FRUCD-Dashboard\Dashboard.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />

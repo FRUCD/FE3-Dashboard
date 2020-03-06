@@ -1,5 +1,5 @@
 # Dashboard
-# 2020-02-22 20:55:55Z
+# 2020-03-05 23:56:56Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -15,7 +15,7 @@ set_io "Drive(0)" iocell 3 0
 set_io "RGB3_1(0)" iocell 2 4
 set_io "RGB2_1(0)" iocell 2 3
 set_io "RGB1_1(0)" iocell 2 2
-set_io "TFT_reset(0)" iocell 12 0
+set_io "D_RST(0)" iocell 12 0
 set_io "d_lsb(0)" iocell 4 3
 set_io "d_lsb(1)" iocell 4 2
 set_io "d_lsb(2)" iocell 0 7
@@ -28,13 +28,4 @@ set_io "d_c(0)" iocell 4 6
 set_io "ncs(0)" iocell 12 1
 set_io "nwr(0)" iocell 4 5
 set_io "nrd(0)" iocell 4 4
-set_io "d_msb(0)" iocell 0 1
-set_io "d_msb(1)" iocell 0 0
-set_io "d_msb(2)" iocell 4 1
-set_io "d_msb(3)" iocell 4 0
-set_io "d_msb(4)" iocell 12 3
-set_io "d_msb(5)" iocell 12 2
-set_io "d_msb(6)" iocell 15 3
-set_io "d_msb(7)" iocell 15 2
-set_io "TFT_BLED(0)" iocell 4 7
-set_io "DISP(0)" iocell 3 7
+set_io "D_BL(0)" iocell 4 7

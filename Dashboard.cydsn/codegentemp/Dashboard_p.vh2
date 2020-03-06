@@ -1,5 +1,5 @@
 -- Project:   Dashboard
--- Generated: 02/22/2020 12:55:55
+-- Generated: 03/05/2020 15:56:56
 -- PSoC Creator  4.2
 
 ENTITY Dashboard IS
@@ -16,7 +16,7 @@ ENTITY Dashboard IS
         RGB1_2(0)_PAD : OUT std_ulogic;
         RGB2_2(0)_PAD : OUT std_ulogic;
         RGB3_2(0)_PAD : OUT std_ulogic;
-        TFT_reset(0)_PAD : OUT std_ulogic;
+        D_RST(0)_PAD : OUT std_ulogic;
         SD(0)_PAD : INOUT std_ulogic;
         SD(1)_PAD : INOUT std_ulogic;
         SD(2)_PAD : INOUT std_ulogic;
@@ -39,16 +39,7 @@ ENTITY Dashboard IS
         ncs(0)_PAD : OUT std_ulogic;
         nwr(0)_PAD : OUT std_ulogic;
         nrd(0)_PAD : OUT std_ulogic;
-        d_msb(0)_PAD : INOUT std_ulogic;
-        d_msb(1)_PAD : INOUT std_ulogic;
-        d_msb(2)_PAD : INOUT std_ulogic;
-        d_msb(3)_PAD : INOUT std_ulogic;
-        d_msb(4)_PAD : INOUT std_ulogic;
-        d_msb(5)_PAD : INOUT std_ulogic;
-        d_msb(6)_PAD : INOUT std_ulogic;
-        d_msb(7)_PAD : INOUT std_ulogic;
-        TFT_BLED(0)_PAD : OUT std_ulogic;
-        DISP(0)_PAD : OUT std_ulogic);
+        D_BL(0)_PAD : OUT std_ulogic);
     ATTRIBUTE voltage_VDDABUF OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VUSB OF __DEFAULT__ : ENTITY IS 3.3e0;
@@ -74,7 +65,8 @@ ARCHITECTURE __DEFAULT__ OF Dashboard IS
     SIGNAL ClockBlock_PLL_OUT : bit;
     SIGNAL ClockBlock_XTAL : bit;
     SIGNAL ClockBlock_XTAL_32KHZ : bit;
-    SIGNAL DISP(0)__PA : bit;
+    SIGNAL D_BL(0)__PA : bit;
+    SIGNAL D_RST(0)__PA : bit;
     SIGNAL Drive(0)__PA : bit;
     SIGNAL HV(0)__PA : bit;
     SIGNAL LED(0)__PA : bit;
@@ -91,22 +83,6 @@ ARCHITECTURE __DEFAULT__ OF Dashboard IS
     SIGNAL Net_12 : bit;
     SIGNAL Net_13 : bit;
     SIGNAL Net_136 : bit;
-    SIGNAL Net_15_0 : bit;
-    SIGNAL Net_15_1 : bit;
-    SIGNAL Net_15_2 : bit;
-    SIGNAL Net_15_3 : bit;
-    SIGNAL Net_15_4 : bit;
-    SIGNAL Net_15_5 : bit;
-    SIGNAL Net_15_6 : bit;
-    SIGNAL Net_15_7 : bit;
-    SIGNAL Net_186_0 : bit;
-    SIGNAL Net_186_1 : bit;
-    SIGNAL Net_186_2 : bit;
-    SIGNAL Net_186_3 : bit;
-    SIGNAL Net_186_4 : bit;
-    SIGNAL Net_186_5 : bit;
-    SIGNAL Net_186_6 : bit;
-    SIGNAL Net_186_7 : bit;
     SIGNAL Net_187 : bit;
     ATTRIBUTE udbclken_assigned OF Net_187 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_187 : SIGNAL IS true;
@@ -121,11 +97,6 @@ ARCHITECTURE __DEFAULT__ OF Dashboard IS
     SIGNAL Net_188_7 : bit;
     SIGNAL Net_189 : bit;
     SIGNAL Net_2 : bit;
-    SIGNAL Net_209 : bit;
-    SIGNAL Net_220 : bit;
-    ATTRIBUTE udbclken_assigned OF Net_220 : SIGNAL IS "True";
-    ATTRIBUTE global_signal OF Net_220 : SIGNAL IS true;
-    SIGNAL Net_220_local : bit;
     SIGNAL Net_25 : bit;
     SIGNAL Net_26 : bit;
     SIGNAL Net_27 : bit;
@@ -150,12 +121,22 @@ ARCHITECTURE __DEFAULT__ OF Dashboard IS
     SIGNAL SD(5)__PA : bit;
     SIGNAL SD(6)__PA : bit;
     SIGNAL SD(7)__PA : bit;
-    SIGNAL TFT_BLED(0)__PA : bit;
-    SIGNAL TFT_reset(0)__PA : bit;
     SIGNAL TX(0)__PA : bit;
     SIGNAL WDT_Reset(0)__PA : bit;
     SIGNAL \CAN_Timer:Net_261\ : bit;
     SIGNAL \CAN_Timer:Net_57\ : bit;
+    SIGNAL \GraphicLCDIntf:cmd_empty\ : bit;
+    SIGNAL \GraphicLCDIntf:cmd_not_full\ : bit;
+    SIGNAL \GraphicLCDIntf:data_empty\ : bit;
+    SIGNAL \GraphicLCDIntf:data_not_full\ : bit;
+    SIGNAL \GraphicLCDIntf:full\ : bit;
+    SIGNAL \GraphicLCDIntf:state_0\ : bit;
+    SIGNAL \GraphicLCDIntf:state_1\ : bit;
+    SIGNAL \GraphicLCDIntf:state_2\ : bit;
+    SIGNAL \GraphicLCDIntf:state_3\ : bit;
+    SIGNAL \GraphicLCDIntf:status_1\ : bit;
+    SIGNAL \GraphicLCDIntf:z0_detect\ : bit;
+    SIGNAL \GraphicLCDIntf:z1_detect\ : bit;
     SIGNAL \Node_Timer:TimerUDB:control_0\ : bit;
     SIGNAL \Node_Timer:TimerUDB:control_1\ : bit;
     SIGNAL \Node_Timer:TimerUDB:control_2\ : bit;
@@ -170,36 +151,6 @@ ARCHITECTURE __DEFAULT__ OF Dashboard IS
     SIGNAL \Node_Timer:TimerUDB:status_2\ : bit;
     SIGNAL \Node_Timer:TimerUDB:status_3\ : bit;
     SIGNAL \Node_Timer:TimerUDB:status_tc\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:cmp1_less\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:cmp2_less\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:control_0\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:control_1\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:control_2\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:control_3\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:control_4\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:control_5\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:control_6\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:control_7\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:prevCompare1\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:prevCompare2\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:runmode_enable\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:status_0\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:status_1\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:status_2\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:status_3\ : bit;
-    SIGNAL \PWM_BLED:PWMUDB:tc_i\ : bit;
-    SIGNAL \TFT:cmd_empty\ : bit;
-    SIGNAL \TFT:cmd_not_full\ : bit;
-    SIGNAL \TFT:data_empty\ : bit;
-    SIGNAL \TFT:data_not_full\ : bit;
-    SIGNAL \TFT:full\ : bit;
-    SIGNAL \TFT:state_0\ : bit;
-    SIGNAL \TFT:state_1\ : bit;
-    SIGNAL \TFT:state_2\ : bit;
-    SIGNAL \TFT:state_3\ : bit;
-    SIGNAL \TFT:status_1\ : bit;
-    SIGNAL \TFT:z0_detect\ : bit;
-    SIGNAL \TFT:z1_detect\ : bit;
     SIGNAL \WDT_Timer:TimerUDB:control_0\ : bit;
     SIGNAL \WDT_Timer:TimerUDB:control_1\ : bit;
     SIGNAL \WDT_Timer:TimerUDB:control_2\ : bit;
@@ -211,7 +162,6 @@ ARCHITECTURE __DEFAULT__ OF Dashboard IS
     SIGNAL \WDT_Timer:TimerUDB:per_zero\ : bit;
     SIGNAL \WDT_Timer:TimerUDB:sT32:timerdp:u1.ce0__sig\ : bit;
     SIGNAL \WDT_Timer:TimerUDB:sT32:timerdp:u2.ce0__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Lsb.ce0__sig\ : bit;
     SIGNAL \WDT_Timer:TimerUDB:status_2\ : bit;
     SIGNAL \WDT_Timer:TimerUDB:status_3\ : bit;
     SIGNAL \WDT_Timer:TimerUDB:status_tc\ : bit;
@@ -228,14 +178,6 @@ ARCHITECTURE __DEFAULT__ OF Dashboard IS
     SIGNAL d_lsb(5)__PA : bit;
     SIGNAL d_lsb(6)__PA : bit;
     SIGNAL d_lsb(7)__PA : bit;
-    SIGNAL d_msb(0)__PA : bit;
-    SIGNAL d_msb(1)__PA : bit;
-    SIGNAL d_msb(2)__PA : bit;
-    SIGNAL d_msb(3)__PA : bit;
-    SIGNAL d_msb(4)__PA : bit;
-    SIGNAL d_msb(5)__PA : bit;
-    SIGNAL d_msb(6)__PA : bit;
-    SIGNAL d_msb(7)__PA : bit;
     SIGNAL ncs(0)__PA : bit;
     SIGNAL nrd(0)__PA : bit;
     SIGNAL nwr(0)__PA : bit;
@@ -244,7 +186,7 @@ ARCHITECTURE __DEFAULT__ OF Dashboard IS
     SIGNAL zero : bit;
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     SIGNAL \ClockBlock.clk_bus_glb_ff__sig\ : bit;
-    SIGNAL \ClockBlock.dclk_glb_ff_2__sig\ : bit;
+    SIGNAL \ClockBlock.dclk_glb_ff_1__sig\ : bit;
     SIGNAL \Node_Timer:TimerUDB:sT24:timerdp:u0.ce0__sig\ : bit;
     SIGNAL \Node_Timer:TimerUDB:sT24:timerdp:u0.cl0__sig\ : bit;
     SIGNAL \Node_Timer:TimerUDB:sT24:timerdp:u0.z0__sig\ : bit;
@@ -306,18 +248,6 @@ ARCHITECTURE __DEFAULT__ OF Dashboard IS
     SIGNAL \WDT_Timer:TimerUDB:sT32:timerdp:u2.cfbo__sig\ : bit;
     SIGNAL \WDT_Timer:TimerUDB:sT32:timerdp:u3.sor__sig\ : bit;
     SIGNAL \WDT_Timer:TimerUDB:sT32:timerdp:u3.cmsbo__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Lsb.cl0__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Lsb.z0__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Lsb.ff0__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Lsb.ce1__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Lsb.cl1__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Lsb.z1__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Lsb.ff1__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Lsb.co_msb__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Lsb.sol_msb__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Lsb.cfbo__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Msb.sor__sig\ : bit;
-    SIGNAL \TFT:GraphLcd16:Msb.cmsbo__sig\ : bit;
     ATTRIBUTE lib_model OF RX(0) : LABEL IS "iocell1";
     ATTRIBUTE Location OF RX(0) : LABEL IS "P3[4]";
     ATTRIBUTE lib_model OF TX(0) : LABEL IS "iocell2";
@@ -334,8 +264,8 @@ ARCHITECTURE __DEFAULT__ OF Dashboard IS
     ATTRIBUTE Location OF RGB2_1(0) : LABEL IS "P2[3]";
     ATTRIBUTE lib_model OF RGB1_1(0) : LABEL IS "iocell8";
     ATTRIBUTE Location OF RGB1_1(0) : LABEL IS "P2[2]";
-    ATTRIBUTE lib_model OF TFT_reset(0) : LABEL IS "iocell9";
-    ATTRIBUTE Location OF TFT_reset(0) : LABEL IS "P12[0]";
+    ATTRIBUTE lib_model OF D_RST(0) : LABEL IS "iocell9";
+    ATTRIBUTE Location OF D_RST(0) : LABEL IS "P12[0]";
     ATTRIBUTE lib_model OF d_lsb(0) : LABEL IS "iocell10";
     ATTRIBUTE Location OF d_lsb(0) : LABEL IS "P4[3]";
     ATTRIBUTE lib_model OF d_lsb(1) : LABEL IS "iocell11";
@@ -360,32 +290,13 @@ ARCHITECTURE __DEFAULT__ OF Dashboard IS
     ATTRIBUTE Location OF nwr(0) : LABEL IS "P4[5]";
     ATTRIBUTE lib_model OF nrd(0) : LABEL IS "iocell21";
     ATTRIBUTE Location OF nrd(0) : LABEL IS "P4[4]";
-    ATTRIBUTE lib_model OF d_msb(0) : LABEL IS "iocell22";
-    ATTRIBUTE Location OF d_msb(0) : LABEL IS "P0[1]";
-    ATTRIBUTE lib_model OF d_msb(1) : LABEL IS "iocell23";
-    ATTRIBUTE Location OF d_msb(1) : LABEL IS "P0[0]";
-    ATTRIBUTE lib_model OF d_msb(2) : LABEL IS "iocell24";
-    ATTRIBUTE Location OF d_msb(2) : LABEL IS "P4[1]";
-    ATTRIBUTE lib_model OF d_msb(3) : LABEL IS "iocell25";
-    ATTRIBUTE Location OF d_msb(3) : LABEL IS "P4[0]";
-    ATTRIBUTE lib_model OF d_msb(4) : LABEL IS "iocell26";
-    ATTRIBUTE Location OF d_msb(4) : LABEL IS "P12[3]";
-    ATTRIBUTE lib_model OF d_msb(5) : LABEL IS "iocell27";
-    ATTRIBUTE Location OF d_msb(5) : LABEL IS "P12[2]";
-    ATTRIBUTE lib_model OF d_msb(6) : LABEL IS "iocell28";
-    ATTRIBUTE Location OF d_msb(6) : LABEL IS "P15[3]";
-    ATTRIBUTE lib_model OF d_msb(7) : LABEL IS "iocell29";
-    ATTRIBUTE Location OF d_msb(7) : LABEL IS "P15[2]";
-    ATTRIBUTE lib_model OF TFT_BLED(0) : LABEL IS "iocell30";
-    ATTRIBUTE Location OF TFT_BLED(0) : LABEL IS "P4[7]";
-    ATTRIBUTE lib_model OF DISP(0) : LABEL IS "iocell31";
-    ATTRIBUTE Location OF DISP(0) : LABEL IS "P3[7]";
+    ATTRIBUTE lib_model OF D_BL(0) : LABEL IS "iocell22";
+    ATTRIBUTE Location OF D_BL(0) : LABEL IS "P4[7]";
     ATTRIBUTE lib_model OF \Node_Timer:TimerUDB:status_tc\ : LABEL IS "macrocell1";
     ATTRIBUTE lib_model OF \WDT_Timer:TimerUDB:status_tc\ : LABEL IS "macrocell2";
-    ATTRIBUTE lib_model OF \TFT:full\ : LABEL IS "macrocell3";
-    ATTRIBUTE lib_model OF \TFT:status_1\ : LABEL IS "macrocell4";
-    ATTRIBUTE lib_model OF \PWM_BLED:PWMUDB:status_2\ : LABEL IS "macrocell5";
-    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell6";
+    ATTRIBUTE lib_model OF \GraphicLCDIntf:full\ : LABEL IS "macrocell3";
+    ATTRIBUTE lib_model OF \GraphicLCDIntf:status_1\ : LABEL IS "macrocell4";
+    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell5";
     ATTRIBUTE lib_model OF \Node_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell1";
     ATTRIBUTE lib_model OF \Node_Timer:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell1";
     ATTRIBUTE lib_model OF \Node_Timer:TimerUDB:sT24:timerdp:u0\ : LABEL IS "datapathcell1";
@@ -397,29 +308,18 @@ ARCHITECTURE __DEFAULT__ OF Dashboard IS
     ATTRIBUTE lib_model OF \WDT_Timer:TimerUDB:sT32:timerdp:u1\ : LABEL IS "datapathcell5";
     ATTRIBUTE lib_model OF \WDT_Timer:TimerUDB:sT32:timerdp:u2\ : LABEL IS "datapathcell6";
     ATTRIBUTE lib_model OF \WDT_Timer:TimerUDB:sT32:timerdp:u3\ : LABEL IS "datapathcell7";
-    ATTRIBUTE lib_model OF \TFT:StsReg\ : LABEL IS "statuscell1";
-    ATTRIBUTE lib_model OF \TFT:LsbReg\ : LABEL IS "statuscell2";
-    ATTRIBUTE lib_model OF \TFT:GraphLcd16:Lsb\ : LABEL IS "datapathcell8";
-    ATTRIBUTE lib_model OF \TFT:GraphLcd16:MsbReg\ : LABEL IS "statuscell3";
-    ATTRIBUTE lib_model OF \TFT:GraphLcd16:Msb\ : LABEL IS "datapathcell9";
-    ATTRIBUTE lib_model OF \PWM_BLED:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell3";
-    ATTRIBUTE lib_model OF \PWM_BLED:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell3";
-    ATTRIBUTE lib_model OF \PWM_BLED:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell10";
-    ATTRIBUTE lib_model OF \TFT:state_3\ : LABEL IS "macrocell7";
-    ATTRIBUTE lib_model OF \TFT:state_2\ : LABEL IS "macrocell8";
-    ATTRIBUTE lib_model OF \TFT:state_1\ : LABEL IS "macrocell9";
-    ATTRIBUTE lib_model OF \TFT:state_0\ : LABEL IS "macrocell10";
-    ATTRIBUTE lib_model OF Net_25 : LABEL IS "macrocell11";
-    ATTRIBUTE lib_model OF Net_26 : LABEL IS "macrocell12";
-    ATTRIBUTE lib_model OF Net_189 : LABEL IS "macrocell13";
-    ATTRIBUTE lib_model OF Net_27 : LABEL IS "macrocell14";
-    ATTRIBUTE lib_model OF Net_39 : LABEL IS "macrocell15";
-    ATTRIBUTE lib_model OF \PWM_BLED:PWMUDB:runmode_enable\ : LABEL IS "macrocell16";
-    ATTRIBUTE lib_model OF \PWM_BLED:PWMUDB:prevCompare1\ : LABEL IS "macrocell17";
-    ATTRIBUTE lib_model OF \PWM_BLED:PWMUDB:prevCompare2\ : LABEL IS "macrocell18";
-    ATTRIBUTE lib_model OF \PWM_BLED:PWMUDB:status_0\ : LABEL IS "macrocell19";
-    ATTRIBUTE lib_model OF \PWM_BLED:PWMUDB:status_1\ : LABEL IS "macrocell20";
-    ATTRIBUTE lib_model OF Net_209 : LABEL IS "macrocell21";
+    ATTRIBUTE lib_model OF \GraphicLCDIntf:StsReg\ : LABEL IS "statuscell1";
+    ATTRIBUTE lib_model OF \GraphicLCDIntf:LsbReg\ : LABEL IS "statuscell2";
+    ATTRIBUTE lib_model OF \GraphicLCDIntf:GraphLcd8:Lsb\ : LABEL IS "datapathcell8";
+    ATTRIBUTE lib_model OF \GraphicLCDIntf:state_3\ : LABEL IS "macrocell6";
+    ATTRIBUTE lib_model OF \GraphicLCDIntf:state_2\ : LABEL IS "macrocell7";
+    ATTRIBUTE lib_model OF \GraphicLCDIntf:state_1\ : LABEL IS "macrocell8";
+    ATTRIBUTE lib_model OF \GraphicLCDIntf:state_0\ : LABEL IS "macrocell9";
+    ATTRIBUTE lib_model OF Net_25 : LABEL IS "macrocell10";
+    ATTRIBUTE lib_model OF Net_26 : LABEL IS "macrocell11";
+    ATTRIBUTE lib_model OF Net_189 : LABEL IS "macrocell12";
+    ATTRIBUTE lib_model OF Net_27 : LABEL IS "macrocell13";
+    ATTRIBUTE lib_model OF Net_39 : LABEL IS "macrocell14";
     COMPONENT cancell
         PORT (
             clock : IN std_ulogic;
@@ -777,12 +677,10 @@ BEGIN
             dsi_glb_div => open,
             dclk_glb_0 => Net_187,
             dclk_0 => Net_187_local,
-            dclk_glb_1 => Net_220,
-            dclk_1 => Net_220_local,
-            dclk_glb_2 => Net_28,
-            dclk_2 => Net_28_local,
+            dclk_glb_1 => Net_28,
+            dclk_1 => Net_28_local,
             clk_bus_glb_ff => \ClockBlock.clk_bus_glb_ff__sig\,
-            dclk_glb_ff_2 => \ClockBlock.dclk_glb_ff_2__sig\);
+            dclk_glb_ff_1 => \ClockBlock.dclk_glb_ff_1__sig\);
 
     RX:logicalport
         GENERIC MAP(
@@ -1869,7 +1767,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    TFT_reset:logicalport
+    D_RST:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -1940,18 +1838,18 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    TFT_reset(0):iocell
+    D_RST(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "TFT_reset",
+            logicalport => "D_RST",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
-            pa_out => TFT_reset(0)__PA,
+            pa_out => D_RST(0)__PA,
             oe => open,
-            pad_in => TFT_reset(0)_PAD,
+            pad_in => D_RST(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',
@@ -2977,346 +2875,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    d_msb:logicalport
-        GENERIC MAP(
-            drive_mode => "110110110110110110110110",
-            ibuf_enabled => "11111111",
-            id => "dc4339c2-1c04-4edf-9775-17347706f8ff",
-            init_dr_st => "00000000",
-            input_buffer_sel => "0000000000000000",
-            input_clk_en => 0,
-            input_sync => "00000000",
-            input_sync_mode => "00000000",
-            intr_mode => "0000000000000000",
-            invert_in_clock => 0,
-            invert_in_clock_en => 0,
-            invert_in_reset => 0,
-            invert_out_clock => 0,
-            invert_out_clock_en => 0,
-            invert_out_reset => 0,
-            io_voltage => ",,,,,,,",
-            layout_mode => "NONCONTIGUOUS",
-            oe_conn => "11111111",
-            oe_reset => 0,
-            oe_sync => "00000000",
-            output_clk_en => 0,
-            output_clock_mode => "00000000",
-            output_conn => "11111111",
-            output_mode => "00000000",
-            output_reset => 0,
-            output_sync => "00000000",
-            ovt_hyst_trim => "00000000",
-            ovt_needed => "00000000",
-            ovt_slew_control => "0000000000000000",
-            pa_in_clock => -1,
-            pa_in_clock_en => -1,
-            pa_in_reset => -1,
-            pa_out_clock => -1,
-            pa_out_clock_en => -1,
-            pa_out_reset => -1,
-            pin_aliases => ",,,,,,,",
-            pin_mode => "BBBBBBBB",
-            por_state => 4,
-            port_alias_group => "",
-            port_alias_required => 0,
-            sio_group_cnt => 0,
-            sio_hifreq => "00000000",
-            sio_hyst => "11111111",
-            sio_ibuf => "00000000",
-            sio_info => "0000000000000000",
-            sio_obuf => "00000000",
-            sio_refsel => "00000000",
-            sio_vohsel => "00000000",
-            sio_vtrip => "00000000",
-            slew_rate => "00000000",
-            spanning => 1,
-            sw_only => 0,
-            use_annotation => "00000000",
-            vtrip => "0000000000000000",
-            width => 8,
-            in_clk_inv => 0,
-            in_clken_inv => 0,
-            in_clken_mode => 1,
-            in_rst_inv => 0,
-            out_clk_inv => 0,
-            out_clken_inv => 0,
-            out_clken_mode => 1,
-            out_rst_inv => 0)
-        PORT MAP(
-            in_clock_en => open,
-            in_reset => open,
-            out_clock_en => open,
-            out_reset => open);
-
-    d_msb(0):iocell
-        GENERIC MAP(
-            in_sync_mode => 0,
-            out_sync_mode => 0,
-            oe_sync_mode => 0,
-            logicalport => "d_msb",
-            logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
-        PORT MAP(
-            pa_out => d_msb(0)__PA,
-            oe => Net_39,
-            pin_input => Net_15_0,
-            fb => Net_186_0,
-            pad_out => d_msb(0)_PAD,
-            pad_in => d_msb(0)_PAD,
-            in_clock => open,
-            in_clock_en => '1',
-            in_reset => '0',
-            out_clock => open,
-            out_clock_en => '1',
-            out_reset => '0');
-
-    d_msb(1):iocell
-        GENERIC MAP(
-            in_sync_mode => 0,
-            out_sync_mode => 0,
-            oe_sync_mode => 0,
-            logicalport => "d_msb",
-            logicalport_pin_id => 1,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
-        PORT MAP(
-            pa_out => d_msb(1)__PA,
-            oe => Net_39,
-            pin_input => Net_15_1,
-            fb => Net_186_1,
-            pad_out => d_msb(1)_PAD,
-            pad_in => d_msb(1)_PAD,
-            in_clock => open,
-            in_clock_en => '1',
-            in_reset => '0',
-            out_clock => open,
-            out_clock_en => '1',
-            out_reset => '0');
-
-    d_msb(2):iocell
-        GENERIC MAP(
-            in_sync_mode => 0,
-            out_sync_mode => 0,
-            oe_sync_mode => 0,
-            logicalport => "d_msb",
-            logicalport_pin_id => 2,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
-        PORT MAP(
-            pa_out => d_msb(2)__PA,
-            oe => Net_39,
-            pin_input => Net_15_2,
-            fb => Net_186_2,
-            pad_out => d_msb(2)_PAD,
-            pad_in => d_msb(2)_PAD,
-            in_clock => open,
-            in_clock_en => '1',
-            in_reset => '0',
-            out_clock => open,
-            out_clock_en => '1',
-            out_reset => '0');
-
-    d_msb(3):iocell
-        GENERIC MAP(
-            in_sync_mode => 0,
-            out_sync_mode => 0,
-            oe_sync_mode => 0,
-            logicalport => "d_msb",
-            logicalport_pin_id => 3,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
-        PORT MAP(
-            pa_out => d_msb(3)__PA,
-            oe => Net_39,
-            pin_input => Net_15_3,
-            fb => Net_186_3,
-            pad_out => d_msb(3)_PAD,
-            pad_in => d_msb(3)_PAD,
-            in_clock => open,
-            in_clock_en => '1',
-            in_reset => '0',
-            out_clock => open,
-            out_clock_en => '1',
-            out_reset => '0');
-
-    d_msb(4):iocell
-        GENERIC MAP(
-            in_sync_mode => 0,
-            out_sync_mode => 0,
-            oe_sync_mode => 0,
-            logicalport => "d_msb",
-            logicalport_pin_id => 4,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
-        PORT MAP(
-            pa_out => d_msb(4)__PA,
-            oe => Net_39,
-            pin_input => Net_15_4,
-            fb => Net_186_4,
-            pad_out => d_msb(4)_PAD,
-            pad_in => d_msb(4)_PAD,
-            in_clock => open,
-            in_clock_en => '1',
-            in_reset => '0',
-            out_clock => open,
-            out_clock_en => '1',
-            out_reset => '0');
-
-    d_msb(5):iocell
-        GENERIC MAP(
-            in_sync_mode => 0,
-            out_sync_mode => 0,
-            oe_sync_mode => 0,
-            logicalport => "d_msb",
-            logicalport_pin_id => 5,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
-        PORT MAP(
-            pa_out => d_msb(5)__PA,
-            oe => Net_39,
-            pin_input => Net_15_5,
-            fb => Net_186_5,
-            pad_out => d_msb(5)_PAD,
-            pad_in => d_msb(5)_PAD,
-            in_clock => open,
-            in_clock_en => '1',
-            in_reset => '0',
-            out_clock => open,
-            out_clock_en => '1',
-            out_reset => '0');
-
-    d_msb(6):iocell
-        GENERIC MAP(
-            in_sync_mode => 0,
-            out_sync_mode => 0,
-            oe_sync_mode => 0,
-            logicalport => "d_msb",
-            logicalport_pin_id => 6,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
-        PORT MAP(
-            pa_out => d_msb(6)__PA,
-            oe => Net_39,
-            pin_input => Net_15_6,
-            fb => Net_186_6,
-            pad_out => d_msb(6)_PAD,
-            pad_in => d_msb(6)_PAD,
-            in_clock => open,
-            in_clock_en => '1',
-            in_reset => '0',
-            out_clock => open,
-            out_clock_en => '1',
-            out_reset => '0');
-
-    d_msb(7):iocell
-        GENERIC MAP(
-            in_sync_mode => 0,
-            out_sync_mode => 0,
-            oe_sync_mode => 0,
-            logicalport => "d_msb",
-            logicalport_pin_id => 7,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
-        PORT MAP(
-            pa_out => d_msb(7)__PA,
-            oe => Net_39,
-            pin_input => Net_15_7,
-            fb => Net_186_7,
-            pad_out => d_msb(7)_PAD,
-            pad_in => d_msb(7)_PAD,
-            in_clock => open,
-            in_clock_en => '1',
-            in_reset => '0',
-            out_clock => open,
-            out_clock_en => '1',
-            out_reset => '0');
-
-    TFT_BLED:logicalport
-        GENERIC MAP(
-            drive_mode => "110",
-            ibuf_enabled => "1",
-            id => "02150ba5-aa63-4d05-9263-07888a07a679",
-            init_dr_st => "0",
-            input_buffer_sel => "00",
-            input_clk_en => 0,
-            input_sync => "1",
-            input_sync_mode => "0",
-            intr_mode => "00",
-            invert_in_clock => 0,
-            invert_in_clock_en => 0,
-            invert_in_reset => 0,
-            invert_out_clock => 0,
-            invert_out_clock_en => 0,
-            invert_out_reset => 0,
-            io_voltage => "",
-            layout_mode => "CONTIGUOUS",
-            oe_conn => "0",
-            oe_reset => 0,
-            oe_sync => "0",
-            output_clk_en => 0,
-            output_clock_mode => "0",
-            output_conn => "1",
-            output_mode => "0",
-            output_reset => 0,
-            output_sync => "0",
-            ovt_hyst_trim => "0",
-            ovt_needed => "0",
-            ovt_slew_control => "00",
-            pa_in_clock => -1,
-            pa_in_clock_en => -1,
-            pa_in_reset => -1,
-            pa_out_clock => -1,
-            pa_out_clock_en => -1,
-            pa_out_reset => -1,
-            pin_aliases => "",
-            pin_mode => "O",
-            por_state => 4,
-            port_alias_group => "",
-            port_alias_required => 0,
-            sio_group_cnt => 0,
-            sio_hifreq => "",
-            sio_hyst => "1",
-            sio_ibuf => "00000000",
-            sio_info => "00",
-            sio_obuf => "00000000",
-            sio_refsel => "00000000",
-            sio_vohsel => "",
-            sio_vtrip => "00000000",
-            slew_rate => "0",
-            spanning => 0,
-            sw_only => 0,
-            use_annotation => "0",
-            vtrip => "10",
-            width => 1,
-            in_clk_inv => 0,
-            in_clken_inv => 0,
-            in_clken_mode => 1,
-            in_rst_inv => 0,
-            out_clk_inv => 0,
-            out_clken_inv => 0,
-            out_clken_mode => 1,
-            out_rst_inv => 0)
-        PORT MAP(
-            in_clock_en => open,
-            in_reset => open,
-            out_clock_en => open,
-            out_reset => open);
-
-    TFT_BLED(0):iocell
-        GENERIC MAP(
-            in_sync_mode => 0,
-            out_sync_mode => 0,
-            oe_sync_mode => 0,
-            logicalport => "TFT_BLED",
-            logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
-        PORT MAP(
-            pa_out => TFT_BLED(0)__PA,
-            oe => open,
-            pin_input => Net_209,
-            pad_out => TFT_BLED(0)_PAD,
-            pad_in => TFT_BLED(0)_PAD,
-            in_clock => open,
-            in_clock_en => '1',
-            in_reset => '0',
-            out_clock => open,
-            out_clock_en => '1',
-            out_reset => '0');
-
-    DISP:logicalport
+    D_BL:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -3387,18 +2946,18 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    DISP(0):iocell
+    D_BL(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "DISP",
+            logicalport => "D_BL",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
-            pa_out => DISP(0)__PA,
+            pa_out => D_BL(0)__PA,
             oe => open,
-            pad_in => DISP(0)_PAD,
+            pad_in => D_BL(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',
@@ -3426,38 +2985,28 @@ BEGIN
             main_0 => \WDT_Timer:TimerUDB:control_7\,
             main_1 => \WDT_Timer:TimerUDB:per_zero\);
 
-    \TFT:full\:macrocell
+    \GraphicLCDIntf:full\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => \TFT:full\,
-            main_0 => \TFT:cmd_not_full\,
-            main_1 => \TFT:data_not_full\);
+            q => \GraphicLCDIntf:full\,
+            main_0 => \GraphicLCDIntf:cmd_not_full\,
+            main_1 => \GraphicLCDIntf:data_not_full\);
 
-    \TFT:status_1\:macrocell
+    \GraphicLCDIntf:status_1\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1 * main_2 * !main_3 * main_4)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => \TFT:status_1\,
-            main_0 => \TFT:state_3\,
-            main_1 => \TFT:state_2\,
-            main_2 => \TFT:state_1\,
-            main_3 => \TFT:state_0\,
-            main_4 => \TFT:z0_detect\);
-
-    \PWM_BLED:PWMUDB:status_2\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0 * main_1)",
-            regmode => 0,
-            clken_mode => 1)
-        PORT MAP(
-            q => \PWM_BLED:PWMUDB:status_2\,
-            main_0 => \PWM_BLED:PWMUDB:runmode_enable\,
-            main_1 => \PWM_BLED:PWMUDB:tc_i\);
+            q => \GraphicLCDIntf:status_1\,
+            main_0 => \GraphicLCDIntf:state_3\,
+            main_1 => \GraphicLCDIntf:state_2\,
+            main_2 => \GraphicLCDIntf:state_1\,
+            main_3 => \GraphicLCDIntf:state_0\,
+            main_4 => \GraphicLCDIntf:z0_detect\);
 
     \CAN:CanIP\:cancell
         GENERIC MAP(
@@ -3481,7 +3030,7 @@ BEGIN
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clock => \ClockBlock.dclk_glb_ff_2__sig\,
+            clock => \ClockBlock.dclk_glb_ff_1__sig\,
             kill => open,
             enable => __ONE__,
             capture => open,
@@ -3967,7 +3516,7 @@ BEGIN
             interrupt => Net_136,
             clock => ClockBlock_BUS_CLK);
 
-    \TFT:StsReg\:statuscell
+    \GraphicLCDIntf:StsReg\:statuscell
         GENERIC MAP(
             cy_force_order => 1,
             cy_md_select => "00000010",
@@ -3981,10 +3530,10 @@ BEGIN
             status_4 => open,
             status_3 => open,
             status_2 => open,
-            status_1 => \TFT:status_1\,
-            status_0 => \TFT:full\);
+            status_1 => \GraphicLCDIntf:status_1\,
+            status_0 => \GraphicLCDIntf:full\);
 
-    \TFT:LsbReg\:statuscell
+    \GraphicLCDIntf:LsbReg\:statuscell
         GENERIC MAP(
             cy_force_order => 1,
             cy_md_select => "11111111",
@@ -4001,9 +3550,9 @@ BEGIN
             status_2 => Net_109_2,
             status_1 => Net_109_1,
             status_0 => Net_109_0,
-            clk_en => \TFT:status_1\);
+            clk_en => \GraphicLCDIntf:status_1\);
 
-    \TFT:GraphLcd16:Lsb\:datapathcell
+    \GraphicLCDIntf:GraphLcd8:Lsb\:datapathcell
         GENERIC MAP(
             a0_init => "00000000",
             a1_init => "00000000",
@@ -4032,13 +3581,15 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => Net_187,
-            cs_addr_2 => \TFT:state_2\,
-            cs_addr_1 => \TFT:state_1\,
-            cs_addr_0 => \TFT:state_0\,
-            z0_comb => \TFT:z0_detect\,
-            z1_comb => \TFT:z1_detect\,
-            f0_bus_stat_comb => \TFT:cmd_not_full\,
-            f0_blk_stat_comb => \TFT:cmd_empty\,
+            cs_addr_2 => \GraphicLCDIntf:state_2\,
+            cs_addr_1 => \GraphicLCDIntf:state_1\,
+            cs_addr_0 => \GraphicLCDIntf:state_0\,
+            z0_comb => \GraphicLCDIntf:z0_detect\,
+            z1_comb => \GraphicLCDIntf:z1_detect\,
+            f0_bus_stat_comb => \GraphicLCDIntf:cmd_not_full\,
+            f0_blk_stat_comb => \GraphicLCDIntf:cmd_empty\,
+            f1_bus_stat_comb => \GraphicLCDIntf:data_not_full\,
+            f1_blk_stat_comb => \GraphicLCDIntf:data_empty\,
             p_out_7 => Net_188_7,
             p_out_6 => Net_188_6,
             p_out_5 => Net_188_5,
@@ -4047,238 +3598,74 @@ BEGIN
             p_out_2 => Net_188_2,
             p_out_1 => Net_188_1,
             p_out_0 => Net_188_0,
-            busclk => ClockBlock_BUS_CLK,
-            ce0 => \TFT:GraphLcd16:Lsb.ce0__sig\,
-            cl0 => \TFT:GraphLcd16:Lsb.cl0__sig\,
-            z0 => \TFT:GraphLcd16:Lsb.z0__sig\,
-            ff0 => \TFT:GraphLcd16:Lsb.ff0__sig\,
-            ce1 => \TFT:GraphLcd16:Lsb.ce1__sig\,
-            cl1 => \TFT:GraphLcd16:Lsb.cl1__sig\,
-            z1 => \TFT:GraphLcd16:Lsb.z1__sig\,
-            ff1 => \TFT:GraphLcd16:Lsb.ff1__sig\,
-            co_msb => \TFT:GraphLcd16:Lsb.co_msb__sig\,
-            sol_msb => \TFT:GraphLcd16:Lsb.sol_msb__sig\,
-            cfbo => \TFT:GraphLcd16:Lsb.cfbo__sig\,
-            sil => \TFT:GraphLcd16:Msb.sor__sig\,
-            cmsbi => \TFT:GraphLcd16:Msb.cmsbo__sig\);
-
-    \TFT:GraphLcd16:MsbReg\:statuscell
-        GENERIC MAP(
-            cy_force_order => 1,
-            cy_md_select => "11111111",
-            clk_inv => '0',
-            clken_inv => '0',
-            clken_mode => 3)
-        PORT MAP(
-            clock => Net_187,
-            status_7 => Net_186_7,
-            status_6 => Net_186_6,
-            status_5 => Net_186_5,
-            status_4 => Net_186_4,
-            status_3 => Net_186_3,
-            status_2 => Net_186_2,
-            status_1 => Net_186_1,
-            status_0 => Net_186_0,
-            clk_en => \TFT:status_1\);
-
-    \TFT:GraphLcd16:Msb\:datapathcell
-        GENERIC MAP(
-            a0_init => "00000000",
-            a1_init => "00000000",
-            ce0_sync => 1,
-            ce1_sync => 1,
-            cl0_sync => 1,
-            cl1_sync => 1,
-            cmsb_sync => 1,
-            co_msb_sync => 1,
-            cy_dpconfig => "0000000000000000000000000000000000010000001100000001000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111111111111000000000000000000000000000000000000000000000100",
-            d0_init => "00000000",
-            d1_init => "00000000",
-            f0_blk_sync => 1,
-            f0_bus_sync => 1,
-            f1_blk_sync => 1,
-            f1_bus_sync => 1,
-            ff0_sync => 1,
-            ff1_sync => 1,
-            ov_msb_sync => 1,
-            so_sync => 1,
-            z0_sync => 1,
-            z1_sync => 1,
-            uses_p_in => '0',
-            uses_p_out => '1',
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            clock => Net_187,
-            cs_addr_2 => \TFT:state_2\,
-            cs_addr_1 => \TFT:state_1\,
-            cs_addr_0 => \TFT:state_0\,
-            f1_bus_stat_comb => \TFT:data_not_full\,
-            f1_blk_stat_comb => \TFT:data_empty\,
-            busclk => ClockBlock_BUS_CLK,
-            p_out_7 => Net_15_7,
-            p_out_6 => Net_15_6,
-            p_out_5 => Net_15_5,
-            p_out_4 => Net_15_4,
-            p_out_3 => Net_15_3,
-            p_out_2 => Net_15_2,
-            p_out_1 => Net_15_1,
-            p_out_0 => Net_15_0,
-            ce0i => \TFT:GraphLcd16:Lsb.ce0__sig\,
-            cl0i => \TFT:GraphLcd16:Lsb.cl0__sig\,
-            z0i => \TFT:GraphLcd16:Lsb.z0__sig\,
-            ff0i => \TFT:GraphLcd16:Lsb.ff0__sig\,
-            ce1i => \TFT:GraphLcd16:Lsb.ce1__sig\,
-            cl1i => \TFT:GraphLcd16:Lsb.cl1__sig\,
-            z1i => \TFT:GraphLcd16:Lsb.z1__sig\,
-            ff1i => \TFT:GraphLcd16:Lsb.ff1__sig\,
-            ci => \TFT:GraphLcd16:Lsb.co_msb__sig\,
-            sir => \TFT:GraphLcd16:Lsb.sol_msb__sig\,
-            cfbi => \TFT:GraphLcd16:Lsb.cfbo__sig\,
-            sor => \TFT:GraphLcd16:Msb.sor__sig\,
-            cmsbo => \TFT:GraphLcd16:Msb.cmsbo__sig\);
-
-    \PWM_BLED:PWMUDB:genblk1:ctrlreg\:controlcell
-        GENERIC MAP(
-            cy_ctrl_mode_0 => "11111111",
-            cy_ctrl_mode_1 => "00000000",
-            cy_ext_reset => 0,
-            cy_force_order => 1,
-            cy_init_value => "00000000",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            clock => Net_220,
-            control_7 => \PWM_BLED:PWMUDB:control_7\,
-            control_6 => \PWM_BLED:PWMUDB:control_6\,
-            control_5 => \PWM_BLED:PWMUDB:control_5\,
-            control_4 => \PWM_BLED:PWMUDB:control_4\,
-            control_3 => \PWM_BLED:PWMUDB:control_3\,
-            control_2 => \PWM_BLED:PWMUDB:control_2\,
-            control_1 => \PWM_BLED:PWMUDB:control_1\,
-            control_0 => \PWM_BLED:PWMUDB:control_0\,
             busclk => ClockBlock_BUS_CLK);
 
-    \PWM_BLED:PWMUDB:genblk8:stsreg\:statusicell
-        GENERIC MAP(
-            cy_force_order => 1,
-            cy_int_mask => "1111111",
-            cy_md_select => "0100111",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            clock => Net_220,
-            status_6 => open,
-            status_5 => open,
-            status_4 => open,
-            status_3 => \PWM_BLED:PWMUDB:status_3\,
-            status_2 => \PWM_BLED:PWMUDB:status_2\,
-            status_1 => \PWM_BLED:PWMUDB:status_1\,
-            status_0 => \PWM_BLED:PWMUDB:status_0\);
-
-    \PWM_BLED:PWMUDB:sP8:pwmdp:u0\:datapathcell
-        GENERIC MAP(
-            a0_init => "00000000",
-            a1_init => "00000000",
-            ce0_sync => 1,
-            ce1_sync => 1,
-            cl0_sync => 1,
-            cl1_sync => 1,
-            cmsb_sync => 1,
-            co_msb_sync => 1,
-            cy_dpconfig => "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000",
-            d0_init => "00000000",
-            d1_init => "00000000",
-            f0_blk_sync => 1,
-            f0_bus_sync => 1,
-            f1_blk_sync => 1,
-            f1_bus_sync => 1,
-            ff0_sync => 1,
-            ff1_sync => 1,
-            ov_msb_sync => 1,
-            so_sync => 1,
-            z0_sync => 1,
-            z1_sync => 1,
-            uses_p_in => '0',
-            uses_p_out => '0',
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            clock => Net_220,
-            cs_addr_2 => \PWM_BLED:PWMUDB:tc_i\,
-            cs_addr_1 => \PWM_BLED:PWMUDB:runmode_enable\,
-            cl0_comb => \PWM_BLED:PWMUDB:cmp1_less\,
-            z0_comb => \PWM_BLED:PWMUDB:tc_i\,
-            cl1_comb => \PWM_BLED:PWMUDB:cmp2_less\,
-            f1_blk_stat_comb => \PWM_BLED:PWMUDB:status_3\,
-            busclk => ClockBlock_BUS_CLK);
-
-    \TFT:state_3\:macrocell
+    \GraphicLCDIntf:state_3\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1 * !main_2 * !main_3 * !main_4 * !main_5) + (!main_1 * !main_2 * main_4)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \TFT:state_3\,
+            q => \GraphicLCDIntf:state_3\,
             clock_0 => Net_187,
-            main_0 => \TFT:data_empty\,
-            main_1 => \TFT:state_3\,
-            main_2 => \TFT:state_2\,
-            main_3 => \TFT:state_1\,
-            main_4 => \TFT:state_0\,
+            main_0 => \GraphicLCDIntf:data_empty\,
+            main_1 => \GraphicLCDIntf:state_3\,
+            main_2 => \GraphicLCDIntf:state_2\,
+            main_3 => \GraphicLCDIntf:state_1\,
+            main_4 => \GraphicLCDIntf:state_0\,
             main_5 => Net_188_1);
 
-    \TFT:state_2\:macrocell
+    \GraphicLCDIntf:state_2\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1) + (main_0 * !main_2 * !main_3 * main_5) + (main_1 * main_2 * main_3 * main_4)",
             regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \TFT:state_2\,
+            q => \GraphicLCDIntf:state_2\,
             clock_0 => Net_187,
-            main_0 => \TFT:state_3\,
-            main_1 => \TFT:state_2\,
-            main_2 => \TFT:state_1\,
-            main_3 => \TFT:state_0\,
-            main_4 => \TFT:z1_detect\,
+            main_0 => \GraphicLCDIntf:state_3\,
+            main_1 => \GraphicLCDIntf:state_2\,
+            main_2 => \GraphicLCDIntf:state_1\,
+            main_3 => \GraphicLCDIntf:state_0\,
+            main_4 => \GraphicLCDIntf:z1_detect\,
             main_5 => Net_188_1);
 
-    \TFT:state_1\:macrocell
+    \GraphicLCDIntf:state_1\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4 * !main_7) + (!main_1 * !main_2 * main_3) + (!main_1 * main_2 * !main_3) + (!main_1 * main_3 * !main_4 * !main_5) + (!main_1 * main_3 * main_4 * !main_6)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \TFT:state_1\,
+            q => \GraphicLCDIntf:state_1\,
             clock_0 => Net_187,
-            main_0 => \TFT:data_empty\,
-            main_1 => \TFT:state_3\,
-            main_2 => \TFT:state_2\,
-            main_3 => \TFT:state_1\,
-            main_4 => \TFT:state_0\,
-            main_5 => \TFT:z0_detect\,
-            main_6 => \TFT:z1_detect\,
+            main_0 => \GraphicLCDIntf:data_empty\,
+            main_1 => \GraphicLCDIntf:state_3\,
+            main_2 => \GraphicLCDIntf:state_2\,
+            main_3 => \GraphicLCDIntf:state_1\,
+            main_4 => \GraphicLCDIntf:state_0\,
+            main_5 => \GraphicLCDIntf:z0_detect\,
+            main_6 => \GraphicLCDIntf:z1_detect\,
             main_7 => Net_188_1);
 
-    \TFT:state_0\:macrocell
+    \GraphicLCDIntf:state_0\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * !main_1 * !main_2 * !main_4) + (!main_0 * !main_2 * main_3 * main_4) + (!main_1 * !main_2 * main_3) + (!main_1 * main_2 * !main_3 * main_4) + (!main_1 * main_3 * !main_4 * main_5) + (!main_1 * main_3 * main_4 * !main_6)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \TFT:state_0\,
+            q => \GraphicLCDIntf:state_0\,
             clock_0 => Net_187,
-            main_0 => \TFT:cmd_empty\,
-            main_1 => \TFT:state_3\,
-            main_2 => \TFT:state_2\,
-            main_3 => \TFT:state_1\,
-            main_4 => \TFT:state_0\,
-            main_5 => \TFT:z0_detect\,
-            main_6 => \TFT:z1_detect\);
+            main_0 => \GraphicLCDIntf:cmd_empty\,
+            main_1 => \GraphicLCDIntf:state_3\,
+            main_2 => \GraphicLCDIntf:state_2\,
+            main_3 => \GraphicLCDIntf:state_1\,
+            main_4 => \GraphicLCDIntf:state_0\,
+            main_5 => \GraphicLCDIntf:z0_detect\,
+            main_6 => \GraphicLCDIntf:z1_detect\);
 
     Net_25:macrocell
         GENERIC MAP(
@@ -4289,10 +3676,10 @@ BEGIN
         PORT MAP(
             q => Net_25,
             clock_0 => Net_187,
-            main_0 => \TFT:state_3\,
-            main_1 => \TFT:state_2\,
-            main_2 => \TFT:state_1\,
-            main_3 => \TFT:state_0\,
+            main_0 => \GraphicLCDIntf:state_3\,
+            main_1 => \GraphicLCDIntf:state_2\,
+            main_2 => \GraphicLCDIntf:state_1\,
+            main_3 => \GraphicLCDIntf:state_0\,
             main_4 => Net_25,
             main_5 => Net_188_0);
 
@@ -4305,10 +3692,10 @@ BEGIN
         PORT MAP(
             q => Net_26,
             clock_0 => Net_187,
-            main_0 => \TFT:state_3\,
-            main_1 => \TFT:state_2\,
-            main_2 => \TFT:state_1\,
-            main_3 => \TFT:state_0\);
+            main_0 => \GraphicLCDIntf:state_3\,
+            main_1 => \GraphicLCDIntf:state_2\,
+            main_2 => \GraphicLCDIntf:state_1\,
+            main_3 => \GraphicLCDIntf:state_0\);
 
     Net_189:macrocell
         GENERIC MAP(
@@ -4319,9 +3706,9 @@ BEGIN
         PORT MAP(
             q => Net_189,
             clock_0 => Net_187,
-            main_0 => \TFT:state_3\,
-            main_1 => \TFT:state_2\,
-            main_2 => \TFT:state_0\);
+            main_0 => \GraphicLCDIntf:state_3\,
+            main_1 => \GraphicLCDIntf:state_2\,
+            main_2 => \GraphicLCDIntf:state_0\);
 
     Net_27:macrocell
         GENERIC MAP(
@@ -4332,10 +3719,10 @@ BEGIN
         PORT MAP(
             q => Net_27,
             clock_0 => Net_187,
-            main_0 => \TFT:state_3\,
-            main_1 => \TFT:state_2\,
-            main_2 => \TFT:state_1\,
-            main_3 => \TFT:state_0\);
+            main_0 => \GraphicLCDIntf:state_3\,
+            main_1 => \GraphicLCDIntf:state_2\,
+            main_2 => \GraphicLCDIntf:state_1\,
+            main_3 => \GraphicLCDIntf:state_0\);
 
     Net_39:macrocell
         GENERIC MAP(
@@ -4346,77 +3733,8 @@ BEGIN
         PORT MAP(
             q => Net_39,
             clock_0 => Net_187,
-            main_0 => \TFT:state_3\,
-            main_1 => \TFT:state_2\,
-            main_2 => \TFT:state_1\);
-
-    \PWM_BLED:PWMUDB:runmode_enable\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            regmode => 1,
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \PWM_BLED:PWMUDB:runmode_enable\,
-            clock_0 => Net_220,
-            main_0 => \PWM_BLED:PWMUDB:control_7\);
-
-    \PWM_BLED:PWMUDB:prevCompare1\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            regmode => 1,
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \PWM_BLED:PWMUDB:prevCompare1\,
-            clock_0 => Net_220,
-            main_0 => \PWM_BLED:PWMUDB:cmp1_less\);
-
-    \PWM_BLED:PWMUDB:prevCompare2\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            regmode => 1,
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \PWM_BLED:PWMUDB:prevCompare2\,
-            clock_0 => Net_220,
-            main_0 => \PWM_BLED:PWMUDB:cmp2_less\);
-
-    \PWM_BLED:PWMUDB:status_0\:macrocell
-        GENERIC MAP(
-            eqn_main => "(!main_0 * main_1)",
-            regmode => 1,
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \PWM_BLED:PWMUDB:status_0\,
-            clock_0 => Net_220,
-            main_0 => \PWM_BLED:PWMUDB:prevCompare1\,
-            main_1 => \PWM_BLED:PWMUDB:cmp1_less\);
-
-    \PWM_BLED:PWMUDB:status_1\:macrocell
-        GENERIC MAP(
-            eqn_main => "(!main_0 * main_1)",
-            regmode => 1,
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \PWM_BLED:PWMUDB:status_1\,
-            clock_0 => Net_220,
-            main_0 => \PWM_BLED:PWMUDB:prevCompare2\,
-            main_1 => \PWM_BLED:PWMUDB:cmp2_less\);
-
-    Net_209:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0 * main_1)",
-            regmode => 1,
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => Net_209,
-            clock_0 => Net_220,
-            main_0 => \PWM_BLED:PWMUDB:runmode_enable\,
-            main_1 => \PWM_BLED:PWMUDB:cmp1_less\);
+            main_0 => \GraphicLCDIntf:state_3\,
+            main_1 => \GraphicLCDIntf:state_2\,
+            main_2 => \GraphicLCDIntf:state_1\);
 
 END __DEFAULT__;
